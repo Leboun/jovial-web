@@ -1,5 +1,8 @@
 import DownloadSection from "@/components/DownloadSection";
-import { MapPin, Users, Zap, Heart, Star, Bell } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { MapPin, Users, Zap, Heart, Star, Bell, Clock } from "lucide-react";
+import { articles } from "@/lib/articles";
 
 const features = [
   {
@@ -71,15 +74,10 @@ export default function HomePage() {
             <p className="text-white/40 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
           </div>
 
-          {/* Phone mockup */}
-          <div className="hidden lg:flex justify-center">
-            <div className="relative w-64 h-[520px] bg-[#1e3a70] rounded-[3rem] border-4 border-white/20 shadow-2xl overflow-hidden flex items-center justify-center">
-              <div className="absolute top-6 left-1/2 -translate-x-1/2 w-20 h-5 bg-black rounded-full" />
-              <div className="text-center px-6">
-                <MapPin size={48} className="mx-auto mb-3 text-[#F97316]" />
-                <p className="text-sm font-medium text-white/60">Capture d&apos;écran à venir</p>
-              </div>
-            </div>
+          {/* Logo + mascotte */}
+          <div className="hidden lg:flex justify-center items-center relative">
+            <Image src="/logo.png" alt="Jovial — Là où la soirée commence" width={480} height={245} priority className="drop-shadow-2xl" />
+            <Image src="/mascotte.png" alt="Mascotte Jovial" width={140} height={156} className="absolute -bottom-8 -right-4 drop-shadow-xl" />
           </div>
         </div>
       </section>
@@ -151,6 +149,62 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Magazine */}
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-end justify-between mb-12">
+            <div>
+              <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Magazine</span>
+              <h2 className="text-4xl font-bold mt-3">La vie des bars, racontée</h2>
+              <p className="text-gray-500 text-lg mt-3 max-w-xl">
+                Portraits de gérants, coups de projecteur sur des établissements, villes qui bougent — on raconte la vie nocturne française.
+              </p>
+            </div>
+            <Link
+              href="/actualites"
+              className="hidden md:inline-flex items-center gap-2 text-[#2B4E93] font-semibold text-sm hover:underline shrink-0"
+            >
+              Tous les articles →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {articles.slice(0, 3).map((a) => (
+              <Link key={a.slug} href={`/actualites/${a.slug}`} className="group block">
+                <article className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-md transition-shadow h-full flex flex-col">
+                  <div className="h-1.5 w-full" style={{ backgroundColor: a.tagColor }} />
+                  <div className="p-6 flex flex-col flex-1">
+                    <span
+                      className="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-full mb-4 w-fit"
+                      style={{ backgroundColor: a.tagColor + "18", color: a.tagColor }}
+                    >
+                      {a.tagEmoji} {a.tag}
+                    </span>
+                    <h3 className="font-bold text-gray-900 leading-snug mb-3 flex-1 group-hover:text-[#2B4E93] transition-colors">
+                      {a.title}
+                    </h3>
+                    <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">{a.excerpt}</p>
+                    <div className="flex items-center justify-between mt-auto">
+                      <span className="flex items-center gap-1 text-xs text-gray-400">
+                        <Clock size={11} />
+                        {a.readTime} de lecture
+                      </span>
+                      <span className="text-[#2B4E93] text-sm font-semibold group-hover:underline">Lire →</span>
+                    </div>
+                  </div>
+                </article>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-8 text-center md:hidden">
+            <Link href="/actualites" className="text-[#2B4E93] font-semibold text-sm hover:underline">
+              Voir tous les articles →
+            </Link>
           </div>
         </div>
       </section>
