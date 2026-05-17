@@ -7,8 +7,7 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "/#concept", label: "L'appli" },
-  { href: "/premium", label: "Jovial+" },
-  { href: "/etablissements", label: "Établissements" },
+  { href: "/etablissements", label: "Jovial Pro" },
   { href: "/actualites", label: "Magazine" },
 ];
 
