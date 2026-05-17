@@ -214,26 +214,7 @@ export default function EtablissementsPage() {
         </div>
       </section>
 
-      {/* Dashboard preview */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-10">
-            <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Tableau de bord</span>
-            <h2 className="text-3xl font-bold mt-3 mb-4">Accède à ton espace pro</h2>
-            <p className="text-gray-500">Gère ton établissement, tes événements et tes stats depuis ton dashboard.</p>
-          </div>
-          <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100" style={{ height: "700px" }}>
-            <iframe
-              src="https://pro.getjovial.fr"
-              className="w-full h-full"
-              title="Jovial Pro Dashboard"
-              allow="same-origin"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* CTA contact */}
+{/* CTA contact */}
       <section className="py-20 px-6 bg-[#2B4E93] text-white text-center">
         <div className="max-w-xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Une question ? On est là.</h2>
