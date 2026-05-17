@@ -101,6 +101,17 @@ export default function EtablissementsPage() {
       {/* Hero */}
       <section className="relative bg-[#0f1c38] text-white pt-32 pb-20 px-6 overflow-hidden">
         <div className="absolute top-0 right-0 w-80 h-80 bg-[#F97316] rounded-full blur-[100px] opacity-15 -translate-y-1/2 translate-x-1/3" />
+
+        {/* Bouton Se connecter */}
+        <div className="absolute top-6 right-6">
+          <a
+            href="https://pro.getjovial.fr/establishment/login"
+            className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 transition-colors"
+          >
+            Se connecter →
+          </a>
+        </div>
+
         <div className="max-w-4xl mx-auto text-center relative">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
             🏪 Pour les établissements
@@ -112,12 +123,20 @@ export default function EtablissementsPage() {
           <p className="text-white/70 text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
             Rejoins Jovial et connecte ton établissement à des milliers de noctambules qui cherchent où sortir ce soir.
           </p>
-          <a
-            href="mailto:contact@jovial.app?subject=Inscription%20établissement%20Jovial"
-            className="inline-flex items-center gap-2 bg-[#F97316] text-white font-bold px-8 py-4 rounded-2xl hover:bg-orange-600 transition-colors text-lg"
-          >
-            Inscrire mon établissement
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://pro.getjovial.fr/establishment/signup"
+              className="inline-flex items-center justify-center gap-2 bg-[#F97316] text-white font-bold px-8 py-4 rounded-2xl hover:bg-orange-600 transition-colors text-lg"
+            >
+              Inscrire mon établissement
+            </a>
+            <a
+              href="https://pro.getjovial.fr/establishment/login"
+              className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-bold px-8 py-4 rounded-2xl hover:bg-white/20 transition-colors text-lg border border-white/20"
+            >
+              J&apos;ai déjà un compte
+            </a>
+          </div>
         </div>
       </section>
 
@@ -191,6 +210,25 @@ export default function EtablissementsPage() {
                 </a>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Dashboard preview */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Tableau de bord</span>
+            <h2 className="text-3xl font-bold mt-3 mb-4">Accède à ton espace pro</h2>
+            <p className="text-gray-500">Gère ton établissement, tes événements et tes stats depuis ton dashboard.</p>
+          </div>
+          <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100" style={{ height: "700px" }}>
+            <iframe
+              src="https://pro.getjovial.fr"
+              className="w-full h-full"
+              title="Jovial Pro Dashboard"
+              allow="same-origin"
+            />
           </div>
         </div>
       </section>
