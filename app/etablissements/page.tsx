@@ -125,7 +125,7 @@ export default function EtablissementsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://pro.getjovial.fr/establishment/signup"
+              href="https://pro.getjovial.fr/establishment/offers"
               className="inline-flex items-center justify-center gap-2 bg-[#F97316] text-white font-bold px-8 py-4 rounded-2xl hover:bg-orange-600 transition-colors text-lg"
             >
               Inscrire mon établissement
