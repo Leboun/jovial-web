@@ -1,4 +1,5 @@
 import DownloadSection from "@/components/DownloadSection";
+import HeroTagline from "@/components/HeroTagline";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Users, Zap, Heart, Star, Bell, Clock } from "lucide-react";
@@ -63,10 +64,7 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
               🎉 Disponible gratuitement
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              La vie nocturne,{" "}
-              <span className="text-[#F97316]">dans ta poche</span>
-            </h1>
+            <HeroTagline />
             <p className="text-white/75 text-lg leading-relaxed mb-10 max-w-md">
               Jovial te connecte aux meilleurs bars, concerts et événements autour de toi. Découvre, partage, vis.
             </p>
@@ -74,27 +72,10 @@ export default function HomePage() {
             <p className="text-white/40 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
           </div>
 
-          {/* Logo + mascotte */}
-          <div className="hidden lg:flex justify-center items-center relative">
+          {/* Logo */}
+          <div className="hidden lg:flex justify-center items-center">
             <Image src="/logo.png" alt="Jovial — Là où la soirée commence" width={480} height={245} priority className="drop-shadow-2xl" />
-            <Image src="/mascotte.png" alt="Mascotte Jovial" width={140} height={156} className="absolute -bottom-8 -right-4 drop-shadow-xl" />
           </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="bg-white border-b border-gray-100 py-10 px-6">
-        <div className="max-w-4xl mx-auto grid grid-cols-3 gap-8 text-center">
-          {[
-            { value: "100%", label: "Gratuit" },
-            { value: "0", label: "Publicités" },
-            { value: "🇫🇷", label: "Fait en France" },
-          ].map((s) => (
-            <div key={s.label}>
-              <p className="text-3xl font-bold text-[#2B4E93]">{s.value}</p>
-              <p className="text-gray-500 text-sm mt-1">{s.label}</p>
-            </div>
-          ))}
         </div>
       </section>
 
