@@ -14,6 +14,77 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: "art-rock-2026-saint-brieuc-bars-restaurants",
+    date: "18 mai 2026",
+    tag: "Festival & Off",
+    tagColor: "#F59E0B",
+    tagEmoji: "🎪",
+    title: "Art Rock 2026 à Saint-Brieuc : les bars et restaurants se mettent au rythme du festival",
+    excerpt:
+      "Du 22 au 24 mai 2026, la 43ᵉ édition d'Art Rock transforme Saint-Brieuc en terrain de fête. Les bars et restaurants de la ville jouent le jeu avec soirées spéciales, concerts live et animations festives.",
+    readTime: "5 min",
+    author: "Équipe Jovial",
+    city: "Saint-Brieuc",
+    content: `
+## Une ville entière en fête pendant Art Rock 2026
+
+Durant trois jours et trois nuits, le cœur de Saint-Brieuc change totalement de visage. Des milliers de festivaliers affluent dans les rues pour profiter de la programmation du festival, portée cette année par des artistes comme The Kooks, Véronique Sanson, De La Soul, Babyshambles, Suzane, Sébastien Tellier ou encore Gaëtan Roussel.
+
+Mais Art Rock, ce n'est pas uniquement les scènes officielles. Pendant tout le week-end, les bars, pubs et restaurants de Saint-Brieuc jouent eux aussi le jeu avec des soirées spéciales, concerts live, DJ sets, happy hours prolongés et animations festives qui font vibrer toute la ville jusque tard dans la nuit.
+
+Cette effervescence profite naturellement aux établissements briochins qui préparent souvent des animations spéciales pour accueillir les visiteurs :
+
+- concerts acoustiques et showcases après les concerts officiels ;
+- DJ sets électro et soirées à thème ;
+- terrasses animées et retransmissions ;
+- menus spéciaux "festival" ;
+- happy hours prolongés ;
+- brunchs et afters du dimanche.
+
+Le week-end Art Rock est devenu un moment incontournable pour découvrir l'ambiance festive des bars et restaurants de Saint-Brieuc.
+
+## Les bars de Saint-Brieuc au cœur de l'expérience Art Rock
+
+Pendant le festival, les établissements du centre-ville deviennent de véritables lieux de rencontre pour les festivaliers. Entre deux concerts ou après les scènes principales, beaucoup prolongent la soirée dans les bars de la ville.
+
+Les pubs et bars à ambiance proposent généralement des programmations spéciales avec :
+
+- musique live ;
+- soirées électro ;
+- DJ locaux ;
+- cocktails exclusifs ;
+- animations en terrasse.
+
+C'est aussi l'occasion pour les visiteurs de découvrir la scène locale et l'atmosphère chaleureuse du centre historique de Saint-Brieuc.
+
+## Restaurants et food spots : une offre renforcée pendant le festival
+
+Art Rock attire des dizaines de milliers de visiteurs chaque année. Les restaurants de Saint-Brieuc adaptent donc leurs offres avec :
+
+- services en continu ;
+- plats rapides avant concerts ;
+- menus spéciaux festival ;
+- cuisine locale bretonne ;
+- street food et options végétariennes.
+
+Que vous recherchiez un restaurant convivial avant un concert ou un lieu où terminer la soirée entre amis, la ville regorge d'adresses qui participent pleinement à l'expérience Art Rock.
+
+## Pourquoi suivre les animations Art Rock sur Jovial ?
+
+Pendant un week-end aussi dense, il peut être difficile de savoir quels bars organisent une soirée spéciale, où trouver un concert live après minuit, quels restaurants restent ouverts tard ou quelles animations sont prévues autour du festival.
+
+C'est exactement là que Jovial devient utile. Grâce à l'application, vous pouvez retrouver les animations des bars et restaurants, les événements autour d'Art Rock, les soirées et concerts à proximité, les lieux tendance du moment et les établissements les plus animés du week-end.
+
+## Art Rock 2026 : un week-end à ne pas manquer en Bretagne
+
+Avec sa programmation éclectique, son ambiance urbaine et ses nombreuses animations dans les établissements de la ville, Art Rock reste l'un des festivals les plus attendus de Bretagne.
+
+Que vous soyez amateur de concerts, de gastronomie, de soirées festives ou simplement à la recherche d'une bonne ambiance pour le week-end, Saint-Brieuc promet une expérience unique du 22 au 24 mai 2026.
+
+Et pour ne rien manquer des meilleures adresses, soirées et animations pendant le festival, gardez un œil sur Jovial.
+    `,
+  },
+  {
     slug: "melting-pot-rennes-20-ans",
     date: "15 mai 2026",
     tag: "Portrait d'établissement",
