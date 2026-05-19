@@ -10,8 +10,10 @@ export const metadata: Metadata = {
   title: "Jovial — Découvre les bars et événements près de toi",
   description: "Jovial te connecte aux meilleurs bars, concerts et événements autour de toi. Télécharge l'app gratuitement.",
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    apple: "/favicon.png",
   },
   openGraph: {
     title: "Jovial — Découvre les bars et événements près de toi",
