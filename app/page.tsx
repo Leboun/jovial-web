@@ -2,45 +2,57 @@ import DownloadSection from "@/components/DownloadSection";
 import HeroTagline from "@/components/HeroTagline";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Users, Zap, Heart, Star, Bell, Clock } from "lucide-react";
+import { MapPin, Users, Zap, Heart, Bell, Clock, CalendarDays, Ticket, Gift, MessageCircle } from "lucide-react";
 import { articles } from "@/lib/articles";
 
 const features = [
   {
     icon: MapPin,
     title: "Carte interactive",
-    description: "Explore les bars et événements autour de toi sur une carte en temps réel.",
+    description: "Explore bars, restaurants, tiers-lieux et complexes de loisirs autour de toi. Filtre par activité, ambiance ou distance.",
     color: "#2B4E93",
   },
   {
     icon: Bell,
     title: "Événements à venir",
-    description: "Ne rate plus aucun concert, soirée ou afterwork. Ajoute-les à ton calendrier.",
+    description: "Concerts, soirées, afterworks, tournois… Ne rate plus rien. Ajoute directement les événements à ton calendrier.",
     color: "#F97316",
+  },
+  {
+    icon: Ticket,
+    title: "Activités & réservation",
+    description: "Baby-foot, fléchettes, billard, escape game… Découvre les activités disponibles et réserve ta place en quelques secondes depuis l'app.",
+    color: "#5CB6AC",
+  },
+  {
+    icon: Heart,
+    title: "Favoris & alertes",
+    description: "Sauvegarde tes lieux préférés et reçois une notification dès qu'ils publient un nouvel événement ou une nouvelle activité.",
+    color: "#EF4444",
+  },
+  {
+    icon: Gift,
+    title: "Avantages exclusifs Jovial+",
+    description: "Avec Jovial+, profite d'avantages réservés : consommation offerte à l'arrivée, réservation prioritaire, tarif réduit sur les activités et accès early bird aux événements.",
+    color: "#8B5CF6",
   },
   {
     icon: Users,
     title: "Réseau d'amis",
-    description: "Connecte-toi avec tes amis, partage tes bars favoris et planifiez vos sorties.",
+    description: "Connecte-toi avec tes amis, partage tes bons plans et coordonnez vos sorties en un clin d'œil.",
     color: "#10B981",
   },
   {
-    icon: Heart,
-    title: "Favoris & suivi",
-    description: "Sauvegarde les lieux que tu aimes et reçois des alertes quand ils publient.",
-    color: "#EF4444",
-  },
-  {
-    icon: Star,
-    title: "Recommandations",
-    description: "Jovial+ te suggère des lieux selon tes goûts et les coups de cœur de tes amis.",
-    color: "#8B5CF6",
+    icon: MessageCircle,
+    title: "Groupes communautaires",
+    description: "Rejoins des groupes autour de tes passions : amateurs de fléchettes, fans de rooftops, afterwork du jeudi… Échange, planifie et sors ensemble.",
+    color: "#F59E0B",
   },
   {
     icon: Zap,
     title: "100% gratuit",
-    description: "Aucune pub, aucun engagement. Jovial est et restera gratuit pour les utilisateurs.",
-    color: "#F59E0B",
+    description: "Aucune pub, aucun engagement. Télécharge Jovial et commence à explorer dès ce soir.",
+    color: "#6366F1",
   },
 ];
 
@@ -90,7 +102,7 @@ function PhoneMockup({ src, alt }: { src: string; alt: string }) {
         <img
           src={src}
           alt={alt}
-          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block" }}
+          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block", imageRendering: "crisp-edges" }}
         />
         {/* Reflet subtil sur l'écran */}
         <div style={{
@@ -177,19 +189,19 @@ export default function HomePage() {
           </div>
 
           {/* ── Mockups iPhone ── */}
-          <div className="hidden lg:block relative" style={{ height: 620 }}>
+          <div className="hidden lg:block relative" style={{ height: 660 }}>
 
             {/* Téléphone ARRIÈRE — fiche établissement, incliné droite */}
             <div style={{
               position: "absolute",
-              right: 40,
-              bottom: 20,
-              width: 220,
-              transform: "rotate(7deg)",
+              right: 20,
+              bottom: 30,
+              width: 240,
+              transform: "rotate(8deg)",
               transformOrigin: "bottom center",
               zIndex: 10,
               filter: "drop-shadow(0px 30px 50px rgba(0,0,0,0.65))",
-              opacity: 0.92,
+              opacity: 0.95,
             }}>
               <PhoneMockup src="/screen-venue.jpg" alt="Fiche établissement Jovial" />
             </div>
@@ -197,10 +209,10 @@ export default function HomePage() {
             {/* Téléphone AVANT — carte, légèrement incliné gauche */}
             <div style={{
               position: "absolute",
-              left: 40,
+              left: 20,
               bottom: 0,
-              width: 250,
-              transform: "rotate(-4deg)",
+              width: 270,
+              transform: "rotate(-5deg)",
               transformOrigin: "bottom center",
               zIndex: 20,
               filter: "drop-shadow(0px 40px 70px rgba(0,0,0,0.8))",
@@ -218,12 +230,12 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">L&apos;application</span>
             <h2 className="text-4xl font-bold mt-3 mb-4">Tout ce qu&apos;il te faut pour sortir</h2>
-            <p className="text-gray-500 text-lg max-w-xl mx-auto">
-              Une seule app pour découvrir les bars, suivre les événements et retrouver tes amis.
+            <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+              Découvre des lieux uniques, réserve tes activités, suis les événements et rejoins une communauté de sorties — tout en un.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((f) => {
               const Icon = f.icon;
               return (
