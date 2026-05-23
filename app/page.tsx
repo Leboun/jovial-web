@@ -182,7 +182,7 @@ export default function HomePage() {
             </div>
             <HeroTagline />
             <p className="text-white/80 text-lg leading-relaxed mb-10 max-w-md">
-              Fléchettes, concerts, brunchs, tournois, soirées… Découvre les meilleures activités et événements autour de toi, à toute heure. Que tu sois chez toi ou en déplacement, Jovial te connecte à ce qui se passe près de toi.
+              Fléchettes, concerts, escape games, tournois, soirées… Découvre les meilleures activités et événements autour de toi, à toute heure. Que tu sois chez toi ou en déplacement, Jovial te connecte à ce qui se passe près de toi.
             </p>
             <DownloadSection />
             <p className="text-white/40 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
