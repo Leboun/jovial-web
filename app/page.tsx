@@ -51,25 +51,118 @@ const steps = [
   { number: "04", title: "Profite de ta soirée", desc: "Partage tes bons plans, découvre de nouveaux lieux, vis l'instant." },
 ];
 
+/** Mockup iPhone 15 Pro en CSS pur */
+function PhoneMockup({ src, alt }: { src: string; alt: string }) {
+  return (
+    <div style={{
+      position: "relative",
+      borderRadius: 48,
+      background: "linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 50%, #0f0f0f 100%)",
+      padding: 10,
+      boxShadow: `
+        inset 0 0 0 1.5px rgba(255,255,255,0.12),
+        inset 0 1px 0 rgba(255,255,255,0.2),
+        0 0 0 1px rgba(0,0,0,0.6)
+      `,
+    }}>
+      {/* Dynamic Island */}
+      <div style={{
+        position: "absolute",
+        top: 14,
+        left: "50%",
+        transform: "translateX(-50%)",
+        width: 72,
+        height: 22,
+        background: "#000",
+        borderRadius: 20,
+        zIndex: 10,
+        boxShadow: "0 0 0 1px rgba(255,255,255,0.06)",
+      }} />
+
+      {/* Écran */}
+      <div style={{
+        borderRadius: 40,
+        overflow: "hidden",
+        aspectRatio: "9 / 19.5",
+        background: "#000",
+        position: "relative",
+      }}>
+        <img
+          src={src}
+          alt={alt}
+          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block" }}
+        />
+        {/* Reflet subtil sur l'écran */}
+        <div style={{
+          position: "absolute",
+          top: 0, left: 0, right: 0,
+          height: "30%",
+          background: "linear-gradient(to bottom, rgba(255,255,255,0.06), transparent)",
+          pointerEvents: "none",
+        }} />
+      </div>
+
+      {/* Bouton power */}
+      <div style={{
+        position: "absolute", right: -3, top: 90,
+        width: 3, height: 36,
+        background: "linear-gradient(to right, #2a2a2a, #444)",
+        borderRadius: "0 3px 3px 0",
+      }} />
+      {/* Boutons volume */}
+      <div style={{
+        position: "absolute", left: -3, top: 80,
+        width: 3, height: 28,
+        background: "linear-gradient(to left, #2a2a2a, #444)",
+        borderRadius: "3px 0 0 3px",
+      }} />
+      <div style={{
+        position: "absolute", left: -3, top: 118,
+        width: 3, height: 28,
+        background: "linear-gradient(to left, #2a2a2a, #444)",
+        borderRadius: "3px 0 0 3px",
+      }} />
+      {/* Bouton silencieux */}
+      <div style={{
+        position: "absolute", left: -3, top: 55,
+        width: 3, height: 16,
+        background: "linear-gradient(to left, #2a2a2a, #444)",
+        borderRadius: "3px 0 0 3px",
+      }} />
+    </div>
+  );
+}
+
 export default function HomePage() {
   return (
     <>
       {/* Hero */}
       <section className="relative text-white overflow-hidden min-h-screen flex items-center">
-        {/* Photo de fond */}
-        <Image
-          src="/hero-bg.jpg"
-          alt="Ambiance bar Jovial"
-          fill
-          priority
-          quality={90}
-          className="object-cover object-center"
-          style={{ zIndex: 0 }}
-        />
-        {/* Overlay dégradé sombre */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30" style={{ zIndex: 1 }} />
 
-        <div className="relative w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 pt-32 pb-24" style={{ zIndex: 2 }}>
+        {/* ── Photo de fond ── */}
+        <div className="absolute inset-0" style={{ zIndex: 0 }}>
+          <img
+            src="/hero-bg.jpg"
+            alt=""
+            aria-hidden="true"
+            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+          />
+        </div>
+
+        {/* ── Overlay : dégradé gauche→droite ── */}
+        <div
+          className="absolute inset-0"
+          style={{
+            zIndex: 1,
+            background: "linear-gradient(to right, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.15) 100%)",
+          }}
+        />
+
+        {/* ── Contenu ── */}
+        <div
+          className="relative w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-6 pt-32 pb-20"
+          style={{ zIndex: 2 }}
+        >
           {/* Texte gauche */}
           <div>
             <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
@@ -83,37 +176,35 @@ export default function HomePage() {
             <p className="text-white/40 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
           </div>
 
-          {/* Mockups téléphone droite */}
-          <div className="hidden lg:flex justify-center items-end relative h-[580px]">
+          {/* ── Mockups iPhone ── */}
+          <div className="hidden lg:block relative" style={{ height: 620 }}>
 
-            {/* Téléphone arrière (fiche) — incliné à droite */}
-            <div className="absolute right-0 bottom-0 w-[220px] rotate-[8deg] origin-bottom z-10"
-                 style={{ filter: "drop-shadow(0 40px 60px rgba(0,0,0,0.7))" }}>
-              <div className="relative bg-[#111] rounded-[38px] p-[8px] ring-[1.5px] ring-white/10">
-                <div className="absolute top-[8px] left-1/2 -translate-x-1/2 w-16 h-[14px] bg-[#111] rounded-full z-20" />
-                <div className="rounded-[32px] overflow-hidden w-full" style={{ aspectRatio: "9/19.5" }}>
-                  <Image src="/screen-venue.jpg" alt="Fiche établissement" width={204} height={442}
-                    className="w-full h-full object-cover object-top" />
-                </div>
-                <div className="absolute right-[-2px] top-20 w-[2px] h-8 bg-white/20 rounded-r-full" />
-                <div className="absolute left-[-2px] top-16 w-[2px] h-6 bg-white/20 rounded-l-full" />
-                <div className="absolute left-[-2px] top-24 w-[2px] h-6 bg-white/20 rounded-l-full" />
-              </div>
+            {/* Téléphone ARRIÈRE — fiche établissement, incliné droite */}
+            <div style={{
+              position: "absolute",
+              right: 0,
+              bottom: 0,
+              width: 230,
+              transform: "rotate(10deg) translateX(20px)",
+              transformOrigin: "bottom center",
+              zIndex: 10,
+              filter: "drop-shadow(0px 30px 50px rgba(0,0,0,0.65))",
+            }}>
+              <PhoneMockup src="/screen-venue.jpg" alt="Fiche établissement Jovial" />
             </div>
 
-            {/* Téléphone avant (carte) — légèrement incliné à gauche, plus avancé */}
-            <div className="absolute left-8 bottom-4 w-[230px] -rotate-[4deg] origin-bottom z-20"
-                 style={{ filter: "drop-shadow(0 50px 80px rgba(0,0,0,0.8))" }}>
-              <div className="relative bg-[#111] rounded-[38px] p-[8px] ring-[1.5px] ring-white/20">
-                <div className="absolute top-[8px] left-1/2 -translate-x-1/2 w-16 h-[14px] bg-[#111] rounded-full z-20" />
-                <div className="rounded-[32px] overflow-hidden w-full" style={{ aspectRatio: "9/19.5" }}>
-                  <Image src="/screen-map.jpg" alt="Carte Jovial" width={214} height={464}
-                    className="w-full h-full object-cover object-top" />
-                </div>
-                <div className="absolute right-[-2px] top-20 w-[2px] h-8 bg-white/20 rounded-r-full" />
-                <div className="absolute left-[-2px] top-16 w-[2px] h-6 bg-white/20 rounded-l-full" />
-                <div className="absolute left-[-2px] top-24 w-[2px] h-6 bg-white/20 rounded-l-full" />
-              </div>
+            {/* Téléphone AVANT — carte, légèrement incliné gauche */}
+            <div style={{
+              position: "absolute",
+              left: 20,
+              bottom: 0,
+              width: 245,
+              transform: "rotate(-5deg)",
+              transformOrigin: "bottom center",
+              zIndex: 20,
+              filter: "drop-shadow(0px 40px 70px rgba(0,0,0,0.8))",
+            }}>
+              <PhoneMockup src="/screen-map.jpg" alt="Carte interactive Jovial" />
             </div>
 
           </div>
