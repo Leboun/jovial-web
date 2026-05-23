@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="md:col-span-2">
           <p className="font-bold text-xl mb-3">Jovial</p>
           <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-            Découvre les meilleurs bars, concerts et événements près de toi. Gratuit, sans pub, fait avec ❤️ en France.
+            Tu as trouvé où dormir, où manger — maintenant, trouve quoi faire. Activités, événements, bons plans : Jovial, l&apos;app divertissement made in France.
           </p>
         </div>
 

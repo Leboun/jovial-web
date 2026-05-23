@@ -182,7 +182,7 @@ export default function HomePage() {
             </div>
             <HeroTagline />
             <p className="text-white/80 text-lg leading-relaxed mb-10 max-w-md">
-              Jovial te connecte aux meilleurs bars, concerts et événements autour de toi. Découvre, partage, vis.
+              Airbnb pour dormir, The Fork pour manger — et Jovial pour le reste. Activités, événements, bons plans : l&apos;app divertissement qui complète ton séjour ou ta soirée.
             </p>
             <DownloadSection />
             <p className="text-white/40 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
@@ -338,9 +338,10 @@ export default function HomePage() {
       {/* CTA final */}
       <section className="py-24 px-6 bg-[#2B4E93] text-white text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-4xl font-bold mb-5">Prêt pour ce soir ?</h2>
-          <p className="text-white/70 text-lg mb-10">
-            Télécharge Jovial et découvre ce qui se passe autour de toi.
+          <p className="text-white/50 text-sm font-semibold uppercase tracking-widest mb-4">Tu as le logement, tu as le resto.</p>
+          <h2 className="text-4xl font-bold mb-5">Il manque le divertissement.</h2>
+          <p className="text-white/70 text-lg mb-10 max-w-xl mx-auto">
+            Fléchettes, concerts, tournois, soirées mousse… Jovial te connecte aux meilleures activités et événements autour de toi, où que tu sois.
           </p>
           <div className="flex justify-center">
             <DownloadSection />
