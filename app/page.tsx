@@ -59,7 +59,7 @@ const features = [
 const steps = [
   { number: "01", title: "Télécharge l'app", desc: "Disponible sur App Store et Google Play, gratuitement." },
   { number: "02", title: "Crée ton profil", desc: "Choisis ton pseudo, ajoute tes amis et configure tes préférences." },
-  { number: "03", title: "Explore autour de toi", desc: "La carte s'anime avec les bars ouverts et les événements du soir." },
+  { number: "03", title: "Explore autour de toi", desc: "La carte s'anime avec les établissements ouverts autour de toi, leurs activités et événements." },
   { number: "04", title: "Profite de ta soirée", desc: "Partage tes bons plans, découvre de nouveaux lieux, vis l'instant." },
 ];
 
