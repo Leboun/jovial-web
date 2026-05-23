@@ -55,26 +55,79 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-[#2B4E93] text-white overflow-hidden pt-32 pb-24 px-6">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#F97316] rounded-full blur-[120px] opacity-20 -translate-y-1/2 translate-x-1/2" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-white rounded-full blur-[100px] opacity-10 translate-y-1/2 -translate-x-1/2" />
+      <section className="relative text-white overflow-hidden min-h-screen flex items-center">
+        {/* Photo de fond */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/hero-bg.jpg"
+            alt="Ambiance Jovial"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+          {/* Overlay sombre dégradé : opaque à gauche, transparent à droite */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
+        </div>
 
-        <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="relative z-10 w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 pt-32 pb-24">
+          {/* Texte gauche */}
           <div>
             <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
               🎉 Disponible gratuitement
             </div>
             <HeroTagline />
-            <p className="text-white/75 text-lg leading-relaxed mb-10 max-w-md">
+            <p className="text-white/80 text-lg leading-relaxed mb-10 max-w-md">
               Jovial te connecte aux meilleurs bars, concerts et événements autour de toi. Découvre, partage, vis.
             </p>
             <DownloadSection />
             <p className="text-white/40 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
           </div>
 
-          {/* Logo */}
-          <div className="hidden lg:flex justify-center items-center">
-            <Image src="/logo.png" alt="Jovial — Là où la soirée commence" width={480} height={245} priority className="drop-shadow-2xl" />
+          {/* Mockups téléphone droite */}
+          <div className="hidden lg:flex justify-center items-center relative h-[600px]">
+            {/* Téléphone arrière */}
+            <div className="absolute right-4 top-8 w-[240px] rotate-6 drop-shadow-2xl z-10">
+              <div className="relative bg-black rounded-[40px] p-[10px] shadow-[0_0_0_2px_#333,0_30px_80px_rgba(0,0,0,0.6)]">
+                {/* Encoche */}
+                <div className="absolute top-[10px] left-1/2 -translate-x-1/2 w-20 h-5 bg-black rounded-full z-20" />
+                <div className="rounded-[32px] overflow-hidden w-full aspect-[9/19.5]">
+                  <Image
+                    src="/screen-venue.jpg"
+                    alt="Fiche établissement Jovial"
+                    width={220}
+                    height={476}
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bouton power */}
+                <div className="absolute right-[-3px] top-24 w-[3px] h-10 bg-gray-600 rounded-r-full" />
+                {/* Boutons volume */}
+                <div className="absolute left-[-3px] top-20 w-[3px] h-7 bg-gray-600 rounded-l-full" />
+                <div className="absolute left-[-3px] top-32 w-[3px] h-7 bg-gray-600 rounded-l-full" />
+              </div>
+            </div>
+
+            {/* Téléphone avant */}
+            <div className="absolute left-4 top-16 w-[240px] -rotate-3 drop-shadow-2xl z-20">
+              <div className="relative bg-black rounded-[40px] p-[10px] shadow-[0_0_0_2px_#444,0_40px_100px_rgba(0,0,0,0.7)]">
+                {/* Encoche */}
+                <div className="absolute top-[10px] left-1/2 -translate-x-1/2 w-20 h-5 bg-black rounded-full z-20" />
+                <div className="rounded-[32px] overflow-hidden w-full aspect-[9/19.5]">
+                  <Image
+                    src="/screen-map.jpg"
+                    alt="Carte Jovial"
+                    width={220}
+                    height={476}
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bouton power */}
+                <div className="absolute right-[-3px] top-24 w-[3px] h-10 bg-gray-600 rounded-r-full" />
+                {/* Boutons volume */}
+                <div className="absolute left-[-3px] top-20 w-[3px] h-7 bg-gray-600 rounded-l-full" />
+                <div className="absolute left-[-3px] top-32 w-[3px] h-7 bg-gray-600 rounded-l-full" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
