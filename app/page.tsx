@@ -9,19 +9,19 @@ const features = [
   {
     icon: MapPin,
     title: "Carte interactive",
-    description: "Explore bars, restaurants, tiers-lieux et complexes de loisirs autour de toi. Filtre par activité, ambiance ou distance.",
+    description: "Explore bars, restaurants, tiers-lieux, guinguettes et bien plus autour de toi. Filtre par activité, ambiance ou distance.",
     color: "#2B4E93",
   },
   {
     icon: Bell,
     title: "Événements à venir",
-    description: "Concerts, soirées, afterworks, tournois… Ne rate plus rien. Ajoute directement les événements à ton calendrier.",
+    description: "Concerts, soirées, diffusions de matchs, tournois de pétanque… Ne rate plus rien. Ajoute directement les événements à ton calendrier.",
     color: "#F97316",
   },
   {
     icon: Ticket,
     title: "Activités & réservation",
-    description: "Baby-foot, fléchettes, billard, escape game… Découvre les activités disponibles et réserve ta place en quelques secondes depuis l'app.",
+    description: "Baby-foot, fléchettes, billard, palet breton… Découvre les activités disponibles et réserve ta place en quelques secondes depuis l'app.",
     color: "#5CB6AC",
   },
   {
@@ -45,7 +45,7 @@ const features = [
   {
     icon: MessageCircle,
     title: "Groupes communautaires",
-    description: "Rejoins des groupes autour de tes passions : amateurs de fléchettes, fans de rooftops, afterwork du jeudi… Échange, planifie et sors ensemble.",
+    description: "Rejoins des groupes autour de tes passions : amateurs de fléchettes, fans de comedy-club, afterwork du jeudi… Échange, planifie et sors ensemble.",
     color: "#F59E0B",
   },
   {
