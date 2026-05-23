@@ -55,19 +55,16 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative text-white overflow-hidden min-h-screen flex items-center">
-        {/* Photo de fond */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/hero-bg.jpg"
-            alt="Ambiance Jovial"
-            fill
-            priority
-            className="object-cover object-center"
-          />
-          {/* Overlay sombre dégradé : opaque à gauche, transparent à droite */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
-        </div>
+      <section
+        className="relative text-white overflow-hidden min-h-screen flex items-center"
+        style={{
+          backgroundImage: "url('/hero-bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* Overlay dégradé sombre */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30 z-0" />
 
         <div className="relative z-10 w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 pt-32 pb-24">
           {/* Texte gauche */}
@@ -84,50 +81,38 @@ export default function HomePage() {
           </div>
 
           {/* Mockups téléphone droite */}
-          <div className="hidden lg:flex justify-center items-center relative h-[600px]">
-            {/* Téléphone arrière */}
-            <div className="absolute right-4 top-8 w-[240px] rotate-6 drop-shadow-2xl z-10">
-              <div className="relative bg-black rounded-[40px] p-[10px] shadow-[0_0_0_2px_#333,0_30px_80px_rgba(0,0,0,0.6)]">
-                {/* Encoche */}
-                <div className="absolute top-[10px] left-1/2 -translate-x-1/2 w-20 h-5 bg-black rounded-full z-20" />
-                <div className="rounded-[32px] overflow-hidden w-full aspect-[9/19.5]">
-                  <Image
-                    src="/screen-venue.jpg"
-                    alt="Fiche établissement Jovial"
-                    width={220}
-                    height={476}
-                    className="w-full h-full object-cover object-top"
-                  />
+          <div className="hidden lg:flex justify-center items-end relative h-[580px]">
+
+            {/* Téléphone arrière (fiche) — incliné à droite */}
+            <div className="absolute right-0 bottom-0 w-[220px] rotate-[8deg] origin-bottom z-10"
+                 style={{ filter: "drop-shadow(0 40px 60px rgba(0,0,0,0.7))" }}>
+              <div className="relative bg-[#111] rounded-[38px] p-[8px] ring-[1.5px] ring-white/10">
+                <div className="absolute top-[8px] left-1/2 -translate-x-1/2 w-16 h-[14px] bg-[#111] rounded-full z-20" />
+                <div className="rounded-[32px] overflow-hidden w-full" style={{ aspectRatio: "9/19.5" }}>
+                  <Image src="/screen-venue.jpg" alt="Fiche établissement" width={204} height={442}
+                    className="w-full h-full object-cover object-top" />
                 </div>
-                {/* Bouton power */}
-                <div className="absolute right-[-3px] top-24 w-[3px] h-10 bg-gray-600 rounded-r-full" />
-                {/* Boutons volume */}
-                <div className="absolute left-[-3px] top-20 w-[3px] h-7 bg-gray-600 rounded-l-full" />
-                <div className="absolute left-[-3px] top-32 w-[3px] h-7 bg-gray-600 rounded-l-full" />
+                <div className="absolute right-[-2px] top-20 w-[2px] h-8 bg-white/20 rounded-r-full" />
+                <div className="absolute left-[-2px] top-16 w-[2px] h-6 bg-white/20 rounded-l-full" />
+                <div className="absolute left-[-2px] top-24 w-[2px] h-6 bg-white/20 rounded-l-full" />
               </div>
             </div>
 
-            {/* Téléphone avant */}
-            <div className="absolute left-4 top-16 w-[240px] -rotate-3 drop-shadow-2xl z-20">
-              <div className="relative bg-black rounded-[40px] p-[10px] shadow-[0_0_0_2px_#444,0_40px_100px_rgba(0,0,0,0.7)]">
-                {/* Encoche */}
-                <div className="absolute top-[10px] left-1/2 -translate-x-1/2 w-20 h-5 bg-black rounded-full z-20" />
-                <div className="rounded-[32px] overflow-hidden w-full aspect-[9/19.5]">
-                  <Image
-                    src="/screen-map.jpg"
-                    alt="Carte Jovial"
-                    width={220}
-                    height={476}
-                    className="w-full h-full object-cover object-top"
-                  />
+            {/* Téléphone avant (carte) — légèrement incliné à gauche, plus avancé */}
+            <div className="absolute left-8 bottom-4 w-[230px] -rotate-[4deg] origin-bottom z-20"
+                 style={{ filter: "drop-shadow(0 50px 80px rgba(0,0,0,0.8))" }}>
+              <div className="relative bg-[#111] rounded-[38px] p-[8px] ring-[1.5px] ring-white/20">
+                <div className="absolute top-[8px] left-1/2 -translate-x-1/2 w-16 h-[14px] bg-[#111] rounded-full z-20" />
+                <div className="rounded-[32px] overflow-hidden w-full" style={{ aspectRatio: "9/19.5" }}>
+                  <Image src="/screen-map.jpg" alt="Carte Jovial" width={214} height={464}
+                    className="w-full h-full object-cover object-top" />
                 </div>
-                {/* Bouton power */}
-                <div className="absolute right-[-3px] top-24 w-[3px] h-10 bg-gray-600 rounded-r-full" />
-                {/* Boutons volume */}
-                <div className="absolute left-[-3px] top-20 w-[3px] h-7 bg-gray-600 rounded-l-full" />
-                <div className="absolute left-[-3px] top-32 w-[3px] h-7 bg-gray-600 rounded-l-full" />
+                <div className="absolute right-[-2px] top-20 w-[2px] h-8 bg-white/20 rounded-r-full" />
+                <div className="absolute left-[-2px] top-16 w-[2px] h-6 bg-white/20 rounded-l-full" />
+                <div className="absolute left-[-2px] top-24 w-[2px] h-6 bg-white/20 rounded-l-full" />
               </div>
             </div>
+
           </div>
         </div>
       </section>
