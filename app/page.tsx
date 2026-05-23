@@ -154,7 +154,7 @@ export default function HomePage() {
           className="absolute inset-0"
           style={{
             zIndex: 1,
-            background: "linear-gradient(to right, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.15) 100%)",
+            background: "linear-gradient(to right, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.40) 50%, rgba(0,0,0,0.05) 100%)",
           }}
         />
 
@@ -182,13 +182,14 @@ export default function HomePage() {
             {/* Téléphone ARRIÈRE — fiche établissement, incliné droite */}
             <div style={{
               position: "absolute",
-              right: 0,
-              bottom: 0,
-              width: 230,
-              transform: "rotate(10deg) translateX(20px)",
+              right: 40,
+              bottom: 20,
+              width: 220,
+              transform: "rotate(7deg)",
               transformOrigin: "bottom center",
               zIndex: 10,
               filter: "drop-shadow(0px 30px 50px rgba(0,0,0,0.65))",
+              opacity: 0.92,
             }}>
               <PhoneMockup src="/screen-venue.jpg" alt="Fiche établissement Jovial" />
             </div>
@@ -196,10 +197,10 @@ export default function HomePage() {
             {/* Téléphone AVANT — carte, légèrement incliné gauche */}
             <div style={{
               position: "absolute",
-              left: 20,
+              left: 40,
               bottom: 0,
-              width: 245,
-              transform: "rotate(-5deg)",
+              width: 250,
+              transform: "rotate(-4deg)",
               transformOrigin: "bottom center",
               zIndex: 20,
               filter: "drop-shadow(0px 40px 70px rgba(0,0,0,0.8))",
