@@ -55,18 +55,21 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section
-        className="relative text-white overflow-hidden min-h-screen flex items-center"
-        style={{
-          backgroundImage: "url('/hero-bg.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <section className="relative text-white overflow-hidden min-h-screen flex items-center">
+        {/* Photo de fond */}
+        <Image
+          src="/hero-bg.jpg"
+          alt="Ambiance bar Jovial"
+          fill
+          priority
+          quality={90}
+          className="object-cover object-center"
+          style={{ zIndex: 0 }}
+        />
         {/* Overlay dégradé sombre */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30" style={{ zIndex: 1 }} />
 
-        <div className="relative z-10 w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 pt-32 pb-24">
+        <div className="relative w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 pt-32 pb-24" style={{ zIndex: 2 }}>
           {/* Texte gauche */}
           <div>
             <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
