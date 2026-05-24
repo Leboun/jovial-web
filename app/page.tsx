@@ -138,13 +138,9 @@ export default function HomePage() {
             <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-75%, -45%)", width: 340, zIndex: 20 }}>
               <img src="/mockup-map.png" alt="Carte interactive Jovial" style={{ width: "100%", display: "block" }} />
             </div>
-            {/* Téléphone venue */}
-            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(8%, -55%)", width: 320, zIndex: 10, opacity: 0.95 }}>
+            {/* Téléphone venue — décalé à droite pour cacher la personne, montrer la cible */}
+            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(28%, -55%)", width: 320, zIndex: 10, opacity: 0.95 }}>
               <img src="/mockup-venue.png" alt="Fiche établissement Jovial" style={{ width: "100%", display: "block" }} />
-            </div>
-            {/* Mascotte */}
-            <div style={{ position: "absolute", bottom: "12%", left: "50%", transform: "translateX(-50%)", width: 70, zIndex: 30 }}>
-              <img src="/mascotte.png" alt="Mascotte Jovial" style={{ width: "100%", display: "block" }} />
             </div>
           </div>
 

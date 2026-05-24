@@ -11,7 +11,7 @@ export default function DownloadSection() {
   const [activeQR, setActiveQR] = useState<"ios" | "android" | null>(null);
 
   return (
-    <div className="flex flex-col sm:flex-row gap-4 items-start">
+    <div className="flex flex-row gap-4 items-center">
       {/* App Store */}
       <div className="relative">
         <button
@@ -59,6 +59,13 @@ export default function DownloadSection() {
           </div>
         )}
       </div>
+
+      {/* Mascotte à droite des boutons */}
+      <img
+        src="/mascotte.png"
+        alt="Mascotte Jovial"
+        style={{ width: 90, height: "auto", display: "block", flexShrink: 0 }}
+      />
     </div>
   );
 }
