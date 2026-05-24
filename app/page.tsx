@@ -92,57 +92,58 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative text-white overflow-hidden min-h-screen flex items-center">
+      <section className="bg-white overflow-hidden min-h-screen flex items-center">
+        <div className="w-full flex items-center min-h-screen">
 
-        {/* ── Photo de fond ── */}
-        <div className="absolute inset-0" style={{ zIndex: 0 }}>
-          <img
-            src="/hero-bg.jpg"
-            alt=""
-            aria-hidden="true"
-            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
-          />
-        </div>
-
-        {/* ── Overlay : dégradé gauche→droite ── */}
-        <div
-          className="absolute inset-0"
-          style={{
-            zIndex: 1,
-            background: "linear-gradient(to right, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.40) 50%, rgba(0,0,0,0.05) 100%)",
-          }}
-        />
-
-        {/* ── Contenu ── */}
-        <div className="relative w-full flex items-center" style={{ zIndex: 2, minHeight: "100vh" }}>
-
-          {/* Texte gauche — max 480px */}
-          <div className="pl-32 pr-6 pt-32 pb-20 w-full max-w-xl shrink-0">
-            <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
+          {/* ── Texte gauche ── */}
+          <div className="pl-16 pr-10 pt-28 pb-20 w-full max-w-xl shrink-0">
+            <div className="inline-flex items-center gap-2 bg-[#2B4E93]/10 text-[#2B4E93] text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-[#2B4E93]/20">
               🎉 Disponible gratuitement
             </div>
             <HeroTagline />
-            <p className="text-white/80 text-lg leading-relaxed mb-10 max-w-md">
+            <p className="text-gray-500 text-lg leading-relaxed mb-10 max-w-md">
               Fléchettes, concerts, comedy clubs, tournois, soirées… Découvre les meilleures activités et événements autour de toi, à toute heure. Que tu sois chez toi ou en déplacement, Jovial te connecte à ce qui se passe près de toi.
             </p>
             <DownloadSection />
-            <p className="text-white/40 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
+            <p className="text-gray-400 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
           </div>
 
-          {/* ── Mockups — zone pleine largeur droite ── */}
+          {/* ── Zone droite : photo réduite + mockups par-dessus ── */}
           <div className="hidden lg:block flex-1 relative self-stretch">
-            {/* Téléphone carte — centré légèrement à gauche */}
-            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-75%, -45%)", width: 370, zIndex: 20 }}>
-              <img src="/mockup-map.png" alt="Carte interactive Jovial"
-                style={{ width: "100%", display: "block" }} />
+            {/* Photo de fond réduite — occupe la zone droite, arrondie à gauche */}
+            <div style={{
+              position: "absolute",
+              top: "10%",
+              bottom: "10%",
+              left: "5%",
+              right: 0,
+              borderRadius: "24px 0 0 24px",
+              overflow: "hidden",
+              zIndex: 0,
+            }}>
+              <img
+                src="/hero-bg.jpg"
+                alt=""
+                aria-hidden="true"
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+              />
+              {/* Léger overlay sombre pour lisibilité */}
+              <div style={{
+                position: "absolute", inset: 0,
+                background: "linear-gradient(to right, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.10) 100%)"
+              }} />
             </div>
-            {/* Téléphone venue — centré légèrement à droite */}
-            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(10%, -55%)", width: 350, zIndex: 10, opacity: 0.93 }}>
-              <img src="/mockup-venue.png" alt="Fiche établissement Jovial"
-                style={{ width: "100%", display: "block" }} />
+
+            {/* Téléphone carte */}
+            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-75%, -45%)", width: 340, zIndex: 20 }}>
+              <img src="/mockup-map.png" alt="Carte interactive Jovial" style={{ width: "100%", display: "block" }} />
             </div>
-            {/* Mascotte Jovial */}
-            <div style={{ position: "absolute", bottom: 20, left: "50%", transform: "translateX(-50%)", width: 80, zIndex: 30 }}>
+            {/* Téléphone venue */}
+            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(8%, -55%)", width: 320, zIndex: 10, opacity: 0.95 }}>
+              <img src="/mockup-venue.png" alt="Fiche établissement Jovial" style={{ width: "100%", display: "block" }} />
+            </div>
+            {/* Mascotte */}
+            <div style={{ position: "absolute", bottom: "12%", left: "50%", transform: "translateX(-50%)", width: 70, zIndex: 30 }}>
               <img src="/mascotte.png" alt="Mascotte Jovial" style={{ width: "100%", display: "block" }} />
             </div>
           </div>
