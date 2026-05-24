@@ -92,7 +92,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white overflow-hidden min-h-screen flex items-center">
+      <section className="bg-[#2B4E93] overflow-hidden min-h-screen flex items-center">
         <div className="w-full flex items-center min-h-screen">
 
           {/* ── Texte gauche — fond bleu foncé ── */}
@@ -110,14 +110,14 @@ export default function HomePage() {
 
           {/* ── Zone droite : photo réduite + mockups par-dessus ── */}
           <div className="hidden lg:block flex-1 relative self-stretch">
-            {/* Photo de fond réduite — occupe la zone droite, arrondie à gauche */}
+            {/* Photo réduite — carrée, angles droits, cible visible */}
             <div style={{
               position: "absolute",
-              top: "10%",
-              bottom: "10%",
-              left: "5%",
-              right: 0,
-              borderRadius: "24px 0 0 24px",
+              top: "15%",
+              bottom: "15%",
+              left: "8%",
+              right: "8%",
+              borderRadius: 0,
               overflow: "hidden",
               zIndex: 0,
             }}>
@@ -125,12 +125,12 @@ export default function HomePage() {
                 src="/hero-bg.jpg"
                 alt=""
                 aria-hidden="true"
-                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }}
               />
-              {/* Léger overlay sombre pour lisibilité */}
+              {/* Léger overlay pour lisibilité */}
               <div style={{
                 position: "absolute", inset: 0,
-                background: "linear-gradient(to right, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.10) 100%)"
+                background: "rgba(0,0,0,0.25)"
               }} />
             </div>
 
