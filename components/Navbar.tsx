@@ -38,6 +38,12 @@ export default function Navbar() {
           >
             Télécharger
           </a>
+          <a
+            href="https://pro.getjovial.fr/establishment/login"
+            className="text-sm text-gray-600 hover:text-[#2B4E93] font-medium border border-gray-200 px-4 py-2 rounded-full hover:border-[#2B4E93] transition-colors"
+          >
+            Se connecter
+          </a>
         </nav>
 
         {/* Mobile menu button */}
@@ -69,6 +75,13 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
           >
             Télécharger l'app
+          </a>
+          <a
+            href="https://pro.getjovial.fr/establishment/login"
+            className="text-gray-700 font-medium text-sm border border-gray-200 px-5 py-2.5 rounded-full text-center"
+            onClick={() => setOpen(false)}
+          >
+            Se connecter
           </a>
         </div>
       )}
