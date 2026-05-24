@@ -185,17 +185,14 @@ export default function HomePage() {
             <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Simple & rapide</span>
             <h2 className="text-4xl font-bold mt-3 mb-4">Prêt en 2 minutes</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {steps.map((s, i) => (
-              <div key={s.number} className="relative">
-                {i < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-6 left-full w-full h-px bg-[#2B4E93]/20 z-0" />
-                )}
-                <div className="relative z-10">
-                  <div className="text-4xl font-black text-[#2B4E93]/15 mb-3">{s.number}</div>
-                  <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+            {/* Ligne continue derrière tous les numéros */}
+            <div className="hidden lg:block absolute left-0 right-0 h-px bg-[#2B4E93]/25" style={{ top: "1.6rem" }} />
+            {steps.map((s) => (
+              <div key={s.number} className="relative z-10">
+                <div className="text-4xl font-black text-[#2B4E93]/15 mb-3">{s.number}</div>
+                <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
