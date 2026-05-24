@@ -7,7 +7,6 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "/#concept", label: "L'appli" },
-  { href: "/etablissements", label: "Jovial Pro" },
   { href: "/actualites", label: "Magazine" },
 ];
 
@@ -22,26 +21,22 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
-          <nav className="flex items-center gap-8">
-            {links.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="text-sm text-gray-600 hover:text-[#2B4E93] transition-colors font-medium"
-              >
-                {l.label}
-              </Link>
-            ))}
-            <a
-              href="https://apps.apple.com/app/jovial/id0000000000"
-              className="bg-[#2B4E93] text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#1e3a70] transition-colors"
+        <div className="hidden md:flex items-center gap-6">
+          {links.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="text-sm text-gray-600 hover:text-[#2B4E93] transition-colors font-medium whitespace-nowrap"
             >
-              Télécharger
-            </a>
-          </nav>
-        </div>
-        <div className="hidden md:flex items-center gap-3 fixed right-6 top-4 z-50">
+              {l.label}
+            </Link>
+          ))}
+          <a
+            href="https://apps.apple.com/app/jovial/id0000000000"
+            className="bg-[#2B4E93] text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#1e3a70] transition-colors whitespace-nowrap"
+          >
+            Télécharger
+          </a>
           <a
             href="/etablissements"
             className="text-sm font-semibold text-white bg-[#F97316] px-4 py-2 rounded-full hover:bg-[#e06010] transition-colors whitespace-nowrap"
