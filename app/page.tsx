@@ -117,7 +117,7 @@ export default function HomePage() {
         <div className="relative w-full flex items-center" style={{ zIndex: 2, minHeight: "100vh" }}>
 
           {/* Texte gauche — max 480px */}
-          <div className="pl-20 pr-6 pt-32 pb-20 w-full max-w-xl shrink-0">
+          <div className="pl-32 pr-6 pt-32 pb-20 w-full max-w-xl shrink-0">
             <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
               🎉 Disponible gratuitement
             </div>
@@ -132,12 +132,12 @@ export default function HomePage() {
           {/* ── Mockups — zone pleine largeur droite ── */}
           <div className="hidden lg:block flex-1 relative self-stretch">
             {/* Téléphone carte — gauche de la zone */}
-            <div style={{ position: "absolute", left: 60, top: "50%", transform: "translateY(-45%)", width: 340, zIndex: 20 }}>
+            <div style={{ position: "absolute", left: 20, top: "50%", transform: "translateY(-45%)", width: 370, zIndex: 20 }}>
               <img src="/mockup-map.png" alt="Carte interactive Jovial"
                 style={{ width: "100%", display: "block" }} />
             </div>
             {/* Téléphone venue — droite de la zone */}
-            <div style={{ position: "absolute", right: 40, top: "50%", transform: "translateY(-55%)", width: 310, zIndex: 10, opacity: 0.93 }}>
+            <div style={{ position: "absolute", right: 20, top: "50%", transform: "translateY(-55%)", width: 350, zIndex: 10, opacity: 0.93 }}>
               <img src="/mockup-venue.png" alt="Fiche établissement Jovial"
                 style={{ width: "100%", display: "block" }} />
             </div>
