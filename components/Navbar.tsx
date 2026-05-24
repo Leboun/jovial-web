@@ -41,12 +41,20 @@ export default function Navbar() {
             </a>
           </nav>
         </div>
-        <a
-          href="https://pro.getjovial.fr/establishment/login"
-          className="hidden md:block fixed right-6 top-4 text-sm font-semibold text-[#2B4E93] border-2 border-[#2B4E93] px-4 py-2 rounded-full hover:bg-[#2B4E93] hover:text-white transition-colors whitespace-nowrap z-50"
-        >
-          Se connecter
-        </a>
+        <div className="hidden md:flex items-center gap-3 fixed right-6 top-4 z-50">
+          <a
+            href="/etablissements"
+            className="text-sm font-semibold text-white bg-[#F97316] px-4 py-2 rounded-full hover:bg-[#e06010] transition-colors whitespace-nowrap"
+          >
+            Rejoindre Jovial Pro
+          </a>
+          <a
+            href="https://pro.getjovial.fr/establishment/login"
+            className="text-sm font-semibold text-[#2B4E93] border-2 border-[#2B4E93] px-4 py-2 rounded-full hover:bg-[#2B4E93] hover:text-white transition-colors whitespace-nowrap"
+          >
+            Se connecter
+          </a>
+        </div>
 
         {/* Mobile menu button */}
         <button
