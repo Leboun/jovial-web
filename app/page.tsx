@@ -137,7 +137,7 @@ export default function HomePage() {
                 style={{ width: "100%", display: "block" }} />
             </div>
             {/* Téléphone venue — droite de la zone */}
-            <div style={{ position: "absolute", right: 20, top: "50%", transform: "translateY(-55%)", width: 350, zIndex: 10, opacity: 0.93 }}>
+            <div style={{ position: "absolute", left: 300, top: "50%", transform: "translateY(-55%)", width: 350, zIndex: 10, opacity: 0.93 }}>
               <img src="/mockup-venue.png" alt="Fiche établissement Jovial"
                 style={{ width: "100%", display: "block" }} />
             </div>
