@@ -40,7 +40,7 @@ export default function Navbar() {
           </a>
           <a
             href="https://pro.getjovial.fr/establishment/login"
-            className="text-sm text-gray-600 hover:text-[#2B4E93] font-medium border border-gray-200 px-4 py-2 rounded-full hover:border-[#2B4E93] transition-colors"
+            className="ml-auto text-sm text-gray-600 hover:text-[#2B4E93] font-medium border border-gray-200 px-4 py-2 rounded-full hover:border-[#2B4E93] transition-colors"
           >
             Se connecter
           </a>
