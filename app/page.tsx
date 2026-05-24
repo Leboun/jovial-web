@@ -95,17 +95,17 @@ export default function HomePage() {
       <section className="bg-white overflow-hidden min-h-screen flex items-center">
         <div className="w-full flex items-center min-h-screen">
 
-          {/* ── Texte gauche ── */}
-          <div className="pl-16 pr-10 pt-28 pb-20 w-full max-w-xl shrink-0">
-            <div className="inline-flex items-center gap-2 bg-[#2B4E93]/10 text-[#2B4E93] text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-[#2B4E93]/20">
+          {/* ── Texte gauche — fond bleu foncé ── */}
+          <div className="bg-[#2B4E93] pl-16 pr-10 pt-28 pb-20 w-full max-w-xl shrink-0 self-stretch flex flex-col justify-center">
+            <div className="inline-flex items-center gap-2 bg-white/15 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20 w-fit">
               🎉 Disponible gratuitement
             </div>
             <HeroTagline />
-            <p className="text-gray-500 text-lg leading-relaxed mb-10 max-w-md">
+            <p className="text-white/75 text-lg leading-relaxed mb-10 max-w-md">
               Fléchettes, concerts, comedy clubs, tournois, soirées… Découvre les meilleures activités et événements autour de toi, à toute heure. Que tu sois chez toi ou en déplacement, Jovial te connecte à ce qui se passe près de toi.
             </p>
             <DownloadSection />
-            <p className="text-gray-400 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
+            <p className="text-white/40 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
           </div>
 
           {/* ── Zone droite : photo réduite + mockups par-dessus ── */}

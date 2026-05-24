@@ -14,7 +14,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#F2EDE4] border-b border-[#e8e0d4]">
       <div className="w-full px-6 h-16 flex items-center justify-between relative">
 
         {/* Logo — centré absolument */}
