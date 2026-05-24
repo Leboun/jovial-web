@@ -143,7 +143,7 @@ export default function HomePage() {
               zIndex: 10,
             }}>
               <img src="/mockup-venue.png" alt="Fiche établissement Jovial"
-                style={{ width: "100%", display: "block", mixBlendMode: "multiply" }} />
+                style={{ width: "100%", display: "block" }} />
             </div>
 
             {/* Téléphone AVANT — carte, en bas à gauche */}
@@ -155,7 +155,7 @@ export default function HomePage() {
               zIndex: 20,
             }}>
               <img src="/mockup-map.png" alt="Carte interactive Jovial"
-                style={{ width: "100%", display: "block", mixBlendMode: "multiply" }} />
+                style={{ width: "100%", display: "block" }} />
             </div>
 
           </div>
