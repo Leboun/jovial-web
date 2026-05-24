@@ -134,27 +134,33 @@ export default function HomePage() {
           {/* ── Mockups iPhone ── */}
           <div className="hidden lg:block relative" style={{ height: 720 }}>
 
-            {/* Téléphone ARRIÈRE — fiche établissement, décalé en haut à droite */}
+            {/* Téléphone ARRIÈRE — fiche établissement */}
             <div style={{
               position: "absolute",
               right: 0,
               top: 20,
               width: 260,
               zIndex: 10,
+              borderRadius: 24,
+              overflow: "hidden",
+              boxShadow: "0 30px 60px rgba(0,0,0,0.7)",
             }}>
-              <img src="/mockup-venue.png" alt="Fiche établissement Jovial"
+              <img src="/screen-venue.jpg" alt="Fiche établissement Jovial"
                 style={{ width: "100%", display: "block" }} />
             </div>
 
-            {/* Téléphone AVANT — carte, en bas à gauche */}
+            {/* Téléphone AVANT — carte */}
             <div style={{
               position: "absolute",
               left: 0,
               bottom: 0,
               width: 300,
               zIndex: 20,
+              borderRadius: 24,
+              overflow: "hidden",
+              boxShadow: "0 40px 80px rgba(0,0,0,0.85)",
             }}>
-              <img src="/mockup-map.png" alt="Carte interactive Jovial"
+              <img src="/screen-map.jpg" alt="Carte interactive Jovial"
                 style={{ width: "100%", display: "block" }} />
             </div>
 
