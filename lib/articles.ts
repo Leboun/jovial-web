@@ -14,8 +14,61 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: "play-rennes-bar-flechettes-interactives",
+    date: "2 juin 2026",
+    tag: "Portrait d'établissement",
+    tagColor: "#2B4E93",
+    tagEmoji: "🏠",
+    title: "Play Rennes : le bar à fléchettes interactives qui a tout misé sur l'expérience",
+    excerpt:
+      "600 000 € d'investissement, 6 dartboards connectés, un ancien joueur de poker pro et un restaurateur de 30 ans d'expérience. Bienvenue chez Play, le bar qui a transformé les fléchettes en spectacle à Vern-sur-Seiche.",
+    readTime: "5 min",
+    author: "Équipe Jovial",
+    city: "Rennes",
+    content: `
+## L'idée venue de Londres
+
+Adrien Allain a passé cinq ans à Londres en tant que joueur de poker professionnel. C'est là-bas qu'il découvre les bars à fléchettes interactives — concept déjà bien ancré dans la culture britannique — et qu'une évidence s'impose : **ce format n'existe pas encore à Rennes**.
+
+De retour en Bretagne, il convainc Éric Lefaix, restaurateur rennais avec plus de 30 ans d'expérience, de se lancer avec lui. Éric gérait alors son bar La Contrescarpe. Son verdict sur le projet : *"Un endroit convivial et festif, sans nuisances sonores."* L'association se fait naturellement — Adrien apporte la vision, Éric la connaissance du terrain.
+
+## 600 000 € pour transformer une ancienne pizzeria
+
+L'emplacement retenu est à Vern-sur-Seiche, dans une zone commerciale en développement près du Leclerc — les locaux du centre-ville étaient trop chers pour accueillir un espace de cette taille. Une ancienne pizzeria est entièrement rénovée. Budget total : **600 000 €**, financé avec le soutien de BPI France, du Crédit Agricole et du CIC.
+
+Play Rennes ouvre ses portes en **décembre 2024**.
+
+## Ce qu'on trouve à l'intérieur
+
+Le concept repose sur trois jeux :
+
+**6 dartboards interactifs** — chaque cible est connectée à un grand écran. Les scores s'affichent en temps réel, les lancers sont enregistrés et peuvent être rejoués. Plusieurs modes de jeu, du classique 501 aux défis multijoueurs. Réservation à 28€/heure.
+
+**Shuffleboards** — les planches de palets, rarissimes dans la région Ille-et-Vilaine selon l'équipe. Un jeu de précision et de stratégie qui crée une vraie addiction selon les premiers clients : *"Le shuffleboard en particulier est vraiment addictif."*
+
+**2 tables de ping-pong** — pour souffler entre deux parties ou prolonger la soirée.
+
+En cuisine, Corentin et Lily préparent des plats du jour maison, burgers, planches charcuterie et tapas. Au bar, Baptiste et Mattéo servent 8 bières pression — locales et internationales.
+
+## Une clientèle qui revient
+
+Les avis clients convergent sur l'ambiance : *"Dès qu'on entre, l'atmosphère est différente. On peut jouer sérieusement ou juste se détendre — c'est autre chose qu'un café classique."* Le personnel est régulièrement cité : professionnel, toujours souriant, disponible.
+
+Play attire aussi bien les groupes d'amis que les entreprises (team building) et les compétiteurs qui participent aux **tournois bihebdomadaires ouverts à tous les niveaux**.
+
+## Infos pratiques
+
+**Adresse :** 3 rue de la Blanche Hermine, 35770 Vern-sur-Seiche
+**Téléphone :** 02 23 61 27 13 | **Web :** playrennes.fr | **Instagram :** @playrennes
+**Horaires :** Mar–Jeu 17h45–0h | Ven 17h45–1h | Sam 16h45–1h | Dim 16h45–23h | Fermé le lundi
+**Bon plan :** **-30% sur tous les jeux tous les dimanches** toute l'année.
+
+Retrouvez Play Rennes sur la carte Jovial pour réserver votre créneau et suivre les prochains tournois.
+    `,
+  },
+  {
     slug: "fete-de-la-musique-rennes-2026-bars-programme",
-    date: "25 mai 2026",
+    date: "14 juin 2026",
     tag: "Festival & Off",
     tagColor: "#F59E0B",
     tagEmoji: "🎪",
@@ -90,7 +143,7 @@ Sur Jovial, vous retrouvez toutes ces adresses en carte interactive, avec les ho
   },
   {
     slug: "meilleurs-bars-flechettes-rennes-2026",
-    date: "25 mai 2026",
+    date: "9 juin 2026",
     tag: "Ville & Quartier",
     tagColor: "#10B981",
     tagEmoji: "🏙️",
