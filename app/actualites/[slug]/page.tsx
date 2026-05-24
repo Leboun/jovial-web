@@ -17,6 +17,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${article.title} — Jovial Magazine`,
     description: article.excerpt,
+    openGraph: {
+      title: article.title,
+      description: article.excerpt,
+      type: "article",
+      publishedTime: article.date,
+      authors: [article.author],
+      siteName: "Jovial Magazine",
+      url: `https://getjovial.fr/actualites/${article.slug}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.excerpt,
+    },
   };
 }
 
@@ -70,8 +84,28 @@ export default async function ArticlePage({ params }: Props) {
 
   const related = articles.filter((a) => a.slug !== slug).slice(0, 3);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.excerpt,
+    "datePublished": article.date,
+    "author": { "@type": "Organization", "name": "Jovial" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Jovial",
+      "url": "https://getjovial.fr",
+      "logo": { "@type": "ImageObject", "url": "https://getjovial.fr/logo-sm.png" }
+    },
+    "mainEntityOfPage": `https://getjovial.fr/actualites/${article.slug}`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero */}
       <section className="bg-white pt-28 pb-12 px-6 border-b border-gray-100">
         <div className="max-w-3xl mx-auto">
