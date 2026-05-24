@@ -64,7 +64,7 @@ export default function DownloadSection() {
       <img
         src="/mascotte.png"
         alt="Mascotte Jovial"
-        style={{ width: 90, height: "auto", display: "block", flexShrink: 0 }}
+        style={{ width: 115, height: "auto", display: "block", flexShrink: 0 }}
       />
     </div>
   );
