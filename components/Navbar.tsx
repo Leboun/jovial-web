@@ -20,7 +20,7 @@ export default function Navbar() {
           <Image src="/logo-sm.png" alt="Jovial" width={120} height={61} priority />
         </Link>
 
-        {/* Desktop nav */}
+        {/* Desktop nav — gauche */}
         <div className="hidden md:flex items-center gap-6">
           {links.map((l) => (
             <Link
@@ -37,6 +37,10 @@ export default function Navbar() {
           >
             Télécharger
           </a>
+        </div>
+
+        {/* Desktop nav — droite (collé au bord) */}
+        <div className="hidden md:flex items-center gap-3">
           <a
             href="/etablissements"
             className="text-sm font-semibold text-white bg-[#F97316] px-4 py-2 rounded-full hover:bg-[#e06010] transition-colors whitespace-nowrap"
