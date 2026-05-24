@@ -101,7 +101,7 @@ export default function HomePage() {
               🎉 Disponible gratuitement
             </div>
             <HeroTagline />
-            <p className="text-white/75 text-lg leading-relaxed mb-10 max-w-md">
+            <p className="text-white/75 text-lg leading-relaxed mb-5 max-w-md">
               Fléchettes, concerts, comedy clubs, tournois, soirées… Découvre les meilleures activités et événements autour de toi, à toute heure. Que tu sois chez toi ou en déplacement, Jovial te connecte à ce qui se passe près de toi.
             </p>
             <DownloadSection />
@@ -139,7 +139,7 @@ export default function HomePage() {
               <img src="/mockup-map.png" alt="Carte interactive Jovial" style={{ width: "100%", display: "block" }} />
             </div>
             {/* Téléphone venue — décalé à droite pour cacher la personne, montrer la cible */}
-            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(65%, -55%)", width: 320, zIndex: 10, opacity: 0.95 }}>
+            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(55%, -55%)", width: 320, zIndex: 10, opacity: 0.95 }}>
               <img src="/mockup-venue.png" alt="Fiche établissement Jovial" style={{ width: "100%", display: "block" }} />
             </div>
           </div>
