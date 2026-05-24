@@ -9,13 +9,13 @@ const features = [
   {
     icon: MapPin,
     title: "Carte interactive",
-    description: "Explore bars, restaurants, tiers-lieux, guinguettes et bien plus autour de toi. Filtre par activité, ambiance ou distance.",
+    description: "Explore bars, restaurants, tiers-lieux, guinguettes et bien plus autour de toi.",
     color: "#2B4E93",
   },
   {
     icon: Bell,
     title: "Événements à venir",
-    description: "Concerts, soirées, diffusions de matchs, tournois de pétanque… Ne rate plus rien. Ajoute directement les événements à ton calendrier.",
+    description: "Concerts, soirées, diffusions de matchs, tournois de pétanque… Ne rate plus rien. Ajoute directement les événements à ton agenda.",
     color: "#F97316",
   },
   {
@@ -45,7 +45,7 @@ const features = [
   {
     icon: MessageCircle,
     title: "Groupes communautaires",
-    description: "Rejoins des groupes autour de tes passions : amateurs de fléchettes, fans de comedy-club, afterwork du jeudi… Échange, planifie et sors ensemble.",
+    description: "Rejoins des groupes autour de tes passions : amateurs de fléchettes, fans de comedy-club, afterwork du jeudi… Échange, planifie et sors.",
     color: "#F59E0B",
   },
   {
