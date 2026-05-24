@@ -131,15 +131,19 @@ export default function HomePage() {
 
           {/* ── Mockups — zone pleine largeur droite ── */}
           <div className="hidden lg:block flex-1 relative self-stretch">
-            {/* Téléphone carte — gauche de la zone */}
-            <div style={{ position: "absolute", left: 20, top: "50%", transform: "translateY(-45%)", width: 370, zIndex: 20 }}>
+            {/* Téléphone carte — centré légèrement à gauche */}
+            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-60%, -45%)", width: 370, zIndex: 20 }}>
               <img src="/mockup-map.png" alt="Carte interactive Jovial"
                 style={{ width: "100%", display: "block" }} />
             </div>
-            {/* Téléphone venue — droite de la zone */}
-            <div style={{ position: "absolute", left: 300, top: "50%", transform: "translateY(-55%)", width: 350, zIndex: 10, opacity: 0.93 }}>
+            {/* Téléphone venue — centré légèrement à droite */}
+            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(0%, -55%)", width: 350, zIndex: 10, opacity: 0.93 }}>
               <img src="/mockup-venue.png" alt="Fiche établissement Jovial"
                 style={{ width: "100%", display: "block" }} />
+            </div>
+            {/* Mascotte Jovial */}
+            <div style={{ position: "absolute", bottom: 20, left: "50%", transform: "translateX(-50%)", width: 80, zIndex: 30 }}>
+              <img src="/mascotte.png" alt="Mascotte Jovial" style={{ width: "100%", display: "block" }} />
             </div>
           </div>
 

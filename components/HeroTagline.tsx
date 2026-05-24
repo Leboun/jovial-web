@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const ENDINGS = ["ici.", "près de toi.", "ce soir.", "avec Jovial."];
+const ENDINGS = ["ici.", "avec Jovial."];
 
 export default function HeroTagline() {
   const [index, setIndex] = useState(0);
