@@ -16,11 +16,13 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
       <div className="w-full px-6 h-16 flex items-center justify-between relative">
-        <Link href="/" className="flex items-center">
+
+        {/* Logo — centré absolument */}
+        <Link href="/" className="absolute left-1/2 -translate-x-1/2 flex items-center">
           <Image src="/logo-sm.png" alt="Jovial" width={120} height={61} priority />
         </Link>
 
-        {/* Desktop nav — gauche */}
+        {/* Desktop nav — bord gauche */}
         <div className="hidden md:flex items-center gap-6">
           {links.map((l) => (
             <Link
@@ -35,17 +37,17 @@ export default function Navbar() {
             href="https://apps.apple.com/app/jovial/id0000000000"
             className="bg-[#2B4E93] text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#1e3a70] transition-colors whitespace-nowrap"
           >
-            Télécharger
+            Téléchargez
           </a>
         </div>
 
-        {/* Desktop nav — droite (collé au bord) */}
+        {/* Desktop nav — bord droit */}
         <div className="hidden md:flex items-center gap-3">
           <a
             href="/etablissements"
             className="text-sm font-semibold text-white bg-[#F97316] px-4 py-2 rounded-full hover:bg-[#e06010] transition-colors whitespace-nowrap"
           >
-            Rejoindre Jovial Pro
+            Inscrivez votre établissement
           </a>
           <a
             href="https://pro.getjovial.fr/establishment/login"
