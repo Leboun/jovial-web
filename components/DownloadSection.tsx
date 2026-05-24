@@ -11,7 +11,7 @@ export default function DownloadSection() {
   const [activeQR, setActiveQR] = useState<"ios" | "android" | null>(null);
 
   return (
-    <div className="flex flex-row gap-4 items-center">
+    <div className="flex flex-row gap-4 items-end">
       {/* App Store */}
       <div className="relative">
         <button
