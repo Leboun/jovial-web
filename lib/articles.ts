@@ -42,7 +42,7 @@ Play Rennes ouvre ses portes en **décembre 2024**.
 
 Le concept repose sur trois jeux :
 
-**6 dartboards interactifs** — chaque cible est connectée à un grand écran. Les scores s'affichent en temps réel, les lancers sont enregistrés et peuvent être rejoués. Plusieurs modes de jeu, du classique 501 aux défis multijoueurs. Réservation à 28€/heure.
+**6 dartboards interactifs** — chaque cible est connectée à un grand écran. Les scores s'affichent en temps réel, les lancers sont enregistrés et peuvent être rejoués. Plusieurs modes de jeu, du classique 501 aux défis multijoueurs. Tarifs disponibles sur playrennes.fr.
 
 **Shuffleboards** — les planches de palets, rarissimes dans la région Ille-et-Vilaine selon l'équipe. Un jeu de précision et de stratégie qui crée une vraie addiction selon les premiers clients : *"Le shuffleboard en particulier est vraiment addictif."*
 
@@ -61,7 +61,7 @@ Play attire aussi bien les groupes d'amis que les entreprises (team building) et
 **Adresse :** 3 rue de la Blanche Hermine, 35770 Vern-sur-Seiche
 **Téléphone :** 02 23 61 27 13 | **Web :** playrennes.fr | **Instagram :** @playrennes
 **Horaires :** Mar–Jeu 17h45–0h | Ven 17h45–1h | Sam 16h45–1h | Dim 16h45–23h | Fermé le lundi
-**Bon plan :** **-30% sur tous les jeux tous les dimanches** toute l'année.
+**Réservations et tarifs :** playrennes.fr
 
 Retrouvez Play Rennes sur la carte Jovial pour réserver votre créneau et suivre les prochains tournois.
     `,
