@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between relative">
+      <div className="w-full px-6 h-16 flex items-center justify-between relative">
         <Link href="/" className="flex items-center">
           <Image src="/logo-sm.png" alt="Jovial" width={120} height={61} priority />
         </Link>
