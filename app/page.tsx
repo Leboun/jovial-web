@@ -114,12 +114,10 @@ export default function HomePage() {
         />
 
         {/* ── Contenu ── */}
-        <div
-          className="relative w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-6 pt-32 pb-20"
-          style={{ zIndex: 2 }}
-        >
-          {/* Texte gauche */}
-          <div>
+        <div className="relative w-full flex items-center" style={{ zIndex: 2, minHeight: "100vh" }}>
+
+          {/* Texte gauche — max 480px */}
+          <div className="px-10 pt-32 pb-20 w-full max-w-xl shrink-0">
             <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
               🎉 Disponible gratuitement
             </div>
@@ -131,22 +129,20 @@ export default function HomePage() {
             <p className="text-white/40 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
           </div>
 
-          {/* ── Mockups iPhone ── */}
-          <div className="hidden lg:block relative" style={{ height: 680 }}>
-
-            {/* Téléphone ARRIÈRE — fiche établissement (droite, visible) */}
-            <div style={{ position: "absolute", right: -220, top: 0, width: 400, zIndex: 10, opacity: 0.92 }}>
-              <img src="/mockup-venue.png" alt="Fiche établissement Jovial"
-                style={{ width: "100%", display: "block" }} />
-            </div>
-
-            {/* Téléphone AVANT — carte (gauche, devant) */}
-            <div style={{ position: "absolute", left: -20, top: 80, width: 460, zIndex: 20 }}>
+          {/* ── Mockups — zone pleine largeur droite ── */}
+          <div className="hidden lg:block flex-1 relative self-stretch">
+            {/* Téléphone carte — gauche de la zone */}
+            <div style={{ position: "absolute", left: 0, top: "50%", transform: "translateY(-45%)", width: 340, zIndex: 20 }}>
               <img src="/mockup-map.png" alt="Carte interactive Jovial"
                 style={{ width: "100%", display: "block" }} />
             </div>
-
+            {/* Téléphone venue — droite de la zone */}
+            <div style={{ position: "absolute", right: 40, top: "50%", transform: "translateY(-55%)", width: 310, zIndex: 10, opacity: 0.93 }}>
+              <img src="/mockup-venue.png" alt="Fiche établissement Jovial"
+                style={{ width: "100%", display: "block" }} />
+            </div>
           </div>
+
         </div>
       </section>
 
