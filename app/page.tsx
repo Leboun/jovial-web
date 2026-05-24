@@ -132,12 +132,12 @@ export default function HomePage() {
           {/* ── Mockups — zone pleine largeur droite ── */}
           <div className="hidden lg:block flex-1 relative self-stretch">
             {/* Téléphone carte — centré légèrement à gauche */}
-            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-60%, -45%)", width: 370, zIndex: 20 }}>
+            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-75%, -45%)", width: 370, zIndex: 20 }}>
               <img src="/mockup-map.png" alt="Carte interactive Jovial"
                 style={{ width: "100%", display: "block" }} />
             </div>
             {/* Téléphone venue — centré légèrement à droite */}
-            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(0%, -55%)", width: 350, zIndex: 10, opacity: 0.93 }}>
+            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(10%, -55%)", width: 350, zIndex: 10, opacity: 0.93 }}>
               <img src="/mockup-venue.png" alt="Fiche établissement Jovial"
                 style={{ width: "100%", display: "block" }} />
             </div>
