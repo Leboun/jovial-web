@@ -22,29 +22,32 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8">
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="text-sm text-gray-600 hover:text-[#2B4E93] transition-colors font-medium"
+        <div className="hidden md:flex items-center gap-8">
+          <nav className="flex items-center gap-8">
+            {links.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="text-sm text-gray-600 hover:text-[#2B4E93] transition-colors font-medium"
+              >
+                {l.label}
+              </Link>
+            ))}
+            <a
+              href="https://apps.apple.com/app/jovial/id0000000000"
+              className="bg-[#2B4E93] text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#1e3a70] transition-colors"
             >
-              {l.label}
-            </Link>
-          ))}
-          <a
-            href="https://apps.apple.com/app/jovial/id0000000000"
-            className="bg-[#2B4E93] text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#1e3a70] transition-colors"
-          >
-            Télécharger
-          </a>
+              Télécharger
+            </a>
+          </nav>
+          <div className="w-px h-5 bg-gray-200" />
           <a
             href="https://pro.getjovial.fr/establishment/login"
-            className="ml-auto text-sm text-gray-600 hover:text-[#2B4E93] font-medium border border-gray-200 px-4 py-2 rounded-full hover:border-[#2B4E93] transition-colors"
+            className="text-sm font-semibold text-[#2B4E93] border-2 border-[#2B4E93] px-4 py-2 rounded-full hover:bg-[#2B4E93] hover:text-white transition-colors whitespace-nowrap"
           >
             Se connecter
           </a>
-        </nav>
+        </div>
 
         {/* Mobile menu button */}
         <button

@@ -135,7 +135,7 @@ export default function HomePage() {
           <div className="hidden lg:block relative" style={{ height: 680 }}>
 
             {/* Téléphone ARRIÈRE — fiche établissement (droite, visible) */}
-            <div style={{ position: "absolute", right: -160, top: 0, width: 400, zIndex: 10, opacity: 0.92 }}>
+            <div style={{ position: "absolute", right: -100, top: 0, width: 400, zIndex: 10, opacity: 0.92 }}>
               <img src="/mockup-venue.png" alt="Fiche établissement Jovial"
                 style={{ width: "100%", display: "block" }} />
             </div>
