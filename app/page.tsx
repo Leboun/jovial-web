@@ -63,84 +63,27 @@ const steps = [
   { number: "04", title: "Profite de ta soirée", desc: "Partage tes bons plans, découvre de nouveaux lieux, vis l'instant." },
 ];
 
-/** Mockup iPhone 15 Pro en CSS pur */
+/** Mockup iPhone — SVG frame sur screenshot (aucun clip CSS sur l'image) */
 function PhoneMockup({ src, alt }: { src: string; alt: string }) {
   return (
-    <div style={{
-      position: "relative",
-      borderRadius: 48,
-      background: "linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 50%, #0f0f0f 100%)",
-      padding: 10,
-      boxShadow: `
-        inset 0 0 0 1.5px rgba(255,255,255,0.12),
-        inset 0 1px 0 rgba(255,255,255,0.2),
-        0 0 0 1px rgba(0,0,0,0.6)
-      `,
-    }}>
-      {/* Dynamic Island */}
+    <div style={{ position: "relative", width: "100%" }}>
+      {/* Screenshot — aucun border-radius, aucun overflow, aucun clip */}
       <div style={{
         position: "absolute",
-        top: 14,
-        left: "50%",
-        transform: "translateX(-50%)",
-        width: 72,
-        height: 22,
-        background: "#000",
-        borderRadius: 20,
-        zIndex: 10,
-        boxShadow: "0 0 0 1px rgba(255,255,255,0.06)",
+        top: "1.3%",
+        left: "2.8%",
+        right: "2.8%",
+        bottom: "1.3%",
+        backgroundImage: `url(${src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "top center",
       }} />
-
-      {/* Écran */}
-      <div style={{
-        borderRadius: 40,
-        overflow: "hidden",
-        aspectRatio: "9 / 19.5",
-        background: "#000",
-        position: "relative",
-      }}>
-        <img
-          src={src}
-          alt={alt}
-          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", display: "block", imageRendering: "crisp-edges" }}
-        />
-        {/* Reflet subtil sur l'écran */}
-        <div style={{
-          position: "absolute",
-          top: 0, left: 0, right: 0,
-          height: "30%",
-          background: "linear-gradient(to bottom, rgba(255,255,255,0.06), transparent)",
-          pointerEvents: "none",
-        }} />
-      </div>
-
-      {/* Bouton power */}
-      <div style={{
-        position: "absolute", right: -3, top: 90,
-        width: 3, height: 36,
-        background: "linear-gradient(to right, #2a2a2a, #444)",
-        borderRadius: "0 3px 3px 0",
-      }} />
-      {/* Boutons volume */}
-      <div style={{
-        position: "absolute", left: -3, top: 80,
-        width: 3, height: 28,
-        background: "linear-gradient(to left, #2a2a2a, #444)",
-        borderRadius: "3px 0 0 3px",
-      }} />
-      <div style={{
-        position: "absolute", left: -3, top: 118,
-        width: 3, height: 28,
-        background: "linear-gradient(to left, #2a2a2a, #444)",
-        borderRadius: "3px 0 0 3px",
-      }} />
-      {/* Bouton silencieux */}
-      <div style={{
-        position: "absolute", left: -3, top: 55,
-        width: 3, height: 16,
-        background: "linear-gradient(to left, #2a2a2a, #444)",
-        borderRadius: "3px 0 0 3px",
-      }} />
+      {/* SVG frame par-dessus — masque les coins, ajoute le châssis */}
+      <img
+        src="/iphone-frame.svg"
+        alt={alt}
+        style={{ width: "100%", display: "block", position: "relative", zIndex: 2 }}
+      />
     </div>
   );
 }
@@ -189,35 +132,30 @@ export default function HomePage() {
           </div>
 
           {/* ── Mockups iPhone ── */}
-          <div className="hidden lg:block relative" style={{ height: 660 }}>
+          <div className="hidden lg:block relative" style={{ height: 720 }}>
 
-            {/* Téléphone ARRIÈRE — fiche établissement, incliné droite */}
+            {/* Téléphone ARRIÈRE — fiche établissement, décalé en haut à droite */}
             <div style={{
               position: "absolute",
-              right: 20,
-              bottom: 30,
-              width: 240,
-              transform: "rotate(8deg)",
-              transformOrigin: "bottom center",
+              right: 0,
+              top: 20,
+              width: 260,
               zIndex: 10,
-              filter: "drop-shadow(0px 30px 50px rgba(0,0,0,0.65))",
-              opacity: 0.95,
             }}>
-              <PhoneMockup src="/screen-venue.jpg" alt="Fiche établissement Jovial" />
+              <img src="/mockup-venue.png" alt="Fiche établissement Jovial"
+                style={{ width: "100%", display: "block", mixBlendMode: "multiply" }} />
             </div>
 
-            {/* Téléphone AVANT — carte, légèrement incliné gauche */}
+            {/* Téléphone AVANT — carte, en bas à gauche */}
             <div style={{
               position: "absolute",
-              left: 20,
+              left: 0,
               bottom: 0,
-              width: 270,
-              transform: "rotate(-5deg)",
-              transformOrigin: "bottom center",
+              width: 300,
               zIndex: 20,
-              filter: "drop-shadow(0px 40px 70px rgba(0,0,0,0.8))",
             }}>
-              <PhoneMockup src="/screen-map.jpg" alt="Carte interactive Jovial" />
+              <img src="/mockup-map.png" alt="Carte interactive Jovial"
+                style={{ width: "100%", display: "block", mixBlendMode: "multiply" }} />
             </div>
 
           </div>

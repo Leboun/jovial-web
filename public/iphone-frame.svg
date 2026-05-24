@@ -1,0 +1,43 @@
+<svg viewBox="0 0 390 844" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Masque : blanc = visible, noir = transparent (découpe écran) -->
+    <mask id="screen-cutout">
+      <rect width="390" height="844" rx="52" ry="52" fill="white"/>
+      <rect x="11" y="11" width="368" height="822" rx="42" ry="42" fill="black"/>
+    </mask>
+    <!-- Dégradé châssis -->
+    <linearGradient id="frameGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#444"/>
+      <stop offset="40%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0f0f0f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Corps du téléphone (avec découpe écran) -->
+  <rect width="390" height="844" rx="52" ry="52" fill="url(#frameGrad)" mask="url(#screen-cutout)"/>
+
+  <!-- Liseré brillant extérieur -->
+  <rect x="0.75" y="0.75" width="388.5" height="842.5" rx="51.5" ry="51.5"
+    fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+
+  <!-- Liseré intérieur écran -->
+  <rect x="10" y="10" width="370" height="824" rx="43" ry="43"
+    fill="none" stroke="rgba(0,0,0,0.5)" stroke-width="1"/>
+
+  <!-- Dynamic Island -->
+  <rect x="141" y="18" width="108" height="33" rx="16.5" ry="16.5" fill="#000"/>
+  <rect x="141.5" y="18.5" width="107" height="32" rx="16" ry="16"
+    fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Bouton power (droite) -->
+  <rect x="381" y="168" width="9" height="68" rx="4" ry="4" fill="#2a2a2a"/>
+  <rect x="382" y="169" width="7" height="66" rx="3" ry="3"
+    fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+
+  <!-- Bouton silencieux (gauche) -->
+  <rect x="0" y="120" width="9" height="32" rx="4" ry="4" fill="#2a2a2a"/>
+  <!-- Volume + -->
+  <rect x="0" y="168" width="9" height="56" rx="4" ry="4" fill="#2a2a2a"/>
+  <!-- Volume - -->
+  <rect x="0" y="236" width="9" height="56" rx="4" ry="4" fill="#2a2a2a"/>
+</svg>
