@@ -1,4 +1,4 @@
-import { Check, MapPin, Bell, TrendingUp, Calendar, Users } from "lucide-react";
+import { Check, MapPin, Bell, TrendingUp, Calendar, Users, Star } from "lucide-react";
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import FlipCard from "@/components/FlipCard";
