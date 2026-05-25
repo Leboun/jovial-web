@@ -128,7 +128,7 @@ export default function HomePage() {
 
           <div className="flex flex-col lg:flex-row items-center gap-16">
             {/* Mockup carte à gauche */}
-            <div className="w-full max-w-[280px] shrink-0 mx-auto lg:mx-0">
+            <div className="w-full max-w-[380px] shrink-0 mx-auto lg:mx-0">
               <img
                 src="/mockup-map.png"
                 alt="Carte interactive Jovial"
