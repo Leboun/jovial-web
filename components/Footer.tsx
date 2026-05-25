@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="md:col-span-2">
           <p className="font-bold text-xl mb-3">Jovial</p>
           <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-            L&apos;app qui te connecte aux meilleures activités et événements près de toi — à toute heure, partout en France.
+            Bars, concerts, activités — tout ce qui se passe près de chez toi.
           </p>
         </div>
 
@@ -15,9 +15,8 @@ export default function Footer() {
           <p className="font-semibold text-sm mb-4 text-gray-300 uppercase tracking-wider">L'application</p>
           <ul className="space-y-2">
             <li><Link href="/#concept" className="text-gray-400 text-sm hover:text-white transition-colors">Concept</Link></li>
-            <li><Link href="/premium" className="text-gray-400 text-sm hover:text-white transition-colors">Jovial+</Link></li>
             <li><Link href="/etablissements" className="text-gray-400 text-sm hover:text-white transition-colors">Établissements</Link></li>
-            <li><Link href="/actualites" className="text-gray-400 text-sm hover:text-white transition-colors">Actualités</Link></li>
+            <li><Link href="/actualites" className="text-gray-400 text-sm hover:text-white transition-colors">Découvrir</Link></li>
           </ul>
         </div>
 
