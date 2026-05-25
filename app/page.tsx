@@ -2,57 +2,33 @@ import DownloadSection from "@/components/DownloadSection";
 import HeroTagline from "@/components/HeroTagline";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Users, Zap, Heart, Bell, Clock, CalendarDays, Ticket, Gift, MessageCircle } from "lucide-react";
+import { MapPin, Heart, Bell, Clock, Ticket } from "lucide-react";
 import { articles } from "@/lib/articles";
 
 const features = [
   {
     icon: MapPin,
     title: "Carte interactive",
-    description: "Explore bars, restaurants, tiers-lieux, guinguettes et bien plus autour de toi.",
+    description: "Explore bars, restaurants, guinguettes, tiers-lieux et bien plus autour de toi — en temps réel.",
     color: "#2B4E93",
   },
   {
     icon: Bell,
     title: "Événements à venir",
-    description: "Concerts, soirées, diffusions de matchs, tournois de pétanque… Ne rate plus rien. Ajoute directement les événements à ton agenda.",
+    description: "Concerts, tournois, diffusions de matchs… Ne rate plus rien et ajoute les événements directement à ton agenda.",
     color: "#F97316",
   },
   {
     icon: Ticket,
     title: "Activités & réservation",
-    description: "Baby-foot, fléchettes, billard, palet breton… Découvre les activités disponibles et réserve ta place en quelques secondes depuis l'app.",
+    description: "Fléchettes, billard, palet breton, baby-foot… Découvre les activités disponibles et réserve en quelques secondes.",
     color: "#5CB6AC",
   },
   {
     icon: Heart,
     title: "Favoris & alertes",
-    description: "Sauvegarde tes lieux préférés et reçois une notification dès qu'ils publient un nouvel événement ou une nouvelle activité.",
+    description: "Sauvegarde tes lieux préférés et reçois une notification dès qu'ils publient un événement ou une activité.",
     color: "#EF4444",
-  },
-  {
-    icon: Gift,
-    title: "Avantages exclusifs Jovial+",
-    description: "Avec Jovial+, profite d'avantages réservés : consommation offerte à l'arrivée, réservation prioritaire, tarif réduit sur les activités et accès early bird aux événements.",
-    color: "#8B5CF6",
-  },
-  {
-    icon: Users,
-    title: "Réseau d'amis",
-    description: "Connecte-toi avec tes amis, partage tes bons plans et coordonnez vos sorties en un clin d'œil.",
-    color: "#10B981",
-  },
-  {
-    icon: MessageCircle,
-    title: "Groupes communautaires",
-    description: "Rejoins des groupes autour de tes passions : amateurs de fléchettes, fans de comedy-club, afterwork du jeudi… Échange, planifie et sors.",
-    color: "#F59E0B",
-  },
-  {
-    icon: Zap,
-    title: "100% gratuit",
-    description: "Aucune pub, aucun engagement. Télécharge Jovial et commence à explorer dès ce soir.",
-    color: "#6366F1",
   },
 ];
 
@@ -135,16 +111,7 @@ export default function HomePage() {
 
           {/* Boutons téléchargement */}
           <DownloadSection />
-          <p className="text-white/35 text-xs mt-4 mb-10">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
-
-          {/* Mockup carte — grand, centré */}
-          <div className="w-full max-w-xs mx-auto">
-            <img
-              src="/mockup-map.png"
-              alt="Carte interactive Jovial"
-              className="w-full drop-shadow-2xl"
-            />
-          </div>
+          <p className="text-white/35 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
         </div>
       </section>
 
@@ -155,26 +122,38 @@ export default function HomePage() {
             <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">L&apos;application</span>
             <h2 className="text-4xl font-bold mt-3 mb-4">Tout ce qu&apos;il te faut pour sortir</h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-              Découvre des lieux uniques, réserve tes activités, suis les événements et rejoins une communauté de sorties — tout en un.
+              Découvre des lieux uniques, réserve tes activités, suis les événements — tout en un.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {features.map((f) => {
-              const Icon = f.icon;
-              return (
-                <div key={f.title} className="bg-gray-50 rounded-2xl p-6 hover:shadow-md transition-shadow">
-                  <div
-                    className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
-                    style={{ backgroundColor: f.color + "20" }}
-                  >
-                    <Icon size={22} style={{ color: f.color }} />
+          <div className="flex flex-col lg:flex-row items-center gap-16">
+            {/* Mockup carte à gauche */}
+            <div className="w-full max-w-[280px] shrink-0 mx-auto lg:mx-0">
+              <img
+                src="/mockup-map.png"
+                alt="Carte interactive Jovial"
+                className="w-full drop-shadow-2xl"
+              />
+            </div>
+
+            {/* 4 features à droite */}
+            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {features.map((f) => {
+                const Icon = f.icon;
+                return (
+                  <div key={f.title} className="bg-gray-50 rounded-2xl p-6 hover:shadow-md transition-shadow">
+                    <div
+                      className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
+                      style={{ backgroundColor: f.color + "20" }}
+                    >
+                      <Icon size={22} style={{ color: f.color }} />
+                    </div>
+                    <h3 className="font-bold text-gray-900 mb-2">{f.title}</h3>
+                    <p className="text-gray-500 text-sm leading-relaxed">{f.description}</p>
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-2">{f.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{f.description}</p>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
