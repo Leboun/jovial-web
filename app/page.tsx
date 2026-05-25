@@ -90,7 +90,7 @@ export default function HomePage() {
         {/* Overlay sombre + dégradé vers le bas */}
         <div style={{
           position: "absolute", inset: 0, zIndex: 1,
-          background: "linear-gradient(to bottom, rgba(20,30,70,0.75) 0%, rgba(43,78,147,0.65) 50%, rgba(10,15,40,0.85) 100%)"
+          background: "linear-gradient(to bottom, rgba(20,30,70,0.55) 0%, rgba(43,78,147,0.4) 50%, rgba(10,15,40,0.65) 100%)"
         }} />
 
         {/* Contenu centré */}
