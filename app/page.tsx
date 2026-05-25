@@ -158,26 +158,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Comment ça marche */}
-      <section className="py-24 px-6 bg-[#f8faff]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Simple & rapide</span>
-            <h2 className="text-4xl font-bold mt-3 mb-4">Prêt en 2 minutes</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-            {/* Ligne continue derrière tous les numéros */}
-            <div className="hidden lg:block absolute left-0 right-0 h-px bg-[#2B4E93]/25" style={{ top: "1.6rem" }} />
-            {steps.map((s) => (
-              <div key={s.number} className="relative z-10">
-                <div className="text-4xl font-black text-[#2B4E93]/15 mb-3">{s.number}</div>
-                <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Magazine */}
       <section className="py-24 px-6 bg-white">
@@ -237,14 +217,39 @@ export default function HomePage() {
 
       {/* CTA final */}
       <section className="py-24 px-6 bg-[#2B4E93] text-white text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-4xl font-bold mb-5">Il se passe toujours quelque chose près de chez toi.</h2>
-          <p className="text-white/70 text-lg mb-10 max-w-xl mx-auto">
-            Activités, événements, bons plans — à toute heure, partout en France. Télécharge Jovial et ne passe plus à côté.
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Ce soir, qu&apos;est-ce qu&apos;on fait ?</h2>
+          <p className="text-white/70 text-lg mb-12 max-w-xl mx-auto">
+            Concerts, fléchettes, terrasses, comedy clubs — tout ce qui se passe près de chez toi, maintenant.
           </p>
+
+          {/* Étapes inline */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12 text-sm">
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 border border-white/20">
+              <span className="text-lg">📲</span>
+              <span className="font-semibold">Télécharge</span>
+            </div>
+            <span className="text-white/30 hidden sm:block">→</span>
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 border border-white/20">
+              <span className="text-lg">🗺️</span>
+              <span className="font-semibold">Explore autour de toi</span>
+            </div>
+            <span className="text-white/30 hidden sm:block">→</span>
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 border border-white/20">
+              <span className="text-lg">🎯</span>
+              <span className="font-semibold">Réserve</span>
+            </div>
+            <span className="text-white/30 hidden sm:block">→</span>
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 border border-white/20">
+              <span className="text-lg">🎉</span>
+              <span className="font-semibold">Profite</span>
+            </div>
+          </div>
+
           <div className="flex justify-center">
             <DownloadSection />
           </div>
+          <p className="text-white/30 text-xs mt-5">Gratuit, sans publicité. iOS 16+ et Android 10+.</p>
         </div>
       </section>
     </>

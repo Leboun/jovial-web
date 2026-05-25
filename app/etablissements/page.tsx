@@ -243,6 +243,52 @@ export default function EtablissementsPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">FAQ</span>
+            <h2 className="text-3xl font-bold mt-3">Questions fréquentes</h2>
+          </div>
+          <div className="space-y-4">
+            {[
+              {
+                q: "Comment inscrire mon établissement ?",
+                a: "Clique sur \"Inscrire mon établissement\", crée ton compte sur Jovial Pro et suis les étapes pour configurer ta fiche. Notre équipe valide ton établissement sous 24h."
+              },
+              {
+                q: "Quelle est la différence entre les 3 offres ?",
+                a: "L'offre Visibilité (290€/an) te permet d'être présent sur la carte et de publier jusqu'à 4 événements par an. L'offre Rayonnement (490€/an) inclut des événements illimités, des rappels automatiques J-1/H-1 et un boost de visibilité. L'offre Pro (790€/an) est le pack complet : 3 tags d'activités, boost mensuel Explore, notifications ciblées et reporting analytique."
+              },
+              {
+                q: "Y a-t-il un engagement ?",
+                a: "L'engagement minimum est d'1 an, avec paiement annuel. Tu peux évoluer vers une offre supérieure à tout moment."
+              },
+              {
+                q: "Est-ce que Jovial fonctionne pour tous les types d'établissements ?",
+                a: "Oui — bars, restaurants, salles de concert, tiers-lieux, guinguettes, clubs de sport, salles d'activités… Jovial est ouvert à tous les lieux qui accueillent du public et organisent des activités ou événements."
+              },
+              {
+                q: "Comment fonctionne le Kit de communication ?",
+                a: "Dès ton inscription, tu reçois un kit clé en main : affiche à imprimer, visuels réseaux sociaux, QR code renvoyant vers ta fiche Jovial — tout pour communiquer sur ta présence sur l'app."
+              },
+              {
+                q: "Puis-je gérer plusieurs établissements ?",
+                a: "Oui, avec l'offre Pro tu peux administrer plusieurs établissements depuis un seul tableau de bord Jovial Pro."
+              },
+            ].map((item) => (
+              <details key={item.q} className="group bg-gray-50 rounded-2xl px-6 py-5 cursor-pointer">
+                <summary className="flex items-center justify-between font-semibold text-gray-900 list-none">
+                  {item.q}
+                  <span className="text-[#2B4E93] text-xl font-light ml-4 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-3 text-gray-500 text-sm leading-relaxed">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA contact */}
       <section className="py-16 px-6 bg-[#2B4E93] text-white">
         <div className="max-w-2xl mx-auto">
