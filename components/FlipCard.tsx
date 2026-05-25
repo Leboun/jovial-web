@@ -11,7 +11,7 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93" }: Flip
   return (
     <div
       className="group"
-      style={{ perspective: "1000px", height: "220px" }}
+      style={{ perspective: "1000px", height: "180px" }}
     >
       <div
         style={{

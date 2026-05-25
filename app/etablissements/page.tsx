@@ -171,41 +171,75 @@ export default function EtablissementsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <FlipCard
               icon="📍"
-              title="Apparais au bon moment"
+              title="Visible sur la carte dès l'inscription"
               desc="Un utilisateur ouvre Jovial pour trouver quelque chose à faire près de chez lui — ton établissement apparaît sur sa carte, sans qu'il ait à te chercher."
               accent="#2B4E93"
             />
             <FlipCard
               icon="🔔"
-              title="Notifie directement"
+              title="Tes clients notifiés en un clic"
               desc="Publie un événement → tes abonnés reçoivent une notification push sur leur téléphone. Pas d'algorithme, pas de boost payant à la pièce. Direct."
               accent="#2B4E93"
             />
             <FlipCard
               icon="🎯"
-              title="Mets tes activités en avant"
+              title="Tes activités, trouvées par les bons clients"
               desc="Fléchettes, palet breton, billard, jeux de société… Chaque activité que tu proposes devient un filtre de recherche sur la carte Jovial."
               accent="#2B4E93"
             />
             <FlipCard
               icon="📅"
-              title="Événements sans limite"
-              desc="Concerts, tournois, ateliers, happenings… publie autant que tu veux. Rappels automatiques J-1 et H-1 pour que personne n'oublie."
+              title="Publie autant d'événements que tu veux"
+              desc="Concerts, tournois, ateliers, happenings… Rappels automatiques J-1 et H-1 envoyés à tes participants pour que personne n'oublie."
               accent="#2B4E93"
             />
             <FlipCard
               icon="📊"
-              title="Mesure ce qui marche"
-              desc="Vues, clics, abonnés, réservations — un tableau de bord clair pour savoir exactement ce qui attire du monde chez toi."
+              title="Suis ce qui attire du monde chez toi"
+              desc="Vues, clics, abonnés, réservations — un tableau de bord clair pour piloter ta visibilité et savoir ce qui fonctionne vraiment."
               accent="#2B4E93"
             />
             <FlipCard
               icon="🤝"
-              title="Accompagnement inclus"
-              desc="Notre équipe configure ta fiche, te fournit un kit de communication clé en main et reste disponible pour t'aider à performer sur Jovial."
+              title="On t'accompagne de A à Z"
+              desc="Notre équipe configure ta fiche avec toi, te fournit un kit de communication clé en main et reste disponible pour t'aider à performer sur Jovial."
               accent="#2B4E93"
             />
           </div>
+        </div>
+      </section>
+
+      {/* Vidéo interlude */}
+      <section className="relative py-32 px-6 overflow-hidden">
+        <video
+          autoPlay muted loop playsInline
+          aria-hidden="true"
+          style={{
+            position: "absolute", inset: 0,
+            width: "100%", height: "100%",
+            objectFit: "cover", objectPosition: "center 60%",
+            zIndex: 0,
+          }}
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
+        <div style={{
+          position: "absolute", inset: 0, zIndex: 1,
+          background: "linear-gradient(to bottom, rgba(15,28,56,0.82) 0%, rgba(43,78,147,0.7) 50%, rgba(15,28,56,0.82) 100%)"
+        }} />
+        <div className="relative z-10 max-w-2xl mx-auto text-center text-white">
+          <p className="text-4xl md:text-5xl font-bold leading-tight mb-5">
+            Ton établissement mérite d&apos;être découvert.
+          </p>
+          <p className="text-white/70 text-lg mb-8">
+            Rejoins Jovial et sois visible dès aujourd&apos;hui — gratuitement.
+          </p>
+          <a
+            href="https://pro.getjovial.fr/establishment/offers"
+            className="inline-flex items-center gap-2 bg-[#F97316] text-white font-bold px-8 py-4 rounded-2xl hover:bg-orange-600 transition-colors text-lg"
+          >
+            Inscrire mon établissement →
+          </a>
         </div>
       </section>
 
