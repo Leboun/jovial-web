@@ -165,7 +165,7 @@ export default function EtablissementsPage() {
             <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Pourquoi Jovial ?</span>
             <h2 className="text-4xl font-bold mt-3 mb-4">Ce que Jovial change pour toi</h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-              Tes clients sont sur leur téléphone. Jovial te met exactement là où ils cherchent.
+              Sois là où tes clients te cherchent.
             </p>
           </div>
 
