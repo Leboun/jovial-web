@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 // Remplace XXXXXXXX par ton ID Formspree (formspree.io → nouveau formulaire → copier l'ID)
-const FORMSPREE_ID = "XXXXXXXX";
+const FORMSPREE_ID = "xpqnjezp";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
