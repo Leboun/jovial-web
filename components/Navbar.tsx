@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "/#concept", label: "L'appli" },
-  { href: "/actualites", label: "Magazine" },
+  { href: "/actualites", label: "Découvrir" },
 ];
 
 export default function Navbar() {

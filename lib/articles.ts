@@ -16,9 +16,9 @@ export const articles: Article[] = [
   {
     slug: "play-rennes-bar-flechettes-interactives",
     date: "2 juin 2026",
-    tag: "Portrait d'établissement",
+    tag: "Adresses",
     tagColor: "#2B4E93",
-    tagEmoji: "🏠",
+    tagEmoji: "📍",
     title: "Play Rennes : le bar à fléchettes interactives qui a tout misé sur l'expérience",
     excerpt:
       "600 000 € d'investissement, 6 dartboards connectés, un ancien joueur de poker pro et un restaurateur de 30 ans d'expérience. Bienvenue chez Play, le bar qui a transformé les fléchettes en spectacle à Vern-sur-Seiche.",
@@ -267,9 +267,9 @@ Sur Jovial, vous retrouvez toutes ces adresses en carte interactive, avec les ho
   {
     slug: "meilleurs-bars-flechettes-rennes-2026",
     date: "9 juin 2026",
-    tag: "Ville & Quartier",
-    tagColor: "#10B981",
-    tagEmoji: "🏙️",
+    tag: "Adresses",
+    tagColor: "#2B4E93",
+    tagEmoji: "📍",
     title: "Les meilleurs bars à fléchettes de Rennes en 2026",
     excerpt:
       "Fléchettes interactives, tournois, bières artisanales… Rennes s'est imposée comme une vraie capitale bretonne du dart. Voici les 5 adresses à connaître absolument.",
@@ -330,7 +330,7 @@ Play Rennes organise des tournois toutes les deux semaines. BREWKLYN propose des
   {
     slug: "art-rock-2026-saint-brieuc-bars-restaurants",
     date: "18 mai 2026",
-    tag: "Festival & Off",
+    tag: "Festivals",
     tagColor: "#F59E0B",
     tagEmoji: "🎪",
     title: "Art Rock 2026 à Saint-Brieuc : les bars et restaurants se mettent au rythme du festival",

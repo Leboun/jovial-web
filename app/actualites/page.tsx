@@ -4,17 +4,16 @@ import { Calendar, Clock, MapPin } from "lucide-react";
 import { articles } from "@/lib/articles";
 
 export const metadata: Metadata = {
-  title: "Magazine — Jovial",
-  description: "Portraits de gérants, histoires d'établissements, villes qui bougent, artistes émergents — le magazine de la vie nocturne française.",
+  title: "Découvrir — Jovial",
+  description: "Adresses, événements, festivals — tout ce qui se passe près de chez toi. Bars, concerts, activités en Bretagne et partout en France.",
 };
 
 const categories = [
-  { emoji: "🏠", label: "Portrait d'établissement", color: "#2B4E93" },
-  { emoji: "👤", label: "Portrait de gérant", color: "#10B981" },
-  { emoji: "🏙️", label: "Ville & Quartier", color: "#F97316" },
-  { emoji: "🎤", label: "Artiste", color: "#8B5CF6" },
-  { emoji: "🎭", label: "Scène & Soirée", color: "#EF4444" },
-  { emoji: "🎪", label: "Festival & Off", color: "#F59E0B" },
+  { emoji: "📍", label: "Adresses", color: "#2B4E93" },
+  { emoji: "🗓️", label: "À venir", color: "#10B981" },
+  { emoji: "🎪", label: "Festivals", color: "#F59E0B" },
+  { emoji: "🎯", label: "Activités", color: "#EF4444" },
+  { emoji: "🏙️", label: "Villes", color: "#F97316" },
 ];
 
 export default function MagazinePage() {
@@ -26,10 +25,10 @@ export default function MagazinePage() {
       {/* Hero */}
       <section className="bg-white pt-32 pb-12 px-6 border-b border-gray-100">
         <div className="max-w-5xl mx-auto">
-          <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Magazine</span>
-          <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-4 text-gray-900">La vie des bars, racontée</h1>
+          <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Découvrir</span>
+          <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-4 text-gray-900">Adresses, événements, festivals.</h1>
           <p className="text-gray-500 text-lg max-w-2xl">
-            Portraits de gérants, histoires d&apos;établissements, villes qui bougent, artistes émergents, soirées mémorables — on raconte la vie nocturne française.
+            Tout ce qui se passe près de chez toi — bars, concerts, activités et festivals en Bretagne et partout en France.
           </p>
         </div>
       </section>
