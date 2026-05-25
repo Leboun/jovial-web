@@ -108,29 +108,32 @@ export default function HomePage() {
             <p className="text-white/40 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
           </div>
 
-          {/* ── Zone droite : photo réduite + mockups par-dessus ── */}
+          {/* ── Zone droite : vidéo + mockups par-dessus ── */}
           <div className="hidden lg:block flex-1 relative self-stretch">
-            {/* Photo réduite — carrée, angles droits, cible visible */}
+            {/* Vidéo en boucle */}
             <div style={{
               position: "absolute",
               top: "15%",
               bottom: "15%",
               left: "8%",
               right: "8%",
-              borderRadius: 0,
               overflow: "hidden",
               zIndex: 0,
             }}>
-              <img
-                src="/hero-bg.jpg"
-                alt=""
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
                 aria-hidden="true"
-                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }}
-              />
-              {/* Léger overlay pour lisibilité */}
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+              >
+                <source src="/hero-video.mp4" type="video/mp4" />
+              </video>
+              {/* Overlay pour lisibilité */}
               <div style={{
                 position: "absolute", inset: 0,
-                background: "rgba(0,0,0,0.25)"
+                background: "linear-gradient(to right, rgba(43,78,147,0.5) 0%, rgba(0,0,0,0.2) 100%)"
               }} />
             </div>
 
@@ -138,7 +141,7 @@ export default function HomePage() {
             <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-75%, -45%)", width: 340, zIndex: 20 }}>
               <img src="/mockup-map.png" alt="Carte interactive Jovial" style={{ width: "100%", display: "block" }} />
             </div>
-            {/* Téléphone venue — décalé à droite pour cacher la personne, montrer la cible */}
+            {/* Téléphone venue */}
             <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(55%, -55%)", width: 320, zIndex: 10, opacity: 0.95 }}>
               <img src="/mockup-venue.png" alt="Fiche établissement Jovial" style={{ width: "100%", display: "block" }} />
             </div>
