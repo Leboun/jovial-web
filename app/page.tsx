@@ -136,12 +136,12 @@ export default function HomePage() {
               background: "linear-gradient(to right, rgba(43,78,147,0.75) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.15) 100%)"
             }} />
 
-            {/* Téléphone carte */}
-            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-75%, -45%)", width: 340, zIndex: 20 }}>
+            {/* Téléphone carte — droite, légèrement en avant */}
+            <div style={{ position: "absolute", right: "12%", top: "50%", transform: "translateY(-50%)", width: 260, zIndex: 20 }}>
               <img src="/mockup-map.png" alt="Carte interactive Jovial" style={{ width: "100%", display: "block" }} />
             </div>
-            {/* Téléphone venue */}
-            <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(55%, -55%)", width: 320, zIndex: 10, opacity: 0.95 }}>
+            {/* Téléphone venue — décalé derrière, en bas à droite */}
+            <div style={{ position: "absolute", right: "2%", top: "50%", transform: "translateY(-42%)", width: 230, zIndex: 10, opacity: 0.85 }}>
               <img src="/mockup-venue.png" alt="Fiche établissement Jovial" style={{ width: "100%", display: "block" }} />
             </div>
           </div>
