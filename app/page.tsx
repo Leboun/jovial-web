@@ -133,15 +133,15 @@ export default function HomePage() {
             {/* Overlay : fondu depuis le bleu à gauche, sombre à droite */}
             <div style={{
               position: "absolute", inset: 0, zIndex: 1,
-              background: "linear-gradient(to right, rgba(43,78,147,0.75) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.15) 100%)"
+              background: "linear-gradient(to right, rgba(43,78,147,0.95) 0%, rgba(43,78,147,0.4) 35%, rgba(0,0,0,0.15) 100%)"
             }} />
 
-            {/* Téléphone carte — droite, légèrement en avant */}
-            <div style={{ position: "absolute", right: "12%", top: "50%", transform: "translateY(-50%)", width: 260, zIndex: 20 }}>
+            {/* Téléphone carte — bas gauche, couvre les deux personnes */}
+            <div style={{ position: "absolute", left: "-2%", bottom: "-5%", width: 280, zIndex: 20 }}>
               <img src="/mockup-map.png" alt="Carte interactive Jovial" style={{ width: "100%", display: "block" }} />
             </div>
-            {/* Téléphone venue — décalé derrière, en bas à droite */}
-            <div style={{ position: "absolute", right: "2%", top: "50%", transform: "translateY(-42%)", width: 230, zIndex: 10, opacity: 0.85 }}>
+            {/* Téléphone venue — droite, centré verticalement */}
+            <div style={{ position: "absolute", right: "3%", top: "50%", transform: "translateY(-48%)", width: 240, zIndex: 10, opacity: 0.92 }}>
               <img src="/mockup-venue.png" alt="Fiche établissement Jovial" style={{ width: "100%", display: "block" }} />
             </div>
           </div>
