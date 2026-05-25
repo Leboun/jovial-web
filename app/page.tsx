@@ -91,61 +91,60 @@ function PhoneMockup({ src, alt }: { src: string; alt: string }) {
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-[#2B4E93] overflow-hidden min-h-screen flex items-center">
-        <div className="w-full flex items-center min-h-screen">
+      {/* Hero — vidéo plein écran + texte centré + 1 mockup */}
+      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden text-white">
 
-          {/* ── Texte gauche — fond bleu foncé ── */}
-          <div className="bg-[#2B4E93] pl-16 pr-10 pt-28 pb-20 w-full max-w-xl shrink-0 self-stretch flex flex-col justify-center">
-            <div className="inline-flex items-center gap-2 bg-white/15 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20 w-fit">
-              🎉 Disponible gratuitement
-            </div>
-            <HeroTagline />
-            <p className="text-white/75 text-lg leading-relaxed mb-5 max-w-md">
-              Bars, concerts, fléchettes, comedy clubs… Tout ce qui se passe près de chez toi, en un coup d&apos;œil.
-            </p>
-            <DownloadSection />
-            <p className="text-white/40 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
+        {/* Vidéo en fond plein écran */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-hidden="true"
+          style={{
+            position: "absolute", inset: 0,
+            width: "100%", height: "100%",
+            objectFit: "cover", objectPosition: "center 60%",
+            zIndex: 0,
+          }}
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
+
+        {/* Overlay sombre + dégradé vers le bas */}
+        <div style={{
+          position: "absolute", inset: 0, zIndex: 1,
+          background: "linear-gradient(to bottom, rgba(20,30,70,0.75) 0%, rgba(43,78,147,0.65) 50%, rgba(10,15,40,0.85) 100%)"
+        }} />
+
+        {/* Contenu centré */}
+        <div className="relative z-10 flex flex-col items-center text-center px-6 pt-28 pb-12 w-full max-w-5xl mx-auto">
+
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-white/15 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-8 border border-white/20">
+            🎉 Disponible gratuitement
           </div>
 
-          {/* ── Zone droite : vidéo plein bord + mockups par-dessus ── */}
-          <div className="hidden lg:block flex-1 relative self-stretch overflow-hidden">
-            {/* Vidéo pleine hauteur, bord à bord */}
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              aria-hidden="true"
-              style={{
-                position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                objectPosition: "center 70%",
-                display: "block",
-                zIndex: 0,
-              }}
-            >
-              <source src="/hero-video.mp4" type="video/mp4" />
-            </video>
-            {/* Overlay : fondu depuis le bleu à gauche, sombre à droite */}
-            <div style={{
-              position: "absolute", inset: 0, zIndex: 1,
-              background: "linear-gradient(to right, rgba(43,78,147,0.95) 0%, rgba(43,78,147,0.4) 35%, rgba(0,0,0,0.15) 100%)"
-            }} />
+          {/* Tagline */}
+          <HeroTagline />
 
-            {/* Téléphone carte — bas gauche, couvre les deux personnes */}
-            <div style={{ position: "absolute", left: "-2%", bottom: "-5%", width: 280, zIndex: 20 }}>
-              <img src="/mockup-map.png" alt="Carte interactive Jovial" style={{ width: "100%", display: "block" }} />
-            </div>
-            {/* Téléphone venue — droite, centré verticalement */}
-            <div style={{ position: "absolute", right: "3%", top: "50%", transform: "translateY(-48%)", width: 240, zIndex: 10, opacity: 0.92 }}>
-              <img src="/mockup-venue.png" alt="Fiche établissement Jovial" style={{ width: "100%", display: "block" }} />
-            </div>
+          {/* Sous-titre */}
+          <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-xl">
+            Bars, concerts, fléchettes, comedy clubs… Tout ce qui se passe près de chez toi, en un coup d&apos;œil.
+          </p>
+
+          {/* Boutons téléchargement */}
+          <DownloadSection />
+          <p className="text-white/35 text-xs mt-4 mb-10">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
+
+          {/* Mockup carte — grand, centré */}
+          <div className="w-full max-w-xs mx-auto">
+            <img
+              src="/mockup-map.png"
+              alt="Carte interactive Jovial"
+              className="w-full drop-shadow-2xl"
+            />
           </div>
-
         </div>
       </section>
 

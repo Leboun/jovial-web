@@ -20,7 +20,7 @@ export default function HeroTagline() {
   }, []);
 
   return (
-    <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-white">
+    <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-white text-center">
       Les meilleurs moments commencent{" "}
       <span
         className="text-[#F97316] transition-opacity duration-400"
