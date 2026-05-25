@@ -114,7 +114,7 @@ export default async function ArticlePage({ params }: Props) {
             className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-[#2B4E93] transition-colors mb-8"
           >
             <ArrowLeft size={15} />
-            Retour à Découvrir
+            Retour
           </Link>
 
           <div className="flex items-center gap-3 mb-5">
