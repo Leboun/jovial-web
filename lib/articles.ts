@@ -15,7 +15,7 @@ export type Article = {
 export const articles: Article[] = [
   {
     slug: "play-rennes-bar-flechettes-interactives",
-    date: "2 juin 2026",
+    date: "25 mai 2026",
     tag: "Adresses",
     tagColor: "#2B4E93",
     tagEmoji: "📍",
@@ -266,7 +266,7 @@ Sur Jovial, vous retrouvez toutes ces adresses en carte interactive, avec les ho
   */
   {
     slug: "meilleurs-bars-flechettes-rennes-2026",
-    date: "9 juin 2026",
+    date: "25 mai 2026",
     tag: "Adresses",
     tagColor: "#2B4E93",
     tagEmoji: "📍",
