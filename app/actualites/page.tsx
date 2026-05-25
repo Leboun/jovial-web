@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Calendar, Clock, MapPin } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 import { articles } from "@/lib/articles";
 
 export const metadata: Metadata = {
@@ -129,19 +130,16 @@ export default function MagazinePage() {
         </div>
       </section>
 
-      {/* CTA proposer un article */}
-      <section className="py-16 px-6 bg-[#2B4E93] text-white text-center">
-        <div className="max-w-xl mx-auto">
-          <p className="text-3xl font-bold mb-4">Ton bar mérite un article ?</p>
-          <p className="text-white/70 mb-8">
-            Tu gères un établissement avec une histoire à raconter ? On vient à ta rencontre.
-          </p>
-          <a
-            href="mailto:contact@getjovial.fr?subject=Proposition%20article%20Jovial"
-            className="inline-flex items-center gap-2 bg-white text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors"
-          >
-            Nous écrire
-          </a>
+      {/* CTA formulaire de contact */}
+      <section className="py-16 px-6 bg-[#2B4E93] text-white">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-3xl font-bold mb-3">Un lieu, un événement à faire découvrir ?</p>
+            <p className="text-white/70 text-lg">
+              Bar, salle de concert, festival, activité… Vous avez quelque chose à mettre en avant ? On vous contacte.
+            </p>
+          </div>
+          <ContactForm />
         </div>
       </section>
     </>
