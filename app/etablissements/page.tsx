@@ -161,23 +161,72 @@ export default function EtablissementsPage() {
       {/* Bénéfices */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-16">
             <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Pourquoi Jovial ?</span>
-            <h2 className="text-3xl font-bold mt-3">Tout ce que tu gagnes</h2>
+            <h2 className="text-4xl font-bold mt-3 mb-4">Ce que Jovial change pour toi</h2>
+            <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+              Tes clients sont sur leur téléphone. Jovial te met exactement là où ils cherchent.
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {benefits.map((b) => {
-              const Icon = b.icon;
-              return (
-                <div key={b.title} className="bg-gray-50 rounded-2xl p-6">
-                  <div className="w-11 h-11 bg-[#2B4E93]/10 rounded-xl flex items-center justify-center mb-4">
-                    <Icon size={22} className="text-[#2B4E93]" />
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-2">{b.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{b.desc}</p>
-                </div>
-              );
-            })}
+
+          {/* Bloc 1 — Visibilité */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+            <div className="bg-[#2B4E93] rounded-3xl p-10 text-white flex flex-col justify-between min-h-[260px]">
+              <div className="w-12 h-12 bg-white/15 rounded-2xl flex items-center justify-center mb-6">
+                <MapPin size={24} className="text-white" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-2">Apparais quand ça compte</h3>
+                <p className="text-white/70 leading-relaxed">
+                  Un utilisateur ouvre Jovial pour trouver quelque chose à faire près de chez lui — ton établissement apparaît sur sa carte, au bon moment, sans qu'il ait à te chercher.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[#F97316] rounded-3xl p-10 text-white flex flex-col justify-between min-h-[260px]">
+              <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+                <Bell size={24} className="text-white" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-2">Touche tes clients directement</h3>
+                <p className="text-white/80 leading-relaxed">
+                  Publie un événement → tes abonnés reçoivent une notification push sur leur téléphone. Pas d'algorithme, pas de boost payant à la pièce. Direct.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bloc 2 — 3 cartes */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-gray-50 rounded-3xl p-8 flex flex-col gap-4">
+              <div className="w-12 h-12 bg-[#2B4E93]/10 rounded-2xl flex items-center justify-center">
+                <Calendar size={22} className="text-[#2B4E93]" />
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 text-lg mb-2">Événements sans limite</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">Concerts, tournois, ateliers, happenings… publie autant que tu veux. Rappels automatiques J-1 et H-1 pour que personne n&apos;oublie.</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-3xl p-8 flex flex-col gap-4">
+              <div className="w-12 h-12 bg-[#2B4E93]/10 rounded-2xl flex items-center justify-center">
+                <TrendingUp size={22} className="text-[#2B4E93]" />
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 text-lg mb-2">Mesure ce qui marche</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">Vues, clics, abonnés, réservations — un tableau de bord clair pour savoir exactement ce qui attire du monde chez toi.</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-3xl p-8 flex flex-col gap-4">
+              <div className="w-12 h-12 bg-[#2B4E93]/10 rounded-2xl flex items-center justify-center">
+                <Users size={22} className="text-[#2B4E93]" />
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 text-lg mb-2">Accompagnement dès le départ</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">Notre équipe configure ta fiche avec toi, te fournit un kit de communication clé en main et reste disponible pour t&apos;aider à performer.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
