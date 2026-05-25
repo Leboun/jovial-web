@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticle(slug);
   if (!article) return {};
   return {
-    title: `${article.title} — Jovial Magazine`,
+    title: `${article.title} — Jovial`,
     description: article.excerpt,
     openGraph: {
       title: article.title,
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: article.date,
       authors: [article.author],
-      siteName: "Jovial Magazine",
+      siteName: "Jovial",
       url: `https://getjovial.fr/actualites/${article.slug}`,
     },
     twitter: {
@@ -114,7 +114,7 @@ export default async function ArticlePage({ params }: Props) {
             className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-[#2B4E93] transition-colors mb-8"
           >
             <ArrowLeft size={15} />
-            Retour au Magazine
+            Retour à Découvrir
           </Link>
 
           <div className="flex items-center gap-3 mb-5">

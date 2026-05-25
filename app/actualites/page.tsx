@@ -137,7 +137,7 @@ export default function MagazinePage() {
             Tu gères un établissement avec une histoire à raconter ? On vient à ta rencontre.
           </p>
           <a
-            href="mailto:contact@getjovial.fr?subject=Proposition%20article%20Magazine%20Jovial"
+            href="mailto:contact@getjovial.fr?subject=Proposition%20article%20Jovial"
             className="inline-flex items-center gap-2 bg-white text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors"
           >
             Nous écrire

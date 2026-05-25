@@ -204,10 +204,10 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-end justify-between mb-12">
             <div>
-              <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Magazine</span>
-              <h2 className="text-4xl font-bold mt-3">La vie des bars, racontée</h2>
+              <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Découvrir</span>
+              <h2 className="text-4xl font-bold mt-3">Adresses, événements, festivals.</h2>
               <p className="text-gray-500 text-lg mt-3 max-w-xl">
-                Portraits de gérants, coups de projecteur sur des établissements, villes qui bougent — on raconte la vie nocturne française.
+                Tout ce qui se passe près de chez toi — bars, concerts, activités et festivals en Bretagne et partout en France.
               </p>
             </div>
             <Link
