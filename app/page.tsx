@@ -102,40 +102,39 @@ export default function HomePage() {
             </div>
             <HeroTagline />
             <p className="text-white/75 text-lg leading-relaxed mb-5 max-w-md">
-              Fléchettes, concerts, comedy clubs, tournois, soirées… Découvre les meilleures activités et événements autour de toi, à toute heure. Que tu sois chez toi ou en déplacement, Jovial te connecte à ce qui se passe près de toi.
+              Bars, concerts, fléchettes, comedy clubs… Tout ce qui se passe près de chez toi, en un coup d&apos;œil.
             </p>
             <DownloadSection />
             <p className="text-white/40 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
           </div>
 
-          {/* ── Zone droite : vidéo + mockups par-dessus ── */}
-          <div className="hidden lg:block flex-1 relative self-stretch">
-            {/* Vidéo en boucle */}
+          {/* ── Zone droite : vidéo plein bord + mockups par-dessus ── */}
+          <div className="hidden lg:block flex-1 relative self-stretch overflow-hidden">
+            {/* Vidéo pleine hauteur, bord à bord */}
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-hidden="true"
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center 70%",
+                display: "block",
+                zIndex: 0,
+              }}
+            >
+              <source src="/hero-video.mp4" type="video/mp4" />
+            </video>
+            {/* Overlay : fondu depuis le bleu à gauche, sombre à droite */}
             <div style={{
-              position: "absolute",
-              top: "15%",
-              bottom: "15%",
-              left: "8%",
-              right: "8%",
-              overflow: "hidden",
-              zIndex: 0,
-            }}>
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                aria-hidden="true"
-                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
-              >
-                <source src="/hero-video.mp4" type="video/mp4" />
-              </video>
-              {/* Overlay pour lisibilité */}
-              <div style={{
-                position: "absolute", inset: 0,
-                background: "linear-gradient(to right, rgba(43,78,147,0.5) 0%, rgba(0,0,0,0.2) 100%)"
-              }} />
-            </div>
+              position: "absolute", inset: 0, zIndex: 1,
+              background: "linear-gradient(to right, rgba(43,78,147,0.75) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.15) 100%)"
+            }} />
 
             {/* Téléphone carte */}
             <div style={{ position: "absolute", left: "50%", top: "50%", transform: "translate(-75%, -45%)", width: 340, zIndex: 20 }}>
