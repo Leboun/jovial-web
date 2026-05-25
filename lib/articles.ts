@@ -66,6 +66,8 @@ Play attire aussi bien les groupes d'amis que les entreprises (team building) et
 Retrouvez Play Rennes sur la carte Jovial pour réserver votre créneau et suivre les prochains tournois.
     `,
   },
+  // ⚠️ Articles événementiels déplacés dans lib/drafts.ts — à republier 7-10 jours avant l'événement
+  /*
   {
     slug: "festival-interceltique-lorient-2026-bars-off-concerts",
     date: "20 juillet 2026",
@@ -129,6 +131,8 @@ Le festival étant immense, voici quelques repères pratiques :
 Sur Jovial, retrouvez les bars lorientais qui participent au Off, leurs programmations et leurs événements en temps réel pendant le festival.
     `,
   },
+  */
+  /*
   {
     slug: "fete-de-la-musique-bretagne-2026-brest-lorient-saint-brieuc-vannes",
     date: "16 juin 2026",
@@ -182,6 +186,8 @@ Quelle que soit la ville, quelques conseils pour profiter au maximum :
 Retrouvez tous les bars participants et leurs événements du soir sur Jovial.
     `,
   },
+  */
+  /*
   {
     slug: "fete-de-la-musique-rennes-2026-bars-programme",
     date: "14 juin 2026",
@@ -257,6 +263,7 @@ La ZCL (Zone à Circulation Limitée) ferme le centre-ville aux voitures dès 19
 Sur Jovial, vous retrouvez toutes ces adresses en carte interactive, avec les horaires, l'ambiance et les événements du soir en temps réel.
     `,
   },
+  */
   {
     slug: "meilleurs-bars-flechettes-rennes-2026",
     date: "9 juin 2026",
