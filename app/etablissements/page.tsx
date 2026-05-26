@@ -164,9 +164,15 @@ export default function EtablissementsPage() {
       <section className="py-20 px-6 bg-[#f8faff]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Pourquoi Jovial ?</span>
-            <h2 className="text-4xl font-bold mt-3 mb-3">Sois là où tes clients te cherchent.</h2>
-            <p className="text-gray-400 text-sm">Passe ta souris sur chaque carte pour en savoir plus →</p>
+            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+              Pourquoi Jovial ?
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+            </span>
+            <h2 className="text-5xl font-black mt-2 mb-3 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
+              Sois là où tes clients te cherchent.
+            </h2>
+            <p className="text-gray-600 text-sm">Passe ta souris sur chaque carte pour en savoir plus →</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -242,9 +248,15 @@ export default function EtablissementsPage() {
       <section className="py-20 px-6 bg-[#f8faff]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Tarifs</span>
-            <h2 className="text-3xl font-bold mt-3 mb-2">Simple et transparent</h2>
-            <p className="text-gray-500">Engagement minimum 1 an — paiement annuel.</p>
+            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+              Tarifs
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+            </span>
+            <h2 className="text-5xl font-black mt-2 mb-2 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
+              Simple et transparent
+            </h2>
+            <p className="text-gray-600">Engagement minimum 1 an — paiement annuel.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
@@ -303,8 +315,14 @@ export default function EtablissementsPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">FAQ</span>
-            <h2 className="text-3xl font-bold mt-3">Questions fréquentes</h2>
+            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+              FAQ
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+            </span>
+            <h2 className="text-5xl font-black mt-2 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
+              Questions fréquentes
+            </h2>
           </div>
           <div className="space-y-4">
             {[

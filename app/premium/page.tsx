@@ -78,8 +78,13 @@ export default function PremiumPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl font-bold">Gratuit vs Jovial+</h2>
-            <p className="text-gray-500 mt-3">Tout le monde bénéficie de Jovial gratuitement. Jovial+ va encore plus loin.</p>
+            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+              Comparatif
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+            </span>
+            <h2 className="text-5xl font-black mt-2 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">Gratuit vs Jovial+</h2>
+            <p className="text-gray-600 mt-3">Tout le monde bénéficie de Jovial gratuitement. Jovial+ va encore plus loin.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -130,7 +135,12 @@ export default function PremiumPage() {
       <section className="py-20 px-6 bg-[#f8faff]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl font-bold">Ce que tu débloques avec Jovial+</h2>
+            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+              Fonctionnalités
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+            </span>
+            <h2 className="text-5xl font-black mt-2 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">Ce que tu débloques avec Jovial+</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
