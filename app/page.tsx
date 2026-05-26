@@ -98,7 +98,7 @@ export default function HomePage() {
 
           {/* Sous-titre */}
           <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-xl">
-            Bars, concerts, fléchettes, comedy clubs… Tout ce qui se passe près de chez toi, en un coup d&apos;œil.
+            Fléchettes, pétanque, jeux de société… karaoké, concerts, tournois — tout ça près de chez toi.
           </p>
 
           {/* Boutons téléchargement */}
