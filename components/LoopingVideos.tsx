@@ -2,64 +2,36 @@
 
 import { useRef, useEffect } from "react";
 
-const VIDEOS = [
-  { src: "/hero-video.mp4", objectPosition: "center 60%" },
-  { src: "/IMG_3685.mp4",   objectPosition: "center 80%" },
-];
-
 const FADE = 800;
 
 export default function LoopingVideos({ style }: { style?: React.CSSProperties }) {
   const aRef = useRef<HTMLVideoElement>(null);
   const bRef = useRef<HTMLVideoElement>(null);
-  const stateRef = useRef({ active: 0 as 0 | 1 }); // 0 = A actif, 1 = B actif
 
   useEffect(() => {
     const a = aRef.current;
     const b = bRef.current;
     if (!a || !b) return;
 
-    const els = [a, b] as const;
-
-    const preload = (el: HTMLVideoElement, idx: number) => {
-      el.src = VIDEOS[idx].src;
-      el.style.objectPosition = VIDEOS[idx].objectPosition;
-      el.load();
+    const crossfade = (from: HTMLVideoElement, to: HTMLVideoElement) => {
+      to.currentTime = 0;
+      to.play().catch(() => {});
+      from.style.transition = `opacity ${FADE}ms ease`;
+      to.style.transition   = `opacity ${FADE}ms ease`;
+      from.style.opacity = "0";
+      to.style.opacity   = "1";
     };
 
-    // Précharge la vidéo 1 dans B
-    preload(b, 1);
+    const onAEnded = () => crossfade(a, b);
+    const onBEnded = () => crossfade(b, a);
 
-    const onEnded = (activeIdx: 0 | 1) => {
-      const nextVideoIdx = (activeIdx + 1) % VIDEOS.length;
-      const activeEl   = els[activeIdx];
-      const inactiveEl = els[activeIdx === 0 ? 1 : 0];
-      const nextActive = activeIdx === 0 ? 1 : 0;
+    a.addEventListener("ended", onAEnded);
+    b.addEventListener("ended", onBEnded);
 
-      // Lance la prochaine
-      inactiveEl.play().catch(() => {});
-
-      // Fondu croisé
-      activeEl.style.transition   = `opacity ${FADE}ms ease`;
-      inactiveEl.style.transition = `opacity ${FADE}ms ease`;
-      activeEl.style.opacity   = "0";
-      inactiveEl.style.opacity = "1";
-
-      // Écoute la fin de la nouvelle vidéo active
-      stateRef.current.active = nextActive;
-      inactiveEl.addEventListener("ended", () => onEnded(nextActive), { once: true });
-
-      // Précharge la suivante dans l'ancien actif
-      setTimeout(() => {
-        const afterNext = (nextVideoIdx + 1) % VIDEOS.length;
-        preload(activeEl, afterNext);
-      }, FADE + 300);
+    return () => {
+      a.removeEventListener("ended", onAEnded);
+      b.removeEventListener("ended", onBEnded);
     };
-
-    // Premier ended : A se termine
-    a.addEventListener("ended", () => onEnded(0), { once: true });
-
-    return () => {};
   }, []);
 
   const base: React.CSSProperties = {
@@ -73,13 +45,13 @@ export default function LoopingVideos({ style }: { style?: React.CSSProperties }
 
   return (
     <>
-      <video ref={aRef} autoPlay muted playsInline aria-hidden="true"
-        style={{ ...base, objectPosition: VIDEOS[0].objectPosition, opacity: 1 }}
-      >
-        <source src={VIDEOS[0].src} type="video/mp4" />
-      </video>
-      <video ref={bRef} muted playsInline aria-hidden="true"
-        style={{ ...base, objectPosition: VIDEOS[1].objectPosition, opacity: 0 }}
+      <video ref={aRef} autoPlay muted playsInline preload="auto" aria-hidden="true"
+        style={{ ...base, objectPosition: "center 60%", opacity: 1 }}
+        src="/hero-video.mp4"
+      />
+      <video ref={bRef} muted playsInline preload="auto" aria-hidden="true"
+        style={{ ...base, objectPosition: "center 80%", opacity: 0 }}
+        src="/IMG_3685.mp4"
       />
     </>
   );
