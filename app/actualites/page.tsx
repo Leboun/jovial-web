@@ -26,9 +26,13 @@ export default function MagazinePage() {
       {/* Hero */}
       <section className="bg-white pt-32 pb-12 px-6 border-b border-gray-100">
         <div className="max-w-5xl mx-auto">
-          <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Découvrir</span>
-          <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-4 text-gray-900">Adresses, événements, festivals.</h1>
-          <p className="text-gray-500 text-lg max-w-2xl">
+          <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+            <span className="w-6 h-px bg-[#5CB6AC]" />
+            Découvrir
+            <span className="w-6 h-px bg-[#5CB6AC]" />
+          </span>
+          <h1 className="text-5xl font-black mt-2 mb-4 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">Adresses, événements, festivals.</h1>
+          <p className="text-gray-600 text-lg max-w-2xl leading-relaxed">
             Tout ce qui se passe près de chez toi — bars, concerts, activités et festivals en Bretagne et partout en France.
           </p>
         </div>
@@ -134,7 +138,7 @@ export default function MagazinePage() {
       <section className="py-16 px-6 bg-[#2B4E93] text-white">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">
-            <p className="text-3xl font-bold mb-3">Un lieu, un événement à faire découvrir ?</p>
+            <p className="text-4xl font-black mb-3 uppercase">Un lieu, un événement à faire découvrir ?</p>
             <p className="text-white/70 text-lg">
               Bar, salle de concert, festival, activité… Vous avez quelque chose à mettre en avant ? On vous contacte.
             </p>

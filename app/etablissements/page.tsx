@@ -229,7 +229,7 @@ export default function EtablissementsPage() {
           background: "linear-gradient(to bottom, rgba(15,28,56,0.82) 0%, rgba(43,78,147,0.7) 50%, rgba(15,28,56,0.82) 100%)"
         }} />
         <div className="relative z-10 max-w-2xl mx-auto text-center text-white">
-          <p className="text-4xl md:text-5xl font-bold leading-tight mb-5">
+          <p className="text-4xl md:text-5xl font-black leading-tight mb-5 uppercase">
             Ton établissement mérite d&apos;être découvert.
           </p>
           <p className="text-white/70 text-lg mb-8">
