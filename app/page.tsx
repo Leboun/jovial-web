@@ -112,9 +112,15 @@ export default function HomePage() {
       <section id="concept" className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">L&apos;application</span>
-            <h2 className="text-4xl font-bold mt-3 mb-4">Tout ce qu&apos;il te faut pour sortir</h2>
-            <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+              L&apos;application
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+            </span>
+            <h2 className="text-5xl font-black mt-2 mb-5 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight">
+              Tout ce qu&apos;il te faut pour sortir
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
               Découvre des lieux uniques, réserve tes activités, suis les événements — tout en un.
             </p>
           </div>
@@ -160,9 +166,13 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-end justify-between mb-12">
             <div>
-              <span className="text-[#2B4E93] text-sm font-bold uppercase tracking-widest">Découvrir</span>
-              <h2 className="text-4xl font-bold mt-3">Adresses, événements, festivals.</h2>
-              <p className="text-gray-500 text-lg mt-3 max-w-xl">
+              <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+                <span className="w-6 h-px bg-[#5CB6AC]" />
+                Découvrir
+                <span className="w-6 h-px bg-[#5CB6AC]" />
+              </span>
+              <h2 className="text-5xl font-black mt-2 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight">Adresses, événements, festivals.</h2>
+              <p className="text-gray-600 text-lg mt-4 max-w-xl leading-relaxed">
                 Tout ce qui se passe près de chez toi — bars, concerts, activités et festivals en Bretagne et partout en France.
               </p>
             </div>
