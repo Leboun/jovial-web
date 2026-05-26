@@ -26,12 +26,12 @@ const TRACK = [...ITEMS, ...ITEMS];
 
 export default function ScrollingBanner() {
   return (
-    <div className="overflow-hidden bg-[#2B4E93] py-5 select-none" aria-hidden="true">
+    <div className="overflow-hidden bg-[#2B4E93] py-6 select-none" aria-hidden="true">
       <div className="flex gap-14 w-max animate-scroll-banner">
         {TRACK.map((item, i) => (
           <span
             key={i}
-            className="text-white font-bold text-base uppercase tracking-widest whitespace-nowrap flex items-center gap-14"
+            className="text-white font-black text-2xl uppercase tracking-widest whitespace-nowrap flex items-center gap-14"
           >
             {item}
             <span className="text-[#5CB6AC] text-xl">·</span>
