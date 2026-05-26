@@ -217,7 +217,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* Vidéo interlude */}
-      <section className="relative py-32 px-6 overflow-hidden">
+      <section className="relative py-32 px-6 overflow-hidden bg-[#0f1c38]">
         <LoopingVideos style={{
           position: "absolute", inset: 0,
           width: "100%", height: "100%",
