@@ -75,7 +75,7 @@ export default function HomePage() {
         <LoopingVideos style={{
           position: "absolute", inset: 0,
           width: "100%", height: "100%",
-          objectFit: "cover", objectPosition: "center 60%",
+          objectFit: "cover", objectPosition: "center 75%",
           zIndex: 0,
         }} />
 
