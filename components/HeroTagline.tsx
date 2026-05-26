@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 
@@ -23,7 +23,7 @@ export default function HeroTagline() {
     <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-white text-center">
       Les meilleurs moments commencent{" "}
       <span
-        className="text-[#F97316] transition-opacity duration-400"
+        className="text-[#5CB6AC] transition-opacity duration-400"
         style={{ opacity: visible ? 1 : 0 }}
       >
         {ENDINGS[index]}
@@ -31,3 +31,4 @@ export default function HeroTagline() {
     </h1>
   );
 }
+

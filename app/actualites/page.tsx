@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
@@ -14,7 +14,7 @@ const categories = [
   { emoji: "🗓️", label: "À venir", color: "#10B981" },
   { emoji: "🎪", label: "Festivals", color: "#F59E0B" },
   { emoji: "🎯", label: "Activités", color: "#EF4444" },
-  { emoji: "🏙️", label: "Villes", color: "#F97316" },
+  { emoji: "🏙️", label: "Villes", color: "#5CB6AC" },
 ];
 
 export default function MagazinePage() {
@@ -145,3 +145,4 @@ export default function MagazinePage() {
     </>
   );
 }
+

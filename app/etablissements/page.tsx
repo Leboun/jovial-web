@@ -1,7 +1,8 @@
-import { Check, MapPin, Bell, TrendingUp, Calendar, Users, Star } from "lucide-react";
+﻿import { Check, MapPin, Bell, TrendingUp, Calendar, Users, Star } from "lucide-react";
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import FlipCard from "@/components/FlipCard";
+import LoopingVideos from "@/components/LoopingVideos";
 
 export const metadata: Metadata = {
   title: "Jovial pour les établissements — Visibilité & outils pro",
@@ -64,7 +65,7 @@ const plans = [
     period: "/ an",
     saving: "Vous économisez 18%",
     desc: "Pour piloter ta présence, tes réservations et tes prises de parole avec les outils les plus complets.",
-    color: "border-[#F97316]",
+    color: "border-[#5CB6AC]",
     popular: false,
     features: [
       "Tout ce qui est inclus dans Rayonnement",
@@ -78,7 +79,7 @@ const plans = [
     ],
     cta: "Choisir Pro",
     ctaHref: "https://pro.getjovial.fr/establishment/offers",
-    ctaStyle: "bg-[#F97316] text-white hover:bg-orange-600",
+    ctaStyle: "bg-[#5CB6AC] text-white hover:bg-[#4aa39a]",
   },
 ];
 
@@ -120,7 +121,7 @@ export default function EtablissementsPage() {
     <>
       {/* Hero */}
       <section className="relative bg-[#2B4E93] text-white pt-32 pb-20 px-6 overflow-hidden">
-        <div className="absolute top-0 right-0 w-80 h-80 bg-[#F97316] rounded-full blur-[100px] opacity-20 -translate-y-1/2 translate-x-1/3" />
+        <div className="absolute top-0 right-0 w-80 h-80 bg-[#5CB6AC] rounded-full blur-[100px] opacity-20 -translate-y-1/2 translate-x-1/3" />
 
         <div className="absolute top-6 right-6">
           <a
@@ -137,7 +138,7 @@ export default function EtablissementsPage() {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
             Mets ton établissement{" "}
-            <span className="text-[#F97316]">sous les projecteurs</span>
+            <span className="text-[#5CB6AC]">sous les projecteurs</span>
           </h1>
           <p className="text-white/75 text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
             Rejoins Jovial et connecte ton établissement à des milliers d&apos;utilisateurs locaux qui cherchent des lieux, des activités et des événements près de chez eux.
@@ -145,7 +146,7 @@ export default function EtablissementsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://pro.getjovial.fr/establishment/offers"
-              className="inline-flex items-center justify-center gap-2 bg-[#F97316] text-white font-bold px-8 py-4 rounded-2xl hover:bg-orange-600 transition-colors text-lg"
+              className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors text-lg"
             >
               Inscrire mon établissement
             </a>
@@ -211,18 +212,12 @@ export default function EtablissementsPage() {
 
       {/* Vidéo interlude */}
       <section className="relative py-32 px-6 overflow-hidden">
-        <video
-          autoPlay muted loop playsInline
-          aria-hidden="true"
-          style={{
-            position: "absolute", inset: 0,
-            width: "100%", height: "100%",
-            objectFit: "cover", objectPosition: "center 60%",
-            zIndex: 0,
-          }}
-        >
-          <source src="/hero-video.mp4" type="video/mp4" />
-        </video>
+        <LoopingVideos style={{
+          position: "absolute", inset: 0,
+          width: "100%", height: "100%",
+          objectFit: "cover", objectPosition: "center 60%",
+          zIndex: 0,
+        }} />
         <div style={{
           position: "absolute", inset: 0, zIndex: 1,
           background: "linear-gradient(to bottom, rgba(15,28,56,0.82) 0%, rgba(43,78,147,0.7) 50%, rgba(15,28,56,0.82) 100%)"
@@ -236,7 +231,7 @@ export default function EtablissementsPage() {
           </p>
           <a
             href="https://pro.getjovial.fr/establishment/offers"
-            className="inline-flex items-center gap-2 bg-[#F97316] text-white font-bold px-8 py-4 rounded-2xl hover:bg-orange-600 transition-colors text-lg"
+            className="inline-flex items-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors text-lg"
           >
             Inscrire mon établissement →
           </a>
@@ -365,3 +360,4 @@ export default function EtablissementsPage() {
     </>
   );
 }
+

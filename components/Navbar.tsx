@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -45,7 +45,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           <a
             href="/etablissements"
-            className="text-sm font-semibold text-white bg-[#F97316] px-4 py-2 rounded-full hover:bg-[#e06010] transition-colors whitespace-nowrap"
+            className="text-sm font-semibold text-white bg-[#5CB6AC] px-4 py-2 rounded-full hover:bg-[#e06010] transition-colors whitespace-nowrap"
           >
             Inscrivez votre établissement
           </a>
@@ -99,3 +99,4 @@ export default function Navbar() {
     </header>
   );
 }
+

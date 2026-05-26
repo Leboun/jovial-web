@@ -1,4 +1,4 @@
-import { Check, Star, Users, Heart, MapPin, Zap, Lock } from "lucide-react";
+﻿import { Check, Star, Users, Heart, MapPin, Zap, Lock } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -49,7 +49,7 @@ export default function PremiumPage() {
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-[#1a1040] via-[#2B1F6B] to-[#1e3a70] text-white pt-32 pb-20 px-6 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#8B5CF6] rounded-full blur-[120px] opacity-20 -translate-y-1/2 translate-x-1/3" />
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#F97316] rounded-full blur-[100px] opacity-15 translate-y-1/3" />
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#5CB6AC] rounded-full blur-[100px] opacity-15 translate-y-1/3" />
 
         <div className="relative max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
@@ -101,7 +101,7 @@ export default function PremiumPage() {
 
             {/* Premium */}
             <div className="relative bg-gradient-to-br from-[#2B1F6B] to-[#2B4E93] rounded-2xl p-8 text-white overflow-hidden">
-              <div className="absolute top-4 right-4 bg-[#F97316] text-white text-xs font-bold px-3 py-1 rounded-full">
+              <div className="absolute top-4 right-4 bg-[#5CB6AC] text-white text-xs font-bold px-3 py-1 rounded-full">
                 7 jours offerts
               </div>
               <div className="mb-6">
@@ -142,7 +142,7 @@ export default function PremiumPage() {
               },
               {
                 icon: Users,
-                color: "#F97316",
+                color: "#5CB6AC",
                 title: "Sorties de tes amis",
                 desc: "Découvre les bars favoris de tes amis et suis leurs événements à venir.",
               },
@@ -216,3 +216,4 @@ export default function PremiumPage() {
     </>
   );
 }
+

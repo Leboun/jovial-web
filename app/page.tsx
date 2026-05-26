@@ -1,5 +1,6 @@
-import DownloadSection from "@/components/DownloadSection";
+﻿import DownloadSection from "@/components/DownloadSection";
 import HeroTagline from "@/components/HeroTagline";
+import LoopingVideos from "@/components/LoopingVideos";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Heart, Bell, Clock, Ticket } from "lucide-react";
@@ -16,7 +17,7 @@ const features = [
     icon: Bell,
     title: "Événements à venir",
     description: "Concerts, tournois, diffusions de matchs… Ne rate plus rien et ajoute les événements directement à ton agenda.",
-    color: "#F97316",
+    color: "#5CB6AC",
   },
   {
     icon: Ticket,
@@ -71,21 +72,12 @@ export default function HomePage() {
       <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden text-white">
 
         {/* Vidéo en fond plein écran */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          aria-hidden="true"
-          style={{
-            position: "absolute", inset: 0,
-            width: "100%", height: "100%",
-            objectFit: "cover", objectPosition: "center 60%",
-            zIndex: 0,
-          }}
-        >
-          <source src="/hero-video.mp4" type="video/mp4" />
-        </video>
+        <LoopingVideos style={{
+          position: "absolute", inset: 0,
+          width: "100%", height: "100%",
+          objectFit: "cover", objectPosition: "center 60%",
+          zIndex: 0,
+        }} />
 
         {/* Overlay sombre + dégradé vers le bas */}
         <div style={{
@@ -255,3 +247,4 @@ export default function HomePage() {
     </>
   );
 }
+
