@@ -1,6 +1,7 @@
 ﻿import DownloadSection from "@/components/DownloadSection";
 import HeroTagline from "@/components/HeroTagline";
 import LoopingVideos from "@/components/LoopingVideos";
+import ScrollingBanner from "@/components/ScrollingBanner";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Heart, Bell, Clock, Ticket } from "lucide-react";
@@ -150,6 +151,9 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      {/* Bandeau défilant */}
+      <ScrollingBanner />
 
       {/* Magazine */}
       <section className="py-24 px-6 bg-white">
