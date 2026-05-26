@@ -140,7 +140,7 @@ export default function MagazinePage() {
           <div className="text-center mb-10">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
               <span className="w-6 h-px bg-[#5CB6AC]" />
-              Nous rejoindre
+              Nous contacter
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
             <p className="text-4xl font-black mb-3 uppercase">Un lieu ou un événement à mettre en avant ?</p>
