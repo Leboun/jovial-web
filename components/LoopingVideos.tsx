@@ -7,63 +7,59 @@ const VIDEOS = [
   { src: "/IMG_3685.mp4",   objectPosition: "center 80%" },
 ];
 
-const FADE_DURATION = 800; // ms
+const FADE = 800;
 
 export default function LoopingVideos({ style }: { style?: React.CSSProperties }) {
   const aRef = useRef<HTMLVideoElement>(null);
   const bRef = useRef<HTMLVideoElement>(null);
-  const activeRef = useRef<0 | 1>(0); // 0 = A est actif, 1 = B est actif
-  const nextIndexRef = useRef(1);
+  const stateRef = useRef({ active: 0 as 0 | 1 }); // 0 = A actif, 1 = B actif
 
   useEffect(() => {
     const a = aRef.current;
     const b = bRef.current;
     if (!a || !b) return;
 
-    // Précharge la vidéo suivante dans l'élément inactif
-    const preloadNext = (nextIdx: number, inactiveEl: HTMLVideoElement) => {
-      const next = VIDEOS[nextIdx];
-      inactiveEl.src = next.src;
-      inactiveEl.style.objectPosition = next.objectPosition;
-      inactiveEl.load();
+    const els = [a, b] as const;
+
+    const preload = (el: HTMLVideoElement, idx: number) => {
+      el.src = VIDEOS[idx].src;
+      el.style.objectPosition = VIDEOS[idx].objectPosition;
+      el.load();
     };
 
-    // Précharge B dès le départ
-    preloadNext(1, b);
+    // Précharge la vidéo 1 dans B
+    preload(b, 1);
 
-    const handleEnded = () => {
-      const currentActive = activeRef.current;
-      const activeEl  = currentActive === 0 ? a : b;
-      const inactiveEl = currentActive === 0 ? b : a;
-      const nextIdx = nextIndexRef.current;
+    const onEnded = (activeIdx: 0 | 1) => {
+      const nextVideoIdx = (activeIdx + 1) % VIDEOS.length;
+      const activeEl   = els[activeIdx];
+      const inactiveEl = els[activeIdx === 0 ? 1 : 0];
+      const nextActive = activeIdx === 0 ? 1 : 0;
 
-      // Lance la vidéo suivante (déjà préchargée)
-      inactiveEl.style.objectPosition = VIDEOS[nextIdx].objectPosition;
+      // Lance la prochaine
       inactiveEl.play().catch(() => {});
 
-      // Fondu : inactive monte à 1, active descend à 0
-      inactiveEl.style.transition = `opacity ${FADE_DURATION}ms ease`;
-      activeEl.style.transition   = `opacity ${FADE_DURATION}ms ease`;
-      inactiveEl.style.opacity = "1";
+      // Fondu croisé
+      activeEl.style.transition   = `opacity ${FADE}ms ease`;
+      inactiveEl.style.transition = `opacity ${FADE}ms ease`;
       activeEl.style.opacity   = "0";
+      inactiveEl.style.opacity = "1";
 
-      // Bascule les refs
-      activeRef.current = currentActive === 0 ? 1 : 0;
-      const newNextIdx = (nextIdx + 1) % VIDEOS.length;
-      nextIndexRef.current = newNextIdx;
+      // Écoute la fin de la nouvelle vidéo active
+      stateRef.current.active = nextActive;
+      inactiveEl.addEventListener("ended", () => onEnded(nextActive), { once: true });
 
-      // Précharge la vidéo d'après dans l'ancien actif (maintenant inactif)
+      // Précharge la suivante dans l'ancien actif
       setTimeout(() => {
-        preloadNext(newNextIdx, activeEl);
-      }, FADE_DURATION + 200);
+        const afterNext = (nextVideoIdx + 1) % VIDEOS.length;
+        preload(activeEl, afterNext);
+      }, FADE + 300);
     };
 
-    a.addEventListener("ended", handleEnded);
-    b.addEventListener("ended", handleEnded);
-    return () => {
-      a.removeEventListener("ended", handleEnded);
-      b.removeEventListener("ended", handleEnded);
-    };
+    // Premier ended : A se termine
+    a.addEventListener("ended", () => onEnded(0), { once: true });
+
+    return () => {};
   }, []);
 
   const base: React.CSSProperties = {
@@ -77,21 +73,12 @@ export default function LoopingVideos({ style }: { style?: React.CSSProperties }
 
   return (
     <>
-      <video
-        ref={aRef}
-        autoPlay
-        muted
-        playsInline
-        aria-hidden="true"
+      <video ref={aRef} autoPlay muted playsInline aria-hidden="true"
         style={{ ...base, objectPosition: VIDEOS[0].objectPosition, opacity: 1 }}
       >
         <source src={VIDEOS[0].src} type="video/mp4" />
       </video>
-      <video
-        ref={bRef}
-        muted
-        playsInline
-        aria-hidden="true"
+      <video ref={bRef} muted playsInline aria-hidden="true"
         style={{ ...base, objectPosition: VIDEOS[1].objectPosition, opacity: 0 }}
       />
     </>
