@@ -23,7 +23,7 @@ html {
 }
 
 .animate-scroll-banner {
-  animation: scroll-banner 40s linear infinite;
+  animation: scroll-banner 80s linear infinite;
 }
 
 .animate-scroll-banner:hover {
