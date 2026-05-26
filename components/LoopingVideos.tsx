@@ -2,7 +2,10 @@
 
 import { useRef, useEffect } from "react";
 
-const VIDEOS = ["/hero-video.mp4", "/IMG_3685.mp4"];
+const VIDEOS = [
+  { src: "/hero-video.mp4", objectPosition: "center 60%" },
+  { src: "/IMG_3685.mp4",   objectPosition: "center 80%" },
+];
 
 export default function LoopingVideos({ style }: { style?: React.CSSProperties }) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -14,7 +17,9 @@ export default function LoopingVideos({ style }: { style?: React.CSSProperties }
 
     const handleEnded = () => {
       indexRef.current = (indexRef.current + 1) % VIDEOS.length;
-      video.src = VIDEOS[indexRef.current];
+      const next = VIDEOS[indexRef.current];
+      video.src = next.src;
+      video.style.objectPosition = next.objectPosition;
       video.play().catch(() => {});
     };
 
@@ -29,9 +34,9 @@ export default function LoopingVideos({ style }: { style?: React.CSSProperties }
       muted
       playsInline
       aria-hidden="true"
-      style={style}
+      style={{ ...style, objectPosition: VIDEOS[0].objectPosition }}
     >
-      <source src={VIDEOS[0]} type="video/mp4" />
+      <source src={VIDEOS[0].src} type="video/mp4" />
     </video>
   );
 }
