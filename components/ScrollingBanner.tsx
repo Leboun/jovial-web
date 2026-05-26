@@ -22,18 +22,12 @@ const ITEMS = [
   "✨ Et bien d'autres…",
 ];
 
-// On duplique pour boucle infinie fluide
 const TRACK = [...ITEMS, ...ITEMS];
 
 export default function ScrollingBanner() {
   return (
-    <div
-      className="overflow-hidden bg-[#2B4E93] py-4 select-none"
-      aria-hidden="true"
-    >
-      <div
-        className="flex gap-10 w-max animate-scroll"
-      >
+    <div className="overflow-hidden bg-[#2B4E93] py-4 select-none" aria-hidden="true">
+      <div className="flex gap-10 w-max animate-scroll-banner">
         {TRACK.map((item, i) => (
           <span
             key={i}
@@ -44,19 +38,6 @@ export default function ScrollingBanner() {
           </span>
         ))}
       </div>
-
-      <style jsx>{`
-        @keyframes scroll {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-scroll {
-          animation: scroll 40s linear infinite;
-        }
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
     </div>
   );
 }
