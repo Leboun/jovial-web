@@ -224,7 +224,7 @@ export default function HomePage() {
       {/* CTA final */}
       <section className="py-24 px-6 bg-[#2B4E93] text-white text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-black mb-4 uppercase">Ce soir, qu&apos;est-ce qu&apos;on fait ?</h2>
+          <h2 className="font-black mb-4 uppercase" style={{ fontSize: "clamp(1.8rem, 5vw, 3.5rem)" }}>Ce soir, qu&apos;est-ce qu&apos;on fait ?</h2>
           <p className="text-white/70 text-lg mb-12 max-w-xl mx-auto">
             Concerts, fléchettes, terrasses, comedy clubs — tout ce qui se passe près de chez toi, maintenant.
           </p>
