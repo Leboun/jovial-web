@@ -138,9 +138,14 @@ export default function MagazinePage() {
       <section className="py-16 px-6 bg-[#2B4E93] text-white">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">
-            <p className="text-4xl font-black mb-3 uppercase">Un lieu, un événement à faire découvrir ?</p>
+            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+              Nous rejoindre
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+            </span>
+            <p className="text-4xl font-black mb-3 uppercase">Un lieu ou un événement à mettre en avant ?</p>
             <p className="text-white/70 text-lg">
-              Bar, salle de concert, festival, activité… Vous avez quelque chose à mettre en avant ? On vous contacte.
+              Tu gères un établissement, organises des événements ou proposes des activités ? Dis-nous tout, on te recontacte.
             </p>
           </div>
           <ContactForm />
