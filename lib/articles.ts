@@ -14,6 +14,123 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: "finale-ligue-des-champions-2026-bars-bretagne",
+    date: "27 mai 2026",
+    tag: "Adresses",
+    tagColor: "#2B4E93",
+    tagEmoji: "📍",
+    title: "Finale de la Ligue des Champions : les meilleurs bars pour la vivre en Bretagne",
+    excerpt:
+      "Rennes, Saint-Malo, Brest, Quimper, Morlaix, Lorient, Vannes, Saint-Brieuc, Lannion, Guingamp — les meilleures adresses de Bretagne pour vibrer devant la finale, département par département.",
+    readTime: "7 min",
+    author: "Équipe Jovial",
+    city: "Bretagne",
+    content: `
+## La finale, c'est ce soir — et ça se mérite
+
+Regarder la finale de la Ligue des Champions chez soi, c'est bien. La vivre entouré de 200 personnes qui explosent à chaque but, c'est autre chose. Pour ceux qui veulent l'expérience complète, voici les meilleures adresses en Bretagne, département par département — de Rennes à Brest, de Lorient à Dinan.
+
+---
+
+## Ille-et-Vilaine (35)
+
+### BDS — Bar des Sports · Rennes
+L'enseigne co-fondée par l'ancien joueur du Stade Rennais Romain Danzé est devenue une institution du sport à Rennes. Plusieurs grands écrans à chaque étage, 7j/7 de 10h à minuit. Deux autres adresses dans l'agglo : Pacé et Vern-sur-Seiche. **bds-restaurant.com**
+
+### Hall's Beer · Rennes
+Grand bar en bois et murs en pierre, ambiance rock et internationale. La salle du fond est équipée d'un écran géant (1,5 × 2 m) avec son stéréo HD — et peut afficher jusqu'à 3 matchs simultanément. Terrasse fumeurs sur la rue Saint-Denis.
+
+### Club Citron · Rennes (proche du Roazhon Park)
+Décor original avec piste d'athlétisme peinte au sol et écrans géants sur tous les murs. Spacieux, pensé pour les grandes soirées sportives. Foot, rugby, basket, MMA — ici on ne manque aucun temps fort du sport européen.
+
+### Le Dock · Saint-Malo (41 quai Duguay-Trouin)
+Bar-restaurant dans un ancien entrepôt reconverti face au port. 5 écrans répartis dans la salle et un écran géant en terrasse pour suivre le match avec vue sur les remparts. L'une des meilleures ambiances sportives de l'Ille-et-Vilaine. **@ledock_saintmalo**
+
+### BDS Saint-Malo · Saint-Malo
+La franchise BDS est aussi présente à Saint-Malo. Même formule qu'à Rennes : écrans, cuisine continue, fléchettes et baby-foot — ouvert les soirs de match jusqu'à minuit. **bds-restaurant.com**
+
+### Le Cactus · Fougères (51 boulevard Jean Jaurès)
+Bar convivial de 130 places, référencé sur Allomatch pour ses retransmissions sportives régulières. Soirées à thèmes, fléchettes et bières pression complètent l'ambiance. La bonne adresse du nord Ille-et-Vilaine pour les soirs de grande compétition.
+
+### O'Shannon Pub · Redon (62 Grande Rue)
+Pub irlandais ancré au cœur du vieux port de Redon, au carrefour du Morbihan, de la Loire-Atlantique et de l'Ille-et-Vilaine. Diffusion des événements sportifs, ambiance chaleureuse et sélection de bières. L'adresse de référence pour les supporters du pays de Redon.
+
+---
+
+## Finistère (29)
+
+### Klub House · Brest (Kergaradec)
+Le sport bar de Brest par excellence. Écran principal de 10 m² avec gradins façon stade, 20+ bières pression, deux terrasses dont une sur le toit. Conçu pour les grandes soirées européennes. **klubhouse.fr**
+
+### Pub Hamilton · Brest (2 rue de la 2ème DB)
+Référencé par le Stade Brestois lui-même parmi les adresses incontournables. Billard, ambiance pub authentique, retransmissions régulières. Un classique du centre brestois. **Tél. 02 98 43 32 32**
+
+### Le KEMP'5 · Quimper
+Complexe soccer indoor avec bar lounge, restauration et 6 écrans pour les grandes compétitions. Le KEMP'5 diffuse la Ligue des Champions dans un cadre pensé pour les passionnés de sport.
+
+### Bar des Sports · Morlaix (68 rue Ploujean)
+L'adresse de référence pour le sport à Morlaix. Atmosphère de bar de quartier, clientèle fidèle et grands écrans pour ne rien rater des soirées européennes. La valeur sûre du nord Finistère.
+
+### BlackRock Irish Pub · Landerneau
+Pub irlandais authentique au cœur de Landerneau. Bières irlandaises et bretonnes à la pression, retransmissions régulières des matchs de rugby et de football dont la Ligue des Champions. La bonne adresse du Pays de Landerneau.
+
+### V and B · Concarneau
+Bar à bières avec retransmissions sportives et grande sélection de bières artisanales. Une option sérieuse pour les supporters du sud Finistère qui veulent éviter la route jusqu'à Quimper.
+
+---
+
+## Morbihan (56)
+
+### Tavarn Ar Roue Morvan · Lorient
+L'adresse incontournable de la nuit lorientaise. Taverne bretonne aux murs chargés d'histoire, bières bretonnes à la pression. Le soir d'une finale, la salle se remplit vite — arrivez 30 minutes avant le coup d'envoi.
+
+### Le Shamrock · Lorient (29 place Jules-Ferry)
+Pub irlandais en plein cœur de Lorient. Grand écran, ambiance festive garantie pour les soirées européennes. Le point de ralliement historique des supporters lorientais pour les grands soirs de Ligue des Champions.
+
+### Le Bar d'En Face (BDF) · Lorient
+Juste en face du Tavarn Ar Roue Morvan, le BDF prolonge la soirée avec ses écrans, ses sessions live et ses DJ sets en after. Un combo parfait pour les nuits de finale qui se prolongent.
+
+### Le Bar des Sports · Vannes
+Recommandé par l'Office de Tourisme du Golfe du Morbihan. Ambiance bar de supporters, écrans bien positionnés, service rapide même quand la salle est pleine. La référence sportive vannetaise.
+
+### Kilkenny's Pub · Vannes
+Pub irlandais bien connu des Vannetais pour ses soirées sportives. Bières pression, écrans dispersés dans la salle et ambiance garantie pour les compétitions européennes.
+
+### Dartrad · Pontivy (14 rue Albert de Mun)
+Bar à fléchettes connectées au cœur de Pontivy, présent sur Facebook et Instagram. Ambiance décontractée, clientèle locale fidèle — et les grands matchs passent sur les écrans du bar. L'adresse à connaître dans le centre Morbihan. **@dartrad_bar**
+
+---
+
+## Côtes-d'Armor (22)
+
+### BDS Saint-Brieuc · Saint-Brieuc (quartier Brézillet)
+Le plus grand sport bar des Côtes-d'Armor. Même concept qu'à Rennes : 7j/7, grande terrasse extérieure, fléchettes, baby-foot, pétanque et écrans pour ne rien rater. Cuisine servie en continu jusqu'à 22h30 les soirs de match. **bds-restaurant.com**
+
+### Bar des Sports · Guingamp (55 rue Notre Dame)
+Institution guingampaise, fidèle à son nom. Atmosphère authentique où les habitués se retrouvent à chaque grande soirée européenne. La référence foot du secteur de Guingamp.
+
+### Campbell's Pub · Guingamp (14 place Saint-Michel)
+Pub avec grand écran en plein centre de Guingamp. Cadre convivial, bières pression, ambiance qui monte forcément quand la place est pleine un soir de finale.
+
+### Pub Le Zinc · Lannion (46 rue de Tréguier)
+Bar lannionnais référencé sur Allomatch pour ses retransmissions foot. Fléchettes, tournois de poker et ambiance locale — l'adresse de quartier où les supporters se retrouvent pour les grands soirs.
+
+### Bar Le Duclos · Dinan (20 place Duclos)
+Installé en plein cœur de la vieille ville de Dinan, Le Duclos est LA référence locale pour suivre le foot et le rugby. Terrasse sur la place, clientèle fidèle, et une atmosphère qui monte d'un cran les soirs de compétition européenne. **Tél. 02 96 39 95 74**
+
+### L'Arc de Triomphe · Paimpol (7 Hent Kervig)
+Bar sportif de Paimpol avec retransmissions des grands événements. Ambiance locale, clientèle fidèle, écran pour ne rien manquer. La bonne adresse du Goëlo pour vibrer en groupe ce soir.
+
+---
+
+## Trouver votre spot avec Jovial
+
+Vous êtes en déplacement en Bretagne ou vous cherchez l'adresse la plus proche ? Avec **Jovial**, géolocalisation en main, trouvez en quelques secondes les bars et établissements autour de vous qui diffusent des événements sportifs. Ambiance, animations, événements du soir — tout est sur la carte.
+
+Bonne finale. Et que le meilleur gagne.
+    `,
+  },
+  {
     slug: "play-rennes-bar-flechettes-interactives",
     date: "25 mai 2026",
     tag: "Adresses",
@@ -396,123 +513,6 @@ Avec sa programmation éclectique, son ambiance urbaine et ses nombreuses animat
 Que vous soyez amateur de concerts, de gastronomie, de soirées festives ou simplement à la recherche d'une bonne ambiance pour le week-end, Saint-Brieuc promet une expérience unique du 22 au 24 mai 2026.
 
 Et pour ne rien manquer des meilleures adresses, soirées et animations pendant le festival, gardez un œil sur Jovial.
-    `,
-  },
-  {
-    slug: "finale-ligue-des-champions-2026-bars-bretagne",
-    date: "27 mai 2026",
-    tag: "Adresses",
-    tagColor: "#2B4E93",
-    tagEmoji: "📍",
-    title: "Finale de la Ligue des Champions : les meilleurs bars pour la vivre en Bretagne",
-    excerpt:
-      "Rennes, Saint-Malo, Brest, Quimper, Morlaix, Lorient, Vannes, Saint-Brieuc, Lannion, Guingamp — les meilleures adresses de Bretagne pour vibrer devant la finale, département par département.",
-    readTime: "7 min",
-    author: "Équipe Jovial",
-    city: "Bretagne",
-    content: `
-## La finale, c'est ce soir — et ça se mérite
-
-Regarder la finale de la Ligue des Champions chez soi, c'est bien. La vivre entouré de 200 personnes qui explosent à chaque but, c'est autre chose. Pour ceux qui veulent l'expérience complète, voici les meilleures adresses en Bretagne, département par département — de Rennes à Brest, de Lorient à Dinan.
-
----
-
-## Ille-et-Vilaine (35)
-
-### BDS — Bar des Sports · Rennes
-L'enseigne co-fondée par l'ancien joueur du Stade Rennais Romain Danzé est devenue une institution du sport à Rennes. Plusieurs grands écrans à chaque étage, 7j/7 de 10h à minuit. Deux autres adresses dans l'agglo : Pacé et Vern-sur-Seiche. **bds-restaurant.com**
-
-### Hall's Beer · Rennes
-Grand bar en bois et murs en pierre, ambiance rock et internationale. La salle du fond est équipée d'un écran géant (1,5 × 2 m) avec son stéréo HD — et peut afficher jusqu'à 3 matchs simultanément. Terrasse fumeurs sur la rue Saint-Denis.
-
-### Club Citron · Rennes (proche du Roazhon Park)
-Décor original avec piste d'athlétisme peinte au sol et écrans géants sur tous les murs. Spacieux, pensé pour les grandes soirées sportives. Foot, rugby, basket, MMA — ici on ne manque aucun temps fort du sport européen.
-
-### Le Dock · Saint-Malo (41 quai Duguay-Trouin)
-Bar-restaurant dans un ancien entrepôt reconverti face au port. 5 écrans répartis dans la salle et un écran géant en terrasse pour suivre le match avec vue sur les remparts. L'une des meilleures ambiances sportives de l'Ille-et-Vilaine. **@ledock_saintmalo**
-
-### BDS Saint-Malo · Saint-Malo
-La franchise BDS est aussi présente à Saint-Malo. Même formule qu'à Rennes : écrans, cuisine continue, fléchettes et baby-foot — ouvert les soirs de match jusqu'à minuit. **bds-restaurant.com**
-
-### Le Cactus · Fougères (51 boulevard Jean Jaurès)
-Bar convivial de 130 places, référencé sur Allomatch pour ses retransmissions sportives régulières. Soirées à thèmes, fléchettes et bières pression complètent l'ambiance. La bonne adresse du nord Ille-et-Vilaine pour les soirs de grande compétition.
-
-### O'Shannon Pub · Redon (62 Grande Rue)
-Pub irlandais ancré au cœur du vieux port de Redon, au carrefour du Morbihan, de la Loire-Atlantique et de l'Ille-et-Vilaine. Diffusion des événements sportifs, ambiance chaleureuse et sélection de bières. L'adresse de référence pour les supporters du pays de Redon.
-
----
-
-## Finistère (29)
-
-### Klub House · Brest (Kergaradec)
-Le sport bar de Brest par excellence. Écran principal de 10 m² avec gradins façon stade, 20+ bières pression, deux terrasses dont une sur le toit. Conçu pour les grandes soirées européennes. **klubhouse.fr**
-
-### Pub Hamilton · Brest (2 rue de la 2ème DB)
-Référencé par le Stade Brestois lui-même parmi les adresses incontournables. Billard, ambiance pub authentique, retransmissions régulières. Un classique du centre brestois. **Tél. 02 98 43 32 32**
-
-### Le KEMP'5 · Quimper
-Complexe soccer indoor avec bar lounge, restauration et 6 écrans pour les grandes compétitions. Le KEMP'5 diffuse la Ligue des Champions dans un cadre pensé pour les passionnés de sport.
-
-### Bar des Sports · Morlaix (68 rue Ploujean)
-L'adresse de référence pour le sport à Morlaix. Atmosphère de bar de quartier, clientèle fidèle et grands écrans pour ne rien rater des soirées européennes. La valeur sûre du nord Finistère.
-
-### BlackRock Irish Pub · Landerneau
-Pub irlandais authentique au cœur de Landerneau. Bières irlandaises et bretonnes à la pression, retransmissions régulières des matchs de rugby et de football dont la Ligue des Champions. La bonne adresse du Pays de Landerneau.
-
-### V and B · Concarneau
-Bar à bières avec retransmissions sportives et grande sélection de bières artisanales. Une option sérieuse pour les supporters du sud Finistère qui veulent éviter la route jusqu'à Quimper.
-
----
-
-## Morbihan (56)
-
-### Tavarn Ar Roue Morvan · Lorient
-L'adresse incontournable de la nuit lorientaise. Taverne bretonne aux murs chargés d'histoire, bières bretonnes à la pression. Le soir d'une finale, la salle se remplit vite — arrivez 30 minutes avant le coup d'envoi.
-
-### Le Shamrock · Lorient (29 place Jules-Ferry)
-Pub irlandais en plein cœur de Lorient. Grand écran, ambiance festive garantie pour les soirées européennes. Le point de ralliement historique des supporters lorientais pour les grands soirs de Ligue des Champions.
-
-### Le Bar d'En Face (BDF) · Lorient
-Juste en face du Tavarn Ar Roue Morvan, le BDF prolonge la soirée avec ses écrans, ses sessions live et ses DJ sets en after. Un combo parfait pour les nuits de finale qui se prolongent.
-
-### Le Bar des Sports · Vannes
-Recommandé par l'Office de Tourisme du Golfe du Morbihan. Ambiance bar de supporters, écrans bien positionnés, service rapide même quand la salle est pleine. La référence sportive vannetaise.
-
-### Kilkenny's Pub · Vannes
-Pub irlandais bien connu des Vannetais pour ses soirées sportives. Bières pression, écrans dispersés dans la salle et ambiance garantie pour les compétitions européennes.
-
-### Dartrad · Pontivy (14 rue Albert de Mun)
-Bar à fléchettes connectées au cœur de Pontivy, présent sur Facebook et Instagram. Ambiance décontractée, clientèle locale fidèle — et les grands matchs passent sur les écrans du bar. L'adresse à connaître dans le centre Morbihan. **@dartrad_bar**
-
----
-
-## Côtes-d'Armor (22)
-
-### BDS Saint-Brieuc · Saint-Brieuc (quartier Brézillet)
-Le plus grand sport bar des Côtes-d'Armor. Même concept qu'à Rennes : 7j/7, grande terrasse extérieure, fléchettes, baby-foot, pétanque et écrans pour ne rien rater. Cuisine servie en continu jusqu'à 22h30 les soirs de match. **bds-restaurant.com**
-
-### Bar des Sports · Guingamp (55 rue Notre Dame)
-Institution guingampaise, fidèle à son nom. Atmosphère authentique où les habitués se retrouvent à chaque grande soirée européenne. La référence foot du secteur de Guingamp.
-
-### Campbell's Pub · Guingamp (14 place Saint-Michel)
-Pub avec grand écran en plein centre de Guingamp. Cadre convivial, bières pression, ambiance qui monte forcément quand la place est pleine un soir de finale.
-
-### Pub Le Zinc · Lannion (46 rue de Tréguier)
-Bar lannionnais référencé sur Allomatch pour ses retransmissions foot. Fléchettes, tournois de poker et ambiance locale — l'adresse de quartier où les supporters se retrouvent pour les grands soirs.
-
-### Bar Le Duclos · Dinan (20 place Duclos)
-Installé en plein cœur de la vieille ville de Dinan, Le Duclos est LA référence locale pour suivre le foot et le rugby. Terrasse sur la place, clientèle fidèle, et une atmosphère qui monte d'un cran les soirs de compétition européenne. **Tél. 02 96 39 95 74**
-
-### L'Arc de Triomphe · Paimpol (7 Hent Kervig)
-Bar sportif de Paimpol avec retransmissions des grands événements. Ambiance locale, clientèle fidèle, écran pour ne rien manquer. La bonne adresse du Goëlo pour vibrer en groupe ce soir.
-
----
-
-## Trouver votre spot avec Jovial
-
-Vous êtes en déplacement en Bretagne ou vous cherchez l'adresse la plus proche ? Avec **Jovial**, géolocalisation en main, trouvez en quelques secondes les bars et établissements autour de vous qui diffusent des événements sportifs. Ambiance, animations, événements du soir — tout est sur la carte.
-
-Bonne finale. Et que le meilleur gagne.
     `,
   },
 ];
