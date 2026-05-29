@@ -497,11 +497,8 @@ Institution guingampaise, fidèle à son nom. Atmosphère authentique où les ha
 ### Campbell's Pub · Guingamp (14 place Saint-Michel)
 Pub avec grand écran en plein centre de Guingamp. Cadre convivial, bières pression, ambiance qui monte forcément quand la place est pleine un soir de finale.
 
-### Au Bureau · Lannion (32 avenue du Général de Gaulle)
-Brasserie-pub moderne avec écran géant pour les retransmissions sportives. Cuisine complète servie en soirée — idéal pour dîner et regarder le match dans le même lieu.
-
 ### Pub Le Zinc · Lannion (46 rue de Tréguier)
-Deuxième bonne adresse lannionnaise, référencée sur Allomatch pour ses retransmissions foot. Bar de quartier avec fléchettes et tournois de poker — l'ambiance y est souvent plus locale et spontanée.
+Bar lannionnais référencé sur Allomatch pour ses retransmissions foot. Fléchettes, tournois de poker et ambiance locale — l'adresse de quartier où les supporters se retrouvent pour les grands soirs.
 
 ### Bar Le Duclos · Dinan (20 place Duclos)
 Installé en plein cœur de la vieille ville de Dinan, Le Duclos est LA référence locale pour suivre le foot et le rugby. Terrasse sur la place, clientèle fidèle, et une atmosphère qui monte d'un cran les soirs de compétition européenne. **Tél. 02 96 39 95 74**
