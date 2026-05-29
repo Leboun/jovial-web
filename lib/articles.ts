@@ -97,9 +97,6 @@ Juste en face du Tavarn Ar Roue Morvan, le BDF assure le relais avec ses propres
 ### Le Bar des Sports · Vannes
 Recommandé par l'Office de Tourisme du Golfe du Morbihan, c'est la référence sportive vannetaise. Écrans bien positionnés, service efficace même à salle comble, et une clientèle qui connaît son football. Pour une finale PSG-Arsenal, l'endroit sera plein — réservez ou arrivez tôt.
 
-### Kilkenny's Pub · Vannes
-Autre valeur sûre vannetaise pour les soirées sportives. Atmosphère de pub irlandais, bières pression, écrans répartis dans la salle — le Kilkenny's assemble une clientèle fidèle et animée pour ce type d'événement. Une bonne option si Le Bar des Sports affiche complet.
-
 ### Dartrad · Pontivy (14 rue Albert de Mun)
 Bar à fléchettes connectées au cœur de Pontivy, avec une communauté locale solide sur les réseaux sociaux. Les grands matchs passent sur les écrans du bar — et l'ambiance fléchettes avant PSG-Arsenal, c'est une façon originale de chauffer la salle avant 18h. **@dartrad_bar**
 
