@@ -413,7 +413,7 @@ Et pour ne rien manquer des meilleures adresses, soirées et animations pendant 
     content: `
 ## La finale, c'est ce soir — et ça se mérite
 
-Regarder la finale de la Ligue des Champions chez soi, c'est bien. La vivre entouré de 200 personnes qui explosent à chaque but, c'est autre chose. Pour ceux qui veulent l'expérience complète, voici les meilleures adresses en Bretagne, département par département — de Rennes à Brest, de Lorient à Lannion.
+Regarder la finale de la Ligue des Champions chez soi, c'est bien. La vivre entouré de 200 personnes qui explosent à chaque but, c'est autre chose. Pour ceux qui veulent l'expérience complète, voici les meilleures adresses en Bretagne, département par département — de Rennes à Brest, de Lorient à Dinan.
 
 ---
 
@@ -433,6 +433,12 @@ Bar-restaurant dans un ancien entrepôt reconverti face au port. 5 écrans répa
 
 ### BDS Saint-Malo · Saint-Malo
 La franchise BDS est aussi présente à Saint-Malo. Même formule qu'à Rennes : écrans, cuisine continue, fléchettes et baby-foot — ouvert les soirs de match jusqu'à minuit. **bds-restaurant.com**
+
+### Le Cactus · Fougères (51 boulevard Jean Jaurès)
+Bar convivial de 130 places, référencé sur Allomatch pour ses retransmissions sportives régulières. Soirées à thèmes, fléchettes et bières pression complètent l'ambiance. La bonne adresse du nord Ille-et-Vilaine pour les soirs de grande compétition.
+
+### O'Shannon Pub · Redon (62 Grande Rue)
+Pub irlandais ancré au cœur du vieux port de Redon, au carrefour du Morbihan, de la Loire-Atlantique et de l'Ille-et-Vilaine. Diffusion des événements sportifs, ambiance chaleureuse et sélection de bières. L'adresse de référence pour les supporters du pays de Redon.
 
 ---
 
@@ -475,8 +481,8 @@ Recommandé par l'Office de Tourisme du Golfe du Morbihan. Ambiance bar de suppo
 ### Kilkenny's Pub · Vannes
 Pub irlandais bien connu des Vannetais pour ses soirées sportives. Bières pression, écrans dispersés dans la salle et ambiance garantie pour les compétitions européennes.
 
-### Le Bar des Sports Au Taquet · Bignan (5 place de Chouannerie)
-Pour ceux qui sont entre Vannes et Pontivy, Le Taquet est l'adresse du centre Morbihan. Multiple écrans, atmosphère animée et clientèle locale passionnée. Idéal pour vibrer en groupe hors des grandes villes.
+### Dartrad · Pontivy (14 rue Albert de Mun)
+Bar à fléchettes connectées au cœur de Pontivy, présent sur Facebook et Instagram. Ambiance décontractée, clientèle locale fidèle — et les grands matchs passent sur les écrans du bar. L'adresse à connaître dans le centre Morbihan. **@dartrad_bar**
 
 ---
 
@@ -492,7 +498,13 @@ Institution guingampaise, fidèle à son nom. Atmosphère authentique où les ha
 Pub avec grand écran en plein centre de Guingamp. Cadre convivial, bières pression, ambiance qui monte forcément quand la place est pleine un soir de finale.
 
 ### Au Bureau · Lannion (32 avenue du Général de Gaulle)
-Brasserie-pub moderne avec écran géant pour les retransmissions sportives. Cuisine complète servie en soirée — idéal pour dîner et regarder le match dans le même lieu, à Lannion.
+Brasserie-pub moderne avec écran géant pour les retransmissions sportives. Cuisine complète servie en soirée — idéal pour dîner et regarder le match dans le même lieu.
+
+### Pub Le Zinc · Lannion (46 rue de Tréguier)
+Deuxième bonne adresse lannionnaise, référencée sur Allomatch pour ses retransmissions foot. Bar de quartier avec fléchettes et tournois de poker — l'ambiance y est souvent plus locale et spontanée.
+
+### Bar Le Duclos · Dinan (20 place Duclos)
+Installé en plein cœur de la vieille ville de Dinan, Le Duclos est LA référence locale pour suivre le foot et le rugby. Terrasse sur la place, clientèle fidèle, et une atmosphère qui monte d'un cran les soirs de compétition européenne. **Tél. 02 96 39 95 74**
 
 ### L'Arc de Triomphe · Paimpol (7 Hent Kervig)
 Bar sportif de Paimpol avec retransmissions des grands événements. Ambiance locale, clientèle fidèle, écran pour ne rien manquer. La bonne adresse du Goëlo pour vibrer en groupe ce soir.
