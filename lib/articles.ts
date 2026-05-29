@@ -26,108 +26,118 @@ export const articles: Article[] = [
     author: "Équipe Jovial",
     city: "Bretagne",
     content: `
-## La finale, c'est ce soir — et ça se mérite
+## PSG - Arsenal. Budapest. Samedi 31 mai à 18h.
 
-Regarder la finale de la Ligue des Champions chez soi, c'est bien. La vivre entouré de 200 personnes qui explosent à chaque but, c'est autre chose. Pour ceux qui veulent l'expérience complète, voici les meilleures adresses en Bretagne, département par département — de Rennes à Brest, de Lorient à Dinan.
+Vingt ans. C'est le temps qu'il a fallu à Arsenal pour retrouver une finale de Ligue des Champions. En face, le PSG, tenant du titre, qui rêve de doubler la mise. À Budapest, au Puskás Aréna, l'une des affiches les plus attendues de la décennie va se jouer devant 67 000 spectateurs — et des millions de regards rivés sur un écran.
+
+Si vous n'êtes pas dans les tribunes hongroises, autant être dans la meilleure salle possible. Voici les adresses en Bretagne où l'ambiance sera à la hauteur du match.
+
+**Coup d'envoi : 18h00. Prévoyez d'arriver au moins 30 minutes avant — les meilleures places partent vite les soirs de finale.**
 
 ---
 
 ## Ille-et-Vilaine (35)
 
 ### BDS — Bar des Sports · Rennes
-L'enseigne co-fondée par l'ancien joueur du Stade Rennais Romain Danzé est devenue une institution du sport à Rennes. Plusieurs grands écrans à chaque étage, 7j/7 de 10h à minuit. Deux autres adresses dans l'agglo : Pacé et Vern-sur-Seiche. **bds-restaurant.com**
+Fondé notamment par l'ancien joueur du Stade Rennais Romain Danzé, le BDS est devenu en quelques années LA référence du sport à Rennes. Plusieurs grands écrans par étage, cuisine servie en continu, ambiance garantie dès le coup d'envoi. Ouvert 7j/7 de 10h à minuit — et avec trois adresses dans l'agglo (Rennes centre, Pacé, Vern-sur-Seiche), pas d'excuse pour rater la finale. **bds-restaurant.com**
 
 ### Hall's Beer · Rennes
-Grand bar en bois et murs en pierre, ambiance rock et internationale. La salle du fond est équipée d'un écran géant (1,5 × 2 m) avec son stéréo HD — et peut afficher jusqu'à 3 matchs simultanément. Terrasse fumeurs sur la rue Saint-Denis.
+Un grand bar en bois et pierres brutes, ambiance rock, et dans la salle du fond : un écran géant de 1,5 × 2 m avec son stéréo HD. La particularité ? Trois matchs peuvent être diffusés simultanément — utile si vous avez des dissidents Arsenal dans le groupe. Terrasse sur la rue Saint-Denis pour l'avant-match.
 
 ### Club Citron · Rennes (proche du Roazhon Park)
-Décor original avec piste d'athlétisme peinte au sol et écrans géants sur tous les murs. Spacieux, pensé pour les grandes soirées sportives. Foot, rugby, basket, MMA — ici on ne manque aucun temps fort du sport européen.
+Piste d'athlétisme peinte au sol, écrans géants sur tous les murs, salle spacieuse — le Club Citron est fait pour les grands événements sportifs. L'adresse idéale si vous êtes un groupe nombreux et que vous voulez de la place pour célébrer (ou pleurer) dans de bonnes conditions.
 
 ### Le Dock · Saint-Malo (41 quai Duguay-Trouin)
-Bar-restaurant dans un ancien entrepôt reconverti face au port. 5 écrans répartis dans la salle et un écran géant en terrasse pour suivre le match avec vue sur les remparts. L'une des meilleures ambiances sportives de l'Ille-et-Vilaine. **@ledock_saintmalo**
+Un entrepôt portuaire reconverti en bar face aux remparts de Saint-Malo. Cinq écrans dans la salle, un écran géant en terrasse pour regarder PSG-Arsenal avec la mer en toile de fond. L'une des expériences visuelles les plus uniques de toute la région pour un soir de finale. **@ledock_saintmalo**
 
 ### BDS Saint-Malo · Saint-Malo
-La franchise BDS est aussi présente à Saint-Malo. Même formule qu'à Rennes : écrans, cuisine continue, fléchettes et baby-foot — ouvert les soirs de match jusqu'à minuit. **bds-restaurant.com**
+La franchise BDS a aussi posé ses valises à Saint-Malo. Même ADN qu'à Rennes : grands écrans, cuisine en continu, baby-foot et fléchettes pour les impatients d'avant-match. Ouvert jusqu'à minuit les soirs de compétition. **bds-restaurant.com**
 
 ### Le Cactus · Fougères (51 boulevard Jean Jaurès)
-Bar convivial de 130 places, référencé sur Allomatch pour ses retransmissions sportives régulières. Soirées à thèmes, fléchettes et bières pression complètent l'ambiance. La bonne adresse du nord Ille-et-Vilaine pour les soirs de grande compétition.
+130 places, une salle taillée pour les soirées foot, référencée sur Allomatch pour ses retransmissions régulières. Fléchettes, bières pression, soirées à thème — Le Cactus est l'adresse incontournable du nord Ille-et-Vilaine pour les amateurs de sport. Idéal pour éviter la route jusqu'à Rennes.
 
 ### O'Shannon Pub · Redon (62 Grande Rue)
-Pub irlandais ancré au cœur du vieux port de Redon, au carrefour du Morbihan, de la Loire-Atlantique et de l'Ille-et-Vilaine. Diffusion des événements sportifs, ambiance chaleureuse et sélection de bières. L'adresse de référence pour les supporters du pays de Redon.
+Au cœur du vieux port de Redon, à la frontière du Morbihan et de la Loire-Atlantique, l'O'Shannon est un pub irlandais qui a fait de la diffusion sportive l'un de ses piliers. Ambiance chaleureuse, bonne sélection de bières, et un écran pour ne rien rater du duel PSG-Arsenal. L'adresse du pays de Redon pour ce samedi soir.
 
 ---
 
 ## Finistère (29)
 
 ### Klub House · Brest (Kergaradec)
-Le sport bar de Brest par excellence. Écran principal de 10 m² avec gradins façon stade, 20+ bières pression, deux terrasses dont une sur le toit. Conçu pour les grandes soirées européennes. **klubhouse.fr**
+Le sport bar le plus ambitieux de Bretagne occidentale. Écran principal de 10 m² avec gradins façon tribune, plus de 20 bières pression, deux terrasses dont une sur le toit. Le Klub House a été conçu pour exactement ce type de soirée — une finale européenne diffusée dans les meilleures conditions possibles. Réservation conseillée. **klubhouse.fr**
 
 ### Pub Hamilton · Brest (2 rue de la 2ème DB)
-Référencé par le Stade Brestois lui-même parmi les adresses incontournables. Billard, ambiance pub authentique, retransmissions régulières. Un classique du centre brestois. **Tél. 02 98 43 32 32**
+Référencé par le Stade Brestois parmi les adresses incontournables pour regarder les matchs, le Pub Hamilton est un classique du centre brestois. Billard, ambiance pub authentique, retransmissions régulières. Pour ceux qui préfèrent l'atmosphère d'un vrai pub à l'américaine du sport bar. **Tél. 02 98 43 32 32**
 
 ### Le KEMP'5 · Quimper
-Complexe soccer indoor avec bar lounge, restauration et 6 écrans pour les grandes compétitions. Le KEMP'5 diffuse la Ligue des Champions dans un cadre pensé pour les passionnés de sport.
+Six écrans, bar lounge et restauration dans un complexe soccer indoor — le KEMP'5 propose une expérience sport immersive à Quimper. Ambiance passionnée garantie pour une finale de cette envergure. L'alternative aux bars du centre-ville pour ceux qui veulent du calme et de la place.
 
 ### Bar des Sports · Morlaix (68 rue Ploujean)
-L'adresse de référence pour le sport à Morlaix. Atmosphère de bar de quartier, clientèle fidèle et grands écrans pour ne rien rater des soirées européennes. La valeur sûre du nord Finistère.
+L'adresse historique du sport à Morlaix. Bar de quartier à l'ambiance authentique, clientèle locale fidèle et grand écran pour les soirées européennes. Pas de chichi, pas de prétention — juste le foot, bien regardé, entre gens du coin.
 
 ### BlackRock Irish Pub · Landerneau
-Pub irlandais authentique au cœur de Landerneau. Bières irlandaises et bretonnes à la pression, retransmissions régulières des matchs de rugby et de football dont la Ligue des Champions. La bonne adresse du Pays de Landerneau.
+Un pub irlandais ancré en plein cœur de Landerneau, qui retransmet régulièrement rugby et football dont la Ligue des Champions. Bières irlandaises et bretonnes à la pression, ambiance conviviale — l'adresse de référence du Pays de Landerneau pour PSG-Arsenal.
 
 ### V and B · Concarneau
-Bar à bières avec retransmissions sportives et grande sélection de bières artisanales. Une option sérieuse pour les supporters du sud Finistère qui veulent éviter la route jusqu'à Quimper.
+Bar à bières spécialisé avec retransmissions sportives et une belle sélection de bières artisanales. Pour les habitants de Concarneau et du sud Finistère, c'est l'alternative sérieuse à la route jusqu'à Quimper. Grande finale, grande bière — l'équation est simple.
 
 ---
 
 ## Morbihan (56)
 
 ### Tavarn Ar Roue Morvan · Lorient
-L'adresse incontournable de la nuit lorientaise. Taverne bretonne aux murs chargés d'histoire, bières bretonnes à la pression. Le soir d'une finale, la salle se remplit vite — arrivez 30 minutes avant le coup d'envoi.
+La taverne bretonne de référence de la scène nocturne lorientaise. Murs chargés d'histoire, bières bretonnes à la pression, atmosphère incomparable. Les soirs de grande compétition, le Tavarn se transforme : les tables se remplissent vite, les voix montent, et les cris de but résonnent jusqu'à la rue. **Arrivez impérativement avant 17h30 pour PSG-Arsenal.**
 
 ### Le Shamrock · Lorient (29 place Jules-Ferry)
-Pub irlandais en plein cœur de Lorient. Grand écran, ambiance festive garantie pour les soirées européennes. Le point de ralliement historique des supporters lorientais pour les grands soirs de Ligue des Champions.
+Pub irlandais en plein cœur de Lorient, place Jules-Ferry. Grand écran, ambiance festive et clientèle de supporters passionnés — le Shamrock est depuis des années le point de ralliement pour les grands soirs européens. Si le PSG marque, vous l'entendrez depuis la place.
 
 ### Le Bar d'En Face (BDF) · Lorient
-Juste en face du Tavarn Ar Roue Morvan, le BDF prolonge la soirée avec ses écrans, ses sessions live et ses DJ sets en after. Un combo parfait pour les nuits de finale qui se prolongent.
+Juste en face du Tavarn Ar Roue Morvan, le BDF assure le relais avec ses propres écrans pour le match, et prolonge la soirée avec sessions live et DJ sets. Le combo parfait : Tavarn pour le match, BDF pour l'after — ou vice versa selon l'ambiance.
 
 ### Le Bar des Sports · Vannes
-Recommandé par l'Office de Tourisme du Golfe du Morbihan. Ambiance bar de supporters, écrans bien positionnés, service rapide même quand la salle est pleine. La référence sportive vannetaise.
+Recommandé par l'Office de Tourisme du Golfe du Morbihan, c'est la référence sportive vannetaise. Écrans bien positionnés, service efficace même à salle comble, et une clientèle qui connaît son football. Pour une finale PSG-Arsenal, l'endroit sera plein — réservez ou arrivez tôt.
 
 ### Kilkenny's Pub · Vannes
-Pub irlandais bien connu des Vannetais pour ses soirées sportives. Bières pression, écrans dispersés dans la salle et ambiance garantie pour les compétitions européennes.
+Autre valeur sûre vannetaise pour les soirées sportives. Atmosphère de pub irlandais, bières pression, écrans répartis dans la salle — le Kilkenny's assemble une clientèle fidèle et animée pour ce type d'événement. Une bonne option si Le Bar des Sports affiche complet.
 
 ### Dartrad · Pontivy (14 rue Albert de Mun)
-Bar à fléchettes connectées au cœur de Pontivy, présent sur Facebook et Instagram. Ambiance décontractée, clientèle locale fidèle — et les grands matchs passent sur les écrans du bar. L'adresse à connaître dans le centre Morbihan. **@dartrad_bar**
+Bar à fléchettes connectées au cœur de Pontivy, avec une communauté locale solide sur les réseaux sociaux. Les grands matchs passent sur les écrans du bar — et l'ambiance fléchettes avant PSG-Arsenal, c'est une façon originale de chauffer la salle avant 18h. **@dartrad_bar**
 
 ---
 
 ## Côtes-d'Armor (22)
 
 ### BDS Saint-Brieuc · Saint-Brieuc (quartier Brézillet)
-Le plus grand sport bar des Côtes-d'Armor. Même concept qu'à Rennes : 7j/7, grande terrasse extérieure, fléchettes, baby-foot, pétanque et écrans pour ne rien rater. Cuisine servie en continu jusqu'à 22h30 les soirs de match. **bds-restaurant.com**
+Le sport bar le plus complet des Côtes-d'Armor. Grande terrasse extérieure, fléchettes, baby-foot, pétanque, et plusieurs écrans pour ne rien rater de PSG-Arsenal. La cuisine tourne en continu jusqu'à 22h30 — vous pouvez dîner et regarder la finale dans le même lieu, sans vous presser. **bds-restaurant.com**
 
 ### Bar des Sports · Guingamp (55 rue Notre Dame)
-Institution guingampaise, fidèle à son nom. Atmosphère authentique où les habitués se retrouvent à chaque grande soirée européenne. La référence foot du secteur de Guingamp.
+Une institution guingampaise, fidèle à son nom depuis des années. Atmosphère authentique de bar de supporters, sans fioriture — les habitués s'y retrouvent à chaque grande soirée européenne. La référence du secteur pour regarder le foot dans une vraie ambiance locale.
 
 ### Campbell's Pub · Guingamp (14 place Saint-Michel)
-Pub avec grand écran en plein centre de Guingamp. Cadre convivial, bières pression, ambiance qui monte forcément quand la place est pleine un soir de finale.
+Grand écran en plein cœur de Guingamp, place Saint-Michel. Cadre convivial, bières pression, et une salle qui prend vie dès que l'enjeu est là. Pour une finale PSG-Arsenal, la place sera animée — l'une des meilleures options du Guingampais.
 
 ### Pub Le Zinc · Lannion (46 rue de Tréguier)
-Bar lannionnais référencé sur Allomatch pour ses retransmissions foot. Fléchettes, tournois de poker et ambiance locale — l'adresse de quartier où les supporters se retrouvent pour les grands soirs.
+Bar lannionnais référencé sur Allomatch pour ses retransmissions foot régulières. Ambiance de quartier, fléchettes et tournois de poker — Le Zinc rassemble une clientèle locale passionnée qui n'a pas besoin d'un grand écran 10 m² pour vibrer devant une finale.
 
 ### Bar Le Duclos · Dinan (20 place Duclos)
-Installé en plein cœur de la vieille ville de Dinan, Le Duclos est LA référence locale pour suivre le foot et le rugby. Terrasse sur la place, clientèle fidèle, et une atmosphère qui monte d'un cran les soirs de compétition européenne. **Tél. 02 96 39 95 74**
+En plein cœur de la vieille ville médiévale de Dinan, Le Duclos est LA référence locale pour le foot et le rugby. Terrasse sur la place, clientèle fidèle, atmosphère qui monte d'un cran les soirs de compétition. Regarder PSG-Arsenal depuis la place Duclos avec les remparts en fond — difficile de faire mieux à Dinan. **Tél. 02 96 39 95 74**
 
 ### L'Arc de Triomphe · Paimpol (7 Hent Kervig)
-Bar sportif de Paimpol avec retransmissions des grands événements. Ambiance locale, clientèle fidèle, écran pour ne rien manquer. La bonne adresse du Goëlo pour vibrer en groupe ce soir.
+L'adresse sportive de Paimpol pour les soirées de grande compétition. Ambiance locale, clientèle fidèle, écran pour ne rien manquer du match. Pour les supporters du Goëlo qui veulent vivre PSG-Arsenal en groupe sans faire la route.
 
 ---
 
-## Trouver votre spot avec Jovial
+## Quelques conseils avant le coup d'envoi
 
-Vous êtes en déplacement en Bretagne ou vous cherchez l'adresse la plus proche ? Avec **Jovial**, géolocalisation en main, trouvez en quelques secondes les bars et établissements autour de vous qui diffusent des événements sportifs. Ambiance, animations, événements du soir — tout est sur la carte.
+**Arrivez tôt.** Le coup d'envoi est à 18h — une heure qui change tout. Pas besoin de poser une journée, mais il faut prévoir d'être installé vers 17h15-17h30. Les meilleurs sièges face à l'écran partent vite les soirs de finale.
 
-Bonne finale. Et que le meilleur gagne.
+**Réservez si vous êtes en groupe.** Beaucoup de ces établissements ne prennent pas de réservation habituellement, mais certains acceptent des demandes pour les grands événements. Un coup de téléphone la veille ne coûte rien.
+
+**Pensez à l'after.** Si le PSG gagne, la nuit risque de durer. Si Arsenal crée l'exploit, idem. Choisissez un bar qui ferme tard — ou vérifiez ce qui se passe à côté.
+
+Avec **Jovial**, retrouvez toutes ces adresses sur la carte interactive, leurs événements du soir et les animations prévues près de chez vous.
+
+Bonne finale — et que le meilleur gagne.
     `,
   },
   {
