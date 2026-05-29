@@ -122,9 +122,6 @@ Bar lannionnais référencé sur Allomatch pour ses retransmissions foot réguli
 ### Bar Le Duclos · Dinan (20 place Duclos)
 En plein cœur de la vieille ville médiévale de Dinan, Le Duclos est LA référence locale pour le foot et le rugby. Terrasse sur la place, clientèle fidèle, atmosphère qui monte d'un cran les soirs de compétition. Regarder PSG-Arsenal depuis la place Duclos avec les remparts en fond — difficile de faire mieux à Dinan. **Tél. 02 96 39 95 74**
 
-### L'Arc de Triomphe · Paimpol (7 Hent Kervig)
-L'adresse sportive de Paimpol pour les soirées de grande compétition. Ambiance locale, clientèle fidèle, écran pour ne rien manquer du match. Pour les supporters du Goëlo qui veulent vivre PSG-Arsenal en groupe sans faire la route.
-
 ---
 
 ## Quelques conseils avant le coup d'envoi
