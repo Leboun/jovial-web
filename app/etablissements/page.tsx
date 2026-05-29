@@ -59,7 +59,7 @@ const plans = [
   },
   {
     name: "Offre Pro",
-    badge: null,
+    badge: "Le plus complet",
     tagline: "Pilotage complet",
     price: "790 €",
     period: "/ an",
@@ -266,8 +266,11 @@ export default function EtablissementsPage() {
                 className={`relative bg-white rounded-2xl border-2 ${plan.color} p-8 flex flex-col ${plan.popular ? "shadow-xl scale-[1.02]" : ""}`}
               >
                 {plan.badge && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#2B4E93] text-white text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
-                    ★ {plan.badge}
+                  <div
+                    className="absolute -top-3 left-1/2 -translate-x-1/2 text-white text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1"
+                    style={{ backgroundColor: plan.name === "Offre Pro" ? "#5CB6AC" : "#2B4E93" }}
+                  >
+                    {plan.name === "Offre Pro" ? "✦" : "★"} {plan.badge}
                   </div>
                 )}
                 <div className="mb-6">
