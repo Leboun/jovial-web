@@ -51,7 +51,7 @@ export default function LoopingVideos({ style }: { style?: React.CSSProperties }
       />
       <video ref={bRef} muted playsInline preload="auto" aria-hidden="true"
         style={{ ...base, objectPosition: "center 80%", opacity: 0 }}
-        src="/IMG_3685.mp4"
+        src="/FinaleLDC.mp4"
       />
     </>
   );
