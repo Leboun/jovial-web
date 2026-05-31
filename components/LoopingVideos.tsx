@@ -1,9 +1,14 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 
 const FADE = 800;
-const VIDEOS = ["/hero-video.mp4", "/FinaleLDC.mp4", "/IMG_3685.mov"];
+
+const VIDEOS = [
+  { src: "/hero-video.mp4",  position: "center 60%", brightness: 1    },
+  { src: "/FinaleLDC.mp4",   position: "center 70%", brightness: 0.55 },
+  { src: "/IMG_3685.mov",    position: "center 80%", brightness: 1    },
+];
 
 export default function LoopingVideos({ style }: { style?: React.CSSProperties }) {
   const refs = [
@@ -30,10 +35,7 @@ export default function LoopingVideos({ style }: { style?: React.CSSProperties }
     };
 
     const handlers = els.map((el, i) => {
-      const handler = () => {
-        const next = (i + 1) % els.length;
-        crossfadeTo(next);
-      };
+      const handler = () => crossfadeTo((i + 1) % els.length);
       el.addEventListener("ended", handler);
       return handler;
     });
@@ -54,7 +56,7 @@ export default function LoopingVideos({ style }: { style?: React.CSSProperties }
 
   return (
     <>
-      {VIDEOS.map((src, i) => (
+      {VIDEOS.map(({ src, position, brightness }, i) => (
         <video
           key={src}
           ref={refs[i]}
@@ -63,7 +65,12 @@ export default function LoopingVideos({ style }: { style?: React.CSSProperties }
           playsInline
           preload={i === 0 ? "auto" : "metadata"}
           aria-hidden="true"
-          style={{ ...base, objectPosition: "center 60%", opacity: i === 0 ? 1 : 0 }}
+          style={{
+            ...base,
+            objectPosition: position,
+            opacity: i === 0 ? 1 : 0,
+            filter: brightness < 1 ? `brightness(${brightness})` : undefined,
+          }}
           src={src}
         />
       ))}
