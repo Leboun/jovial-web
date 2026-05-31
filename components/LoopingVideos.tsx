@@ -1,36 +1,45 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 const FADE = 800;
+const VIDEOS = ["/hero-video.mp4", "/FinaleLDC.mp4", "/IMG_3685.mov"];
 
 export default function LoopingVideos({ style }: { style?: React.CSSProperties }) {
-  const aRef = useRef<HTMLVideoElement>(null);
-  const bRef = useRef<HTMLVideoElement>(null);
+  const refs = [
+    useRef<HTMLVideoElement>(null),
+    useRef<HTMLVideoElement>(null),
+    useRef<HTMLVideoElement>(null),
+  ];
+  const current = useRef(0);
 
   useEffect(() => {
-    const a = aRef.current;
-    const b = bRef.current;
-    if (!a || !b) return;
+    const els = refs.map((r) => r.current).filter(Boolean) as HTMLVideoElement[];
+    if (els.length === 0) return;
 
-    const crossfade = (from: HTMLVideoElement, to: HTMLVideoElement) => {
-      to.currentTime = 0;
-      to.play().catch(() => {});
-      from.style.transition = `opacity ${FADE}ms ease`;
-      to.style.transition   = `opacity ${FADE}ms ease`;
-      from.style.opacity = "0";
-      to.style.opacity   = "1";
+    const crossfadeTo = (nextIndex: number) => {
+      const prev = els[current.current];
+      const next = els[nextIndex];
+      next.currentTime = 0;
+      next.play().catch(() => {});
+      prev.style.transition = `opacity ${FADE}ms ease`;
+      next.style.transition = `opacity ${FADE}ms ease`;
+      prev.style.opacity = "0";
+      next.style.opacity = "1";
+      current.current = nextIndex;
     };
 
-    const onAEnded = () => crossfade(a, b);
-    const onBEnded = () => crossfade(b, a);
-
-    a.addEventListener("ended", onAEnded);
-    b.addEventListener("ended", onBEnded);
+    const handlers = els.map((el, i) => {
+      const handler = () => {
+        const next = (i + 1) % els.length;
+        crossfadeTo(next);
+      };
+      el.addEventListener("ended", handler);
+      return handler;
+    });
 
     return () => {
-      a.removeEventListener("ended", onAEnded);
-      b.removeEventListener("ended", onBEnded);
+      els.forEach((el, i) => el.removeEventListener("ended", handlers[i]));
     };
   }, []);
 
@@ -45,14 +54,19 @@ export default function LoopingVideos({ style }: { style?: React.CSSProperties }
 
   return (
     <>
-      <video ref={aRef} autoPlay muted playsInline preload="auto" aria-hidden="true"
-        style={{ ...base, objectPosition: "center 60%", opacity: 1 }}
-        src="/hero-video.mp4"
-      />
-      <video ref={bRef} muted playsInline preload="auto" aria-hidden="true"
-        style={{ ...base, objectPosition: "center 80%", opacity: 0 }}
-        src="/FinaleLDC.mp4"
-      />
+      {VIDEOS.map((src, i) => (
+        <video
+          key={src}
+          ref={refs[i]}
+          autoPlay={i === 0}
+          muted
+          playsInline
+          preload={i === 0 ? "auto" : "metadata"}
+          aria-hidden="true"
+          style={{ ...base, objectPosition: "center 60%", opacity: i === 0 ? 1 : 0 }}
+          src={src}
+        />
+      ))}
     </>
   );
 }
