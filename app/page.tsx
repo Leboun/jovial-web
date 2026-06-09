@@ -70,7 +70,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero — vidéo plein écran + texte centré + 1 mockup */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden text-white bg-[#0f1c38]">
+      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden text-white bg-[#080b14]">
 
         {/* Vidéo en fond plein écran */}
         <LoopingVideos style={{

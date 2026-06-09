@@ -1,4 +1,5 @@
-const ITEMS = [
+// On alterne une activite puis un evenement, une activite, un evenement...
+const ACTIVITES = [
   "Fléchettes",
   "Billard",
   "Pétanque",
@@ -8,19 +9,30 @@ const ITEMS = [
   "Jeux de société",
   "Quiz",
   "Shuffleboard",
+  "Blind test",
+];
+
+const EVENEMENTS = [
   "Karaoké",
   "Concert",
   "Tournoi",
   "Soirée comedy club",
   "Open mic",
-  "Blind test",
   "Soirée jeux",
   "Afterwork",
   "Jam session",
   "Soirée thématique",
   "DJ set",
-  "Et bien d'autres…",
 ];
+
+// Tissage alterne activite / evenement
+const ITEMS: string[] = [];
+const max = Math.max(ACTIVITES.length, EVENEMENTS.length);
+for (let i = 0; i < max; i++) {
+  if (ACTIVITES[i]) ITEMS.push(ACTIVITES[i]);
+  if (EVENEMENTS[i]) ITEMS.push(EVENEMENTS[i]);
+}
+ITEMS.push("Et bien d'autres…");
 
 const TRACK = [...ITEMS, ...ITEMS];
 

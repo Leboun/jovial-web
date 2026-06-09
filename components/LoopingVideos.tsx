@@ -40,8 +40,21 @@ export default function LoopingVideos({ style }: { style?: React.CSSProperties }
       return handler;
     });
 
+    // Fondu d'apparition de la 1ere video (evite le "flash" du fond avant la lecture)
+    const first = els[0];
+    const fadeInFirst = () => {
+      first.style.transition = `opacity ${FADE}ms ease`;
+      first.style.opacity = "1";
+    };
+    if (first.readyState >= 2) {
+      fadeInFirst();
+    } else {
+      first.addEventListener("loadeddata", fadeInFirst, { once: true });
+    }
+
     return () => {
       els.forEach((el, i) => el.removeEventListener("ended", handlers[i]));
+      first.removeEventListener("loadeddata", fadeInFirst);
     };
   }, []);
 
@@ -68,7 +81,7 @@ export default function LoopingVideos({ style }: { style?: React.CSSProperties }
           style={{
             ...base,
             objectPosition: position,
-            opacity: i === 0 ? 1 : 0,
+            opacity: 0,
             filter: brightness < 1 ? `brightness(${brightness})` : undefined,
           }}
           src={src}
