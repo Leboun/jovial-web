@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { articles } from "@/lib/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://getjovial.fr";
+  const base = "https://www.getjovial.fr";
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: base, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },

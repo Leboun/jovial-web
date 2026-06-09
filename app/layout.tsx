@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jovial — Découvre les bars et événements près de toi",
     description: "Bars, concerts, fléchettes, comedy clubs… Tout ce qui se passe près de chez toi, en un coup d'œil. Télécharge Jovial gratuitement.",
-    url: "https://getjovial.fr",
+    url: "https://www.getjovial.fr",
     siteName: "Jovial",
     locale: "fr_FR",
     type: "website",
     images: [
       {
-        url: "https://getjovial.fr/og-image.png",
+        url: "https://www.getjovial.fr/og-image.png",
         width: 1200,
         height: 630,
         alt: "Jovial — Bars, concerts, activités près de toi",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jovial — Découvre les bars et événements près de toi",
     description: "Bars, concerts, fléchettes, comedy clubs… Tout ce qui se passe près de chez toi.",
-    images: ["https://getjovial.fr/og-image.png"],
+    images: ["https://www.getjovial.fr/og-image.png"],
   },
 };
 

@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: article.date,
       authors: [article.author],
       siteName: "Jovial",
-      url: `https://getjovial.fr/actualites/${article.slug}`,
+      url: `https://www.getjovial.fr/actualites/${article.slug}`,
     },
     twitter: {
       card: "summary_large_image",
@@ -94,10 +94,10 @@ export default async function ArticlePage({ params }: Props) {
     "publisher": {
       "@type": "Organization",
       "name": "Jovial",
-      "url": "https://getjovial.fr",
-      "logo": { "@type": "ImageObject", "url": "https://getjovial.fr/logo-sm.png" }
+      "url": "https://www.getjovial.fr",
+      "logo": { "@type": "ImageObject", "url": "https://www.getjovial.fr/logo-sm.png" }
     },
-    "mainEntityOfPage": `https://getjovial.fr/actualites/${article.slug}`,
+    "mainEntityOfPage": `https://www.getjovial.fr/actualites/${article.slug}`,
   };
 
   return (
