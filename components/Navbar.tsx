@@ -17,9 +17,19 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#F2EDE4] border-b border-[#e8e0d4]">
       <div className="w-full px-6 h-16 flex items-center justify-between relative">
 
-        {/* Logo — centré absolument */}
-        <Link href="/" className="absolute left-1/2 -translate-x-1/2 flex items-center">
-          <Image src="/logo-sm.png" alt="Jovial" width={120} height={61} priority />
+        {/* Logo — centré et agrandi, chevauchant le bandeau beige et la vidéo */}
+        <Link
+          href="/"
+          className="absolute left-1/2 -translate-x-1/2 top-2 z-10 flex items-center drop-shadow-[0_8px_18px_rgba(0,0,0,0.35)]"
+        >
+          <Image
+            src="/logo-sm.png"
+            alt="Jovial"
+            width={210}
+            height={107}
+            priority
+            className="w-[150px] md:w-[200px] h-auto"
+          />
         </Link>
 
         {/* Desktop nav — bord gauche */}
