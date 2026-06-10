@@ -30,6 +30,8 @@ export const articles: Article[] = [
     content: `
 Cibles connectées, tournois entre potes, planches de charcuterie et bières artisanales… En quelques années, le bar à fléchettes est devenu un incontournable de la sortie en Bretagne — des grandes villes comme Brest, Rennes ou Vannes jusqu'aux pépites de communes plus discrètes comme Pontivy ou Hillion. Voici nos adresses préférées pour viser dans le mille en 2026.
 
+![Le Piccadilly, bar a flechettes a Saint-Brieuc](/piccadilly-darts.jpg "Photo : Le Piccadilly")
+
 ## La fléchette, nouveau réflexe de sortie en Bretagne
 
 Longtemps cantonnée à la cible poussiéreuse au fond du pub, la fléchette s'est offert une seconde jeunesse. La version interactive — cibles électroniques, scoring automatique, écrans qui réagissent à chaque lancer — a transformé un jeu de comptoir en véritable activité de soirée, à faire entre amis, en couple ou en équipe.
@@ -115,8 +117,6 @@ Plus qu'un bar, un véritable club de fléchettes lorientais : ambiance ultra-co
 ## Saint-Brieuc — Le Piccadilly, le QG du dart costarmoricain
 
 ### Le Piccadilly
-
-![Le Piccadilly, bar a flechettes a Saint-Brieuc](/piccadilly-darts.jpg "Photo : Le Piccadilly")
 
 **Adresse :** rue Michelet, 22000 Saint-Brieuc
 **Tél :** 02 96 33 37 09
