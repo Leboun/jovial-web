@@ -25,13 +25,69 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       authors: [article.author],
       siteName: "Jovial",
       url: `https://www.getjovial.fr/actualites/${article.slug}`,
+      ...(article.image
+        ? { images: [`https://www.getjovial.fr${article.image}`] }
+        : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.excerpt,
+      ...(article.image
+        ? { images: [`https://www.getjovial.fr${article.image}`] }
+        : {}),
     },
   };
+}
+
+// Liens Markdown [texte](url) — internes via <Link>, externes via <a>
+function renderInlineLinks(text: string): React.ReactNode[] {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (m) {
+      const label = m[1];
+      const url = m[2];
+      const base = "https://www.getjovial.fr";
+      const cls =
+        "text-[#2B4E93] font-semibold underline underline-offset-2 hover:text-[#1e3a70] transition-colors";
+      if (url.startsWith(base)) {
+        const path = url.slice(base.length) || "/";
+        return (
+          <Link key={i} href={path} className={cls}>
+            {label}
+          </Link>
+        );
+      }
+      if (url.startsWith("/")) {
+        return (
+          <Link key={i} href={url} className={cls}>
+            {label}
+          </Link>
+        );
+      }
+      return (
+        <a key={i} href={url} target="_blank" rel="noopener noreferrer" className={cls}>
+          {label}
+        </a>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
+}
+
+// Gras **texte**, italique *texte*, puis liens à l'intérieur
+function renderInline(text: string): React.ReactNode[] {
+  const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={i}>{renderInlineLinks(part.slice(2, -2))}</strong>;
+    }
+    if (part.startsWith("*") && part.endsWith("*")) {
+      return <em key={i}>{renderInlineLinks(part.slice(1, -1))}</em>;
+    }
+    return <span key={i}>{renderInlineLinks(part)}</span>;
+  });
 }
 
 function renderContent(content: string) {
@@ -43,33 +99,51 @@ function renderContent(content: string) {
     const trimmed = line.trim();
     if (!trimmed) {
       elements.push(<div key={key++} className="h-4" />);
+    } else if (trimmed === "---") {
+      elements.push(<hr key={key++} className="my-8 border-t border-gray-200" />);
+    } else if (/^!\[[^\]]*\]\([^)]+\)$/.test(trimmed)) {
+      // ![alt](url) ou ![alt](url "Crédit / légende")
+      const m = trimmed.match(/^!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)$/)!;
+      const caption = m[3];
+      elements.push(
+        <figure key={key++} className="my-4">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={m[2]}
+            alt={m[1]}
+            loading="lazy"
+            className="w-full rounded-2xl shadow-sm"
+          />
+          {caption ? (
+            <figcaption className="mt-2 text-center text-sm text-gray-400 italic">
+              {caption}
+            </figcaption>
+          ) : null}
+        </figure>
+      );
     } else if (trimmed.startsWith("## ")) {
       elements.push(
         <h2 key={key++} className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-          {trimmed.slice(3)}
+          {renderInline(trimmed.slice(3))}
         </h2>
       );
     } else if (trimmed.startsWith("### ")) {
       elements.push(
         <h3 key={key++} className="text-xl font-bold text-gray-900 mt-8 mb-3">
-          {trimmed.slice(4)}
+          {renderInline(trimmed.slice(4))}
         </h3>
       );
+    } else if (trimmed.startsWith("- ")) {
+      elements.push(
+        <div key={key++} className="flex gap-2.5 text-gray-700 text-lg leading-relaxed">
+          <span className="text-[#2B4E93] mt-0.5">•</span>
+          <p className="flex-1 mb-0">{renderInline(trimmed.slice(2))}</p>
+        </div>
+      );
     } else {
-      // Handle inline bold **text** and italic *text*
-      const parts = trimmed.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
-      const rendered = parts.map((part, i) => {
-        if (part.startsWith("**") && part.endsWith("**")) {
-          return <strong key={i}>{part.slice(2, -2)}</strong>;
-        }
-        if (part.startsWith("*") && part.endsWith("*")) {
-          return <em key={i}>{part.slice(1, -1)}</em>;
-        }
-        return part;
-      });
       elements.push(
         <p key={key++} className="text-gray-700 leading-relaxed text-lg mb-0">
-          {rendered}
+          {renderInline(trimmed)}
         </p>
       );
     }

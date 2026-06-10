@@ -10,9 +10,192 @@ export type Article = {
   content: string;
   author: string;
   city?: string;
+  image?: string; // chemin public utilise pour l'apercu de partage (og:image)
 };
 
 export const articles: Article[] = [
+  {
+    slug: "meilleurs-bars-flechettes-bretagne-2026",
+    date: "10 juin 2026",
+    tag: "Adresses",
+    tagColor: "#2B4E93",
+    tagEmoji: "📍",
+    title: "Les meilleurs bars à fléchettes de Bretagne en 2026",
+    excerpt:
+      "Du bar du n°1 français Thibault Tricole à Pontivy aux enseignes Ma Target de Brest, Vannes et Lorient : les meilleurs bars à fléchettes de Bretagne en 2026.",
+    readTime: "11 min",
+    author: "Équipe Jovial",
+    city: "Bretagne",
+    image: "/dartrad.jpg",
+    content: `
+Cibles connectées, tournois entre potes, planches de charcuterie et bières artisanales… En quelques années, le bar à fléchettes est devenu un incontournable de la sortie en Bretagne — des grandes villes comme Brest, Rennes ou Vannes jusqu'aux pépites de communes plus discrètes comme Pontivy ou Hillion. Voici nos adresses préférées pour viser dans le mille en 2026.
+
+## La fléchette, nouveau réflexe de sortie en Bretagne
+
+Longtemps cantonnée à la cible poussiéreuse au fond du pub, la fléchette s'est offert une seconde jeunesse. La version interactive — cibles électroniques, scoring automatique, écrans qui réagissent à chaque lancer — a transformé un jeu de comptoir en véritable activité de soirée, à faire entre amis, en couple ou en équipe.
+
+La Bretagne n'est pas en reste : une enseigne dédiée, **Ma Target**, a essaimé dans plusieurs villes de la région, de nombreux bars à jeux ont ajouté leurs dartboards, et le meilleur joueur français de l'histoire, **Thibault Tricole**, a même ouvert son propre bar à Pontivy. Tour d'horizon, ville par ville.
+
+## Rennes — la capitale bretonne du dart
+
+Rennes mérite à elle seule son propre guide : fléchettes interactives, tournois hebdomadaires, bars à jeux géants… la scène y est la plus dense de Bretagne, avec des adresses comme Play Rennes, BREWKLYN ou Le Grand Bain.
+
+➡️ On vous a préparé le détail dans notre article dédié : **[Les meilleurs bars à fléchettes de Rennes en 2026](https://www.getjovial.fr/actualites/meilleurs-bars-flechettes-rennes-2026)**, et un focus complet sur **[Play Rennes, le bar à fléchettes interactives](https://www.getjovial.fr/actualites/play-rennes-bar-flechettes-interactives)**.
+
+## Brest — entre la rue de Siam et les pubs de quartier
+
+### Ma Target Brest — la référence interactive
+
+**Adresse :** 11 rue de Siam, 29200 Brest
+**Tél :** 02 98 46 94 75
+**Horaires :** Lun–Mer 17h–00h | Jeu–Ven 17h–1h | Sam 16h–1h | Dim 16h–22h
+
+En plein cœur de la rue de Siam, l'artère la plus connue de Brest, Ma Target a planté ses cibles connectées et s'est imposée comme l'adresse fléchettes de la ville. Ambiance sports bar décontractée, bonnes bières pression, planches à partager et un patron aux petits soins : on y vient autant pour la partie que pour l'atmosphère. Avec près de 300 avis et une note de 4,7/5, c'est une valeur sûre pour une soirée entre amis.
+
+### Le Loustik Bar — le pub de quartier qui joue le jeu
+
+**Adresse :** 62 rue Armorique, 29200 Brest
+**Tél :** 07 69 65 18 11
+**Horaires :** Mar–Sam 10h–00h (fermé dimanche et lundi)
+
+Plus intimiste, Le Loustik cultive l'esprit bistrot de quartier : accueil chaleureux, bières à prix doux, et une cible pour se lancer un défi entre deux verres. Une note de 4,8/5 qui en dit long sur la convivialité du lieu — parfait pour une fléchette sans chichis.
+
+## Vannes — la scène fléchettes du Morbihan
+
+### Ma Target Vannes — cibles, planches et ambiance
+
+**Adresse :** 21 rue Marcellin Berthelot, 56000 Vannes
+**Tél :** 02 42 05 06 40
+**Horaires :** Lun–Mar 17h–00h | Mer–Jeu 16h–00h | Ven–Sam 14h–1h | Dim 14h–23h
+
+Le pendant vannetais de l'enseigne : un lieu joliment décoré, des dartboards au très bon rapport qualité-prix, de belles planches de charcuterie-fromage et des cocktails à prix raisonnables. L'endroit fait aussi salle de concert, ce qui donne souvent une ambiance survoltée le week-end (4,7/5).
+
+### Le Skellig — le pub à fléchettes du centre
+
+**Adresse :** 8 rue Jacques Rueff, 56000 Vannes
+**Tél :** 02 97 46 27 09
+**Horaires :** Mar–Mer 17h–00h | Jeu–Sam jusqu'à 1h | Dim & Lun en soirée
+
+Un pub vannetais apprécié pour ses bières et cocktails à prix sages, ses planches généreuses et ses quelques jeux dont une cible de fléchettes. Concerts live réguliers et bonne ambiance quand ça se remplit (4,6/5) : l'adresse idéale pour enchaîner partie et pinte.
+
+### SET&SMASH — aux portes de Vannes (Ploeren)
+
+**Adresse :** 24 bis av. Louis de Cadoudal, 56880 Ploeren
+**Tél :** 02 97 62 85 47
+**Horaires :** Lun–Mer 17h–23h | Jeu–Sam 17h–1h | Dim 17h–23h
+
+À quelques minutes de Vannes, SET&SMASH joue la carte du bar 100 % sport et jeux : fléchettes, poker, diffusions sportives, soirées à thème. Accueil très soigné et ambiance où toutes les générations se mélangent (4,8/5). Une belle alternative si vous cherchez un esprit « club » convivial.
+
+## Lorient — du bar à cocktails au club de passionnés
+
+### Ma Target Lorient — l'incontournable
+
+**Adresse :** 2 rue de Pontcarré, 56100 Lorient
+**Tél :** 09 77 97 28 85
+**Horaires :** Lun–Jeu 17h–00h | Ven–Sam 17h–1h | Dim fermé
+
+La troisième Ma Target de notre sélection, et l'une des mieux notées (4,8/5). Des pistes de fléchettes très bien entretenues, une vraie diversité de jeux, de la bonne bière et une équipe qui prend le temps d'expliquer aux débutants. L'adresse parfaite pour découvrir le dart à Lorient.
+
+### BARZH — fléchettes et cocartes à la carte
+
+**Adresse :** 9 rue Victor Masse, 56100 Lorient
+
+**Horaires :** Lun–Jeu 17h–23h | Ven–Sam 16h–1h | Dim 17h–1h
+
+Comme son nom complet l'indique (« bar cocktails fléchettes bière artisanale »), BARZH assume sa double vocation : deux cibles électroniques, un large choix de bières, des cocktails soignés et de généreuses planches à partager. Une salle à l'étage permet d'accueillir les plus grands groupes.
+
+### CEP Darts An Oriant — pour les passionnés
+
+**Adresse :** 67 rue Duguay Trouin, 56100 Lorient
+**Tél :** 06 46 49 07 04
+**Horaires :** Lun & Ven 19h15–22h30 (club)
+
+Plus qu'un bar, un véritable club de fléchettes lorientais : ambiance ultra-conviviale, joueurs de tous niveaux et habitués toujours prêts à transmettre leurs conseils. Idéal si vous voulez progresser ou rejoindre une communauté de mordus.
+
+## Saint-Brieuc — Le Piccadilly, le QG du dart costarmoricain
+
+### Le Piccadilly
+
+![Le Piccadilly, bar a flechettes a Saint-Brieuc](/piccadilly-darts.jpg "Photo : Le Piccadilly")
+
+**Adresse :** rue Michelet, 22000 Saint-Brieuc
+**Tél :** 02 96 33 37 09
+**Horaires :** Mar–Sam 18h–1h (fermé dimanche et lundi)
+
+Régulièrement cité comme l'un des meilleurs bars de Saint-Brieuc pour jouer aux fléchettes, Le Piccadilly mise sur une belle sélection de whiskies et de bières, une jolie cour à l'arrière et une ambiance musicale soignée portée par un patron très accueillant (4,7/5). Une adresse qui fait l'unanimité dans les Côtes-d'Armor.
+
+## Les pépites hors des sentiers battus
+
+On l'oublie trop souvent : certaines des meilleures adresses fléchettes de Bretagne ne sont pas au cœur des grandes villes, mais dans des communes plus discrètes. Deux d'entre elles valent largement le déplacement.
+
+### Dartrad — Pontivy, le bar du meilleur joueur français
+
+![Dartrad a Pontivy, le bar a flechettes de Thibault Tricole](/dartrad.jpg "Photo : Dartrad")
+
+**Adresse :** 14 rue Albert de Mun, 56300 Pontivy
+**Tél :** 06 30 08 31 13
+**Horaires :** Mer 11h–23h | Jeu–Sam 11h–1h | Dim 17h–00h (fermé lundi et mardi)
+
+C'est sans doute la pépite la plus folle de notre sélection. Dartrad a été ouvert par **Thibault Tricole** — surnommé « The French Touch », numéro 1 français, premier joueur tricolore à disputer le championnat du monde PDC et finaliste du championnat du monde WDF 2022 — avec sa compagne Marie Bouffaut. Installé à Malguénac, à deux pas de Pontivy, où il préside aussi le Bleiz Darts Club, le meilleur joueur français de l'histoire a voulu créer dans son fief un véritable repaire pour les amateurs de dart.
+
+Le résultat : un bar à la déco industrielle très soignée, du matériel haut de gamme, de bonnes bières et une ambiance saluée par l'ensemble des avis (4,8/5). Le concept a quelque chose d'unique en France : on peut y croiser un champion et profiter de ses conseils. Débutant curieux ou joueur confirmé, c'est une étape incontournable du dart breton — et une vraie raison de pousser jusqu'à Pontivy.
+
+### Le Griffin — Hillion, le social darts dans la baie de Saint-Brieuc
+
+![Le Griffin a Hillion, social darts dans la baie de Saint-Brieuc](/le-griffin-darts.jpg "Photo : Le Griffin")
+
+**Adresse :** 1 rue des Grands Champs, 22120 Hillion
+**Tél :** 09 77 00 85 75 | **Web :** legriffin.fr
+**Horaires :** Lun–Sam 10h–21h | Dim 14h–20h
+
+La preuve qu'une petite commune peut abriter un grand concept. Niché à Hillion, dans la baie de Saint-Brieuc, **Le Griffin** est un lieu hybride — cave à bières, coffee shop et bar — entièrement pensé autour du **social darts** : des cibles connectées avec scoring par caméra et une interface ludique, accessibles à tous les niveaux. Fondé par Anthony, il y ajoute du rétrogaming et la diffusion des grands matchs.
+
+Avec une note d'environ 4,8/5 sur plusieurs centaines d'avis, Le Griffin s'est imposé en un temps record comme une adresse de référence du secteur briochin. Belle sélection de bières artisanales, accueil chaleureux, terrasse couverte : l'endroit idéal pour découvrir la fléchette interactive entre amis, en famille ou pour un afterwork — la cible se réserve même à l'avance.
+
+## Quimper — le dart au cœur des pubs
+
+### Ceili
+
+**Adresse :** 4 rue Aristide Briand, 29000 Quimper
+**Tél :** 02 98 95 17 61
+**Horaires :** tous les jours dès 11h30 (jusqu'à 1h)
+
+Véritable institution quimpéroise (plus de 1 600 avis, 4,6/5), ce pub à l'irlandaise est le repaire des amateurs de fléchettes de la ville : il abrite le **Ceili Dart's Club**, qui réunit les joueurs de cibles électroniques et traditionnelles. Large choix de bières pression, ambiance animée, terrasse : l'adresse idéale pour enchaîner une partie et une pinte en plein centre.
+
+Pour une soirée plus orientée jeux, *Le Big Bang* (110 rue de Bénodet) complète l'offre quimpéroise avec ses jeux de société, son coin rétrogaming et sa déco soignée.
+
+## Saint-Malo — un berceau de la fléchette électronique
+
+Petite surprise : Saint-Malo est l'un des berceaux historiques de la fléchette électronique en France. C'est ici qu'est installé **Shop Loisirs**, à l'origine de la diffusion de la cible électronique dans l'Hexagone depuis 1992, et la cité corsaire compte plusieurs clubs de dart actifs. De quoi trouver largement où viser, intra-muros.
+
+### L'Equinoxial
+
+**Adresse :** 3 rue du Puits-aux-Braies, 35400 Saint-Malo
+**Tél :** 02 90 10 24 99
+**Horaires :** basse saison Mar–Sam 17h–1h | haute saison tous les jours
+
+En plein intra-muros, près de la Grande Porte, ce pub à l'ambiance irlandaise (Guinness, rhums arrangés maison, esprit rock'n'roll) propose une sélection de jeux de pub dont une cible de fléchettes, et diffuse les matchs. Accueil chaleureux et l'un des bars ouverts le plus tard de la vieille ville (4,5/5).
+
+### L'Alchimiste
+
+**Adresse :** 7 rue Saint-Thomas, 35400 Saint-Malo
+
+Réparti sur trois niveaux, ce bar atypique à l'esprit rock cache à son sous-sol un billard et un jeu de fléchettes. Déco vintage, éclairage tamisé, belle sélection de bières et de cocktails : parfait pour une partie un peu à l'écart (4,5/5).
+
+## Comment choisir son bar à fléchettes ?
+
+- **Pour découvrir :** privilégiez une enseigne dédiée type Ma Target, où les cibles électroniques comptent les points à votre place — idéal quand on débute.
+- **Pour la compétition :** visez les bars à tournois réguliers ou un club comme CEP Darts à Lorient.
+- **Pour une soirée groupe :** choisissez les grands bars à jeux qui cumulent fléchettes, billard et planches à partager.
+- **Pour l'ambiance pub :** les adresses de quartier (Le Loustik, Le Piccadilly, Le Skellig) offrent une fléchette plus « cosy », entre deux pintes.
+
+## Bientôt, retrouve tout ça sur Jovial
+
+**Jovial** arrive très prochainement : l'appli qui réunira les bars, activités et événements près de chez toi — fléchettes comprises. L'idée : repérer les adresses sur une carte interactive, suivre les tournois et réserver ta soirée en quelques secondes. Des lieux comme ceux de ce guide sont exactement ce qu'on a hâte de te faire découvrir au lancement.
+
+📲 *Disponible très prochainement sur l'App Store et Google Play — gratuit, sans publicité.*
+    `,
+  },
   {
     slug: "finale-ligue-des-champions-2026-bars-bretagne",
     date: "27 mai 2026",
@@ -424,6 +607,8 @@ Sur Jovial, vous retrouvez toutes ces adresses en carte interactive, avec les ho
 ## Rennes, nouvelle capitale bretonne des fléchettes
 
 En quelques années, la fléchette — et surtout la fléchette interactive — est devenue l'une des activités phares de la sortie nocturne à Rennes. Les nouvelles technologies ont transformé le jeu : cibles connectées, écrans géants, scoring en temps réel, tournois hebdomadaires… Voici les cinq adresses rennaises qui font référence en 2026.
+
+Rennes fait partie de notre tour des [meilleurs bars à fléchettes de Bretagne](/actualites/meilleurs-bars-flechettes-bretagne-2026).
 
 ## Play Rennes — le spécialiste (Vern-sur-Seiche)
 
