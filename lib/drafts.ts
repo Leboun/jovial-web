@@ -6,7 +6,7 @@
  *
  * Calendrier de publication prévu :
  * - fete-de-la-musique-rennes          → publier le ~11 juin 2026 (événement le 21 juin)
- * - fete-de-la-musique-bretagne        → publier le ~11 juin 2026 (événement le 21 juin)
+ * - fete-de-la-musique-bretagne        → PUBLIÉ (guide complet : articles.ts → fete-de-la-musique-2026-bretagne-ou-aller)
  * - festival-interceltique-lorient     → publier le ~21 juillet 2026 (festival du 31 juillet)
  */
 
@@ -86,59 +86,6 @@ Trois places concentrent l'énergie de la soirée :
 La ZCL ferme le centre-ville aux voitures dès 19h. Venez à pied, à vélo ou en métro. Le réseau STAR assure des trajets toute la nuit du 21 au 22 juin, avec des lignes de nuit jusqu'à 5h00.
 
 Sur Jovial, vous retrouvez toutes ces adresses en carte interactive, avec les horaires, l'ambiance et les événements du soir en temps réel.
-    `,
-  },
-  {
-    slug: "fete-de-la-musique-bretagne-2026-brest-lorient-saint-brieuc-vannes",
-    date: "11 juin 2026",
-    tag: "Festival & Off",
-    tagColor: "#F59E0B",
-    tagEmoji: "🎪",
-    title: "Fête de la Musique 2026 en Bretagne : Brest, Lorient, Saint-Brieuc, Vannes",
-    excerpt:
-      "Le 21 juin, toute la Bretagne chante. Concerts gratuits dans les bars, scènes en plein air, terrasses animées jusqu'à 1h du matin — le guide ville par ville pour ne rien manquer.",
-    readTime: "5 min",
-    author: "Équipe Jovial",
-    content: `
-## Le 21 juin, la Bretagne entière en fête
-
-Chaque année le 21 juin, la Fête de la Musique transforme les villes françaises en scènes géantes. En Bretagne, l'événement prend une saveur particulière : musique bretonne, fest-noz spontanés, binious dans les rues pavées et bars animés jusqu'au bout de la nuit. Tour d'horizon des quatre grandes villes bretonnes cette année.
-
-## Brest — du Jardin Kennedy au Port de Commerce
-
-Brest est l'une des villes bretonnes qui investit le plus dans la Fête de la Musique. Les concerts s'étendent du **Jardin Kennedy** au **Port de Commerce**, avec des scènes installées dans les principales places du centre-ville. Tous les styles sont représentés : rock, jazz, électro, musique traditionnelle bretonne.
-
-Les bars du quartier de la Rue de Siam et du Port de Commerce ouvrent leurs terrasses et accueillent des concerts live. Le **Vauban** et la **Carène**, deux salles incontournables de la scène brestoise, participent également aux festivités avec des programmations spéciales.
-
-Entrée libre partout, dès la fin d'après-midi jusqu'à 1h00 du matin.
-
-## Lorient — festival dans le festival
-
-À Lorient, la Fête de la Musique a un goût particulier : la ville est rodée aux grandes fêtes musicales grâce au Festival Interceltique. Les bars du centre-ville — le **Tavarn Ar Roue Morvan**, le **Westport Inn**, le **Shamrock** — organisent des sessions live et des concerts en terrasse.
-
-La place Polig Montjarret et les quais s'animent dès 17h avec des scènes en plein air. Les musiciens amateurs côtoient les professionnels dans une ambiance de fête de quartier à grande échelle. Concerts gratuits dans tous les bars participants jusqu'à 1h.
-
-## Saint-Brieuc — dans les rues du centre historique
-
-Saint-Brieuc transforme son centre médiéval en scène à ciel ouvert. Les ruelles pavées autour de la cathédrale et la place du Martray accueillent groupes de brass band, musiciens bretons et artistes locaux. Les bars du centre participent avec des concerts en terrasse ou en intérieur.
-
-Entrée libre, ambiance familiale en début de soirée puis plus festive après 21h.
-
-## Vannes — port et vieille ville
-
-Vannes combine deux atouts uniques : la **vieille ville médiévale** avec ses remparts et ses ruelles, et le **port**, qui s'anime en été. Le 21 juin, les deux se rejoignent : scènes en plein air dans les places historiques, concerts dans les bars du port et animations sur les quais.
-
-L'**Echonova** (salle de musiques actuelles) organise une scène spéciale "Fête de la Musique" au port. Les bars et restaurants de la rue des Halles et du port restent ouverts et animés jusqu'à minuit passé.
-
-## Les bons réflexes le 21 juin
-
-Quelle que soit la ville :
-- Venez à **pied ou à vélo** — les centres-villes sont fermés aux voitures en soirée
-- Les transports en commun fonctionnent jusqu'à 1h30 minimum dans toutes ces villes
-- Les bars peuvent servir en terrasse jusqu'à **0h30**
-- Le meilleur créneau pour l'ambiance dans les bars : entre **21h et 23h**
-
-Retrouvez tous les bars participants et leurs événements du soir sur Jovial.
     `,
   },
   {

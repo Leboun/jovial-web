@@ -15,6 +15,229 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: "fete-de-la-musique-2026-bretagne-ou-aller",
+    date: "19 juin 2026",
+    tag: "Festivals",
+    tagColor: "#F59E0B",
+    tagEmoji: "🎪",
+    title: "Fête de la Musique 2026 en Bretagne : où aller, heure par heure",
+    excerpt:
+      "Quoi voir à la Fête de la Musique 2026 ? Notre sélection concrète des meilleurs concerts gratuits à Rennes, Brest, Nantes & co : groupes, styles, horaires, lieux.",
+    readTime: "9 min",
+    author: "Équipe Jovial",
+    city: "Bretagne",
+    content: `
+**Dimanche 21 juin 2026** (⚠️ **samedi 20 juin** à Lorient et Pontivy), la Bretagne se transforme en scène géante. Pour vous éviter de tourner en rond, on a fait le tri : voici, ville par ville, **les concerts qui valent le détour, avec l'heure, le lieu et le style** — pour que vous puissiez vous dire « à 18 h je vais voir ça là, puis je file découvrir tel son ailleurs ». Tout est gratuit, sans réservation.
+
+**🎯 Mode d'emploi :** repérez votre ville, choisissez 2-3 rendez-vous selon vos goûts, et laissez-vous porter de scène en scène. Les centres-villes sont piétonnisés.
+
+## Au programme, département par département
+
+- **Ille-et-Vilaine (35)** — Rennes, Saint-Malo, Fougères
+- **Côtes-d'Armor (22)** — Dinan, Lannion, Saint-Brieuc
+- **Morbihan (56)** — Lorient, Vannes, Pontivy
+- **Finistère (29)** — Brest, Quimper, Concarneau
+- **Loire-Atlantique (44)** — Nantes
+- **⚠️ Les communes qui fêtent la musique le 19 ou le 20 juin** — récap en bas d'article
+
+---
+
+## Ille-et-Vilaine (35)
+
+### Rennes — la capitale qui ne dort pas (dim. 21, 17 h → 1 h)
+
+- **16 h–22 h · Théâtre de verdure du Thabor** (programmé par le Jardin Moderne) : 4 groupes locaux. Pour le grand écart entre **synth-pop bizarroïde** (Mange-Religieuses, clarinette basse + spoken word) et **grunge / shoegaze** (Memoranda, dans la veine Pixies/Sonic Youth).
+- **Dès 17 h · centre-ville** : **Gombocats**, l'afro-pop rennaise du chanteur sénégalais Ismaïl Touré ; puis **Lézard**, post-punk-disco venu de Belgique.
+- **17 h → 1 h · Esplanade Charles-de-Gaulle** : le QG **techno / transe** avec les collectifs Affluence et Processus. Le spot pour finir la nuit.
+- **Dès 20 h · jardin de l'Hôtel de Courcy** (9 rue Martenot) : ambiance **fest-noz** et musique bretonne dans une villa palladienne.
+- **Place de la gare** : « Les Escales Musicales », nouveau concept en 3 lieux / 3 ambiances.
+- **Côté bars (concerts ~18 h–1 h)** : La Bonne Nouvelle (place Sainte-Anne), Caliente (place Saint-Michel), Le Hangar (rue de Dinan), La Piste (Mail Mitterrand, open air très couru). La **rue Nantaise** (Le Berzingue, Café Breton, Maison Paganelli…) concentre les concerts de troquets. *(Bars qui programment habituellement pour la fête — à confirmer pour 2026.)*
+
+### Saint-Malo — la cité corsaire (dim. 21, 15 h → minuit)
+
+Huit scènes réparties entre **Intra-Muros et les quartiers malouins**, dans tous les styles — du **folk maritime** à la **techno**, des **chorales et de l'orgue** du Conservatoire aux **DJ sets** de fin de soirée, sans oublier les incontournables **chants marins**. Notre parcours, scène par scène :
+
+- **Esplanade Saint-Vincent (15 h → 22 h)** — la grande scène musiques actuelles : **3lia** (néo folk, 15 h) → 3lia & Presqu'Un Team (folk rock, 16 h) → **Truffu** (tribal blues psychédélique, 17 h) → Cent Z'Escales (folk maritime, 18 h) → Chat Tomalo (folk rock indie, 19 h) → **KJD** (blues / soul / rock, 20 h) → Shy Narciss (new wave / shoegaze, 21 h) → **Brise Lame** (electronica / break / IDM, 22 h).
+- **Place des Frères Lamennais (15 h → 21 h)** : Malone et Margot (variété française / pop / RNB, 15 h) → Le temps de chanter (variétés, 16 h) → **LAAS** (rock, 17 h) → Gladys 5 (pop rock / rock français, 18 h) → Comme à la maison (reprises pop-rock des années 70 à nos jours, 19 h) → **Flying Nuns** (pop shoegaze, 20 h) → **Chiiro** (house / dubstep, 21 h).
+- **Fosse aux Lions (dès 15 h)** — carte blanche au **Conservatoire Claude Debussy** : Natty Combo (reggae, 15 h) → Groupe Tuesday (15 h 40), Groupe 2e Bain (16 h 20) et Groupe Maclow (17 h), tous en musiques actuelles → puis, pour les **75 ans de l'association Quic en Groigne** (17 h 30 → 19 h), l'orchestre d'harmonie du conservatoire et le **bagad Quic en Groigne** réunis.
+- **Jardin de la Briantais — Rochebonne (18 h → minuit)** — programmation **Zephyr** : Karma Shelter (pop / rock, 18 h) → Namas (jazz, 19 h 30) → Big Idea (rock, 21 h) → Collectif Zephyr (DJ set, 22 h → minuit).
+- **Tour Solidor (14 h → 22 h)** — l'ambiance guinguette des commerçants : DJ set **années 60-70 & bal musette** (14 h), **jazz manouche** (16 h), **musique irlandaise** (18 h) puis **DJ set sur vinyles années 80-90** (20 h).
+- **Cathédrale Saint-Vincent** : le concert d'orgue **« Les couleurs de l'Orgue »** par le Conservatoire (19 h), pour une parenthèse au calme.
+- **Déambulations (départ place de la Poissonnerie → Grand'Porte)** : la fanfare de rue **Breizh'Ile** (20 h) puis **Sax Attack** (musique du monde, Conservatoire, 21 h).
+- **Jardin de la Légion d'honneur (11 h 30 → 14 h 30)** — pour démarrer la journée en douceur : un **pique-nique géant musical** ponctué d'initiations Zumba (Valérie Pichon, 11 h 30), salsa & bachata (Lucia, 12 h 30) et danse country (West Cowboy Country, 13 h 30). Apportez votre panier.
+
+Conseil parcours : commencez par les remparts en fin d'après-midi, finissez Intra-Muros. **Retour facile** : le réseau MAT ajoute des bus à 22 h 30, 23 h 30 et 0 h 30 au départ d'Intra-Muros.
+
+### Fougères — au pied du château (dim. 21)
+
+Cap sur la **place du Château**, qui passe en mode « 2 scènes, 2 ambiances » : un **bal populaire** qui bascule vers l'**électro** (set d'Antomix), et une **terrasse 100 % techno** (Boisaler et sa team). Les bars et restos du centre prolongent la soirée.
+
+---
+
+## Côtes-d'Armor (22)
+
+### Dinan — la médiévale festive (dim. 21, 15 h → 23 h)
+
+Plus de **60 groupes** investissent le centre historique, les jardins et les **quais du port**. À retenir : l'ouverture par **L'héros Rose** (pop poétique, artiste rennais), puis une couleur **pop & cumbia** avec Genevieve et Soma-Cumbia. Le cadre (château + port) en fait l'une des plus belles ambiances du département.
+
+### Lannion — la cinquantaine de scènes (dim. 21, 14 h → minuit)
+
+- **Quai d'Aiguillon (dès 14 h 30)** : enchaînement **danses du monde** — danse orientale, danses latines (Sabor Hispano, 17 h), trad irlandais (Trégor Gaëlic, 17 h 50).
+- Côté musique : **Aurélien – « Demain Sans Faute »** (transe expérimentale guitare/synthés, façon Steve Reich), le duo **Scardanelli & Sophie** (chanson), l'ensemble **Crescendo** (medleys de comédies musicales).
+- **Côté bars** : Le Pixie, la Brasserie Kérampont et Le Bistronome programment leurs propres concerts ; le Conservatoire et l'espace La Mutante complètent.
+
+### Saint-Brieuc — le centre-ville rendu aux musiciens (dim. 21, 15 h → 21 h)
+
+De 15 h à 21 h, la Ville rend le centre-ville aux musiciens : **huit espaces** en plein air, plus les bars, plus les artistes qui s'installent spontanément dans la rue. C'est l'esprit fondateur de la fête. Notre parcours :
+
+- **Parc des Promenades (15 h → 20 h)** : Bryan Hesry (pop) → Wave (rock, 16 h) → **Colonels Carotte** (blues / folk, 17 h) → AZ'Danse (danse fitness & latino, 18 h) → **Balkouest** (musiques du monde, 19 h) → Batukablok & Batougether (percussions brésiliennes, 20 h).
+- **Place de la Grille — le coin qui tape (dès 15 h)** : la **drill mahoraise** de Mafia St-B Label Music (15 h), puis ça durcit avec **Malbête** (rock métal, 16 h 30) et **Ego Brain** (métal, 18 h), avant Fraggles Rock (19 h) et Open Bac'h (20 h), tous deux blues / pop / rock.
+- **Place de la Résistance (dès 15 h)** : l'**Orchestre d'Harmonie de Saint-Brieuc** ouvre le bal, puis percussions brésiliennes (Batukablok & Batougether, 17 h), variété (Lalita, 17 h 30), **percussions africaines** (Association Djabotu Binghi, 18 h 30) et un final monde / variété avec Dézane (19 h 30).
+- **Rue Saint-Gouéno** : Entre Deux (variété, 15 h–18 h) → Les BN (blues / pop / rock, 18 h 30) → **Half Way to Memphis** (blues / rock, 20 h 30).
+- **Jardin de Bellescize (15 h → 21 h)** : le QG **électro**, avec le **Collectif La Briocherie** aux platines tout l'après-midi.
+- **Rue Saint-Gilles** : set **électro** d'Alex Carné (18 h).
+- **La Griffe** : pour les amateurs de voix, un enchaînement de **chorales** — Vent d'Ouest (16 h), Grain de sable (17 h 15), Chœur Kantarmor (18 h 15), Pop en scène (19 h 30).
+- **Déambulations** : la **capoeira** (danse & musique du monde, 15 h → 21 h) et la fanfare **Les Griffons** (du COB, rue du Général-Leclerc / rue du Chapitre, 18 h), pendant que Batukablok & Batougether sillonnent le centre (17 h 30, 19 h 30, et 20 h 45 avec Batuka-block).
+
+---
+
+## Morbihan (56)
+
+### Lorient — ⚠️ le SAMEDI 20 juin (14 h → 1 h)
+
+Attention au jour ! Six scènes en centre-ville :
+
+- **Places de l'Hôtel-de-Ville & Aristide-Briand** : les **gros concerts** de la soirée.
+- **Rue Paul-Bert, 18 h pile** : 6 jeunes talents du Festival des Talents JAIME Radio.
+- **Jardins de la Villa La Frégate** : après-midi musical dans un cadre verdoyant (nouveauté).
+- **Guinguette A Dreuz (Péristyle)** : boum intergénérationnelle bon enfant.
+- En plus : **fest-noz**, défilé du **Lorient Pipe Band**, et un « **spot autonome** » passage du Blavet où chacun branche son instrument de 18 h à 1 h.
+
+### Vannes — entre port et musique bretonne (dim. 21)
+
+- **Esplanade Simone-Veil (port), 18 h → minuit** : **électro & DJ sets** portés par l'Echonova (DJ du Collectif KCK dès 19 h). Le coin pour danser au bord de l'eau.
+- **Place de Bretagne** : **accordéon diatonique** (Diatofolies, 19 h) puis **musique bretonne** avec Kilhan et Makadam Fentus (20 h 30 → minuit).
+- **Places du centre** : rock (Nutri Score Z), **bachata** (Bachata Passion), **salsa** (Breizh Latino, Salsa Spirit), chanson française (Alain Chomat).
+- **Intra-muros** : scènes acoustiques et concerts de bars tard dans la nuit.
+
+### Pontivy — ⚠️ le SAMEDI 20 juin (10 h 30 → 2 h !)
+
+L'amplitude la plus folle du département. **Place du Martray** : chanson (Tokata'porte, 15 h) → **rock reprises 60s-2000s** (Spin-Off, 16 h 30) → fanfare Usine à canards (19 h 15) → **rap festif** (Turok Eddie, 21 h 15). **Place Anne-de-Bretagne** : **musique bretonne** avec le Kerlenn Pondi (17 h 30) et **percussions brésiliennes** Batuca'Pondi (19 h).
+
+---
+
+## Finistère (29)
+
+### Brest — la plus dense (dim. 21, dès 12 h), notre carte au trésor
+
+C'est la ville où la programmation 2026 est la plus détaillée. Selon votre humeur :
+
+- **Envie d'électro ? → Jardin Kennedy** (16 h–21 h, avec Unanenn & Brest Queer Fest) : Solarius (16 h), Cinae (18 h 30), Sanski B2B LE MO[r]AL (19 h 45).
+- **Musiques actuelles ? → Parc à Chaînes** (La Carène) : Lucie Solé (16 h 30), Lolalang (17 h 35), **FAKS** (18 h 40), Ysengreen (19 h 45).
+- **Trad bretonne ? → Place du Général-de-Gaulle** (CBAP & SKED) : **kan ha diskan** (18 h 30), Nozride (20 h).
+- **Musiques du monde / afro ? → Cours Dajot** : **Brest Afrobeat Collectif** (19 h 20), Ethojazz (19 h 50), L'Oreille Cassée (22 h 20).
+- **Rock & pop ? → Place Wilson** : Les Rats Crevés (20 h 30), Dun3s (21 h 25), GUBBE (22 h 20) ; ou **Place Keruscun** (15 h–21 h) : Dub Garage Army (dub), Les Frères Tyrans (punk rock), Masterwall (reprises d'Oasis), SCXNDY (électro).
+- **Au calme ? → Tour Tanguy** : sessions acoustiques (Sheppa dès 14 h ; **Tang Trev chante Nick Cave** à 16 h).
+
+### Quimper — tradition + rock + rap (dim. 21)
+
+- **Jardin de l'Évêché (17 h → 23 h)** : le Conservatoire jusqu'à 20 h, puis un **grand fest-noz** avec les bagadoù quimpérois (20 h → 23 h). Le rendez-vous breton de la soirée.
+- **Le Novomax** : côté rock musclé — **Diank** (power rock, 17 h) puis **Brokenwall** (garage/soul, 18 h).
+- **Halles Saint-François** : la scène **rap/hip-hop** du Local Musik (Yamals1, D-ro, Kuma Vim).
+
+### Concarneau — du rock latino au metalcore (dim. 21, dès 16 h)
+
+Tout est groupé entre le centre et la **Ville-Close** :
+
+- **Place Jean-Jaurès** : Carlos Eston (rock latino, 16 h) → Havres (chanson poétique, 17 h) → Slivotisa (musiques de l'Est, 18 h 15) → **Cancel** (rock, 20 h 30) → **No Retry** (metalcore, 22 h).
+- **Petit Champs** : Bjembefellas (percussions africaines, 17 h) → Les Oiseaux de Passage (folk, 19 h 30) → **Trancylvania** (melodic techno/trance, 21 h).
+- **19 h** : déambulation du **Bagadig Bro Konk Kerne** dans les ruelles.
+
+---
+
+## Loire-Atlantique (44)
+
+### Nantes — la fête « diffuse » (dim. 21, dès 18 h)
+
+Pas de scène géante unique, mais des dizaines de spots. Nos repères concrets :
+
+- **18 h 30 · Place du Pilori** : **Luz de Tieta**, la banda brésilienne nantaise, joue depuis un balcon (samba, MPB, pop). Démarrage parfait.
+- **Atelier Dulcie September (scène acoustique), dès 17 h** : chorale Arrivée d'air Show, Vocaswing, **Reggae a vida**, Bagad de Nantes… puis, **21 h 30 → 23 h**, Phénomène, Sahra Cherifi, Léa Castel Thébault et Langa.
+- **Quai de la Fosse** : **fest-deiz** de l'ACB44 avec le Bagad d'Orvault (musique bretonne).
+- **Le cœur de la fête** : quartier médiéval du **Bouffay**, place Royale, place du Commerce, puis les **bords de Loire** en soirée.
+- ⚠️ **Tram ligne 1 partiellement fermée** pour travaux : prévoyez vélo ou marche.
+
+---
+
+## 📅 Attention : ces communes ne fêtent pas la musique le 21 juin
+
+Le 21 juin tombe un **dimanche** cette année : du coup, beaucoup de communes bretonnes décalent leur Fête de la Musique au **vendredi 19** ou au **samedi 20 juin**. Avant de prendre la route, vérifiez le bon jour ! (Toutes les autres communes — et la grande majorité des villes — fêtent la musique le dimanche 21.)
+
+**Jeudi 18 juin :** Guidel (56).
+
+**Vendredi 19 juin**
+
+- *Ille-et-Vilaine :* Saint-Lunaire, Pleurtuit, Miniac-Morvan
+- *Côtes-d'Armor :* Plédran, Plouër-sur-Rance, Évran, La Landec
+- *Morbihan :* Lanester, Quéven, Riantec, Cléguérec, Crac'h, Baud, Langonnet
+- *Finistère :* Plouarzel, Plouguerneau, Loperhet
+- *Loire-Atlantique :* Savenay
+
+**Samedi 20 juin**
+
+- *Ille-et-Vilaine :* Iffendic
+- *Côtes-d'Armor :* Saint-Quay-Portrieux, Ploeuc-L'Hermitage
+- *Morbihan :* **Lorient**, **Pontivy**, Hennebont
+- *Finistère :* Lesneven, Guilers, La Forest-Landerneau, Guiscriff, Treffiagat, Pouldreuzic
+- *Loire-Atlantique :* Sainte-Pazanne, Saint-Mars-de-Coutais
+
+---
+
+## En pratique
+
+- **Le bon jour** : 21 juin partout, sauf **Lorient et Pontivy (samedi 20)**.
+- **Arrivez tôt** : beaucoup de scènes démarrent l'après-midi ; les spots électro chauffent en soirée.
+- **Bougez léger** : centres-villes piétonnisés, transports souvent prolongés (métro de nuit à Rennes, bus renforcés à Quimper, Saint-Malo, etc.).
+- **Le secret d'une bonne soirée** : alterner une scène officielle (gros son) et un concert de bar ou de jardin (ambiance plus intime).
+
+## Questions fréquentes sur la Fête de la Musique 2026
+
+**Quand a lieu la Fête de la Musique 2026 ?**
+
+Le **dimanche 21 juin 2026** dans la plupart des villes. Quelques communes la décalent au vendredi 19 ou au samedi 20 juin (notamment Lorient et Pontivy) : vérifiez le jour de votre ville plus haut.
+
+**Est-ce que c'est gratuit ?**
+
+Oui, totalement. Tous les concerts dans l'espace public, les bars et les jardins sont **gratuits et sans réservation**.
+
+**Où sortir le 21 juin en Bretagne ?**
+
+Partout ! Les plus grosses programmations sont à **Rennes, Brest et Nantes**, mais chaque ville a ses scènes (voir notre sélection ville par ville ci-dessus). Pour une ambiance plus intime, visez les bars et les concerts de quartier.
+
+**Faut-il s'inscrire pour jouer de la musique dans la rue ?**
+
+Dans la plupart des centres-villes piétonnisés (Rennes, Nantes…), **non** : chacun peut s'installer librement. Pour les scènes officielles, les villes organisent des inscriptions en amont.
+
+**Jusqu'à quelle heure ça dure ?**
+
+Souvent **jusqu'à 1 h ou 2 h du matin** sur les scènes électro et dans les bars. Pensez aux transports de nuit, renforcés dans la plupart des villes.
+
+## Pas (trop) fan de concerts ? Et si vous tiriez quelques fléchettes ?
+
+La Fête de la Musique, ce n'est pas le truc de tout le monde — et c'est très bien comme ça. Si les foules et les décibels, très peu pour vous, la Bretagne a de quoi occuper votre soirée autrement : rien de tel qu'un **bar à fléchettes** pour passer un bon moment entre amis, au calme, un verre à la main. On vous a justement préparé le guide des **[meilleurs bars à fléchettes de Bretagne](/actualites/meilleurs-bars-flechettes-bretagne-2026)** — de quoi viser dans le mille pendant que la ville chante.
+
+## Jovial, votre futur radar à bonnes soirées en Bretagne 🎶
+
+Vous avez aimé ne rien rater de la Fête de la Musique ? Imaginez la même chose **toute l'année**. **Jovial**, c'est l'application bretonne (bientôt disponible) qui rassemblera au même endroit les concerts, soirées et bonnes adresses près de chez vous — pour savoir en un coup d'œil **quoi faire ce soir**, sans éplucher dix sites différents.
+
+📲 *Bientôt disponible sur l'App Store et Google Play — gratuit, sans publicité.*
+
+## Sources
+
+Programmation issue des sites officiels des villes et des offices de tourisme (juin 2026) : Rennes, Saint-Malo (programme officiel de la Ville), Fougères, Dinan, Lannion, Saint-Brieuc, Lorient, Vannes, Pontivy, Brest, Quimper, Concarneau et Nantes. Horaires des bars à vérifier le jour J.
+    `,
+  },
+  {
     slug: "meilleurs-bars-flechettes-bretagne-2026",
     date: "10 juin 2026",
     tag: "Adresses",
