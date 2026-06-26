@@ -111,8 +111,8 @@ export default function PremiumPage() {
               </div>
               <div className="mb-6">
                 <p className="font-bold text-xl">Jovial+</p>
-                <p className="text-3xl font-black mt-2">3,99 €<span className="text-base font-medium text-white/50"> / mois</span></p>
-                <p className="text-white/50 text-xs mt-1">ou 34,99 € / an (économise 30%)</p>
+                <p className="text-3xl font-black mt-2">2,99 €<span className="text-base font-medium text-white/50"> / mois</span></p>
+                <p className="text-white/50 text-xs mt-1">ou 29,99 € / an (économise 17%)</p>
               </div>
               <ul className="space-y-3">
                 {premium.map((item) => (

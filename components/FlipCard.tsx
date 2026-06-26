@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 interface FlipCardProps {
   icon: string;
   title: string;
@@ -8,10 +10,22 @@ interface FlipCardProps {
 }
 
 export default function FlipCard({ icon, title, desc, accent = "#2B4E93" }: FlipCardProps) {
+  const [flipped, setFlipped] = useState(false);
+  const toggle = () => setFlipped((f) => !f);
+
   return (
     <div
-      className="group"
-      style={{ perspective: "1000px", height: "180px" }}
+      style={{ perspective: "1000px", height: "180px", cursor: "pointer", userSelect: "none" }}
+      onClick={toggle}
+      role="button"
+      tabIndex={0}
+      aria-label={`${title} — appuie pour ${flipped ? "revenir" : "en savoir plus"}`}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          toggle();
+        }
+      }}
     >
       <div
         style={{
@@ -20,8 +34,8 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93" }: Flip
           height: "100%",
           transformStyle: "preserve-3d",
           transition: "transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+          transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)",
         }}
-        className="group-hover:[transform:rotateY(180deg)]"
       >
         {/* Face avant */}
         <div
@@ -41,10 +55,7 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93" }: Flip
           </div>
           <div>
             <h3 className="text-white font-bold text-xl leading-snug">{title}</h3>
-            <div
-              className="w-8 h-0.5 mt-3 rounded-full"
-              style={{ backgroundColor: accent }}
-            />
+            <div className="w-8 h-0.5 mt-3 rounded-full" style={{ backgroundColor: accent }} />
           </div>
         </div>
 

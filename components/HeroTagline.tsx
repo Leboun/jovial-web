@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 
@@ -6,15 +6,10 @@ const ENDINGS = ["ici.", "avec Jovial."];
 
 export default function HeroTagline() {
   const [index, setIndex] = useState(0);
-  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setVisible(false);
-      setTimeout(() => {
-        setIndex((i) => (i + 1) % ENDINGS.length);
-        setVisible(true);
-      }, 400);
+      setIndex((i) => (i + 1) % ENDINGS.length);
     }, 4000);
     return () => clearInterval(interval);
   }, []);
@@ -22,13 +17,19 @@ export default function HeroTagline() {
   return (
     <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-white text-center">
       Les meilleurs moments commencent{" "}
-      <span
-        className="text-[#5CB6AC] transition-opacity duration-400"
-        style={{ opacity: visible ? 1 : 0 }}
-      >
-        {ENDINGS[index]}
+      {/* Les deux fins restent dans le DOM (SEO stable) — on n'anime que l'opacité, empilées dans une même cellule grid. */}
+      <span className="grid">
+        {ENDINGS.map((ending, i) => (
+          <span
+            key={ending}
+            aria-hidden={index === i ? undefined : true}
+            className="text-[#5CB6AC] transition-opacity duration-500"
+            style={{ gridArea: "1 / 1", opacity: index === i ? 1 : 0 }}
+          >
+            {ending}
+          </span>
+        ))}
       </span>
     </h1>
   );
 }
-
