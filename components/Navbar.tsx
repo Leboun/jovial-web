@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import { DOWNLOAD_HREF } from "@/lib/appLinks";
 
 const links = [
   { href: "/#concept", label: "L'appli" },
@@ -44,7 +45,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://apps.apple.com/app/jovial/id0000000000"
+            href={DOWNLOAD_HREF}
             className="bg-[#2B4E93] text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#1e3a70] transition-colors whitespace-nowrap"
           >
             Téléchargez
@@ -91,7 +92,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://apps.apple.com/app/jovial/id0000000000"
+            href={DOWNLOAD_HREF}
             className="bg-[#2B4E93] text-white text-sm font-semibold px-5 py-2.5 rounded-full text-center"
             onClick={() => setOpen(false)}
           >

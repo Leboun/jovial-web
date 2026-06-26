@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { APP_STORE_URL, PLAY_STORE_URL, DOWNLOAD_HREF } from "@/lib/appLinks";
 
 export default function Footer() {
   return (
@@ -26,7 +27,7 @@ export default function Footer() {
             <li><Link href="/confidentialite" className="text-gray-400 text-sm hover:text-white transition-colors">Confidentialité</Link></li>
             <li><Link href="/cgu" className="text-gray-400 text-sm hover:text-white transition-colors">CGU</Link></li>
             <li><Link href="/mentions-legales" className="text-gray-400 text-sm hover:text-white transition-colors">Mentions légales</Link></li>
-            <li><a href="mailto:contact@jovial.app" className="text-gray-400 text-sm hover:text-white transition-colors">Contact</a></li>
+            <li><a href="mailto:hello@getjovial.fr" className="text-gray-400 text-sm hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -36,13 +37,13 @@ export default function Footer() {
           <p className="text-gray-500 text-xs">© {new Date().getFullYear()} Jovial. Tous droits réservés.</p>
           <div className="flex items-center gap-4">
             <a
-              href="https://apps.apple.com/app/jovial/id0000000000"
+              href={APP_STORE_URL || DOWNLOAD_HREF}
               className="text-gray-400 text-xs hover:text-white transition-colors"
             >
               App Store
             </a>
             <a
-              href="https://play.google.com/store/apps/details?id=com.jovial.app"
+              href={PLAY_STORE_URL || DOWNLOAD_HREF}
               className="text-gray-400 text-xs hover:text-white transition-colors"
             >
               Google Play

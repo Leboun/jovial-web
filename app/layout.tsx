@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.getjovial.fr/og-image.png",
+        url: "https://www.getjovial.fr/hero-bg.jpg",
         width: 1200,
         height: 630,
         alt: "Jovial — Bars, concerts, activités près de toi",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jovial — Découvre les bars et événements près de toi",
     description: "Bars, concerts, fléchettes, comedy clubs… Tout ce qui se passe près de chez toi.",
-    images: ["https://www.getjovial.fr/og-image.png"],
+    images: ["https://www.getjovial.fr/hero-bg.jpg"],
   },
 };
 

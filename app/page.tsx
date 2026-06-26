@@ -91,7 +91,7 @@ export default function HomePage() {
 
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/15 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-8 border border-white/20">
-            🎉 Disponible gratuitement
+            🎉 Bientôt disponible — gratuit
           </div>
 
           {/* Tagline */}
@@ -103,7 +103,9 @@ export default function HomePage() {
           </p>
 
           {/* Boutons téléchargement */}
-          <DownloadSection />
+          <div id="telecharger" className="scroll-mt-28 w-full flex flex-col items-center">
+            <DownloadSection />
+          </div>
           <p className="text-white/35 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
         </div>
       </section>
