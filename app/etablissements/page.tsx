@@ -23,7 +23,7 @@ const plans = [
     features: [
       "Fiche établissement complète (photos, horaires, réseaux sociaux)",
       "Apparition sur la carte interactive et les recherches Jovial",
-      "1 tag d'activité mis en avant",
+      "2 tags d'activités mis en avant",
       "4 événements par an dans l'agenda Jovial",
       "Gestion des réservations sur Jovial Pro",
       "Avantages exclusifs pour les membres Premium Jovial",
