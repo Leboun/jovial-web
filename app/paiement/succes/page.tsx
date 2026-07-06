@@ -24,9 +24,9 @@ export default async function PaiementSucces({
         <h1 className="text-2xl font-black text-gray-900 mb-3">Paiement confirmé !</h1>
         {isTicket ? (
           <p className="text-gray-500 leading-relaxed mb-2">
-            Ta place est réservée ! Ton billet (QR code) t&apos;attend dans
-            l&apos;application <span className="font-bold text-gray-900">Jovial</span>,
-            sur la fiche de l&apos;événement — et il arrive aussi par email.
+            Ton billet t&apos;attend dans l&apos;application{" "}
+            <span className="font-bold text-gray-900">Jovial</span>, sur la fiche de
+            l&apos;événement — et il arrive aussi par mail.
           </p>
         ) : (
           <p className="text-gray-500 leading-relaxed mb-2">
