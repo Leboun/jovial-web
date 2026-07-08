@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 interface FlipCardProps {
   icon: string;
@@ -13,13 +13,24 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93" }: Flip
   const [flipped, setFlipped] = useState(false);
   const toggle = () => setFlipped((f) => !f);
 
+  // Souris : le survol suffit. Tactile (pas de vrai hover) : le tap bascule.
+  const hoverable = useRef<boolean | null>(null);
+  const canHover = () => {
+    if (hoverable.current === null && typeof window !== "undefined") {
+      hoverable.current = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    }
+    return hoverable.current ?? false;
+  };
+
   return (
     <div
       style={{ perspective: "1000px", height: "180px", cursor: "pointer", userSelect: "none" }}
-      onClick={toggle}
+      onMouseEnter={() => canHover() && setFlipped(true)}
+      onMouseLeave={() => canHover() && setFlipped(false)}
+      onClick={() => !canHover() && toggle()}
       role="button"
       tabIndex={0}
-      aria-label={`${title} — appuie pour ${flipped ? "revenir" : "en savoir plus"}`}
+      aria-label={`${title} — survole ou appuie pour ${flipped ? "revenir" : "en savoir plus"}`}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();

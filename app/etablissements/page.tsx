@@ -1,5 +1,6 @@
 ﻿import { Check, CreditCard, QrCode, RefreshCcw } from "lucide-react";
 import type { Metadata } from "next";
+import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import FlipCard from "@/components/FlipCard";
 import LoopingVideos from "@/components/LoopingVideos";
@@ -105,10 +106,11 @@ export default function EtablissementsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-[#2B4E93] text-white pt-32 pb-20 px-6 overflow-hidden">
-        <div className="absolute top-0 right-0 w-80 h-80 bg-[#5CB6AC] rounded-full blur-[100px] opacity-20 -translate-y-1/2 translate-x-1/3" />
+      <section className="relative bg-gradient-to-br from-[#2B4E93] via-[#2B4E93] to-[#2F7D73] text-white pt-32 pb-20 px-6 overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#5CB6AC] rounded-full blur-[110px] opacity-25 -translate-y-1/3 translate-x-1/4" />
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#011A5C] rounded-full blur-[100px] opacity-30 translate-y-1/2 -translate-x-1/4" />
 
-        <div className="absolute top-6 right-6">
+        <div className="absolute top-6 right-6 z-10">
           <a
             href="https://pro.getjovial.fr/establishment/login"
             className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 transition-colors"
@@ -117,30 +119,44 @@ export default function EtablissementsPage() {
           </a>
         </div>
 
-        <div className="max-w-4xl mx-auto text-center relative">
-          <div className="inline-flex items-center gap-2 bg-white/15 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
-            🏪 Pour les établissements
+        <div className="max-w-5xl mx-auto relative flex flex-col lg:flex-row items-center gap-10">
+          <div className="flex-1 text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 bg-white/15 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
+              🏪 Pour les établissements
+            </div>
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+              Ce soir, ils cherchent où sortir.{" "}
+              <span className="text-[#8FD9CF]">Fais-toi trouver.</span>
+            </h1>
+            <p className="text-white/75 text-xl leading-relaxed mb-10 max-w-2xl mx-auto lg:mx-0">
+              Bar, resto, salle d&apos;activités ou tiers-lieu : Jovial te met sous les yeux de ceux qui veulent sortir près de chez toi — et leur permet de réserver et payer directement dans l&apos;app.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a
+                href="https://pro.getjovial.fr/establishment/offers"
+                className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors text-lg"
+              >
+                Inscrire mon établissement
+              </a>
+              <a
+                href="https://pro.getjovial.fr/establishment/login"
+                className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-bold px-8 py-4 rounded-2xl hover:bg-white/20 transition-colors text-lg border border-white/20"
+              >
+                J&apos;ai déjà un compte
+              </a>
+            </div>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Mets ton établissement{" "}
-            <span className="text-[#5CB6AC]">sous les projecteurs</span>
-          </h1>
-          <p className="text-white/75 text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
-            Rejoins Jovial et connecte ton établissement à des milliers d&apos;utilisateurs locaux qui cherchent des lieux, des activités et des événements près de chez eux.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://pro.getjovial.fr/establishment/offers"
-              className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors text-lg"
-            >
-              Inscrire mon établissement
-            </a>
-            <a
-              href="https://pro.getjovial.fr/establishment/login"
-              className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-bold px-8 py-4 rounded-2xl hover:bg-white/20 transition-colors text-lg border border-white/20"
-            >
-              J&apos;ai déjà un compte
-            </a>
+
+          {/* Mascotte — desktop uniquement */}
+          <div className="hidden lg:block shrink-0">
+            <Image
+              src="/mascotte.png"
+              alt="La mascotte Jovial"
+              width={2953}
+              height={3283}
+              sizes="260px"
+              className="w-[240px] xl:w-[260px] h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.35)]"
+            />
           </div>
         </div>
       </section>
