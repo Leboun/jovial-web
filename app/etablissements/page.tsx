@@ -27,6 +27,7 @@ const plans = [
       "2 tags d'activités mis en avant",
       "4 événements par an dans l'agenda Jovial",
       "Gestion des réservations sur Jovial Pro",
+      "Billetterie d'événements : vente, contrôle des billets et remboursements",
       "Avantages exclusifs pour les membres Premium Jovial",
       "Kit de communication inclus",
     ],
@@ -49,6 +50,7 @@ const plans = [
       "2 tags d'activités mis en avant",
       "Événements illimités dans l'agenda Jovial",
       "Rappels automatiques J-1 et H-1 (réservations & événements)",
+      "Billetterie d'événements : vente, contrôle des billets et remboursements",
       "Accès et animation du Club Jovial",
       "2 passages dans le carrousel Top lieux par an",
       "1 boost Explore (24h dans ta zone) par an",
@@ -72,6 +74,7 @@ const plans = [
       "Tout ce qui est inclus dans Rayonnement",
       "3 tags d'activités mis en avant",
       "Événements illimités + rappels automatiques J-1 et H-1",
+      "Billetterie d'événements : vente, contrôle des billets et remboursements",
       "Club Jovial avec administration complète",
       "6 passages dans le carrousel Top lieux par an",
       "1 boost Explore (24h dans ta zone) par mois",
@@ -291,7 +294,7 @@ export default function EtablissementsPage() {
             <h2 className="text-5xl font-black mt-2 mb-2 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
               Simple et transparent
             </h2>
-            <p className="text-gray-600">Engagement minimum 1 an — paiement annuel.</p>
+            <p className="text-gray-600">Engagement minimum 1 an — paiement annuel ou mensuel.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
@@ -374,7 +377,7 @@ export default function EtablissementsPage() {
               },
               {
                 q: "Y a-t-il un engagement ?",
-                a: "L'engagement minimum est d'1 an, avec paiement annuel. Tu peux évoluer vers une offre supérieure à tout moment."
+                a: "L'engagement minimum est d'1 an, avec paiement annuel ou mensuel au choix. Tu peux évoluer vers une offre supérieure à tout moment."
               },
               {
                 q: "Est-ce que Jovial fonctionne pour tous les types d'établissements ?",
