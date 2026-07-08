@@ -48,7 +48,7 @@ export default function Navbar() {
             href={DOWNLOAD_HREF}
             className="bg-[#2B4E93] text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#1e3a70] transition-colors whitespace-nowrap"
           >
-            Téléchargez
+            Télécharge
           </a>
         </div>
 
@@ -58,7 +58,7 @@ export default function Navbar() {
             href="/etablissements"
             className="text-sm font-semibold text-white bg-[#5CB6AC] px-4 py-2 rounded-full hover:bg-[#4aa39a] transition-colors whitespace-nowrap"
           >
-            Inscrivez votre établissement
+            Inscris ton établissement
           </a>
           <a
             href="https://pro.getjovial.fr/establishment/login"
@@ -97,6 +97,13 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
           >
             Télécharger l'app
+          </a>
+          <a
+            href="/etablissements"
+            className="bg-[#5CB6AC] text-white text-sm font-semibold px-5 py-2.5 rounded-full text-center"
+            onClick={() => setOpen(false)}
+          >
+            Inscris ton établissement
           </a>
           <a
             href="https://pro.getjovial.fr/establishment/login"

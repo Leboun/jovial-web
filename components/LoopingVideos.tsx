@@ -7,7 +7,7 @@ const FADE = 800;
 const VIDEOS = [
   { src: "/hero-video.mp4",  position: "center 60%", brightness: 1    },
   { src: "/FinaleLDC.mp4",   position: "center 70%", brightness: 0.55 },
-  { src: "/IMG_3685.mov",    position: "center 80%", brightness: 1    },
+  { src: "/IMG_3685.mp4",    position: "center 80%", brightness: 1    },
 ];
 
 export default function LoopingVideos({ style }: { style?: React.CSSProperties }) {

@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Calendar, Clock, ArrowLeft, MapPin } from "lucide-react";
 import { articles, getArticle } from "@/lib/articles";
+import { APP_STORE_URL, PLAY_STORE_URL, APP_COMING_SOON } from "@/lib/appLinks";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -241,18 +242,29 @@ export default async function ArticlePage({ params }: Props) {
             <p className="text-white/70 text-sm">Carte interactive, événements, réservations — tout est là.</p>
           </div>
           <div className="flex gap-3 shrink-0">
-            <a
-              href="https://apps.apple.com/app/jovial"
-              className="bg-white text-[#2B4E93] text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-white/90 transition-colors"
-            >
-              App Store
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.jovial.app"
-              className="bg-white/15 text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-white/25 transition-colors border border-white/20"
-            >
-              Google Play
-            </a>
+            {APP_COMING_SOON ? (
+              <Link
+                href="/#telecharger"
+                className="bg-white text-[#2B4E93] text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-white/90 transition-colors"
+              >
+                Découvrir l&apos;app →
+              </Link>
+            ) : (
+              <>
+                <a
+                  href={APP_STORE_URL}
+                  className="bg-white text-[#2B4E93] text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-white/90 transition-colors"
+                >
+                  App Store
+                </a>
+                <a
+                  href={PLAY_STORE_URL}
+                  className="bg-white/15 text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-white/25 transition-colors border border-white/20"
+                >
+                  Google Play
+                </a>
+              </>
+            )}
           </div>
         </div>
       </section>

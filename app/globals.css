@@ -17,6 +17,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Anneau de focus visible au clavier (a11y) */
+:focus-visible {
+  outline: 2px solid #5CB6AC;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 @keyframes scroll-banner {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }

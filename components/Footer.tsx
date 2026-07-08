@@ -15,36 +15,36 @@ export default function Footer() {
         <div>
           <p className="font-semibold text-sm mb-4 text-gray-300 uppercase tracking-wider">L'application</p>
           <ul className="space-y-2">
-            <li><Link href="/#concept" className="text-gray-400 text-sm hover:text-white transition-colors">Concept</Link></li>
-            <li><Link href="/etablissements" className="text-gray-400 text-sm hover:text-white transition-colors">Établissements</Link></li>
-            <li><Link href="/actualites" className="text-gray-400 text-sm hover:text-white transition-colors">Découvrir</Link></li>
+            <li><Link href="/#concept" className="text-gray-300 text-sm hover:text-white transition-colors">Concept</Link></li>
+            <li><Link href="/etablissements" className="text-gray-300 text-sm hover:text-white transition-colors">Établissements</Link></li>
+            <li><Link href="/actualites" className="text-gray-300 text-sm hover:text-white transition-colors">Découvrir</Link></li>
           </ul>
         </div>
 
         <div>
           <p className="font-semibold text-sm mb-4 text-gray-300 uppercase tracking-wider">Légal</p>
           <ul className="space-y-2">
-            <li><Link href="/confidentialite" className="text-gray-400 text-sm hover:text-white transition-colors">Confidentialité</Link></li>
-            <li><Link href="/cgu" className="text-gray-400 text-sm hover:text-white transition-colors">CGU</Link></li>
-            <li><Link href="/mentions-legales" className="text-gray-400 text-sm hover:text-white transition-colors">Mentions légales</Link></li>
-            <li><a href="mailto:hello@getjovial.fr" className="text-gray-400 text-sm hover:text-white transition-colors">Contact</a></li>
+            <li><Link href="/confidentialite" className="text-gray-300 text-sm hover:text-white transition-colors">Confidentialité</Link></li>
+            <li><Link href="/cgu" className="text-gray-300 text-sm hover:text-white transition-colors">CGU</Link></li>
+            <li><Link href="/mentions-legales" className="text-gray-300 text-sm hover:text-white transition-colors">Mentions légales</Link></li>
+            <li><a href="mailto:hello@getjovial.fr" className="text-gray-300 text-sm hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-gray-500 text-xs">© {new Date().getFullYear()} Jovial. Tous droits réservés.</p>
+          <p className="text-gray-400 text-xs">© {new Date().getFullYear()} Jovial. Tous droits réservés.</p>
           <div className="flex items-center gap-4">
             <a
               href={APP_STORE_URL || DOWNLOAD_HREF}
-              className="text-gray-400 text-xs hover:text-white transition-colors"
+              className="text-gray-300 text-xs hover:text-white transition-colors"
             >
               App Store
             </a>
             <a
               href={PLAY_STORE_URL || DOWNLOAD_HREF}
-              className="text-gray-400 text-xs hover:text-white transition-colors"
+              className="text-gray-300 text-xs hover:text-white transition-colors"
             >
               Google Play
             </a>

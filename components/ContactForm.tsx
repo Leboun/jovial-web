@@ -51,7 +51,7 @@ export default function ContactForm() {
             type="text"
             required
             placeholder="Votre nom"
-            className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-white/50 transition-colors"
+            className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:border-white/50 transition-colors"
           />
         </div>
         <div>
@@ -60,7 +60,7 @@ export default function ContactForm() {
             name="etablissement"
             type="text"
             placeholder="Nom de votre lieu ou événement"
-            className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-white/50 transition-colors"
+            className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:border-white/50 transition-colors"
           />
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function ContactForm() {
             type="email"
             required
             placeholder="votre@email.fr"
-            className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-white/50 transition-colors"
+            className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:border-white/50 transition-colors"
           />
         </div>
         <div>
@@ -81,7 +81,7 @@ export default function ContactForm() {
             name="ville"
             type="text"
             placeholder="Rennes, Brest, Lorient…"
-            className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-white/50 transition-colors"
+            className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:border-white/50 transition-colors"
           />
         </div>
       </div>
@@ -92,7 +92,7 @@ export default function ContactForm() {
           required
           rows={4}
           placeholder="Parlez-nous de votre lieu, de votre événement, de ce que vous souhaitez mettre en avant…"
-          className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-white/50 transition-colors resize-none"
+          className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:border-white/50 transition-colors resize-none"
         />
       </div>
       <button

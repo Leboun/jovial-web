@@ -4,7 +4,7 @@ import LoopingVideos from "@/components/LoopingVideos";
 import ScrollingBanner from "@/components/ScrollingBanner";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Heart, Bell, Clock, Ticket } from "lucide-react";
+import { MapPin, Heart, Bell, Clock, Ticket, CreditCard, QrCode } from "lucide-react";
 import { articles } from "@/lib/articles";
 
 const features = [
@@ -130,9 +130,12 @@ export default function HomePage() {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             {/* Mockup carte à gauche */}
             <div className="w-full max-w-[380px] shrink-0 mx-auto lg:mx-0">
-              <img
+              <Image
                 src="/mockup-map.png"
                 alt="Carte interactive Jovial"
+                width={1095}
+                height={1877}
+                sizes="(max-width: 1024px) 90vw, 380px"
                 className="w-full drop-shadow-2xl"
               />
             </div>
@@ -159,6 +162,71 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      {/* Établissements — B2B */}
+      <section className="py-20 px-6 bg-gradient-to-br from-[#2B4E93] to-[#2F7D73] text-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 text-white/70 text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-white/50" />
+              Établissements
+              <span className="w-6 h-px bg-white/50" />
+            </span>
+            <h2 className="text-4xl md:text-5xl font-black mt-2 mb-4 uppercase leading-tight">
+              Tu gères un bar, un resto, un lieu qui bouge ?
+            </h2>
+            <p className="text-white/75 text-lg max-w-2xl mx-auto leading-relaxed">
+              Jovial met ton établissement sous les yeux de ceux qui cherchent une sortie près de chez toi — et te donne les outils pour les accueillir.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
+            {[
+              {
+                icon: MapPin,
+                title: "Visible au bon moment",
+                desc: "Ta fiche, tes activités et tes événements apparaissent sur la carte quand on cherche une sortie autour de toi.",
+              },
+              {
+                icon: CreditCard,
+                title: "Réservations payées en ligne",
+                desc: "Tes clients réservent et paient directement dans l'app. Tu reçois 95 % du montant sur ton compte, sans terminal ni paperasse.",
+              },
+              {
+                icon: QrCode,
+                title: "Billetterie clé en main",
+                desc: "Vends les billets de tes événements : QR codes nominatifs, scanner à l'entrée, remboursements gérés pour toi.",
+              },
+            ].map((b) => {
+              const Icon = b.icon;
+              return (
+                <div key={b.title} className="bg-white/10 border border-white/15 rounded-2xl p-6 text-left">
+                  <div className="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center mb-4">
+                    <Icon size={22} className="text-white" />
+                  </div>
+                  <h3 className="font-bold mb-2">{b.title}</h3>
+                  <p className="text-white/70 text-sm leading-relaxed">{b.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://pro.getjovial.fr/establishment/offers"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors"
+            >
+              Inscrire mon établissement
+            </a>
+            <Link
+              href="/etablissements"
+              className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-bold px-8 py-4 rounded-2xl hover:bg-white/20 transition-colors border border-white/25"
+            >
+              Découvrir Jovial Pro →
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Bandeau défilant */}
       <ScrollingBanner />

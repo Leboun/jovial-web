@@ -1,4 +1,4 @@
-﻿import { Check, MapPin, Bell, TrendingUp, Calendar, Users, Star } from "lucide-react";
+﻿import { Check, CreditCard, QrCode, RefreshCcw } from "lucide-react";
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import FlipCard from "@/components/FlipCard";
@@ -6,7 +6,7 @@ import LoopingVideos from "@/components/LoopingVideos";
 
 export const metadata: Metadata = {
   title: "Jovial pour les établissements — Visibilité & outils pro",
-  description: "Inscrivez votre établissement sur Jovial, publiez vos événements et boostez votre visibilité auprès de milliers d'utilisateurs locaux.",
+  description: "Inscris ton établissement sur Jovial : fiche visible sur la carte, événements, réservations payées en ligne et billetterie clé en main.",
 };
 
 const plans = [
@@ -39,7 +39,7 @@ const plans = [
     tagline: "Animation locale",
     price: "490 €",
     period: "/ an",
-    saving: "Vous économisez 18%",
+    saving: "Tu économises 18 %",
     desc: "Pour animer régulièrement ton établissement, engager ta communauté et gagner en visibilité locale.",
     color: "border-[#2B4E93]",
     popular: true,
@@ -63,7 +63,7 @@ const plans = [
     tagline: "Pilotage complet",
     price: "790 €",
     period: "/ an",
-    saving: "Vous économisez 18%",
+    saving: "Tu économises 18 %",
     desc: "Pour piloter ta présence, tes réservations et tes prises de parole avec les outils les plus complets.",
     color: "border-[#5CB6AC]",
     popular: false,
@@ -83,36 +83,21 @@ const plans = [
   },
 ];
 
-const benefits = [
+const paymentFeatures = [
   {
-    icon: MapPin,
-    title: "Sois visible au bon moment",
-    desc: "Quand un utilisateur cherche un lieu, une activité ou un événement près de chez lui, ton établissement apparaît en premier sur la carte Jovial.",
+    icon: CreditCard,
+    title: "Réservations payées en ligne",
+    desc: "Tes clients réservent et paient directement dans l'app. Tu reçois 95 % du montant sur ton compte bancaire — les 5 % restants couvrent tous les frais, y compris bancaires.",
   },
   {
-    icon: Bell,
-    title: "Notifie ta communauté",
-    desc: "Publie un événement ou une nouveauté et tes abonnés reçoivent une notification directe sur leur téléphone — sans algorithme, sans filtre.",
+    icon: QrCode,
+    title: "Billetterie d'événements",
+    desc: "Vends tes billets dans l'app : billets nominatifs avec QR code, scanner intégré à Jovial Pro pour contrôler l'entrée — par toi ou ton équipe avec des comptes staff.",
   },
   {
-    icon: TrendingUp,
-    title: "Mesure ton impact",
-    desc: "Vues de ta fiche, clics sur tes événements, nouveaux abonnés — suis tes performances en temps réel depuis ton tableau de bord.",
-  },
-  {
-    icon: Star,
-    title: "Remonte dans les résultats",
-    desc: "Avec les offres Rayonnement et Pro, ton établissement est mis en avant sur la carte et dans les recherches Jovial de ta zone.",
-  },
-  {
-    icon: Calendar,
-    title: "Publie tes événements sans limite",
-    desc: "Concerts, tournois, ateliers, happenings… publie autant d'événements que tu veux et rappelle automatiquement tes participants J-1 et H-1.",
-  },
-  {
-    icon: Users,
-    title: "Accompagnement inclus",
-    desc: "Notre équipe t'aide à optimiser ta fiche, configurer tes outils et tirer le meilleur de Jovial pour ton établissement.",
+    icon: RefreshCcw,
+    title: "Remboursements en un clic",
+    desc: "Un événement annulé, un imprévu ? Tu rembourses une commande en un clic depuis ton espace, et les billets sont automatiquement invalidés.",
   },
 ];
 
@@ -212,6 +197,40 @@ export default function EtablissementsPage() {
               desc="Notre équipe configure ta fiche avec toi, te fournit un kit de communication clé en main et reste disponible pour t'aider à performer sur Jovial."
               accent="#2B4E93"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Paiements & billetterie */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+              Nouveau
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+            </span>
+            <h2 className="text-5xl font-black mt-2 mb-3 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
+              Encaisse en ligne, sans terminal
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+              Réservations et billets payés directement dans l&apos;app, l&apos;argent versé sur ton compte. Paiements sécurisés par Stripe.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {paymentFeatures.map((f) => {
+              const Icon = f.icon;
+              return (
+                <div key={f.title} className="bg-[#f8faff] rounded-2xl p-7 border border-gray-100">
+                  <div className="w-11 h-11 rounded-xl bg-[#D8F0EE] flex items-center justify-center mb-4">
+                    <Icon size={22} className="text-[#2F7D73]" />
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-2">{f.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -344,6 +363,10 @@ export default function EtablissementsPage() {
               {
                 q: "Est-ce que Jovial fonctionne pour tous les types d'établissements ?",
                 a: "Oui — bars, restaurants, salles de concert, tiers-lieux, guinguettes, clubs de sport, salles d'activités… Jovial est ouvert à tous les lieux qui accueillent du public et organisent des activités ou événements."
+              },
+              {
+                q: "Comment fonctionnent la billetterie et le paiement en ligne ?",
+                a: "Tu actives le paiement en ligne depuis ton espace Jovial Pro (compte de paiement sécurisé Stripe, création guidée). Tes clients paient leur réservation ou leurs billets directement dans l'app, et tu reçois 95 % du montant sur ton compte bancaire — les 5 % restants couvrent l'ensemble des frais. Pour tes événements : billets nominatifs avec QR code, scanner intégré pour contrôler l'entrée (par toi ou ton staff) et remboursement d'une commande en un clic si besoin."
               },
               {
                 q: "Comment fonctionne le Kit de communication ?",
