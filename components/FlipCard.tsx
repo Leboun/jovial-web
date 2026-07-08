@@ -81,10 +81,12 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93", footer
           className="rounded-3xl p-8 flex flex-col justify-between"
         >
           <p className="text-white/95 text-sm leading-relaxed">{desc}</p>
-          <div className="flex items-center gap-2 text-white font-semibold text-sm">
-            <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-xs shrink-0">✓</div>
-            {footer}
-          </div>
+          {footer ? (
+            <div className="flex items-center gap-2 text-white font-semibold text-sm">
+              <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-xs shrink-0">✓</div>
+              {footer}
+            </div>
+          ) : null}
         </div>
       </div>
     </div>

@@ -1,38 +1,12 @@
 ﻿import DownloadSection from "@/components/DownloadSection";
+import FlipCard from "@/components/FlipCard";
 import HeroTagline from "@/components/HeroTagline";
 import LoopingVideos from "@/components/LoopingVideos";
 import ScrollingBanner from "@/components/ScrollingBanner";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Heart, Bell, Clock, Ticket, CreditCard, QrCode } from "lucide-react";
+import { MapPin, Clock, CreditCard, QrCode } from "lucide-react";
 import { articles } from "@/lib/articles";
-
-const features = [
-  {
-    icon: MapPin,
-    title: "Carte interactive",
-    description: "Explore bars, restaurants, guinguettes, tiers-lieux et bien plus autour de toi — en temps réel.",
-    color: "#2B4E93",
-  },
-  {
-    icon: Bell,
-    title: "Événements à venir",
-    description: "Concerts, tournois, diffusions de matchs… Ne rate plus rien et ajoute les événements directement à ton agenda.",
-    color: "#5CB6AC",
-  },
-  {
-    icon: Ticket,
-    title: "Activités & réservation",
-    description: "Fléchettes, billard, palet breton, baby-foot… Découvre les activités disponibles et réserve en quelques secondes.",
-    color: "#5CB6AC",
-  },
-  {
-    icon: Heart,
-    title: "Favoris & alertes",
-    description: "Sauvegarde tes lieux préférés et reçois une notification dès qu'ils publient un événement ou une activité.",
-    color: "#EF4444",
-  },
-];
 
 const steps = [
   { number: "01", title: "Télécharge l'app", desc: "Disponible sur App Store et Google Play, gratuitement." },
@@ -128,35 +102,44 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-col lg:flex-row items-center gap-16">
-            {/* Mockup carte à gauche */}
+            {/* Mockup app à gauche */}
             <div className="w-full max-w-[380px] shrink-0 mx-auto lg:mx-0">
               <Image
-                src="/mockup-map.png"
-                alt="Carte interactive Jovial"
-                width={1095}
-                height={1877}
+                src="/mockup-app.jpg"
+                alt="L'app Jovial : carte interactive et fiche établissement"
+                width={828}
+                height={1792}
                 sizes="(max-width: 1024px) 90vw, 380px"
-                className="w-full drop-shadow-2xl"
+                className="w-full drop-shadow-2xl rounded-[2rem]"
               />
             </div>
 
-            {/* 4 features à droite */}
+            {/* 4 features à droite — mêmes cartes retournables que la page établissements */}
             <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {features.map((f) => {
-                const Icon = f.icon;
-                return (
-                  <div key={f.title} className="bg-gray-50 rounded-2xl p-6 hover:shadow-md transition-shadow">
-                    <div
-                      className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
-                      style={{ backgroundColor: f.color + "20" }}
-                    >
-                      <Icon size={22} style={{ color: f.color }} />
-                    </div>
-                    <h3 className="font-bold text-gray-900 mb-2">{f.title}</h3>
-                    <p className="text-gray-500 text-sm leading-relaxed">{f.description}</p>
-                  </div>
-                );
-              })}
+              <FlipCard
+                icon="🗺️"
+                title="Carte interactive"
+                desc="Explore bars, restaurants, guinguettes, tiers-lieux et bien plus autour de toi — en temps réel."
+                footer=""
+              />
+              <FlipCard
+                icon="📅"
+                title="Événements à venir"
+                desc="Concerts, tournois, diffusions de matchs… Ne rate plus rien et ajoute les événements directement à ton agenda."
+                footer=""
+              />
+              <FlipCard
+                icon="🎯"
+                title="Activités & réservation"
+                desc="Fléchettes, billard, palet breton, baby-foot… Découvre les activités disponibles et réserve en quelques secondes."
+                footer=""
+              />
+              <FlipCard
+                icon="❤️"
+                title="Favoris & alertes"
+                desc="Sauvegarde tes lieux préférés et reçois une notification dès qu'ils publient un événement ou une activité."
+                footer=""
+              />
             </div>
           </div>
         </div>
