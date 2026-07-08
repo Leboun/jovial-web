@@ -7,9 +7,10 @@ interface FlipCardProps {
   title: string;
   desc: string;
   accent?: string;
+  footer?: string;
 }
 
-export default function FlipCard({ icon, title, desc, accent = "#2B4E93" }: FlipCardProps) {
+export default function FlipCard({ icon, title, desc, accent = "#2B4E93", footer = "Inclus dans toutes les offres" }: FlipCardProps) {
   const [flipped, setFlipped] = useState(false);
   const toggle = () => setFlipped((f) => !f);
 
@@ -56,16 +57,13 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93" }: Flip
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
           }}
-          className="bg-[#0f1c38] rounded-3xl p-8 flex flex-col justify-between"
+          className="bg-white border border-gray-100 shadow-sm rounded-3xl p-8 flex flex-col justify-between"
         >
-          <div
-            className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl"
-            style={{ backgroundColor: accent + "25" }}
-          >
+          <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl bg-[#D8F0EE]">
             {icon}
           </div>
           <div>
-            <h3 className="text-white font-bold text-xl leading-snug">{title}</h3>
+            <h3 className="text-gray-900 font-bold text-xl leading-snug">{title}</h3>
             <div className="w-8 h-0.5 mt-3 rounded-full" style={{ backgroundColor: accent }} />
           </div>
         </div>
@@ -78,14 +76,14 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93" }: Flip
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
-            backgroundColor: accent,
+            background: "linear-gradient(135deg, #2B4E93 0%, #5CB6AC 100%)",
           }}
           className="rounded-3xl p-8 flex flex-col justify-between"
         >
-          <p className="text-white/90 text-sm leading-relaxed">{desc}</p>
+          <p className="text-white/95 text-sm leading-relaxed">{desc}</p>
           <div className="flex items-center gap-2 text-white font-semibold text-sm">
-            <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-xs">✓</div>
-            Inclus dans toutes les offres
+            <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-xs shrink-0">✓</div>
+            {footer}
           </div>
         </div>
       </div>

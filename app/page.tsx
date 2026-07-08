@@ -175,7 +175,7 @@ export default function HomePage() {
             Tu gères un bar, un resto, un lieu qui bouge ?
           </h2>
           <p className="text-white/75 text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-            Fais-toi trouver par ceux qui cherchent une sortie près de chez toi — et encaisse réservations et billets directement dans l&apos;app.
+            Fais-toi trouver par ceux qui cherchent quoi faire près de chez toi — et encaisse réservations et billets directement dans l&apos;app.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mb-10 text-sm">

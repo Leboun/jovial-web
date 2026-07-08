@@ -125,11 +125,11 @@ export default function EtablissementsPage() {
               🏪 Pour les établissements
             </div>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              Ce soir, ils cherchent où sortir.{" "}
+              Ils cherchent quoi faire.{" "}
               <span className="text-[#8FD9CF]">Fais-toi trouver.</span>
             </h1>
             <p className="text-white/75 text-xl leading-relaxed mb-10 max-w-2xl mx-auto lg:mx-0">
-              Bar, resto, salle d&apos;activités ou tiers-lieu : Jovial te met sous les yeux de ceux qui veulent sortir près de chez toi — et leur permet de réserver et payer directement dans l&apos;app.
+              Bar, resto, salle d&apos;activités ou tiers-lieu : Jovial te met sous les yeux de ceux qui cherchent quoi faire près de chez toi — et leur permet de réserver et payer directement dans l&apos;app.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
@@ -173,7 +173,6 @@ export default function EtablissementsPage() {
             <h2 className="text-5xl font-black mt-2 mb-3 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
               Sois là où tes clients te cherchent.
             </h2>
-            <p className="text-gray-600 text-sm">Passe ta souris sur chaque carte pour en savoir plus →</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -185,26 +184,27 @@ export default function EtablissementsPage() {
             />
             <FlipCard
               icon="🔔"
-              title="Tes clients notifiés en un clic"
-              desc="Publie un événement → tes abonnés reçoivent une notification push sur leur téléphone. Pas d'algorithme, pas de boost payant à la pièce. Direct."
+              title="Tes fans notifiés en un clic"
+              desc="Publie un événement → les utilisateurs qui t'ont mis en favori reçoivent une notification push sur leur téléphone. Pas d'algorithme, pas de pub à payer : tu touches directement ta communauté."
               accent="#2B4E93"
             />
             <FlipCard
               icon="🎯"
               title="Tes activités, trouvées par les bons clients"
-              desc="Fléchettes, palet breton, billard, jeux de société… Chaque activité que tu proposes devient un filtre de recherche sur la carte Jovial."
+              desc="Fléchettes, palet breton, billard, jeux de société… Tes activités ressortent dans la partie Explorer de l'app, là où les utilisateurs choisissent quoi faire."
               accent="#2B4E93"
             />
             <FlipCard
               icon="📅"
-              title="Publie autant d'événements que tu veux"
+              title="Publie et anime tes événements"
               desc="Concerts, tournois, ateliers, happenings… Rappels automatiques J-1 et H-1 envoyés à tes participants pour que personne n'oublie."
               accent="#2B4E93"
+              footer="Illimités avec Rayonnement et Pro — 4/an avec Visibilité"
             />
             <FlipCard
               icon="📊"
-              title="Suis ce qui attire du monde chez toi"
-              desc="Vues, clics, abonnés, réservations — un tableau de bord clair pour piloter ta visibilité et savoir ce qui fonctionne vraiment."
+              title="Pilote tout depuis ton espace Pro"
+              desc="Abonnés, réservations, événements, encaissements — un tableau de bord clair pour gérer ta présence Jovial au même endroit."
               accent="#2B4E93"
             />
             <FlipCard
