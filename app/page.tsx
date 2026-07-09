@@ -63,11 +63,6 @@ export default function HomePage() {
         {/* Contenu centré */}
         <div className="relative z-10 flex flex-col items-center text-center px-6 pt-28 pb-12 w-full max-w-5xl mx-auto">
 
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/15 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-8 border border-white/20">
-            🎉 Bientôt disponible — gratuit
-          </div>
-
           {/* Tagline */}
           <HeroTagline />
 
@@ -96,7 +91,7 @@ export default function HomePage() {
             <h2 className="text-5xl font-black mt-2 mb-5 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
               Tout ce qu&apos;il te faut pour sortir
             </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
               Découvre des lieux uniques, réserve tes activités, suis les événements — tout en un.
             </p>
           </div>
@@ -105,12 +100,12 @@ export default function HomePage() {
             {/* Mockup app à gauche */}
             <div className="w-full max-w-[380px] shrink-0 mx-auto lg:mx-0">
               <Image
-                src="/mockup-app.jpg"
+                src="/mockup-app.png"
                 alt="L'app Jovial : carte interactive et fiche établissement"
-                width={828}
-                height={1792}
+                width={977}
+                height={1961}
                 sizes="(max-width: 1024px) 90vw, 380px"
-                className="w-full drop-shadow-2xl rounded-[2rem]"
+                className="w-full drop-shadow-2xl"
               />
             </div>
 

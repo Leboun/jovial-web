@@ -55,7 +55,7 @@ export default function Navbar() {
         {/* Desktop nav — bord droit */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="/etablissements"
+            href="https://pro.getjovial.fr/establishment/offers"
             className="text-sm font-semibold text-white bg-[#5CB6AC] px-4 py-2 rounded-full hover:bg-[#4aa39a] transition-colors whitespace-nowrap"
           >
             Inscris ton établissement
@@ -99,7 +99,7 @@ export default function Navbar() {
             Télécharger l'app
           </a>
           <a
-            href="/etablissements"
+            href="https://pro.getjovial.fr/establishment/offers"
             className="bg-[#5CB6AC] text-white text-sm font-semibold px-5 py-2.5 rounded-full text-center"
             onClick={() => setOpen(false)}
           >

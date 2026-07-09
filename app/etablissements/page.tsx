@@ -224,11 +224,6 @@ export default function EtablissementsPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
-              Nouveau
-              <span className="w-6 h-px bg-[#5CB6AC]" />
-            </span>
             <h2 className="text-5xl font-black mt-2 mb-3 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
               Encaisse en ligne, sans terminal
             </h2>
@@ -271,7 +266,7 @@ export default function EtablissementsPage() {
             Ils cherchent quoi faire. <span className="text-[#8FD9CF]">Fais-toi trouver.</span>
           </p>
           <p className="text-white/70 text-lg mb-8">
-            Rejoins Jovial et sois visible dès aujourd&apos;hui — gratuitement.
+            Rejoins Jovial et sois visible dès aujourd&apos;hui — 14 jours d&apos;essai offerts.
           </p>
           <a
             href="https://pro.getjovial.fr/establishment/offers"
