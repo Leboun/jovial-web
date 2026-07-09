@@ -26,10 +26,10 @@ export default function Navbar() {
           <Image
             src="/logo-sm.png"
             alt="Jovial"
-            width={210}
-            height={107}
+            width={230}
+            height={117}
             priority
-            className="w-[150px] md:w-[200px] h-auto"
+            className="w-[180px] md:w-[230px] h-auto"
           />
         </Link>
 
