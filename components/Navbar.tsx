@@ -21,7 +21,7 @@ export default function Navbar() {
         {/* Logo — centré et agrandi, chevauchant le bandeau beige et la vidéo */}
         <Link
           href="/"
-          className="absolute left-1/2 -translate-x-1/2 top-2 z-10 flex items-center drop-shadow-[0_8px_18px_rgba(0,0,0,0.35)]"
+          className="absolute left-1/2 -translate-x-1/2 top-0 z-10 flex items-center drop-shadow-[0_8px_18px_rgba(0,0,0,0.35)]"
         >
           <Image
             src="/logo-sm.png"
