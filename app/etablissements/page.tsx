@@ -109,7 +109,7 @@ export default function EtablissementsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-[#2B4E93] via-[#2B4E93] to-[#2F7D73] text-white pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-[#2B4E93] via-[#2B4E93] to-[#2F7D73] text-white pt-40 pb-20 px-6 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#5CB6AC] rounded-full blur-[110px] opacity-25 -translate-y-1/3 translate-x-1/4" />
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#011A5C] rounded-full blur-[100px] opacity-30 translate-y-1/2 -translate-x-1/4" />
 
@@ -128,8 +128,8 @@ export default function EtablissementsPage() {
               🏪 Pour les établissements
             </div>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              Ils cherchent quoi faire.{" "}
-              <span className="text-[#8FD9CF]">Fais-toi trouver.</span>
+              Ton établissement mérite{" "}
+              <span className="text-[#8FD9CF]">d&apos;être découvert.</span>
             </h1>
             <p className="text-white/75 text-xl leading-relaxed mb-10 max-w-2xl mx-auto lg:mx-0">
               Bar, resto, salle d&apos;activités ou tiers-lieu : Jovial te met sous les yeux de ceux qui cherchent quoi faire près de chez toi — et leur permet de réserver et payer directement dans l&apos;app.
@@ -268,7 +268,7 @@ export default function EtablissementsPage() {
         }} />
         <div className="relative z-10 max-w-2xl mx-auto text-center text-white">
           <p className="text-4xl md:text-5xl font-black leading-tight mb-5 uppercase">
-            Ton établissement mérite d&apos;être découvert.
+            Ils cherchent quoi faire. <span className="text-[#8FD9CF]">Fais-toi trouver.</span>
           </p>
           <p className="text-white/70 text-lg mb-8">
             Rejoins Jovial et sois visible dès aujourd&apos;hui — gratuitement.
