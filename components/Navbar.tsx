@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
@@ -13,6 +13,14 @@ const links = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  // Le logo rétrécit légèrement dès qu'on scrolle (en restant centré).
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 30);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#F2EDE4] border-b border-[#e8e0d4]">
@@ -29,7 +37,9 @@ export default function Navbar() {
             width={288}
             height={147}
             priority
-            className="w-[225px] md:w-[288px] h-auto"
+            className={`h-auto transition-[width] duration-300 ease-out ${
+              scrolled ? "w-[175px] md:w-[224px]" : "w-[225px] md:w-[288px]"
+            }`}
           />
         </Link>
 
