@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { articles } from "@/lib/articles";
+import { articles, toIsoDate } from "@/lib/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.getjovial.fr";
@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const articlePages: MetadataRoute.Sitemap = articles.map((a) => ({
     url: `${base}/actualites/${a.slug}`,
-    lastModified: new Date(),
+    lastModified: new Date(toIsoDate(a.date)),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));

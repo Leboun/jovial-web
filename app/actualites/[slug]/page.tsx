@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Calendar, Clock, ArrowLeft, MapPin } from "lucide-react";
-import { articles, getArticle } from "@/lib/articles";
+import { articles, getArticle, toIsoDate } from "@/lib/articles";
 import { APP_STORE_URL, PLAY_STORE_URL, APP_COMING_SOON } from "@/lib/appLinks";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -18,11 +18,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${article.title} — Jovial`,
     description: article.excerpt,
+    alternates: { canonical: `/actualites/${article.slug}` },
     openGraph: {
       title: article.title,
       description: article.excerpt,
       type: "article",
-      publishedTime: article.date,
+      publishedTime: toIsoDate(article.date),
       authors: [article.author],
       siteName: "Jovial",
       url: `https://www.getjovial.fr/actualites/${article.slug}`,
@@ -158,13 +159,15 @@ export default async function ArticlePage({ params }: Props) {
   if (!article) notFound();
 
   const related = articles.filter((a) => a.slug !== slug).slice(0, 3);
+  const iso = toIsoDate(article.date);
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": article.title,
     "description": article.excerpt,
-    "datePublished": article.date,
+    "datePublished": iso,
+    "dateModified": iso,
     "author": { "@type": "Organization", "name": "Jovial" },
     "publisher": {
       "@type": "Organization",
@@ -216,7 +219,7 @@ export default async function ArticlePage({ params }: Props) {
           <div className="flex items-center gap-5 text-sm text-gray-400">
             <span className="flex items-center gap-1.5">
               <Calendar size={13} />
-              {article.date}
+              <time dateTime={iso}>{article.date}</time>
             </span>
             <span className="flex items-center gap-1.5">
               <Clock size={13} />

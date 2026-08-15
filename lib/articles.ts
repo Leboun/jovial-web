@@ -13,6 +13,23 @@ export type Article = {
   image?: string; // chemin public utilise pour l'apercu de partage (og:image)
 };
 
+const FR_MONTHS: Record<string, string> = {
+  janvier: "01", "février": "02", fevrier: "02", mars: "03", avril: "04",
+  mai: "05", juin: "06", juillet: "07", "août": "08", aout: "08",
+  septembre: "09", octobre: "10", novembre: "11", "décembre": "12", decembre: "12",
+};
+
+// Convertit "19 juin 2026" → "2026-06-19" (ISO 8601) pour le SEO : datePublished
+// (JSON-LD), og:publishedTime, sitemap lastModified. Google exige de l'ISO.
+// Renvoie la chaîne d'origine si le format n'est pas reconnu (jamais de crash).
+export function toIsoDate(frenchDate: string): string {
+  const m = frenchDate.trim().toLowerCase().match(/^(\d{1,2})\s+([a-zà-ÿ]+)\s+(\d{4})$/);
+  if (!m) return frenchDate;
+  const month = FR_MONTHS[m[2]];
+  if (!month) return frenchDate;
+  return `${m[3]}-${month}-${m[1].padStart(2, "0")}`;
+}
+
 export const articles: Article[] = [
   {
     slug: "fete-de-la-musique-2026-bretagne-ou-aller",
