@@ -36,7 +36,7 @@ export default function ContactForm() {
       <div className="bg-white/15 rounded-2xl p-8 text-center">
         <div className="text-4xl mb-4">🎉</div>
         <p className="text-xl font-bold mb-2">Message envoyé !</p>
-        <p className="text-white/70">On reviendra vers vous très vite.</p>
+        <p className="text-white/70">On revient vers toi très vite.</p>
       </div>
     );
   }
@@ -50,7 +50,7 @@ export default function ContactForm() {
             name="nom"
             type="text"
             required
-            placeholder="Votre nom"
+            placeholder="Ton nom"
             className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:border-white/50 transition-colors"
           />
         </div>
@@ -59,7 +59,7 @@ export default function ContactForm() {
           <input
             name="etablissement"
             type="text"
-            placeholder="Nom de votre lieu ou événement"
+            placeholder="Nom de ton lieu ou événement"
             className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:border-white/50 transition-colors"
           />
         </div>
@@ -71,7 +71,7 @@ export default function ContactForm() {
             name="email"
             type="email"
             required
-            placeholder="votre@email.fr"
+            placeholder="ton@email.fr"
             className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:border-white/50 transition-colors"
           />
         </div>
@@ -86,12 +86,12 @@ export default function ContactForm() {
         </div>
       </div>
       <div>
-        <label className="text-sm font-semibold text-white/80 mb-1 block">Votre message *</label>
+        <label className="text-sm font-semibold text-white/80 mb-1 block">Ton message *</label>
         <textarea
           name="message"
           required
           rows={4}
-          placeholder="Parlez-nous de votre lieu, de votre événement, de ce que vous souhaitez mettre en avant…"
+          placeholder="Parle-nous de ton lieu, de ton événement, de ce que tu souhaites mettre en avant…"
           className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:border-white/50 transition-colors resize-none"
         />
       </div>
@@ -103,7 +103,7 @@ export default function ContactForm() {
         {status === "sending" ? "Envoi en cours…" : "Envoyer"}
       </button>
       {status === "error" && (
-        <p className="text-center text-red-300 text-sm">Une erreur est survenue. Réessayez ou écrivez-nous à contact@getjovial.fr</p>
+        <p className="text-center text-red-300 text-sm">Une erreur est survenue. Réessaie ou écris-nous à hello@getjovial.fr</p>
       )}
     </form>
   );

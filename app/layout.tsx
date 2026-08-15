@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.getjovial.fr"),
+  alternates: { canonical: "/" },
   title: "Jovial — Découvre les bars et événements près de toi",
   description: "Jovial te connecte aux meilleurs bars, concerts, activités et événements autour de toi. Carte interactive, réservations, alertes — télécharge l'app gratuitement.",
   icons: {

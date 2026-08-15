@@ -8,6 +8,16 @@ import LoopingVideos from "@/components/LoopingVideos";
 export const metadata: Metadata = {
   title: "Jovial pour les établissements — Visibilité & outils pro",
   description: "Inscris ton établissement sur Jovial : fiche visible sur la carte, événements, réservations payées en ligne et billetterie clé en main.",
+  alternates: { canonical: "/etablissements" },
+  openGraph: {
+    title: "Jovial pour les établissements — Visibilité & outils pro",
+    description: "Inscris ton établissement sur Jovial : fiche visible sur la carte, événements, réservations payées en ligne et billetterie clé en main.",
+    url: "https://www.getjovial.fr/etablissements",
+    siteName: "Jovial",
+    locale: "fr_FR",
+    type: "website",
+    images: [{ url: "/hero-bg.jpg", width: 1200, height: 630, alt: "Jovial pour les établissements" }],
+  },
 };
 
 const plans = [
