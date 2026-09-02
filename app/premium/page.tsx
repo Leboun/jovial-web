@@ -16,7 +16,7 @@ const free = [
 
 const premium = [
   { text: "Tout ce qui est inclus dans Gratuit", highlight: false },
-  { text: "Recommandations personnalisées par IA", highlight: true },
+  { text: "Recommandations personnalisées selon tes goûts", highlight: true },
   { text: "Favoris & sorties de tes amis", highlight: true },
   { text: "Alertes prioritaires avant tout le monde", highlight: true },
   { text: "Filtres avancés (ambiance, style, prix...)", highlight: true },
@@ -147,8 +147,8 @@ export default function PremiumPage() {
               {
                 icon: Star,
                 color: "#8B5CF6",
-                title: "Recommandations IA",
-                desc: "Jovial apprend tes goûts et te suggère les bars et événements qui te correspondent vraiment.",
+                title: "Recommandations sur mesure",
+                desc: "Jovial s'appuie sur tes goûts et tes centres d'intérêt pour te suggérer les bars et événements qui te correspondent vraiment.",
               },
               {
                 icon: Users,
