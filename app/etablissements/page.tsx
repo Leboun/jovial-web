@@ -342,7 +342,7 @@ export default function EtablissementsPage() {
             <h2 className="text-5xl font-black mt-2 mb-2 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
               Simple et transparent
             </h2>
-            <p className="text-gray-600">Engagement minimum 1 an — paiement annuel ou mensuel.</p>
+            <p className="text-gray-600">Mensuel sans engagement, ou à l&apos;année pour économiser.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
@@ -425,7 +425,7 @@ export default function EtablissementsPage() {
               },
               {
                 q: "Y a-t-il un engagement ?",
-                a: "L'engagement minimum est d'1 an, avec paiement annuel ou mensuel au choix. Tu peux évoluer vers une offre supérieure à tout moment."
+                a: "L'abonnement mensuel est sans engagement : tu résilies quand tu veux. L'offre à l'année court sur 12 mois et revient moins chère. Dans les deux cas, tu peux passer à une offre supérieure à tout moment."
               },
               {
                 q: "Est-ce que Jovial fonctionne pour tous les types d'établissements ?",
