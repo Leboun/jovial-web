@@ -34,6 +34,7 @@ const plans = [
     features: [
       "Ta fiche dans l'annuaire : activités, horaires, contact",
       "Visible par tous ceux qui cherchent une sortie près de chez eux",
+      "Ton épingle sur la carte pendant tes événements (le temps de l'événement)",
       "Ton premier événement de l'année dans l'agenda Jovial",
       "Billetterie intégrée : billets gratuits ou payants, QR scanné à l'entrée",
     ],
@@ -52,7 +53,7 @@ const plans = [
     popular: true,
     features: [
       "Tout ce qui est inclus dans Découverte",
-      "Ton épingle sur la carte : on te repère au premier coup d'œil",
+      "Ton épingle sur la carte en permanence : on te repère au premier coup d'œil",
       "Jusqu'à 6 événements par an pour rythmer ta saison",
       "Ton Club Jovial : fédère tes membres et recrute des bénévoles",
     ],
@@ -175,10 +176,10 @@ export default function AssociationsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <FlipCard
               icon="📍"
-              title="Sur la carte dès l'inscription"
-              desc="Un habitant ouvre Jovial pour trouver une sortie près de chez lui — ton association apparaît, sans qu'il ait à te chercher."
+              title="Repérable sur la carte"
+              desc="Un habitant ouvre Jovial pour trouver une sortie près de chez lui — ton association apparaît sur la carte, sans qu'il ait à te chercher."
               accent="#2B4E93"
-              footer="Épingle sur la carte à partir d'Asso Active"
+              footer="Épingle permanente dès Asso Active · pendant tes événements en gratuit"
             />
             <FlipCard
               icon="🎟️"
