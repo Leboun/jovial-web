@@ -1,4 +1,4 @@
-﻿import { Check, CreditCard, QrCode, RefreshCcw } from "lucide-react";
+﻿import { Check, CreditCard, Percent, QrCode, RefreshCcw, Tag } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
@@ -38,7 +38,7 @@ const plans = [
       "4 événements par an dans l'agenda Jovial",
       "Gestion des réservations sur Jovial Pro",
       "Billetterie d'événements : vente, contrôle des billets et remboursements",
-      "Avantages exclusifs pour les membres Premium Jovial",
+      "Avantages exclusifs pour les membres Jovial+ (ta clé pour rester visible sur la carte)",
       "Kit de communication inclus",
     ],
     cta: "Choisir Visibilité",
@@ -89,7 +89,7 @@ const plans = [
       "6 passages dans le carrousel Top lieux par an",
       "1 boost Explore (24h dans ta zone) par mois",
       "1 notification de proximité ciblée par an (accord utilisateurs)",
-      "Reporting analytique sur demande (visibilité, interactions, participation)",
+      "Statistiques détaillées en temps réel : vues, favoris, réservations, billets et taux de conversion",
     ],
     cta: "Choisir Pro",
     ctaHref: "https://pro.getjovial.fr/establishment/offers",
@@ -259,6 +259,49 @@ export default function EtablissementsPage() {
         </div>
       </section>
 
+      {/* Bons plans */}
+      <section className="py-20 px-6 bg-[#f8faff]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+              Nouveau
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+            </span>
+            <h2 className="text-5xl font-black mt-2 mb-3 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
+              Remplis tes heures creuses
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+              Avec les <strong className="text-[#2B4E93]">Bons plans</strong>, tu proposes une offre à prix réduit : l&apos;utilisateur la paie d&apos;avance dans l&apos;app et vient la récupérer chez toi. Tu écoules tes invendus et tu remplis tes creux — <strong className="text-[#2B4E93]">10 % de commission seulement, uniquement quand ça se vend.</strong>
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="bg-white rounded-2xl p-7 border border-gray-100">
+              <div className="w-11 h-11 rounded-xl bg-[#D8F0EE] flex items-center justify-center mb-4">
+                <Tag size={22} className="text-[#2F7D73]" />
+              </div>
+              <h3 className="font-bold text-gray-900 mb-2">Crée ton bon en 2 minutes</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Un titre, un prix barré, un nombre de bons et une date : ton offre part en ligne et apparaît dans l&apos;app auprès des utilisateurs proches de toi.</p>
+            </div>
+            <div className="bg-white rounded-2xl p-7 border border-gray-100">
+              <div className="w-11 h-11 rounded-xl bg-[#D8F0EE] flex items-center justify-center mb-4">
+                <Percent size={22} className="text-[#2F7D73]" />
+              </div>
+              <h3 className="font-bold text-gray-900 mb-2">10 % seulement, à la vente</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Aucun abonnement en plus, aucun frais fixe : tu ne paies une commission que sur les bons réellement vendus. Le reste tombe sur ton compte.</p>
+            </div>
+            <div className="bg-white rounded-2xl p-7 border border-gray-100">
+              <div className="w-11 h-11 rounded-xl bg-[#D8F0EE] flex items-center justify-center mb-4">
+                <QrCode size={22} className="text-[#2F7D73]" />
+              </div>
+              <h3 className="font-bold text-gray-900 mb-2">Le client vient avec son QR</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Le bon payé s&apos;affiche avec un QR code dans l&apos;app. Le client passe chez toi, tu valides — simple, sans terminal, sans paperasse.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Vidéo interlude */}
       <section className="relative py-32 px-6 overflow-hidden bg-[#0f1c38]">
         <LoopingVideos style={{
@@ -378,7 +421,7 @@ export default function EtablissementsPage() {
               },
               {
                 q: "Quelle est la différence entre les 3 offres ?",
-                a: "L'offre Visibilité (290€/an) te permet d'être présent sur la carte et de publier jusqu'à 4 événements par an. L'offre Rayonnement (490€/an) inclut des événements illimités, des rappels automatiques J-1/H-1 et un boost de visibilité. L'offre Pro (790€/an) est le pack complet : 3 tags d'activités, boost mensuel Explore, notifications ciblées et reporting analytique."
+                a: "L'offre Visibilité (290€/an) te permet d'être présent sur la carte et de publier jusqu'à 4 événements par an. L'offre Rayonnement (490€/an) inclut des événements illimités, des rappels automatiques J-1/H-1 et un boost de visibilité. L'offre Pro (790€/an) est le pack complet : 3 tags d'activités, boost mensuel Explore, notifications ciblées et statistiques détaillées en temps réel."
               },
               {
                 q: "Y a-t-il un engagement ?",
@@ -386,7 +429,7 @@ export default function EtablissementsPage() {
               },
               {
                 q: "Est-ce que Jovial fonctionne pour tous les types d'établissements ?",
-                a: "Oui — bars, restaurants, salles de concert, tiers-lieux, guinguettes, clubs de sport, salles d'activités… Jovial est ouvert à tous les lieux qui accueillent du public et organisent des activités ou événements."
+                a: "Oui — bars, restaurants, salles de concert, tiers-lieux, guinguettes, clubs de sport et salles d'activités, mais aussi hôtels, campings, parcs de loisirs, zoos, aquariums, accrobranche, cinémas, musées, patinoires… Jovial est ouvert à tous les lieux qui accueillent du public et proposent des activités, des sorties ou des événements."
               },
               {
                 q: "Comment fonctionnent la billetterie et le paiement en ligne ?",

@@ -8,6 +8,7 @@ import { DOWNLOAD_HREF } from "@/lib/appLinks";
 
 const links = [
   { href: "/#concept", label: "L'appli" },
+  { href: "/associations", label: "Associations" },
   { href: "/actualites", label: "Découvrir" },
 ];
 

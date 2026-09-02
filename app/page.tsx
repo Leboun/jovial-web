@@ -5,7 +5,7 @@ import LoopingVideos from "@/components/LoopingVideos";
 import ScrollingBanner from "@/components/ScrollingBanner";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Clock, CreditCard, QrCode } from "lucide-react";
+import { MapPin, Clock, CreditCard, QrCode, Ticket, Users } from "lucide-react";
 import { articles } from "@/lib/articles";
 
 const steps = [
@@ -180,6 +180,50 @@ export default function HomePage() {
               className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-bold px-8 py-4 rounded-2xl hover:bg-white/20 transition-colors border border-white/25"
             >
               Inscrire mon établissement
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Associations — teaser vers /associations */}
+      <section className="py-16 px-6 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+            <span className="w-6 h-px bg-[#5CB6AC]" />
+            Associations
+            <span className="w-6 h-px bg-[#5CB6AC]" />
+          </span>
+          <h2 className="text-4xl md:text-5xl font-black mt-2 mb-4 uppercase leading-tight bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent">
+            Tu fais vivre une association ?
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed mb-8">
+            Sport, culture, solidarité, comité des fêtes… Fais connaître ton asso, remplis tes événements et recrute des bénévoles. Billetterie gratuite ou payante incluse — et c&apos;est gratuit pour commencer.
+          </p>
+
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-10 text-sm">
+            <span className="flex items-center gap-2 bg-[#f8faff] rounded-full px-4 py-2 border border-gray-100 font-semibold text-gray-700">
+              <MapPin size={15} className="text-[#2F7D73]" /> Sur la carte
+            </span>
+            <span className="flex items-center gap-2 bg-[#f8faff] rounded-full px-4 py-2 border border-gray-100 font-semibold text-gray-700">
+              <Ticket size={15} className="text-[#2F7D73]" /> Billetterie gratuite ou payante
+            </span>
+            <span className="flex items-center gap-2 bg-[#f8faff] rounded-full px-4 py-2 border border-gray-100 font-semibold text-gray-700">
+              <Users size={15} className="text-[#2F7D73]" /> Recrute des bénévoles
+            </span>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/associations"
+              className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors"
+            >
+              Jovial pour les associations →
+            </Link>
+            <a
+              href="https://pro.getjovial.fr/establishment/asso/offers"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#2B4E93] font-bold px-8 py-4 rounded-2xl border-2 border-[#2B4E93] hover:bg-[#2B4E93] hover:text-white transition-colors"
+            >
+              Inscrire mon association
             </a>
           </div>
         </div>
