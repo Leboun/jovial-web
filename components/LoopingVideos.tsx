@@ -77,6 +77,7 @@ export default function LoopingVideos({ style }: { style?: React.CSSProperties }
           muted
           playsInline
           preload={i === 0 ? "auto" : "metadata"}
+          poster={src.replace(/\.mp4$/, ".jpg")}
           aria-hidden="true"
           style={{
             ...base,
