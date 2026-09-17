@@ -27,20 +27,11 @@ export const metadata: Metadata = {
     siteName: "Jovial",
     locale: "fr_FR",
     type: "website",
-    images: [
-      {
-        url: "https://www.getjovial.fr/logo-sm.png",
-        width: 2144,
-        height: 1095,
-        alt: "Jovial",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Jovial — Découvre les bars et événements près de toi",
     description: "Bars, concerts, fléchettes, comedy clubs… Tout ce qui se passe près de chez toi.",
-    images: ["https://www.getjovial.fr/logo-sm.png"],
   },
 };
 
