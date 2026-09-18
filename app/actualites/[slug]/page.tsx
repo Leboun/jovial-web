@@ -68,10 +68,14 @@ function renderInlineLinks(text: string): React.ReactNode[] {
           </Link>
         );
       }
-      return (
+      // Sécurité : n'autoriser que http(s)/mailto/tel (bloque javascript:, data:, etc.)
+      const safeScheme = /^(https?:|mailto:|tel:)/i.test(url);
+      return safeScheme ? (
         <a key={i} href={url} target="_blank" rel="noopener noreferrer" className={cls}>
           {label}
         </a>
+      ) : (
+        <span key={i}>{label}</span>
       );
     }
     return <span key={i}>{part}</span>;
@@ -182,7 +186,14 @@ export default async function ArticlePage({ params }: Props) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        // Sécurité : échappe <, > et & pour empêcher toute évasion du bloc <script>
+        // si un titre/extrait d'article devenait un jour dynamique (CMS/base de données).
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd)
+            .replace(/</g, "\\u003c")
+            .replace(/>/g, "\\u003e")
+            .replace(/&/g, "\\u0026"),
+        }}
       />
       {/* Hero */}
       <section className="bg-white pt-28 pb-12 px-6 border-b border-gray-100">
