@@ -9,7 +9,7 @@ export default function ConfidentialitePage() {
   return (
     <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Politique de confidentialité</h1>
-      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 27 septembre 2026</p>
+      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 7 octobre 2026</p>
 
       <section className="space-y-3 mb-8">
         <h2 className="text-xl font-bold">Article 1 — Qui est responsable de vos données</h2>
@@ -294,13 +294,27 @@ export default function ConfidentialitePage() {
                 <td className="py-2 pr-4">Pièces comptables et factures</td>
                 <td className="py-2">10 ans (obligation légale).</td>
               </tr>
-              <tr>
+              <tr className="border-b border-gray-100">
                 <td className="py-2 pr-4">Journaux techniques</td>
                 <td className="py-2">12 mois maximum.</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4">Trace de modération (versions antérieures de contenus modifiés, contenus signalés)</td>
+                <td className="py-2">12 mois, puis suppression automatique.</td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p className="text-gray-700 leading-relaxed">
+          <strong>Trace des éditions (modération).</strong> Lorsqu&apos;un contenu public (commentaire
+          ou publication) est modifié, sa version précédente est conservée dans un journal de
+          modération sécurisé, accessible uniquement aux personnes habilitées, pendant 12 mois au
+          maximum, puis supprimée automatiquement. Par respect de la confidentialité des
+          correspondances, le contenu des messages privés (conversations individuelles et de groupe)
+          n&apos;est pas conservé lors de leur modification ; une copie n&apos;est enregistrée que si
+          un message fait l&apos;objet d&apos;un signalement. Vos contenus actifs restent accessibles
+          tant que vous ne les supprimez pas et que votre compte est actif.
+        </p>
       </section>
 
       <section className="space-y-3 mb-8">
