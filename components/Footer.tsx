@@ -27,6 +27,7 @@ export default function Footer() {
           <ul className="space-y-2">
             <li><Link href="/confidentialite" className="text-gray-300 text-sm hover:text-white transition-colors">Confidentialité</Link></li>
             <li><Link href="/cgu" className="text-gray-300 text-sm hover:text-white transition-colors">CGU</Link></li>
+            <li><Link href="/cgv" className="text-gray-300 text-sm hover:text-white transition-colors">CGV</Link></li>
             <li><Link href="/mentions-legales" className="text-gray-300 text-sm hover:text-white transition-colors">Mentions légales</Link></li>
             <li><a href="mailto:hello@getjovial.fr" className="text-gray-300 text-sm hover:text-white transition-colors">Contact</a></li>
           </ul>
