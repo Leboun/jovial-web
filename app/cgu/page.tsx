@@ -9,7 +9,7 @@ export default function CguPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Conditions générales d&apos;utilisation</h1>
-      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 27 septembre 2026</p>
+      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 7 octobre 2026</p>
 
       <section className="space-y-3 mb-8">
         <h2 className="text-xl font-bold">Article 1 — Objet</h2>
@@ -136,11 +136,14 @@ export default function CguPage() {
         <h2 className="text-xl font-bold">Article 10 — Billetterie, réservations et offres</h2>
         <p className="text-gray-700 leading-relaxed">
           Pour les billets, réservations et offres proposés par un Organisateur, Jovial agit en qualité
-          d&apos;intermédiaire technique. L&apos;Organisateur demeure responsable de son événement ou de
-          son offre (description, tenue, accès, annulation et remboursement). Les paiements sont traités
+          d&apos;intermédiaire technique ; l&apos;Organisateur demeure responsable de son événement, de sa
+          prestation ou de son offre (description, tenue, accès, annulation et remboursement).
+          Lorsqu&apos;un paiement en ligne est requis — notamment pour les billets payants, les bons plans,
+          ou les réservations pour lesquelles l&apos;établissement demande un prépaiement — il est traité
           par Stripe ; Jovial ne stocke aucune donnée de carte bancaire et peut percevoir une commission.
-          Les conditions d&apos;annulation et de remboursement sont celles de l&apos;Organisateur, à qui
-          toute réclamation relative à un événement doit être adressée en priorité.
+          De nombreuses réservations sont gratuites et ne donnent lieu à aucun paiement en ligne. Les
+          conditions d&apos;annulation et de remboursement sont celles de l&apos;Organisateur, à qui toute
+          réclamation relative à un événement doit être adressée en priorité.
         </p>
       </section>
 
