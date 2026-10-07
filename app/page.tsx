@@ -102,8 +102,8 @@ export default function HomePage() {
               <Image
                 src="/mockup-app.png"
                 alt="L'app Jovial : carte interactive et fiche établissement"
-                width={977}
-                height={1961}
+                width={856}
+                height={1733}
                 sizes="(max-width: 1024px) 90vw, 380px"
                 className="w-full drop-shadow-2xl"
               />
