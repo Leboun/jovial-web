@@ -3,23 +3,22 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Jovial+ — Passe à l'expérience premium",
-  description: "Jovial+ débloque les recommandations personnalisées, les favoris de tes amis et bien plus. Disponible directement dans l'application.",
+  description: "Jovial+ débloque les offres privilèges, les alertes des nouveaux événements de tes lieux favoris et les sorties de tes amis. Disponible directement dans l'application.",
 };
 
 const free = [
-  "Carte interactive des bars",
-  "Événements à venir",
-  "Favoris personnels",
-  "Réseau d'amis",
-  "Notifications d'événements",
+  "Carte interactive des lieux",
+  "Événements à venir dans ton fil",
+  "Favoris illimités",
+  "Réseau d'amis & clubs",
+  "Rappels de tes sorties (événements où tu participes)",
 ];
 
 const premium = [
   { text: "Tout ce qui est inclus dans Gratuit", highlight: false },
-  { text: "Recommandations personnalisées selon tes goûts", highlight: true },
-  { text: "Favoris & sorties de tes amis", highlight: true },
-  { text: "Alertes prioritaires avant tout le monde", highlight: true },
-  { text: "Filtres avancés (ambiance, style, prix...)", highlight: true },
+  { text: "Offres privilèges dans les établissements", highlight: true },
+  { text: "Alertes des nouveaux événements de tes lieux favoris", highlight: true },
+  { text: "L'agenda et la carte des favoris de tes amis", highlight: true },
   { text: "Badge Jovial+ sur ton profil", highlight: false },
   { text: "Support prioritaire", highlight: false },
 ];
@@ -62,7 +61,7 @@ export default function PremiumPage() {
             </span>
           </h1>
           <p className="text-white/70 text-xl leading-relaxed mb-8 max-w-xl mx-auto">
-            Découvre une expérience sociale encore plus riche : recommandations sur mesure, sorties de tes amis, alertes en avant-première.
+            Ne rate plus jamais une sortie : offres privilèges dans les établissements, alertes des nouveaux événements de tes lieux préférés, et les sorties de tes amis.
           </p>
 
           <div className="inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-2xl px-6 py-4">
@@ -147,32 +146,32 @@ export default function PremiumPage() {
               {
                 icon: Star,
                 color: "#8B5CF6",
-                title: "Recommandations sur mesure",
-                desc: "Jovial s'appuie sur tes goûts et tes centres d'intérêt pour te suggérer les bars et événements qui te correspondent vraiment.",
+                title: "Offres privilèges",
+                desc: "Profite d'offres et de réductions réservées aux membres Jovial+ dans les établissements partenaires.",
+              },
+              {
+                icon: Zap,
+                color: "#10B981",
+                title: "Alertes nouveaux événements",
+                desc: "Sois prévenu dès qu'un de tes lieux favoris publie un nouvel événement. Les autres le verront dans leur fil — toi, tu es alerté en premier.",
               },
               {
                 icon: Users,
                 color: "#5CB6AC",
                 title: "Sorties de tes amis",
-                desc: "Découvre les bars favoris de tes amis et suis leurs événements à venir.",
-              },
-              {
-                icon: Zap,
-                color: "#10B981",
-                title: "Alertes prioritaires",
-                desc: "Reçois les notifications en avant-première, avant la foule. Ne rate plus jamais les meilleurs spots.",
-              },
-              {
-                icon: Heart,
-                color: "#EF4444",
-                title: "Favoris enrichis",
-                desc: "Organise tes favoris en listes, ajoute des notes, partage des sélections privées avec tes amis.",
+                desc: "Découvre l'agenda de tes amis et les événements auxquels ils participent.",
               },
               {
                 icon: MapPin,
                 color: "#2B4E93",
-                title: "Filtres avancés",
-                desc: "Filtre par ambiance, style de musique, fourchette de prix, horaires d'ouverture et plus.",
+                title: "Carte des favoris de tes amis",
+                desc: "Vois sur la carte les lieux préférés de tes amis pour trouver vos prochains spots ensemble.",
+              },
+              {
+                icon: Heart,
+                color: "#EF4444",
+                title: "Support prioritaire",
+                desc: "Une question, un souci ? Les membres Jovial+ sont traités en priorité par notre équipe.",
               },
               {
                 icon: Lock,
