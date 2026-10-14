@@ -19,6 +19,7 @@ export default function Footer() {
             <li><Link href="/etablissements" className="text-gray-300 text-sm hover:text-white transition-colors">Établissements</Link></li>
             <li><Link href="/associations" className="text-gray-300 text-sm hover:text-white transition-colors">Associations</Link></li>
             <li><Link href="/actualites" className="text-gray-300 text-sm hover:text-white transition-colors">Découvrir</Link></li>
+            <li><Link href="/premium" className="text-gray-300 text-sm hover:text-white transition-colors">Jovial+</Link></li>
           </ul>
         </div>
 
@@ -29,6 +30,7 @@ export default function Footer() {
             <li><Link href="/cgu" className="text-gray-300 text-sm hover:text-white transition-colors">CGU</Link></li>
             <li><Link href="/cgv" className="text-gray-300 text-sm hover:text-white transition-colors">CGV</Link></li>
             <li><Link href="/mentions-legales" className="text-gray-300 text-sm hover:text-white transition-colors">Mentions légales</Link></li>
+            <li><Link href="/suppression-compte" className="text-gray-300 text-sm hover:text-white transition-colors">Supprimer mon compte</Link></li>
             <li><a href="mailto:hello@getjovial.fr" className="text-gray-300 text-sm hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>

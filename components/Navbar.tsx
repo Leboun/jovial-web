@@ -10,6 +10,7 @@ const links = [
   { href: "/#concept", label: "L'appli" },
   { href: "/associations", label: "Associations" },
   { href: "/actualites", label: "Découvrir" },
+  { href: "/premium", label: "Jovial+" },
 ];
 
 export default function Navbar() {
