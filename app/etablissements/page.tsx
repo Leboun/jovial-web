@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
+import EligibilityCheck from "@/components/EligibilityCheck";
 import FlipCard from "@/components/FlipCard";
 import LoopingVideos from "@/components/LoopingVideos";
 
@@ -209,17 +210,10 @@ export default function EtablissementsPage() {
             </span>
           </div>
 
-          <div className="max-w-xl mx-auto bg-[#f8faff] border border-gray-100 rounded-2xl px-6 py-6">
-            <p className="text-gray-700 text-base leading-relaxed">
-              <strong className="text-[#2B4E93]">Un doute sur ton type de lieu ?</strong> Tu es sûrement éligible quand même — écris-nous, on te répond en 2 min.
-            </p>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center gap-2 mt-4 bg-[#5CB6AC] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#4aa39a] transition-colors"
-            >
-              Poser ma question →
-            </a>
-          </div>
+          <EligibilityCheck />
+          <p className="text-gray-400 text-sm mt-5">
+            Toujours un doute ? <a href="#contact" className="text-[#2B4E93] font-semibold hover:underline">Écris-nous</a>, on te répond en 2 min.
+          </p>
         </div>
       </section>
 
