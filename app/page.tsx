@@ -287,6 +287,58 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FAQ utilisateurs */}
+      <section className="py-24 px-6 bg-white border-t border-gray-100">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+              FAQ
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+            </span>
+            <h2 className="text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
+              Questions fréquentes
+            </h2>
+          </div>
+          <div className="space-y-4">
+            {[
+              {
+                q: "Jovial, c'est gratuit ?",
+                a: "Oui, totalement. Tu explores et tu réserves sans payer, sans pub. Jovial+ (2,99 €/mois) est optionnel et débloque des avantages en plus.",
+              },
+              {
+                q: "Comment ça marche ?",
+                a: "Tu ouvres la carte, tu vois les lieux et événements autour de toi en temps réel, tu réserves une activité ou un billet en deux clics, et tu y vas.",
+              },
+              {
+                q: "C'est disponible dans ma ville ?",
+                a: "On ouvre région par région, en commençant par la Bretagne — et ça arrive vite. Laisse ton email en haut de page : plus une ville est demandée, plus vite on y arrive.",
+              },
+              {
+                q: "Mon bar ou mon resto préféré n'est pas sur Jovial ?",
+                a: "Recommande-le ! Depuis l'app, tu peux nous suggérer ton établissement préféré — on l'invite à rejoindre Jovial.",
+              },
+              {
+                q: "Faut-il créer un compte ?",
+                a: "Non, tu peux explorer librement en mode découverte. Un compte te sert à réserver, suivre tes lieux favoris et retrouver tes amis.",
+              },
+              {
+                q: "C'est quoi Jovial+ ?",
+                a: "La version premium (2,99 €/mois) : offres privilèges dans les établissements, alertes dès qu'un lieu favori publie un événement, et les sorties de tes amis. 7 jours offerts.",
+              },
+            ].map((item) => (
+              <details key={item.q} className="group bg-gray-50 rounded-2xl px-6 py-5 cursor-pointer">
+                <summary className="flex items-center justify-between font-semibold text-gray-900 list-none">
+                  {item.q}
+                  <span className="text-[#2B4E93] text-xl font-light ml-4 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-3 text-gray-500 text-sm leading-relaxed">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA final */}
       <section className="py-24 px-6 bg-[#2B4E93] text-white text-center">
         <div className="max-w-3xl mx-auto">

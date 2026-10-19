@@ -101,7 +101,7 @@ const paymentFeatures = [
   {
     icon: CreditCard,
     title: "Réservations payées en ligne",
-    desc: "Tes clients réservent et paient directement dans l'app. Tu reçois 95 % du montant sur ton compte bancaire — les 5 % restants couvrent tous les frais, y compris bancaires.",
+    desc: "Tes clients réservent et paient directement dans l'app. Notre commission n'est que de 5 % : tu reçois 95 % du montant moins les frais de carte (~1,5 % + 0,25 €), versés automatiquement sur ton compte.",
   },
   {
     icon: QrCode,
@@ -465,36 +465,48 @@ export default function EtablissementsPage() {
           <div className="space-y-4">
             {[
               {
-                q: "Comment inscrire mon établissement ?",
-                a: "Clique sur \"Inscrire mon établissement\", crée ton compte sur Jovial Pro et suis les étapes pour configurer ta fiche. Notre équipe valide ton établissement sous 24h."
+                q: "Comment mes clients me trouvent, concrètement ?",
+                a: "Quand quelqu'un cherche quoi faire près de chez lui, ta fiche et tes événements apparaissent sur sa carte — sans qu'il ait à te connaître. Et les utilisateurs qui t'ont mis en favori reçoivent une notification à chaque nouvel événement que tu publies."
               },
               {
-                q: "Puis-je essayer gratuitement avant de payer ?",
-                a: "Oui : 14 jours d'essai gratuit, sans engagement — rien n'est débité avant la fin de l'essai. Tu peux configurer ta fiche, publier tes premiers événements et tout tester pendant cette période, puis annuler quand tu veux."
+                q: "Combien je touche sur une réservation ou un billet ?",
+                a: "Notre commission n'est que de 5 %. Tu reçois 95 % du montant, moins les frais de carte bancaire (~1,5 % + 0,25 €), versés automatiquement sur ton compte. Les billets gratuits, eux, ne te coûtent rien."
+              },
+              {
+                q: "Et pour les Bons plans ?",
+                a: "10 % de commission, uniquement sur les bons réellement vendus (plus les frais de carte). Aucun abonnement ni frais fixe en plus : tu écoules tes invendus et tu remplis tes heures creuses sans prendre de risque."
+              },
+              {
+                q: "Comment être mis en avant ?",
+                a: "Les offres Rayonnement et Pro incluent des passages dans le carrousel « Top lieux » et des boosts dans l'Explorer. Tu peux aussi en ajouter à la carte depuis ton espace, quand tu as un gros événement à pousser."
+              },
+              {
+                q: "Puis-je essayer gratuitement ?",
+                a: "Oui : 14 jours d'essai gratuit, sans engagement — rien n'est débité avant la fin. Tu configures ta fiche, tu publies tes premiers événements, tu testes tout, et tu annules quand tu veux."
               },
               {
                 q: "Quelle est la différence entre les 3 offres ?",
-                a: "L'offre Visibilité (290€/an) te permet d'être présent sur la carte et de publier jusqu'à 4 événements par an. L'offre Rayonnement (490€/an) inclut des événements illimités, des rappels automatiques J-1/H-1 et un boost de visibilité. L'offre Pro (790€/an) est le pack complet : 3 tags d'activités, boost mensuel Explore, notifications ciblées et statistiques détaillées en temps réel."
+                a: "Visibilité : être présent sur la carte et publier jusqu'à 4 événements par an. Rayonnement : événements illimités, rappels automatiques J-1/H-1, Club Jovial et mise en avant. Pro : tout le reste + boost mensuel, notification de proximité et statistiques détaillées en temps réel."
               },
               {
                 q: "Y a-t-il un engagement ?",
-                a: "L'abonnement mensuel est sans engagement : tu résilies quand tu veux. L'offre à l'année court sur 12 mois et revient moins chère. Dans les deux cas, tu peux passer à une offre supérieure à tout moment."
+                a: "Non. L'abonnement mensuel se résilie quand tu veux ; l'offre à l'année revient moins chère. Dans les deux cas, tu peux passer à une offre supérieure à tout moment."
               },
               {
-                q: "Est-ce que Jovial fonctionne pour tous les types d'établissements ?",
-                a: "Oui — bars, restaurants, salles de concert, tiers-lieux, guinguettes, clubs de sport et salles d'activités, mais aussi hôtels, campings, parcs de loisirs, zoos, aquariums, accrobranche, cinémas, musées, patinoires… Jovial est ouvert à tous les lieux qui accueillent du public et proposent des activités, des sorties ou des événements."
+                q: "Mon établissement est déjà sur Google et les réseaux, pourquoi Jovial en plus ?",
+                a: "Google et Instagram te montrent surtout à ceux qui te cherchent déjà. Jovial te fait découvrir par ceux qui cherchent quoi faire près d'eux, au moment où ils décident de sortir — et te donne réservations et billetterie au même endroit."
               },
               {
-                q: "Comment fonctionnent la billetterie et le paiement en ligne ?",
-                a: "Tu actives le paiement en ligne depuis ton espace Jovial Pro (compte de paiement sécurisé Stripe, création guidée). Tes clients paient leur réservation ou leurs billets directement dans l'app, et tu reçois 95 % du montant sur ton compte bancaire — les 5 % restants couvrent l'ensemble des frais. Pour tes événements : billets nominatifs avec QR code, scanner intégré pour contrôler l'entrée (par toi ou ton staff) et remboursement d'une commande en un clic si besoin."
+                q: "Comment inscrire mon établissement ?",
+                a: "Clique sur « Inscrire mon établissement », crée ton compte sur Jovial Pro et configure ta fiche en quelques étapes. Notre équipe la valide sous 24h."
               },
               {
                 q: "Comment fonctionne le Kit de communication ?",
-                a: "Dès ton inscription, tu reçois un kit clé en main : affiche à imprimer, visuels réseaux sociaux, QR code renvoyant vers ta fiche Jovial — tout pour communiquer sur ta présence sur l'app."
+                a: "Dès ton inscription, tu reçois un kit clé en main : affiche à imprimer, visuels pour les réseaux sociaux et QR code qui renvoie vers ta fiche Jovial."
               },
               {
                 q: "Puis-je gérer plusieurs établissements ?",
-                a: "Oui, avec l'offre Pro tu peux administrer plusieurs établissements depuis un seul tableau de bord Jovial Pro."
+                a: "Oui : avec l'offre Pro, tu administres plusieurs établissements depuis un seul tableau de bord."
               },
             ].map((item) => (
               <details key={item.q} className="group bg-gray-50 rounded-2xl px-6 py-5 cursor-pointer">
