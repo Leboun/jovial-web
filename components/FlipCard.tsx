@@ -76,7 +76,7 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93", footer
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
-            background: "linear-gradient(135deg, #2B4E93 0%, #5CB6AC 100%)",
+            background: "var(--jovial-grad)",
           }}
           className="rounded-3xl p-8 flex flex-col justify-between"
         >

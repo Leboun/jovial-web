@@ -119,7 +119,7 @@ export default function EtablissementsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-[#2B4E93] via-[#2B4E93] to-[#2F7D73] text-white pt-40 pb-20 px-6 overflow-hidden">
+      <section className="relative jovial-grad-bg text-white pt-40 pb-20 px-6 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#5CB6AC] rounded-full blur-[110px] opacity-25 -translate-y-1/3 translate-x-1/4" />
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#011A5C] rounded-full blur-[100px] opacity-30 translate-y-1/2 -translate-x-1/4" />
 
@@ -183,7 +183,7 @@ export default function EtablissementsPage() {
               Pourquoi Jovial ?
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 mb-3 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
+            <h2 className="text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
               Sois là où tes clients te cherchent.
             </h2>
           </div>
@@ -234,7 +234,7 @@ export default function EtablissementsPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-5xl font-black mt-2 mb-3 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
+            <h2 className="text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
               Encaisse en ligne, sans terminal
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
@@ -268,7 +268,7 @@ export default function EtablissementsPage() {
               Nouveau
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 mb-3 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
+            <h2 className="text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
               Remplis tes heures creuses
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
@@ -339,7 +339,7 @@ export default function EtablissementsPage() {
               Tarifs
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 mb-2 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
+            <h2 className="text-5xl font-black mt-2 mb-2 jovial-grad-text leading-tight uppercase">
               Simple et transparent
             </h2>
             <p className="text-gray-600">Mensuel sans engagement, ou à l&apos;année pour économiser.</p>
@@ -409,7 +409,7 @@ export default function EtablissementsPage() {
               FAQ
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
+            <h2 className="text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
               Questions fréquentes
             </h2>
           </div>

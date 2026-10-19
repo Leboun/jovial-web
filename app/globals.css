@@ -5,6 +5,21 @@
   --primary-dark: #1e3a70;
   --orange: #5CB6AC;
   --cream: #FFF8F0;
+  /* Dégradé UNIQUE de la marque (bleu marine → turquoise de l'app).
+     Source unique : on le change ICI et il se met à jour sur tout le site. */
+  --jovial-grad: linear-gradient(135deg, #2B4E93 0%, #5CB6AC 100%);
+}
+
+/* Dégradé de marque en remplissage de TEXTE (titres) */
+.jovial-grad-text {
+  background-image: var(--jovial-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+/* Dégradé de marque en FOND (bandes colorées, boutons) */
+.jovial-grad-bg {
+  background-image: var(--jovial-grad);
 }
 
 body {

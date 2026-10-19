@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-[#0f1c38] text-white">
       <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
-          <p className="font-black text-2xl mb-1 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent uppercase tracking-wide">Jovial</p>
+          <p className="font-black text-2xl mb-1 jovial-grad-text uppercase tracking-wide">Jovial</p>
           <p className="text-gray-400 text-sm leading-relaxed max-w-xs mt-2">
             Fléchettes, pétanque, karaoké, concerts… Tous les bons plans près de chez toi.
           </p>

@@ -36,7 +36,7 @@ export default async function PaiementAnnule({
         )}
         <a
           href={appLink}
-          className="inline-block mt-4 mb-3 w-full rounded-2xl bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] px-6 py-4 text-white font-extrabold text-base"
+          className="inline-block mt-4 mb-3 w-full rounded-2xl jovial-grad-bg px-6 py-4 text-white font-extrabold text-base"
         >
           Revenir dans Jovial
         </a>

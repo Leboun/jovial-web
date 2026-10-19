@@ -16,12 +16,12 @@ const EVENEMENTS = [
   "Karaoké",
   "Concert",
   "Tournoi",
-  "Soirée comedy club",
+  "Comedy club",
   "Open mic",
-  "Soirée jeux",
+  "Loto",
   "Afterwork",
   "Jam session",
-  "Soirée thématique",
+  "Expo",
   "DJ set",
 ];
 

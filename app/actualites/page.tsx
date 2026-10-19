@@ -31,7 +31,7 @@ export default function MagazinePage() {
             Découvrir
             <span className="w-6 h-px bg-[#5CB6AC]" />
           </span>
-          <h1 className="text-5xl font-black mt-2 mb-4 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">CE QUI SE PASSE PRÈS DE CHEZ TOI.</h1>
+          <h1 className="text-5xl font-black mt-2 mb-4 jovial-grad-text leading-tight uppercase">CE QUI SE PASSE PRÈS DE CHEZ TOI.</h1>
           <p className="text-gray-600 text-lg max-w-2xl leading-relaxed">
             Événements à venir, lieux d'activités, scènes locales — près de chez toi.
           </p>

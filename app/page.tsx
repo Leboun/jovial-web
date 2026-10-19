@@ -4,7 +4,6 @@ import HeroTagline from "@/components/HeroTagline";
 import LoopingVideos from "@/components/LoopingVideos";
 import ScrollingBanner from "@/components/ScrollingBanner";
 import Link from "next/link";
-import Image from "next/image";
 import { MapPin, Clock, CreditCard, QrCode, Ticket, Users } from "lucide-react";
 import { articles } from "@/lib/articles";
 
@@ -12,7 +11,7 @@ const steps = [
   { number: "01", title: "Télécharge l'app", desc: "Disponible sur App Store et Google Play, gratuitement." },
   { number: "02", title: "Crée ton profil", desc: "Choisis ton pseudo, ajoute tes amis et configure tes préférences." },
   { number: "03", title: "Explore autour de toi", desc: "La carte s'anime avec les établissements ouverts autour de toi, leurs activités et événements." },
-  { number: "04", title: "Profite de ta soirée", desc: "Partage tes bons plans, découvre de nouveaux lieux, vis l'instant." },
+  { number: "04", title: "Profite du moment", desc: "Partage tes bons plans, découvre de nouveaux lieux, vis l'instant." },
 ];
 
 /** Mockup iPhone — SVG frame sur screenshot (aucun clip CSS sur l'image) */
@@ -68,7 +67,7 @@ export default function HomePage() {
 
           {/* Sous-titre */}
           <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-xl">
-            Fléchettes, pétanque, jeux de société… karaoké, concerts, tournois — tout ça près de chez toi.
+            Concerts, tournois, activités, bonnes adresses… Découvre tout ce qu&apos;il y a à faire près de chez toi — et réserve en deux clics.
           </p>
 
           {/* Boutons téléchargement */}
@@ -88,7 +87,7 @@ export default function HomePage() {
               L&apos;application
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 mb-5 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">
+            <h2 className="text-5xl font-black mt-2 mb-5 jovial-grad-text leading-tight uppercase">
               Tout ce qu&apos;il te faut pour sortir
             </h2>
             <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
@@ -98,14 +97,10 @@ export default function HomePage() {
 
           <div className="flex flex-col lg:flex-row items-center gap-16">
             {/* Mockup app à gauche */}
-            <div className="w-full max-w-[380px] shrink-0 mx-auto lg:mx-0">
-              <Image
-                src="/mockup-app.png"
-                alt="L'app Jovial : carte interactive et fiche établissement"
-                width={856}
-                height={1733}
-                sizes="(max-width: 1024px) 90vw, 380px"
-                className="w-full drop-shadow-2xl"
+            <div className="w-full max-w-[360px] shrink-0 mx-auto lg:mx-0 drop-shadow-2xl">
+              <PhoneMockup
+                src="/mockup-carte.jpg"
+                alt="L'app Jovial : la carte interactive et la fiche d'un lieu"
               />
             </div>
 
@@ -142,7 +137,7 @@ export default function HomePage() {
 
 
       {/* Établissements — teaser vers /etablissements */}
-      <section className="py-16 px-6 bg-gradient-to-br from-[#2B4E93] to-[#2F7D73] text-white">
+      <section className="py-16 px-6 jovial-grad-bg text-white">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-flex items-center gap-2 text-white/70 text-xs font-bold uppercase tracking-[0.2em] mb-4">
             <span className="w-6 h-px bg-white/50" />
@@ -193,7 +188,7 @@ export default function HomePage() {
             Associations
             <span className="w-6 h-px bg-[#5CB6AC]" />
           </span>
-          <h2 className="text-4xl md:text-5xl font-black mt-2 mb-4 uppercase leading-tight bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-black mt-2 mb-4 uppercase leading-tight jovial-grad-text">
             Tu fais vivre une association ?
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed mb-8">
@@ -242,7 +237,7 @@ export default function HomePage() {
                 Découvrir
                 <span className="w-6 h-px bg-[#5CB6AC]" />
               </span>
-              <h2 className="text-5xl font-black mt-2 bg-gradient-to-r from-[#2B4E93] to-[#5CB6AC] bg-clip-text text-transparent leading-tight uppercase">CE QUI SE PASSE PRÈS DE CHEZ TOI.</h2>
+              <h2 className="text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">CE QUI SE PASSE PRÈS DE CHEZ TOI.</h2>
               <p className="text-gray-600 text-lg mt-4 max-w-xl leading-relaxed">
                 Événements à venir, lieux d'activités, scènes locales — près de chez toi.
               </p>
@@ -295,9 +290,9 @@ export default function HomePage() {
       {/* CTA final */}
       <section className="py-24 px-6 bg-[#2B4E93] text-white text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-black mb-4 uppercase" style={{ fontSize: "clamp(1.8rem, 5vw, 3.5rem)" }}>Ce soir, qu&apos;est-ce qu&apos;on fait ?</h2>
+          <h2 className="font-black mb-4 uppercase" style={{ fontSize: "clamp(1.8rem, 5vw, 3.5rem)" }}>Alors, on fait quoi ?</h2>
           <p className="text-white/70 text-lg mb-12 max-w-xl mx-auto">
-            Concerts, fléchettes, terrasses, comedy clubs — tout ce qui se passe près de chez toi, maintenant.
+            Concerts, activités, expos, tournois — tout ce qu&apos;il y a à faire près de chez toi, en temps réel.
           </p>
 
           {/* Étapes inline */}

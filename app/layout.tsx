@@ -10,8 +10,8 @@ const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.getjovial.fr"),
   alternates: { canonical: "/" },
-  title: "Jovial — Découvre les bars et événements près de toi",
-  description: "Jovial te connecte aux meilleurs bars, concerts, activités et événements autour de toi. Carte interactive, réservations, alertes — télécharge l'app gratuitement.",
+  title: "Jovial — Découvre les sorties, activités et événements près de toi",
+  description: "Jovial te connecte aux meilleurs lieux, activités et événements autour de toi — bars, cafés, concerts, tournois et bien plus. Carte interactive, réservations, alertes — télécharge l'app gratuitement.",
   icons: {
     icon: [
       { url: "/favicon.png", type: "image/png", sizes: "32x32" },
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
   },
   openGraph: {
-    title: "Jovial — Découvre les bars et événements près de toi",
-    description: "Bars, concerts, fléchettes, comedy clubs… Tout ce qui se passe près de chez toi, en un coup d'œil. Télécharge Jovial gratuitement.",
+    title: "Jovial — Découvre les sorties, activités et événements près de toi",
+    description: "Bars, cafés, concerts, activités, tournois… Tout ce qu'il y a à faire près de chez toi, en un coup d'œil. Télécharge Jovial gratuitement.",
     url: "https://www.getjovial.fr",
     siteName: "Jovial",
     locale: "fr_FR",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jovial — Découvre les bars et événements près de toi",
-    description: "Bars, concerts, fléchettes, comedy clubs… Tout ce qui se passe près de chez toi.",
+    title: "Jovial — Découvre les sorties, activités et événements près de toi",
+    description: "Bars, cafés, concerts, activités, tournois… Tout ce qu'il y a à faire près de chez toi.",
   },
 };
 
