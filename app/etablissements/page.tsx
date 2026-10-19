@@ -469,6 +469,10 @@ export default function EtablissementsPage() {
                 a: "Clique sur \"Inscrire mon établissement\", crée ton compte sur Jovial Pro et suis les étapes pour configurer ta fiche. Notre équipe valide ton établissement sous 24h."
               },
               {
+                q: "Puis-je essayer gratuitement avant de payer ?",
+                a: "Oui : 14 jours d'essai gratuit, sans engagement — rien n'est débité avant la fin de l'essai. Tu peux configurer ta fiche, publier tes premiers événements et tout tester pendant cette période, puis annuler quand tu veux."
+              },
+              {
                 q: "Quelle est la différence entre les 3 offres ?",
                 a: "L'offre Visibilité (290€/an) te permet d'être présent sur la carte et de publier jusqu'à 4 événements par an. L'offre Rayonnement (490€/an) inclut des événements illimités, des rappels automatiques J-1/H-1 et un boost de visibilité. L'offre Pro (790€/an) est le pack complet : 3 tags d'activités, boost mensuel Explore, notifications ciblées et statistiques détaillées en temps réel."
               },

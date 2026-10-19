@@ -25,20 +25,32 @@ const premium = [
 
 const faqs = [
   {
+    q: "Combien coûte Jovial+ ?",
+    a: "2,99 €/mois, ou 29,99 €/an (tu économises environ 17 %). Et les 7 premiers jours sont offerts, sans engagement.",
+  },
+  {
     q: "Comment m'abonner à Jovial+ ?",
-    a: "L'abonnement Jovial+ se souscrit directement depuis l'application Jovial, dans l'onglet Profil. Le paiement est géré par Apple (App Store) ou Google (Play Store) selon ton appareil.",
+    a: "L'abonnement se souscrit directement dans l'application Jovial, depuis l'onglet Profil. Le paiement est géré par Apple (App Store) ou Google (Play Store) selon ton téléphone.",
+  },
+  {
+    q: "C'est quoi les offres privilèges, concrètement ?",
+    a: "Des avantages réservés aux membres Jovial+ dans les établissements partenaires : une réduction, un verre ou un café offert, une place en avant-première… Ils s'affichent directement dans l'app, près de chez toi.",
+  },
+  {
+    q: "Si je me désabonne, je perds mes favoris et mes amis ?",
+    a: "Non. Tu repasses simplement sur la version gratuite : tu gardes ton compte, tes favoris, tes amis et tes clubs. Tu perds seulement les avantages Jovial+ (offres privilèges, alertes de tes lieux favoris, sorties de tes amis).",
   },
   {
     q: "Puis-je annuler à tout moment ?",
-    a: "Oui, tu peux annuler ton abonnement à tout moment depuis les paramètres de ton App Store ou Google Play. Tu conserves l'accès jusqu'à la fin de la période payée.",
+    a: "Oui, à tout moment depuis les réglages de ton App Store ou Google Play. Tu conserves l'accès jusqu'à la fin de la période déjà payée.",
   },
   {
     q: "Y a-t-il une période d'essai ?",
-    a: "Oui ! Jovial+ propose une période d'essai gratuite de 7 jours pour les nouveaux abonnés. Aucun engagement.",
+    a: "Oui ! 7 jours d'essai gratuit pour les nouveaux abonnés, sans engagement. Tu peux annuler avant la fin de l'essai sans rien payer.",
   },
   {
     q: "Mes données sont-elles protégées ?",
-    a: "Absolument. Toutes tes données sont hébergées en Europe et protégées conformément au RGPD. Nous ne revendons jamais tes données personnelles.",
+    a: "Absolument. Tes données sont hébergées en Europe et protégées conformément au RGPD. Nous ne revendons jamais tes données personnelles.",
   },
 ];
 
@@ -198,13 +210,25 @@ export default function PremiumPage() {
       {/* FAQ */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Questions fréquentes</h2>
-          <div className="space-y-6">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+              FAQ
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+            </span>
+            <h2 className="text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
+              Questions fréquentes
+            </h2>
+          </div>
+          <div className="space-y-4">
             {faqs.map((faq) => (
-              <div key={faq.q} className="border-b border-gray-100 pb-6">
-                <h3 className="font-semibold text-gray-900 mb-2">{faq.q}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{faq.a}</p>
-              </div>
+              <details key={faq.q} className="group bg-gray-50 rounded-2xl px-6 py-5 cursor-pointer">
+                <summary className="flex items-center justify-between font-semibold text-gray-900 list-none">
+                  {faq.q}
+                  <span className="text-[#2B4E93] text-xl font-light ml-4 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-3 text-gray-500 text-sm leading-relaxed">{faq.a}</p>
+              </details>
             ))}
           </div>
         </div>
