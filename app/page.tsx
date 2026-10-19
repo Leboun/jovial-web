@@ -67,7 +67,7 @@ export default function HomePage() {
 
           {/* Sous-titre */}
           <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-xl">
-            Concerts, tournois, activités, bonnes adresses… Découvre tout ce qu&apos;il y a à faire près de chez toi — et réserve en deux clics.
+            Sortir, jouer, se retrouver : concerts, comedy clubs, tournois, activités, événements… tout ce qui t&apos;attend près de chez toi, à réserver en deux clics.
           </p>
 
           {/* Boutons téléchargement */}

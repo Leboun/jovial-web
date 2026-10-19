@@ -174,6 +174,55 @@ export default function EtablissementsPage() {
         </div>
       </section>
 
+      {/* C'est pour qui ? — éligibilité, surfacée tôt pour rassurer */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-5xl mx-auto text-center">
+          <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+            <span className="w-6 h-px bg-[#5CB6AC]" />
+            C&apos;est pour qui ?
+            <span className="w-6 h-px bg-[#5CB6AC]" />
+          </span>
+          <h2 className="text-5xl font-black mt-2 mb-4 jovial-grad-text leading-tight uppercase">
+            Ton lieu a sa place sur Jovial
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed mb-10">
+            Dès que ton lieu accueille du public et propose une activité, une sortie ou un événement, tu as ta place sur Jovial — peu importe sa taille ou son style.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-2.5 mb-10">
+            {([
+              ["🍺", "Bar"], ["🍽️", "Restaurant"], ["☕", "Café"], ["🥂", "Guinguette"],
+              ["🎱", "Bar à jeux"], ["🎳", "Bowling"], ["🔐", "Escape game"], ["🎤", "Karaoké"],
+              ["😂", "Comedy club"], ["🎸", "Salle de concert"], ["🎭", "Théâtre"], ["🎬", "Cinéma"],
+              ["🏛️", "Tiers-lieu"], ["🧗", "Salle de sport"], ["🎨", "Atelier créatif"], ["🍷", "Bar à vin"],
+              ["🎢", "Parc de loisirs"], ["🖼️", "Musée"], ["⛳", "Mini-golf"], ["🤝", "Association"],
+            ] as [string, string][]).map(([emoji, label]) => (
+              <span
+                key={label}
+                className="inline-flex items-center gap-2 bg-[#f8faff] border border-gray-100 rounded-full px-4 py-2 text-sm font-semibold text-gray-700"
+              >
+                <span className="text-base leading-none">{emoji}</span> {label}
+              </span>
+            ))}
+            <span className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-[#2B4E93] bg-[#2B4E93]/5 border border-[#2B4E93]/15">
+              … et bien d&apos;autres
+            </span>
+          </div>
+
+          <div className="max-w-xl mx-auto bg-[#f8faff] border border-gray-100 rounded-2xl px-6 py-6">
+            <p className="text-gray-700 text-base leading-relaxed">
+              <strong className="text-[#2B4E93]">Un doute sur ton type de lieu ?</strong> Tu es sûrement éligible quand même — écris-nous, on te répond en 2 min.
+            </p>
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center gap-2 mt-4 bg-[#5CB6AC] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#4aa39a] transition-colors"
+            >
+              Poser ma question →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Bénéfices — Flip cards */}
       <section className="py-20 px-6 bg-[#f8faff]">
         <div className="max-w-6xl mx-auto">
@@ -457,7 +506,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* CTA contact */}
-      <section className="py-16 px-6 bg-[#2B4E93] text-white">
+      <section id="contact" className="py-16 px-6 bg-[#2B4E93] text-white scroll-mt-24">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold mb-3">Une question ? On est là.</h2>
