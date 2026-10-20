@@ -39,6 +39,22 @@
   background-image: var(--jovial-grad);
 }
 
+/* Variante CRÈME — pour un bloc en MILIEU de page (aère entre deux sections) */
+.jovial-block-cream {
+  position: relative;
+  background-color: #FFF6EC;
+  border-bottom: 1px solid #efe4d3;
+}
+.jovial-block-cream::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-image: var(--jovial-grad);
+}
+
 body {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   background: #ffffff;
