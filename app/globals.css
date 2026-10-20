@@ -17,8 +17,25 @@
   background-clip: text;
   color: transparent;
 }
-/* Dégradé de marque en FOND (bandes colorées, boutons) */
+/* Dégradé de marque en FOND (PETITS éléments : boutons, puces) — le dégradé reste
+   joli quand il est fin/petit. */
 .jovial-grad-bg {
+  background-image: var(--jovial-grad);
+}
+
+/* GRANDS blocs / bandeaux : fond UNI (plus d'aplat dégradé géant, jugé lourd) +
+   un FIN filet dégradé en haut → le dégradé reste en touche discrète. */
+.jovial-block {
+  position: relative;
+  background-color: #2B4E93;
+}
+.jovial-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
   background-image: var(--jovial-grad);
 }
 

@@ -137,7 +137,7 @@ export default function HomePage() {
 
 
       {/* Établissements — teaser vers /etablissements */}
-      <section className="py-16 px-6 jovial-grad-bg text-white">
+      <section className="py-16 px-6 jovial-block text-white overflow-hidden">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-flex items-center gap-2 text-white/70 text-xs font-bold uppercase tracking-[0.2em] mb-4">
             <span className="w-6 h-px bg-white/50" />
