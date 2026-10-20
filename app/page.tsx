@@ -137,42 +137,42 @@ export default function HomePage() {
 
 
       {/* Établissements — teaser vers /etablissements */}
-      <section className="py-16 px-6 jovial-block-cream overflow-hidden">
+      <section className="py-16 px-6 jovial-block text-white overflow-hidden">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-            <span className="w-6 h-px bg-[#5CB6AC]" />
+          <span className="inline-flex items-center gap-2 text-white/70 text-xs font-bold uppercase tracking-[0.2em] mb-4">
+            <span className="w-6 h-px bg-white/50" />
             Établissements
-            <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="w-6 h-px bg-white/50" />
           </span>
-          <h2 className="text-4xl md:text-5xl font-black mt-2 mb-4 uppercase leading-tight jovial-grad-text">
+          <h2 className="text-4xl md:text-5xl font-black mt-2 mb-4 uppercase leading-tight">
             Tu gères un bar, un resto, un lieu qui bouge ?
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed mb-8">
+          <p className="text-white/75 text-lg max-w-2xl mx-auto leading-relaxed mb-8">
             Fais-toi trouver par ceux qui cherchent quoi faire près de chez toi — et encaisse réservations et billets directement dans l&apos;app.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mb-10 text-sm">
-            <span className="flex items-center gap-2 bg-white rounded-full px-4 py-2 border border-gray-100 font-semibold text-gray-700">
-              <MapPin size={15} className="text-[#2F7D73]" /> Visible au bon moment
+            <span className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 border border-white/20 font-semibold">
+              <MapPin size={15} /> Visible au bon moment
             </span>
-            <span className="flex items-center gap-2 bg-white rounded-full px-4 py-2 border border-gray-100 font-semibold text-gray-700">
-              <CreditCard size={15} className="text-[#2F7D73]" /> Réservations payées en ligne
+            <span className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 border border-white/20 font-semibold">
+              <CreditCard size={15} /> Réservations payées en ligne
             </span>
-            <span className="flex items-center gap-2 bg-white rounded-full px-4 py-2 border border-gray-100 font-semibold text-gray-700">
-              <QrCode size={15} className="text-[#2F7D73]" /> Billetterie QR
+            <span className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 border border-white/20 font-semibold">
+              <QrCode size={15} /> Billetterie QR
             </span>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/etablissements"
-              className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors"
             >
               Découvrir Jovial Pro →
             </Link>
             <a
               href="https://pro.getjovial.fr/establishment/offers"
-              className="inline-flex items-center justify-center gap-2 bg-white text-[#2B4E93] font-bold px-8 py-4 rounded-2xl border-2 border-[#2B4E93] hover:bg-[#2B4E93] hover:text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-bold px-8 py-4 rounded-2xl hover:bg-white/20 transition-colors border border-white/25"
             >
               Inscrire mon établissement
             </a>
