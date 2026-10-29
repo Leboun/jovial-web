@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { APP_STORE_URL, PLAY_STORE_URL, DOWNLOAD_HREF } from "@/lib/appLinks";
+import { PREMIUM_ENABLED } from "@/lib/features";
 
 export default function Footer() {
   return (
@@ -19,7 +20,7 @@ export default function Footer() {
             <li><Link href="/etablissements" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Établissements</Link></li>
             <li><Link href="/associations" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Associations</Link></li>
             <li><Link href="/actualites" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Découvrir</Link></li>
-            <li><Link href="/premium" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Jovial+</Link></li>
+            {PREMIUM_ENABLED && <li><Link href="/premium" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Jovial+</Link></li>}
           </ul>
         </div>
 

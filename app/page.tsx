@@ -6,6 +6,7 @@ import ScrollingBanner from "@/components/ScrollingBanner";
 import Link from "next/link";
 import { MapPin, Clock, CreditCard, QrCode, Ticket, Users } from "lucide-react";
 import { articles } from "@/lib/articles";
+import { PREMIUM_ENABLED } from "@/lib/features";
 
 const steps = [
   { number: "01", title: "Télécharge l'app", desc: "Disponible sur App Store et Google Play, gratuitement." },
@@ -306,7 +307,9 @@ export default function HomePage() {
             {[
               {
                 q: "Jovial, c'est gratuit ?",
-                a: "Oui, totalement. Tu explores et tu réserves sans payer, sans pub. Jovial+ (2,99 €/mois) est optionnel et débloque des avantages en plus.",
+                a: PREMIUM_ENABLED
+                  ? "Oui, totalement. Tu explores et tu réserves sans payer, sans pub. Jovial+ (2,99 €/mois) est optionnel et débloque des avantages en plus."
+                  : "Oui, totalement. Tu explores, tu suis tes lieux favoris et tu retrouves tes amis sans payer, sans pub.",
               },
               {
                 q: "Comment ça marche ?",
@@ -324,10 +327,12 @@ export default function HomePage() {
                 q: "Faut-il créer un compte ?",
                 a: "Non, tu peux explorer librement en mode découverte. Un compte te sert à réserver, suivre tes lieux favoris et retrouver tes amis.",
               },
-              {
-                q: "C'est quoi Jovial+ ?",
-                a: "La version premium (2,99 €/mois) : offres privilèges dans les établissements, alertes dès qu'un lieu favori publie un événement, et les sorties de tes amis. 7 jours offerts.",
-              },
+              ...(PREMIUM_ENABLED
+                ? [{
+                    q: "C'est quoi Jovial+ ?",
+                    a: "La version premium (2,99 €/mois) : offres privilèges dans les établissements, alertes dès qu'un lieu favori publie un événement, et les sorties de tes amis. 7 jours offerts.",
+                  }]
+                : []),
             ].map((item) => (
               <details key={item.q} className="group bg-gray-50 rounded-2xl">
                 <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-gray-900 list-none [&::-webkit-details-marker]:hidden">

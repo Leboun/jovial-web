@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { articles, toIsoDate } from "@/lib/articles";
+import { PREMIUM_ENABLED } from "@/lib/features";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.getjovial.fr";
@@ -9,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/actualites`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/etablissements`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/associations`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/premium`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    ...(PREMIUM_ENABLED ? [{ url: `${base}/premium`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.8 }] : []),
     { url: `${base}/confidentialite`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/cgu`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/cgv`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },

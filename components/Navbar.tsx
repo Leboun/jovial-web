@@ -5,12 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { DOWNLOAD_HREF } from "@/lib/appLinks";
+import { PREMIUM_ENABLED } from "@/lib/features";
 
 const links = [
   { href: "/#concept", label: "L'appli" },
   { href: "/associations", label: "Associations" },
   { href: "/actualites", label: "Découvrir" },
-  { href: "/premium", label: "Jovial+" },
+  ...(PREMIUM_ENABLED ? [{ href: "/premium", label: "Jovial+" }] : []),
 ];
 
 export default function Navbar() {

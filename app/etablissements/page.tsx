@@ -5,6 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import EligibilityCheck from "@/components/EligibilityCheck";
 import FlipCard from "@/components/FlipCard";
 import LoopingVideos from "@/components/LoopingVideos";
+import { PREMIUM_ENABLED } from "@/lib/features";
 
 export const metadata: Metadata = {
   title: "Jovial pour les établissements — Visibilité & outils pro",
@@ -39,7 +40,9 @@ const plans = [
       "4 événements par an dans l'agenda Jovial",
       "Gestion des réservations sur Jovial Pro",
       "Billetterie d'événements : vente, contrôle des billets et remboursements",
-      "Avantages exclusifs pour les membres Jovial+ (ta clé pour rester visible sur la carte)",
+      PREMIUM_ENABLED
+        ? "Avantages exclusifs pour les membres Jovial+ (ta clé pour rester visible sur la carte)"
+        : "Avantages exclusifs pour les utilisateurs Jovial (ta clé pour rester visible sur la carte)",
       "Kit de communication inclus",
     ],
     cta: "Choisir Visibilité",

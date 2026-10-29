@@ -1,5 +1,7 @@
 ﻿import { Check, Star, Users, Heart, MapPin, Zap, Lock } from "lucide-react";
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
+import { PREMIUM_ENABLED } from "@/lib/features";
 
 export const metadata: Metadata = {
   title: "Jovial+ — Passe à l'expérience premium",
@@ -55,6 +57,9 @@ const faqs = [
 ];
 
 export default function PremiumPage() {
+  // Jovial+ masqué tant qu'il n'est pas en vente dans l'app → redirection temporaire (307).
+  if (!PREMIUM_ENABLED) redirect("/");
+
   return (
     <>
       {/* Hero */}
