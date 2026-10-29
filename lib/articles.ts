@@ -243,11 +243,11 @@ Souvent **jusqu'à 1 h ou 2 h du matin** sur les scènes électro et dans les ba
 
 La Fête de la Musique, ce n'est pas le truc de tout le monde — et c'est très bien comme ça. Si les foules et les décibels, très peu pour vous, la Bretagne a de quoi occuper votre soirée autrement : rien de tel qu'un **bar à fléchettes** pour passer un bon moment entre amis, au calme, un verre à la main. On vous a justement préparé le guide des **[meilleurs bars à fléchettes de Bretagne](/actualites/meilleurs-bars-flechettes-bretagne-2026)** — de quoi viser dans le mille pendant que la ville chante.
 
-## Jovial, votre futur radar à bonnes soirées en Bretagne 🎶
+## Jovial, votre radar à bonnes soirées en Bretagne 🎶
 
-Vous avez aimé ne rien rater de la Fête de la Musique ? Imaginez la même chose **toute l'année**. **Jovial**, c'est l'application bretonne (bientôt disponible) qui rassemblera au même endroit les concerts, soirées et bonnes adresses près de chez vous — pour savoir en un coup d'œil **quoi faire ce soir**, sans éplucher dix sites différents.
+Vous avez aimé ne rien rater de la Fête de la Musique ? Imaginez la même chose **toute l'année**. **Jovial**, c'est l'application bretonne qui rassemble au même endroit les concerts, soirées et bonnes adresses près de chez vous — pour savoir en un coup d'œil **quoi faire ce soir**, sans éplucher dix sites différents.
 
-📲 *Bientôt disponible sur l'App Store et Google Play — gratuit, sans publicité.*
+📲 *Disponible sur l'App Store, bientôt sur Google Play — gratuit, sans publicité.*
 
 ## Sources
 
@@ -429,11 +429,11 @@ Réparti sur trois niveaux, ce bar atypique à l'esprit rock cache à son sous-s
 - **Pour une soirée groupe :** choisissez les grands bars à jeux qui cumulent fléchettes, billard et planches à partager.
 - **Pour l'ambiance pub :** les adresses de quartier (Le Loustik, Le Piccadilly, Le Skellig) offrent une fléchette plus « cosy », entre deux pintes.
 
-## Bientôt, retrouve tout ça sur Jovial
+## Retrouve tout ça sur Jovial
 
-**Jovial** arrive très prochainement : l'appli qui réunira les bars, activités et événements près de chez toi — fléchettes comprises. L'idée : repérer les adresses sur une carte interactive, suivre les tournois et réserver ta soirée en quelques secondes. Des lieux comme ceux de ce guide sont exactement ce qu'on a hâte de te faire découvrir au lancement.
+**Jovial**, c'est l'appli qui réunit les bars, activités et événements près de chez toi — fléchettes comprises. L'idée : repérer les adresses sur une carte interactive, suivre les tournois et réserver ta soirée en quelques secondes. Des lieux comme ceux de ce guide sont exactement ce qu'on a hâte de te faire découvrir au lancement.
 
-📲 *Disponible très prochainement sur l'App Store et Google Play — gratuit, sans publicité.*
+📲 *Disponible sur l'App Store, bientôt sur Google Play — gratuit, sans publicité.*
     `,
   },
   {

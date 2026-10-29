@@ -314,7 +314,7 @@ export default function HomePage() {
               },
               {
                 q: "C'est disponible dans ma ville ?",
-                a: "On ouvre région par région, en commençant par la Bretagne — et ça arrive vite. Laisse ton email en haut de page : plus une ville est demandée, plus vite on y arrive.",
+                a: "On ouvre région par région, en commençant par la Bretagne — et ça arrive vite. Dis-le-nous à hello@getjovial.fr : plus une ville est demandée, plus vite on y arrive.",
               },
               {
                 q: "Mon bar ou mon resto préféré n'est pas sur Jovial ?",

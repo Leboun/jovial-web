@@ -265,17 +265,19 @@ export default async function ArticlePage({ params }: Props) {
               </Link>
             ) : (
               <>
+                {APP_STORE_URL && (
+                  <a
+                    href={APP_STORE_URL}
+                    className="bg-white text-[#2B4E93] text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/90 transition-colors"
+                  >
+                    App Store
+                  </a>
+                )}
                 <a
-                  href={APP_STORE_URL}
-                  className="bg-white text-[#2B4E93] text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-white/90 transition-colors"
+                  href={PLAY_STORE_URL || "/#telecharger"}
+                  className="bg-white/15 text-white text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/25 transition-colors border border-white/20"
                 >
-                  App Store
-                </a>
-                <a
-                  href={PLAY_STORE_URL}
-                  className="bg-white/15 text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-white/25 transition-colors border border-white/20"
-                >
-                  Google Play
+                  {PLAY_STORE_URL ? "Google Play" : "Android : bientôt"}
                 </a>
               </>
             )}
