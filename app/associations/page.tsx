@@ -108,21 +108,21 @@ export default function AssociationsPage() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#5CB6AC] rounded-full blur-[110px] opacity-25 -translate-y-1/3 translate-x-1/4" />
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#011A5C] rounded-full blur-[100px] opacity-30 translate-y-1/2 -translate-x-1/4" />
 
-        <div className="absolute top-6 right-6 z-10">
+        <div className="absolute top-20 right-6 z-10 hidden sm:block xl:hidden">
           <a
             href="https://pro.getjovial.fr/establishment/login"
-            className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 transition-colors"
+            className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-5 py-3 rounded-full border border-white/20 hover:bg-white/20 transition-colors"
           >
             Se connecter →
           </a>
         </div>
 
         <div className="max-w-5xl mx-auto relative flex flex-col lg:flex-row items-center gap-10">
-          <div className="flex-1 text-center lg:text-left">
+          <div className="w-full lg:flex-1 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-white/15 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
               🤝 Pour les associations
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
               Ton association mérite{" "}
               <span className="text-[#8FD9CF]">d&apos;être connue.</span>
             </h1>
@@ -168,7 +168,7 @@ export default function AssociationsPage() {
               Pourquoi Jovial ?
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
+            <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
               Fais connaître ton asso, remplis tes événements.
             </h2>
           </div>
@@ -221,7 +221,7 @@ export default function AssociationsPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
+            <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
               Les mêmes outils que les pros, pour ton asso
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
@@ -255,7 +255,7 @@ export default function AssociationsPage() {
               Tarifs
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 mb-2 jovial-grad-text leading-tight uppercase">
+            <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-2 jovial-grad-text leading-tight uppercase">
               Un tarif pensé pour les assos
             </h2>
             <p className="text-gray-600">Commence gratuitement, passe à une offre supérieure quand tu veux.</p>
@@ -323,7 +323,7 @@ export default function AssociationsPage() {
               FAQ
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
+            <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
               Questions fréquentes
             </h2>
           </div>
@@ -354,12 +354,12 @@ export default function AssociationsPage() {
                 a: "Un espace communautaire réservé à ton association : tu y publies tes annonces, tu fédères tes membres et tu peux recruter des bénévoles. C'est inclus à partir de l'offre Asso Active.",
               },
             ].map((item) => (
-              <details key={item.q} className="group bg-gray-50 rounded-2xl px-6 py-5 cursor-pointer">
-                <summary className="flex items-center justify-between font-semibold text-gray-900 list-none">
+              <details key={item.q} className="group bg-gray-50 rounded-2xl">
+                <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-gray-900 list-none [&::-webkit-details-marker]:hidden">
                   {item.q}
-                  <span className="text-[#2B4E93] text-xl font-light ml-4 group-open:rotate-45 transition-transform">+</span>
+                  <span className="text-[#2B4E93] text-xl font-light shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <p className="mt-3 text-gray-500 text-sm leading-relaxed">{item.a}</p>
+                <p className="-mt-2 px-6 pb-5 text-gray-500 text-sm leading-relaxed">{item.a}</p>
               </details>
             ))}
           </div>

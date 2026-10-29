@@ -66,7 +66,7 @@ export default function PremiumPage() {
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
             <Star size={12} className="fill-yellow-400 text-yellow-400" /> Premium
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
             Passe à{" "}
             <span className="bg-gradient-to-r from-[#a78bfa] to-[#7c3aed] bg-clip-text text-transparent">
               Jovial+
@@ -94,7 +94,7 @@ export default function PremiumPage() {
               Comparatif
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">Gratuit vs Jovial+</h2>
+            <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">Gratuit vs Jovial+</h2>
             <p className="text-gray-600 mt-3">Tout le monde bénéficie de Jovial gratuitement. Jovial+ va encore plus loin.</p>
           </div>
 
@@ -151,7 +151,7 @@ export default function PremiumPage() {
               Fonctionnalités
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">Ce que tu débloques avec Jovial+</h2>
+            <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">Ce que tu débloques avec Jovial+</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -216,18 +216,18 @@ export default function PremiumPage() {
               FAQ
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
+            <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
               Questions fréquentes
             </h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq) => (
-              <details key={faq.q} className="group bg-gray-50 rounded-2xl px-6 py-5 cursor-pointer">
-                <summary className="flex items-center justify-between font-semibold text-gray-900 list-none">
+              <details key={faq.q} className="group bg-gray-50 rounded-2xl">
+                <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-gray-900 list-none [&::-webkit-details-marker]:hidden">
                   {faq.q}
-                  <span className="text-[#2B4E93] text-xl font-light ml-4 group-open:rotate-45 transition-transform">+</span>
+                  <span className="text-[#2B4E93] text-xl font-light shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <p className="mt-3 text-gray-500 text-sm leading-relaxed">{faq.a}</p>
+                <p className="-mt-2 px-6 pb-5 text-gray-500 text-sm leading-relaxed">{faq.a}</p>
               </details>
             ))}
           </div>

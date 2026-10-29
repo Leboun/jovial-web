@@ -25,7 +25,8 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93", footer
 
   return (
     <div
-      style={{ perspective: "1000px", height: "180px", cursor: "pointer", userSelect: "none" }}
+      style={{ perspective: "1000px", cursor: "pointer", userSelect: "none" }}
+      className="h-[200px] sm:h-[220px]"
       onMouseEnter={() => canHover() && setFlipped(true)}
       onMouseLeave={() => canHover() && setFlipped(false)}
       onClick={() => !canHover() && toggle()}
@@ -57,7 +58,7 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93", footer
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
           }}
-          className="bg-white border border-gray-100 shadow-sm rounded-3xl p-8 flex flex-col justify-between"
+          className="bg-white border border-gray-100 shadow-sm rounded-3xl p-6 sm:p-7 flex flex-col justify-between"
         >
           <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl bg-[#D8F0EE]">
             {icon}
@@ -78,7 +79,7 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93", footer
             transform: "rotateY(180deg)",
             background: "var(--jovial-grad)",
           }}
-          className="rounded-3xl p-8 flex flex-col justify-between"
+          className="rounded-3xl p-6 sm:p-7 flex flex-col justify-between overflow-hidden"
         >
           <p className="text-white/95 text-sm leading-relaxed">{desc}</p>
           {footer ? (

@@ -18,13 +18,15 @@ const steps = [
 function PhoneMockup({ src, alt }: { src: string; alt: string }) {
   return (
     <div style={{ position: "relative", width: "100%" }}>
-      {/* Screenshot — aucun border-radius, aucun overflow, aucun clip */}
+      {/* Screenshot — coins arrondis juste sous le châssis (rayon écran 42/368×822 du SVG),
+          sinon les coins carrés dépassent du cadre arrondi */}
       <div style={{
         position: "absolute",
         top: "1.3%",
         left: "2.8%",
         right: "2.8%",
         bottom: "1.3%",
+        borderRadius: "12% / 5.5%",
         backgroundImage: `url(${src})`,
         backgroundSize: "cover",
         backgroundPosition: "top center",
@@ -87,7 +89,7 @@ export default function HomePage() {
               L&apos;application
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 mb-5 jovial-grad-text leading-tight uppercase">
+            <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-5 jovial-grad-text leading-tight uppercase">
               Tout ce qu&apos;il te faut pour sortir
             </h2>
             <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
@@ -95,7 +97,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="flex flex-col lg:flex-row items-center gap-16">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             {/* Mockup app à gauche */}
             <div className="w-full max-w-[360px] shrink-0 mx-auto lg:mx-0 drop-shadow-2xl">
               <PhoneMockup
@@ -105,7 +107,7 @@ export default function HomePage() {
             </div>
 
             {/* 4 features à droite — mêmes cartes retournables que la page établissements */}
-            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="w-full lg:flex-1 lg:min-w-0 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               <FlipCard
                 icon="🗺️"
                 title="Carte interactive"
@@ -237,14 +239,14 @@ export default function HomePage() {
                 Découvrir
                 <span className="w-6 h-px bg-[#5CB6AC]" />
               </span>
-              <h2 className="text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">CE QUI SE PASSE PRÈS DE CHEZ TOI.</h2>
+              <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">CE QUI SE PASSE PRÈS DE CHEZ TOI.</h2>
               <p className="text-gray-600 text-lg mt-4 max-w-xl leading-relaxed">
                 Événements à venir, lieux d'activités, scènes locales — près de chez toi.
               </p>
             </div>
             <Link
               href="/actualites"
-              className="hidden md:inline-flex items-center gap-2 text-[#2B4E93] font-semibold text-sm hover:underline shrink-0"
+              className="hidden md:inline-flex items-center gap-2 min-h-11 text-[#2B4E93] font-semibold text-sm hover:underline shrink-0"
             >
               Tous les articles →
             </Link>
@@ -280,7 +282,7 @@ export default function HomePage() {
           </div>
 
           <div className="mt-8 text-center md:hidden">
-            <Link href="/actualites" className="text-[#2B4E93] font-semibold text-sm hover:underline">
+            <Link href="/actualites" className="inline-flex items-center min-h-11 px-2 text-[#2B4E93] font-semibold text-sm hover:underline">
               Voir tous les articles →
             </Link>
           </div>
@@ -296,7 +298,7 @@ export default function HomePage() {
               FAQ
               <span className="w-6 h-px bg-[#5CB6AC]" />
             </span>
-            <h2 className="text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
+            <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
               Questions fréquentes
             </h2>
           </div>
@@ -327,12 +329,12 @@ export default function HomePage() {
                 a: "La version premium (2,99 €/mois) : offres privilèges dans les établissements, alertes dès qu'un lieu favori publie un événement, et les sorties de tes amis. 7 jours offerts.",
               },
             ].map((item) => (
-              <details key={item.q} className="group bg-gray-50 rounded-2xl px-6 py-5 cursor-pointer">
-                <summary className="flex items-center justify-between font-semibold text-gray-900 list-none">
+              <details key={item.q} className="group bg-gray-50 rounded-2xl">
+                <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-gray-900 list-none [&::-webkit-details-marker]:hidden">
                   {item.q}
-                  <span className="text-[#2B4E93] text-xl font-light ml-4 group-open:rotate-45 transition-transform">+</span>
+                  <span className="text-[#2B4E93] text-xl font-light shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <p className="mt-3 text-gray-500 text-sm leading-relaxed">{item.a}</p>
+                <p className="-mt-2 px-6 pb-5 text-gray-500 text-sm leading-relaxed">{item.a}</p>
               </details>
             ))}
           </div>

@@ -14,24 +14,24 @@ export default function Footer() {
 
         <div>
           <p className="font-semibold text-sm mb-4 text-gray-300 uppercase tracking-wider">L'application</p>
-          <ul className="space-y-2">
-            <li><Link href="/#concept" className="text-gray-300 text-sm hover:text-white transition-colors">Concept</Link></li>
-            <li><Link href="/etablissements" className="text-gray-300 text-sm hover:text-white transition-colors">Établissements</Link></li>
-            <li><Link href="/associations" className="text-gray-300 text-sm hover:text-white transition-colors">Associations</Link></li>
-            <li><Link href="/actualites" className="text-gray-300 text-sm hover:text-white transition-colors">Découvrir</Link></li>
-            <li><Link href="/premium" className="text-gray-300 text-sm hover:text-white transition-colors">Jovial+</Link></li>
+          <ul>
+            <li><Link href="/#concept" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Concept</Link></li>
+            <li><Link href="/etablissements" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Établissements</Link></li>
+            <li><Link href="/associations" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Associations</Link></li>
+            <li><Link href="/actualites" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Découvrir</Link></li>
+            <li><Link href="/premium" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Jovial+</Link></li>
           </ul>
         </div>
 
         <div>
           <p className="font-semibold text-sm mb-4 text-gray-300 uppercase tracking-wider">Légal</p>
-          <ul className="space-y-2">
-            <li><Link href="/confidentialite" className="text-gray-300 text-sm hover:text-white transition-colors">Confidentialité</Link></li>
-            <li><Link href="/cgu" className="text-gray-300 text-sm hover:text-white transition-colors">CGU</Link></li>
-            <li><Link href="/cgv" className="text-gray-300 text-sm hover:text-white transition-colors">CGV</Link></li>
-            <li><Link href="/mentions-legales" className="text-gray-300 text-sm hover:text-white transition-colors">Mentions légales</Link></li>
-            <li><Link href="/suppression-compte" className="text-gray-300 text-sm hover:text-white transition-colors">Supprimer mon compte</Link></li>
-            <li><a href="mailto:hello@getjovial.fr" className="text-gray-300 text-sm hover:text-white transition-colors">Contact</a></li>
+          <ul>
+            <li><Link href="/confidentialite" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Confidentialité</Link></li>
+            <li><Link href="/cgu" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">CGU</Link></li>
+            <li><Link href="/cgv" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">CGV</Link></li>
+            <li><Link href="/mentions-legales" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Mentions légales</Link></li>
+            <li><Link href="/suppression-compte" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Supprimer mon compte</Link></li>
+            <li><a href="mailto:hello@getjovial.fr" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -42,13 +42,13 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <a
               href={APP_STORE_URL || DOWNLOAD_HREF}
-              className="text-gray-300 text-xs hover:text-white transition-colors"
+              className="inline-flex items-center min-h-11 px-1 text-gray-300 text-xs hover:text-white transition-colors"
             >
               App Store
             </a>
             <a
               href={PLAY_STORE_URL || DOWNLOAD_HREF}
-              className="text-gray-300 text-xs hover:text-white transition-colors"
+              className="inline-flex items-center min-h-11 px-1 text-gray-300 text-xs hover:text-white transition-colors"
             >
               Google Play
             </a>

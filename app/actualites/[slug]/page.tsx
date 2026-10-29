@@ -200,7 +200,7 @@ export default async function ArticlePage({ params }: Props) {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/actualites"
-            className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-[#2B4E93] transition-colors mb-8"
+            className="inline-flex items-center gap-2 min-h-11 text-sm text-gray-500 hover:text-[#2B4E93] transition-colors mb-8"
           >
             <ArrowLeft size={15} />
             Retour
@@ -259,7 +259,7 @@ export default async function ArticlePage({ params }: Props) {
             {APP_COMING_SOON ? (
               <Link
                 href="/#telecharger"
-                className="bg-white text-[#2B4E93] text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-white/90 transition-colors"
+                className="bg-white text-[#2B4E93] text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/90 transition-colors"
               >
                 Découvrir l&apos;app →
               </Link>
