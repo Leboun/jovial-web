@@ -9,7 +9,7 @@ export default function CguPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Conditions générales d&apos;utilisation</h1>
-      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 7 octobre 2026</p>
+      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 4 novembre 2026</p>
 
       <section className="space-y-3 mb-8">
         <h2 className="text-xl font-bold">Article 1 — Objet</h2>
@@ -60,8 +60,8 @@ export default function CguPage() {
         <h2 className="text-xl font-bold">Article 5 — Accès au Service et compte</h2>
         <p className="text-gray-700 leading-relaxed">
           <strong>Âge minimum.</strong> Le Service est réservé aux personnes âgées d&apos;au moins 15 ans.
-          En dessous de cet âge, l&apos;autorisation du titulaire de l&apos;autorité parentale est requise
-          dans les conditions prévues par la loi.
+          En créant un compte, vous déclarez avoir au moins 15 ans. Jovial peut suspendre ou supprimer
+          un compte s&apos;il apparaît que son titulaire n&apos;a pas l&apos;âge requis.
         </p>
         <p className="text-gray-700 leading-relaxed">
           <strong>Création du compte.</strong> Vous pouvez créer un compte via une adresse électronique ou
@@ -98,11 +98,19 @@ export default function CguPage() {
           contenus offensants et peut retirer tout Contenu contraire aux CGU ou à la loi, sans préavis.
         </p>
         <p className="text-gray-700 leading-relaxed">
-          <strong>Licence.</strong> En publiant un Contenu, vous concédez à Jovial une licence non
-          exclusive, gratuite et mondiale permettant d&apos;héberger, reproduire, afficher et diffuser ce
-          Contenu aux seules fins de fournir et promouvoir le Service. Cette licence prend fin à la
-          suppression du Contenu ou du compte, sous réserve des besoins de sécurité, de preuve ou des
-          obligations légales.
+          <strong>Licence.</strong> Vous restez propriétaire de vos Contenus. En publiant un Contenu, vous
+          concédez à Jovial une licence non exclusive et gratuite permettant de l&apos;héberger, de le
+          reproduire et de l&apos;afficher dans le Service, uniquement auprès des personnes autorisées par vos
+          réglages de visibilité, et aux seules fins de faire fonctionner le Service. Cette licence prend
+          fin à la suppression du Contenu ou du compte, sous réserve des besoins de sécurité, de preuve ou
+          des obligations légales.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <strong>Aucune utilisation promotionnelle sans votre accord.</strong> Jovial n&apos;utilise jamais
+          vos Contenus (photos, publications, nom ou avatar) pour sa communication ou sa publicité,
+          notamment sur son site ou ses réseaux sociaux, sans vous avoir demandé votre accord préalable et
+          exprès pour le Contenu concerné. Vous pouvez retirer cet accord à tout moment en écrivant à{" "}
+          <a className="text-[#2B4E93] underline" href="mailto:hello@getjovial.fr">hello@getjovial.fr</a>.
         </p>
       </section>
 
@@ -214,9 +222,8 @@ export default function CguPage() {
           49 rue de Ponthieu, 75008 Paris — Tél. : 01 89 47 00 14 — SIRET : 831 213 871 00021
         </p>
         <p className="text-gray-700 leading-relaxed">
-          Vous pouvez également recourir à la plateforme européenne de règlement en ligne des litiges
-          (ec.europa.eu/consumers/odr). À défaut de résolution amiable, les tribunaux compétents sont
-          ceux désignés par les règles de droit applicables, notamment protectrices du consommateur.
+          À défaut de résolution amiable, les tribunaux compétents sont ceux désignés par les règles de
+          droit applicables, notamment protectrices du consommateur.
         </p>
       </section>
 

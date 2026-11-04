@@ -9,7 +9,7 @@ export default function CgvPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Conditions générales de vente</h1>
-      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 7 octobre 2026</p>
+      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 4 novembre 2026</p>
 
       <section className="space-y-3 mb-8">
         <h2 className="text-xl font-bold">Article 1 — Objet et vendeur</h2>
@@ -213,10 +213,6 @@ export default function CgvPage() {
           <strong>CM2C — Centre de la Médiation de la Consommation de Conciliateurs de Justice</strong>
           <br />
           49 rue de Ponthieu, 75008 Paris — Tél. : 01 89 47 00 14 — SIRET : 831 213 871 00021
-        </p>
-        <p className="text-gray-700 leading-relaxed">
-          Le consommateur peut également recourir à la plateforme européenne de règlement en ligne des
-          litiges (ec.europa.eu/consumers/odr).
         </p>
       </section>
 
