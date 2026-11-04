@@ -1,9 +1,12 @@
 "use client";
 
-import { useEffect, type CSSProperties } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { APP_STORE_URL, PLAY_STORE_URL, DOWNLOAD_HREF } from "@/lib/appLinks";
+import { publicSelect } from "@/lib/supabasePublic";
+
+type VenuePreview = { name: string | null; city: string | null; cover_url: string | null; logo_url: string | null };
 
 // QR JOVIAL D'UN LIEU : getjovial.fr/v/<id> (imprimé par l'établissement, kit de
 // communication Jovial Pro). Scanné avec l'appareil photo du téléphone :
@@ -16,6 +19,14 @@ export default function VenueQrPage() {
   const venueId = Array.isArray(raw) ? raw[0] : (raw as string | undefined);
   const valid = !!venueId && /^\d{1,12}$/.test(venueId);
   const deepLink = valid ? `jovial://v/${venueId}` : null;
+
+  // Nom + photo du lieu (lecture publique : lieux approuvés et actifs uniquement).
+  const [venue, setVenue] = useState<VenuePreview | null>(null);
+  useEffect(() => {
+    if (!valid) return;
+    publicSelect<VenuePreview>("venues", `id=eq.${venueId}&select=name,city,cover_url,logo_url&limit=1`)
+      .then((rows) => setVenue(rows?.[0] ?? null));
+  }, [valid, venueId]);
 
   useEffect(() => {
     if (!deepLink) return;
@@ -51,8 +62,20 @@ export default function VenueQrPage() {
         gap: 12,
       }}
     >
-      <div style={{ fontSize: 60 }}>🐙</div>
-      <h1 style={{ fontSize: 26, fontWeight: 700, margin: "6px 0 0" }}>Tu es dans un lieu Jovial !</h1>
+      {venue?.cover_url || venue?.logo_url ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={(venue.cover_url || venue.logo_url) as string}
+          alt={venue.name ?? "Le lieu"}
+          style={{ width: "100%", maxWidth: 340, height: 170, objectFit: "cover", borderRadius: 18, boxShadow: "0 8px 24px rgba(0,0,0,0.25)" }}
+        />
+      ) : (
+        <div style={{ fontSize: 60 }}>🐙</div>
+      )}
+      <h1 style={{ fontSize: 26, fontWeight: 700, margin: "6px 0 0" }}>
+        {venue?.name ? `Tu es chez ${venue.name} !` : "Tu es dans un lieu Jovial !"}
+      </h1>
+      {venue?.city ? <p style={{ fontSize: 14, opacity: 0.75, margin: 0 }}>{venue.city}</p> : null}
       <p style={{ fontSize: 16, opacity: 0.9, maxWidth: 340, lineHeight: 1.55, margin: "0 0 14px" }}>
         Valide ta présence avec l&apos;appli Jovial et fais grimper ta collection de sorties.
       </p>
@@ -66,6 +89,10 @@ export default function VenueQrPage() {
       )}
 
       <p style={{ fontSize: 14, opacity: 0.8, margin: "18px 0 4px" }}>Pas encore l&apos;appli ?</p>
+      {/* Le passage par le store « oublie » le lieu : on le dit clairement. */}
+      <p style={{ fontSize: 14, opacity: 0.9, maxWidth: 320, lineHeight: 1.5, margin: "0 0 8px", background: "rgba(255,255,255,0.12)", borderRadius: 12, padding: "10px 14px" }}>
+        📲 Une fois l&apos;appli installée, <strong>scanne à nouveau ce QR code</strong> pour valider ta présence.
+      </p>
       {APP_STORE_URL ? (
         <a href={APP_STORE_URL} style={{ ...btn, background: "transparent", color: "#fff", border: "2px solid #fff" }}>
           Télécharger sur l&apos;App Store
