@@ -18,7 +18,14 @@ export default function VenueQrPage() {
   const raw = params?.venueId;
   const venueId = Array.isArray(raw) ? raw[0] : (raw as string | undefined);
   const valid = !!venueId && /^\d{1,12}$/.test(venueId);
-  const deepLink = valid ? `jovial://v/${venueId}` : null;
+  // Clé secrète du QR (anti-triche, …/v/<id>?k=<clé>) : transmise telle quelle à l'appli.
+  // Lue côté navigateur (pas de useSearchParams → pas de Suspense nécessaire).
+  const [key, setKey] = useState<string | null>(null);
+  useEffect(() => {
+    const k = new URLSearchParams(window.location.search).get("k");
+    setKey(k && /^[A-Za-z0-9]{4,40}$/.test(k) ? k : null);
+  }, []);
+  const deepLink = valid ? `jovial://v/${venueId}${key ? `?k=${key}` : ""}` : null;
 
   // Nom + photo du lieu (lecture publique : lieux approuvés et actifs uniquement).
   const [venue, setVenue] = useState<VenuePreview | null>(null);
@@ -30,6 +37,8 @@ export default function VenueQrPage() {
 
   useEffect(() => {
     if (!deepLink) return;
+    // On attend d'avoir lu la clé (si elle est dans l'adresse) avant d'ouvrir l'appli.
+    if (/[?&]k=/.test(window.location.search) && !key) return;
     const isMobile = /iphone|ipad|ipod|android/i.test(navigator.userAgent);
     // Ouvre l'app tout de suite sur mobile ; si elle n'est pas installée, la page reste affichée.
     if (isMobile) window.location.href = deepLink;
