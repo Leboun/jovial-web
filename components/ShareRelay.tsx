@@ -11,14 +11,15 @@ import { publicSelect } from "@/lib/supabasePublic";
 //   • Sur téléphone avec l'appli → elle s'ouvre directement au bon endroit (jovial://…).
 //   • Sinon → aperçu (photo, titre, date, lieu) + boutons de téléchargement.
 
-export type ShareKind = "event" | "venue" | "club";
+export type ShareKind = "event" | "venue" | "club" | "outing";
 
 type Preview = { title: string; subtitle: string | null; image: string | null };
 
-const DEEP_PATH: Record<ShareKind, string> = { event: "event", venue: "venue", club: "groups" };
+const DEEP_PATH: Record<ShareKind, string> = { event: "event", venue: "venue", club: "groups", outing: "outing" };
 const LABEL: Record<ShareKind, { open: string; invalid: string; emoji: string; pitch: string }> = {
   event: { open: "Voir l'événement dans Jovial", invalid: "Cet événement n'existe plus.", emoji: "🎉", pitch: "On t'a partagé un événement. Ouvre-le dans Jovial pour voir qui y va et réserver ta place." },
   venue: { open: "Voir le lieu dans Jovial", invalid: "Ce lieu n'est plus disponible.", emoji: "📍", pitch: "On t'a partagé un lieu. Découvre ses activités, ses événements et ses bons plans dans Jovial." },
+  outing: { open: "Voir la sortie dans Jovial", invalid: "Cette sortie n'existe plus.", emoji: "🎤", pitch: "On t'invite à une sortie de club ! Ouvre-la dans Jovial pour voir qui y va et dire « J'y vais »." },
   club: { open: "Voir le club dans Jovial", invalid: "Ce club n'est pas public ou n'existe plus.", emoji: "🤝", pitch: "On t'invite à découvrir ce club. Rejoins-le dans Jovial pour ne rater aucune sortie." },
 };
 
@@ -30,6 +31,8 @@ function formatDate(iso: string | null | undefined): string | null {
 }
 
 async function loadPreview(kind: ShareKind, id: string): Promise<Preview | null> {
+  // Sorties de club : réservées aux membres connectés (pas d'aperçu public) → aperçu générique.
+  if (kind === "outing") return { title: "Une sortie de club", subtitle: null, image: null };
   if (kind === "event") {
     const rows = await publicSelect<{ title: string | null; starts_at: string | null; cover_url: string | null; venues: { name: string | null; city: string | null } | null }>(
       "events",
