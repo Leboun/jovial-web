@@ -3,7 +3,7 @@
 import { useEffect, useState, type CSSProperties } from "react";
 import Link from "next/link";
 import { APP_STORE_URL, PLAY_STORE_URL, DOWNLOAD_HREF } from "@/lib/appLinks";
-import { publicSelect } from "@/lib/supabasePublic";
+import { publicSelect, SUPABASE_ANON_KEY, SUPABASE_URL } from "@/lib/supabasePublic";
 
 // PAGE RELAIS D'UN PARTAGE (audit nov. 2026) : getjovial.fr/e/<id> (événement),
 // /l/<id> (lieu), /c/<id> (club). Avant, partager depuis l'appli envoyait un texte sans
@@ -31,8 +31,20 @@ function formatDate(iso: string | null | undefined): string | null {
 }
 
 async function loadPreview(kind: ShareKind, id: string): Promise<Preview | null> {
-  // Sorties de club : réservées aux membres connectés (pas d'aperçu public) → aperçu générique.
-  if (kind === "outing") return { title: "Une sortie de club", subtitle: null, image: null };
+  // Sorties de club : aperçu PUBLIC seulement pour les clubs publics (fonction dédiée), sinon générique.
+  if (kind === "outing") {
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/public_outing_preview`, {
+        method: "POST",
+        headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ p_id: Number(id) }),
+      });
+      const rows = res.ok ? ((await res.json()) as { title: string | null; starts_at: string | null; location_label: string | null; cover_url: string | null; club_name: string | null }[]) : [];
+      const r = Array.isArray(rows) ? rows[0] : null;
+      if (r) return { title: r.title ?? "Une sortie de club", subtitle: [formatDate(r.starts_at), r.location_label, r.club_name ? `Club ${r.club_name}` : null].filter(Boolean).join(" — ") || null, image: r.cover_url };
+    } catch { /* aperçu générique */ }
+    return { title: "Une sortie de club", subtitle: null, image: null };
+  }
   if (kind === "event") {
     const rows = await publicSelect<{ title: string | null; starts_at: string | null; cover_url: string | null; venues: { name: string | null; city: string | null } | null }>(
       "events",

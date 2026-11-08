@@ -11,6 +11,9 @@ export type Article = {
   author: string;
   city?: string;
   image?: string; // chemin public utilise pour l'apercu de partage (og:image)
+  // Article lié à un événement daté : fin de l'événement (ISO). Passé → plus mis en avant sur
+  // l'accueil (audit nov. 2026 : la Fête de la Musique s'affichait encore en novembre).
+  eventEnd?: string;
 };
 
 const FR_MONTHS: Record<string, string> = {
@@ -33,6 +36,7 @@ export function toIsoDate(frenchDate: string): string {
 export const articles: Article[] = [
   {
     slug: "fete-de-la-musique-2026-bretagne-ou-aller",
+    eventEnd: "2026-06-21",
     date: "19 juin 2026",
     tag: "Festivals",
     tagColor: "#F59E0B",
@@ -438,6 +442,7 @@ Réparti sur trois niveaux, ce bar atypique à l'esprit rock cache à son sous-s
   },
   {
     slug: "finale-ligue-des-champions-2026-bars-bretagne",
+    eventEnd: "2026-05-30",
     date: "27 mai 2026",
     tag: "Adresses",
     tagColor: "#2B4E93",
@@ -637,6 +642,7 @@ Retrouvez Play Rennes sur la carte Jovial pour réserver votre créneau et suivr
   /*
   {
     slug: "festival-interceltique-lorient-2026-bars-off-concerts",
+    eventEnd: "2026-08-16",
     date: "20 juillet 2026",
     tag: "Festival & Off",
     tagColor: "#F59E0B",
@@ -702,6 +708,7 @@ Sur Jovial, retrouvez les bars lorientais qui participent au Off, leurs programm
   /*
   {
     slug: "fete-de-la-musique-bretagne-2026-brest-lorient-saint-brieuc-vannes",
+    eventEnd: "2026-06-21",
     date: "16 juin 2026",
     tag: "Festival & Off",
     tagColor: "#F59E0B",
@@ -757,6 +764,7 @@ Retrouvez tous les bars participants et leurs événements du soir sur Jovial.
   /*
   {
     slug: "fete-de-la-musique-rennes-2026-bars-programme",
+    eventEnd: "2026-06-21",
     date: "14 juin 2026",
     tag: "Festival & Off",
     tagColor: "#F59E0B",
@@ -898,6 +906,7 @@ Play Rennes organise des tournois toutes les deux semaines. BREWKLYN propose des
   },
   {
     slug: "art-rock-2026-saint-brieuc-bars-restaurants",
+    eventEnd: "2026-05-25",
     date: "18 mai 2026",
     tag: "Festivals",
     tagColor: "#F59E0B",
@@ -971,4 +980,14 @@ Et pour ne rien manquer des meilleures adresses, soirées et animations pendant 
 
 export function getArticle(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug);
+}
+
+/** Articles à mettre en avant sur l'accueil : d'abord ceux qui restent d'actualité
+ *  (sans date d'événement, ou événement à venir), puis les plus récents. */
+export function homeArticles(count = 3, now: Date = new Date()): Article[] {
+  const today = now.toISOString().slice(0, 10);
+  const live = (a: Article) => !a.eventEnd || a.eventEnd >= today;
+  return [...articles]
+    .sort((a, b) => Number(live(b)) - Number(live(a)))
+    .slice(0, count);
 }

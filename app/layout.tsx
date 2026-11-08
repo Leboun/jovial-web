@@ -9,7 +9,8 @@ const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.getjovial.fr"),
-  alternates: { canonical: "/" },
+  // Pas de canonical global (audit nov. 2026) : il faisait pointer TOUTES les pages vers
+  // l'accueil. Chaque page est sa propre URL officielle ; les liens de partage ont le leur.
   title: "Jovial — Découvre les sorties, activités et événements près de toi",
   description: "Jovial te connecte aux meilleurs lieux, activités et événements autour de toi — bars, cafés, concerts, tournois et bien plus. Carte interactive, réservations, alertes — télécharge l'app gratuitement.",
   icons: {

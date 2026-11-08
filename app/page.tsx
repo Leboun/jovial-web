@@ -5,7 +5,7 @@ import LoopingVideos from "@/components/LoopingVideos";
 import ScrollingBanner from "@/components/ScrollingBanner";
 import Link from "next/link";
 import { MapPin, Clock, CreditCard, QrCode, Ticket, Users } from "lucide-react";
-import { articles } from "@/lib/articles";
+import { homeArticles } from "@/lib/articles";
 import { PREMIUM_ENABLED } from "@/lib/features";
 
 const steps = [
@@ -139,6 +139,51 @@ export default function HomePage() {
       </section>
 
 
+      {/* Sortir avec sa bande — ce qui distingue Jovial d'une simple carte (audit nov. 2026) */}
+      <section className="py-20 px-6 bg-[#F5F8FC]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+              Avec ta bande
+              <span className="w-6 h-px bg-[#5CB6AC]" />
+            </span>
+            <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-5 jovial-grad-text leading-tight uppercase">
+              Sortir, c&apos;est mieux à plusieurs
+            </h2>
+            <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+              Vois où vont tes amis, organisez vos sorties en club et gardez vos meilleurs souvenirs, au même endroit.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <FlipCard
+              icon="👀"
+              title="Qui sort ?"
+              desc="Le fil « Ma bande » te montre les sorties et les publications de tes amis. Réagis, commente, rejoins-les."
+              footer=""
+            />
+            <FlipCard
+              icon="🤝"
+              title="Clubs & sorties"
+              desc="Crée ou rejoins un club (palet, quiz, running…), propose une sortie, et chacun répond « J'y vais » ou « Peut-être »."
+              footer=""
+            />
+            <FlipCard
+              icon="🏆"
+              title="Le classement du mois"
+              desc="Scanne le QR Jovial des lieux où tu sors : niveaux, badges et un podium entre amis chaque mois."
+              footer=""
+            />
+            <FlipCard
+              icon="📸"
+              title="Photos souvenirs"
+              desc="Après chaque sortie, la bande partage ses photos. Et tu recommandes les lieux que tu as aimés."
+              footer=""
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Établissements — teaser vers /etablissements */}
       <section className="py-16 px-6 jovial-block text-white overflow-hidden">
         <div className="max-w-4xl mx-auto text-center">
@@ -254,7 +299,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {articles.slice(0, 3).map((a) => (
+            {homeArticles(3).map((a) => (
               <Link key={a.slug} href={`/actualites/${a.slug}`} className="group block">
                 <article className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-md transition-shadow h-full flex flex-col">
                   <div className="h-1.5 w-full" style={{ backgroundColor: a.tagColor }} />
