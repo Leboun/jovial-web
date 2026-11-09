@@ -18,9 +18,10 @@ const CSP = [
   // (à retirer plus tard via un nonce + 'strict-dynamic').
   "script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com",
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob:",
+  // Images et données publiques des lieux/événements (Supabase : stockage + lecture REST).
+  "img-src 'self' data: blob: https://luwspwiibxzzjvbtklbo.supabase.co",
   "font-src 'self'",
-  "connect-src 'self' https://formspree.io https://vitals.vercel-insights.com",
+  "connect-src 'self' https://formspree.io https://vitals.vercel-insights.com https://luwspwiibxzzjvbtklbo.supabase.co",
   "frame-ancestors 'none'", // anti-clickjacking (personne ne peut mettre le site dans une iframe)
   "frame-src 'none'",
   "object-src 'none'",
@@ -31,8 +32,8 @@ const CSP = [
 ].join("; ");
 
 const SECURITY_HEADERS = [
-  // Passer en "Content-Security-Policy" (sans -Report-Only) pour ACTIVER le blocage.
-  { key: "Content-Security-Policy-Report-Only", value: CSP },
+  // ACTIVÉE (audit nov. 2026, n°22) après la période d'observation en Report-Only.
+  { key: "Content-Security-Policy", value: CSP },
   // Force HTTPS pendant 1 an sur le domaine et ses sous-domaines (anti-downgrade/MITM).
   { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
   { key: "X-Frame-Options", value: "DENY" }, // filet de sécurité anti-clickjacking (navigateurs anciens)

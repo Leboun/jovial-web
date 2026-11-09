@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { JsonLd, organizationJsonLd } from "@/lib/structuredData";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr" className={`${geist.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased">
+        <JsonLd data={organizationJsonLd} />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

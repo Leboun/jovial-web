@@ -1,8 +1,12 @@
 import type { MetadataRoute } from "next";
 import { articles, toIsoDate } from "@/lib/articles";
 import { PREMIUM_ENABLED } from "@/lib/features";
+import { sitemapEntries } from "@/lib/structuredData";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+// Lieux et événements à venir ajoutés au plan du site (audit n°21) ; régénéré toutes les heures.
+export const revalidate = 3600;
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = "https://www.getjovial.fr";
 
   const staticPages: MetadataRoute.Sitemap = [
@@ -25,5 +29,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...articlePages];
+  const { venues, events } = await sitemapEntries();
+  const venuePages: MetadataRoute.Sitemap = venues.map((v) => ({
+    url: `${base}/l/${v.id}`,
+    lastModified: v.updated_at ? new Date(v.updated_at) : new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+  const eventPages: MetadataRoute.Sitemap = events.map((e) => ({
+    url: `${base}/e/${e.id}`,
+    lastModified: e.updated_at ? new Date(e.updated_at) : new Date(),
+    changeFrequency: "daily" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...articlePages, ...venuePages, ...eventPages];
 }
