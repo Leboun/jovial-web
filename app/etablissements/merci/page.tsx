@@ -47,7 +47,7 @@ export default function MerciPage() {
           <ul className="space-y-2 text-white/85">
             <li>📍 Ton lieu sur la carte Jovial, visible par ceux qui cherchent quoi faire près de chez eux.</li>
             <li>🎟️ Billetterie et réservations payées directement dans l&apos;appli.</li>
-            <li>✅ Des visites vérifiées par QR code et des statistiques claires.</li>
+            <li>📣 Tes événements et tes bons plans publiés en 2 minutes.</li>
           </ul>
         </div>
         <p className="mt-8">
