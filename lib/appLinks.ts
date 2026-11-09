@@ -13,3 +13,7 @@ export const ANDROID_AVAILABLE = !!PLAY_STORE_URL;
 // Cible des CTA « Télécharger » : la section téléchargement de l'accueil, qui montre
 // les deux boutons (envoyer un utilisateur Android sur l'App Store serait une impasse).
 export const DOWNLOAD_HREF = "/#telecharger";
+
+// Démo Jovial Pro (15 min) — lien Cal.com. ⚠️ À remplir quand Cal.com est prêt
+// (ex. "https://cal.com/jovial-pro/demo") : la page « Merci » affichera alors le bouton de réservation.
+export const DEMO_BOOKING_URL = "";

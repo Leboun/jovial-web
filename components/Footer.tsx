@@ -18,6 +18,7 @@ export default function Footer() {
           <ul>
             <li><Link href="/#concept" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Concept</Link></li>
             <li><Link href="/etablissements" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Établissements</Link></li>
+            <li><Link href="/etablissements#contact" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Tu gères un lieu ? Demande une démo</Link></li>
             <li><Link href="/associations" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Associations</Link></li>
             <li><Link href="/actualites" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Découvrir</Link></li>
             {PREMIUM_ENABLED && <li><Link href="/premium" className="inline-flex items-center min-h-11 min-w-11 text-gray-300 text-sm hover:text-white transition-colors">Jovial+</Link></li>}

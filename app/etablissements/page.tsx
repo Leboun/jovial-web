@@ -1,7 +1,7 @@
 ﻿import { Check, CreditCard, Percent, QrCode, RefreshCcw, Tag } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
-import ContactForm from "@/components/ContactForm";
+import ProspectForm from "@/components/ProspectForm";
 import EligibilityCheck from "@/components/EligibilityCheck";
 import FlipCard from "@/components/FlipCard";
 import LoopingVideos from "@/components/LoopingVideos";
@@ -162,6 +162,9 @@ export default function EtablissementsPage() {
                 J&apos;ai déjà un compte
               </a>
             </div>
+            <a href="#contact" className="inline-block mt-5 text-white/85 font-semibold underline underline-offset-4 hover:text-white">
+              Pas encore décidé ? Demande une démo de 15 min →
+            </a>
           </div>
 
           {/* Mascotte — desktop uniquement */}
@@ -522,12 +525,12 @@ export default function EtablissementsPage() {
       <section id="contact" className="py-16 px-6 bg-[#2B4E93] text-white scroll-mt-24">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold mb-3">Une question ? On est là.</h2>
+            <h2 className="text-3xl font-bold mb-3">Tu veux voir Jovial Pro en vrai ?</h2>
             <p className="text-white/70 text-lg">
-              Notre équipe te répond sous 24h pour t&apos;aider à choisir la formule adaptée et intégrer ton établissement.
+              Laisse-nous tes coordonnées : en 15 minutes, on te montre comment Jovial peut remplir ton lieu. Gratuit et sans engagement.
             </p>
           </div>
-          <ContactForm />
+          <ProspectForm />
         </div>
       </section>
     </>
