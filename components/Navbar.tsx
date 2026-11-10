@@ -42,13 +42,13 @@ export default function Navbar() {
             height={147}
             priority
             className={`h-auto transition-[width] duration-300 ease-out ${
-              scrolled ? "w-[175px] md:w-[224px]" : "w-[225px] md:w-[288px]"
+              scrolled ? "w-[175px] md:w-[224px] xl:w-[180px] 2xl:w-[224px]" : "w-[225px] md:w-[288px] xl:w-[210px] 2xl:w-[288px]"
             }`}
           />
         </Link>
 
         {/* Desktop nav — bord gauche */}
-        <div className="hidden xl:flex items-center gap-6">
+        <div className="hidden xl:flex items-center gap-4 2xl:gap-6">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -60,26 +60,32 @@ export default function Navbar() {
           ))}
           <a
             href={DOWNLOAD_HREF}
-            className="bg-[#2B4E93] text-white text-sm font-semibold inline-flex items-center h-11 px-5 rounded-full hover:bg-[#1e3a70] transition-colors whitespace-nowrap"
+            className="bg-[#2B4E93] text-white text-sm font-semibold inline-flex items-center h-11 px-4 rounded-full hover:bg-[#1e3a70] transition-colors whitespace-nowrap"
           >
             Télécharge
           </a>
         </div>
 
         {/* Desktop nav — bord droit */}
-        <div className="hidden xl:flex items-center gap-3">
+        <div className="hidden xl:flex items-center gap-2 2xl:gap-3">
           {/* Appel à l'action principal pour les pros : la démo (formulaire prospects). */}
           <Link
             href="/etablissements#contact"
-            className="inline-flex items-center h-11 text-sm font-semibold text-white bg-[#5CB6AC] px-4 rounded-full hover:bg-[#4aa39a] transition-colors whitespace-nowrap"
+            className="inline-flex items-center h-11 text-sm font-semibold text-white bg-[#5CB6AC] px-3.5 rounded-full hover:bg-[#4aa39a] transition-colors whitespace-nowrap"
           >
             Demander une démo
           </Link>
           <a
-            href="https://pro.getjovial.fr/establishment/login"
-            className="inline-flex items-center h-11 text-sm font-semibold text-[#2B4E93] border-2 border-[#2B4E93] px-4 rounded-full hover:bg-[#2B4E93] hover:text-white transition-colors whitespace-nowrap"
+            href="https://pro.getjovial.fr/establishment/start"
+            className="inline-flex items-center h-11 text-sm font-semibold text-white bg-[#2B4E93] px-3.5 rounded-full hover:bg-[#1e3a70] transition-colors whitespace-nowrap"
           >
-            Se connecter
+            Inscris ton établissement
+          </a>
+          <a
+            href="https://pro.getjovial.fr/establishment/login"
+            className="inline-flex items-center h-11 text-sm font-semibold text-[#2B4E93] border-2 border-[#2B4E93] px-3.5 rounded-full hover:bg-[#2B4E93] hover:text-white transition-colors whitespace-nowrap"
+          >
+            <span className="2xl:hidden">Connexion</span><span className="hidden 2xl:inline">Se connecter</span>
           </a>
         </div>
 
