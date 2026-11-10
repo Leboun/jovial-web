@@ -30,7 +30,9 @@ const input =
   "w-full bg-white/10 border border-white/25 rounded-xl px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:border-white/60 transition-colors";
 const label = "text-sm font-semibold text-white/85 mb-1 block";
 
-export default function ProspectForm() {
+// variant="asso" : version de la page Associations (type « Association » déjà choisi, textes adaptés).
+export default function ProspectForm({ variant = "venue" }: { variant?: "venue" | "asso" }) {
+  const asso = variant === "asso";
   const router = useRouter();
   const [status, setStatus] = useState<"idle" | "sending" | "error" | "too_many">("idle");
   const [missing, setMissing] = useState<string[]>([]);
@@ -41,7 +43,7 @@ export default function ProspectForm() {
     const payload = {
       venueName: String(f.get("venueName") ?? ""),
       city: String(f.get("city") ?? ""),
-      venueType: String(f.get("venueType") ?? ""),
+      venueType: asso ? "association" : String(f.get("venueType") ?? ""),
       firstName: String(f.get("firstName") ?? ""),
       email: String(f.get("email") ?? ""),
       phone: String(f.get("phone") ?? ""),
@@ -60,7 +62,11 @@ export default function ProspectForm() {
       });
       if (res.ok) {
         const first = encodeURIComponent(payload.firstName.trim().split(/\s+/)[0] ?? "");
-        router.push(`/etablissements/merci${first ? `?p=${first}` : ""}`);
+        const q = new URLSearchParams();
+        if (first) q.set("p", decodeURIComponent(first));
+        if (asso) q.set("t", "asso");
+        const qs = q.toString();
+        router.push(`/etablissements/merci${qs ? `?${qs}` : ""}`);
         return;
       }
       if (res.status === 429) { setStatus("too_many"); return; }
@@ -83,8 +89,8 @@ export default function ProspectForm() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className={label} htmlFor="pf-venue">Nom de ton établissement *</label>
-          <input id="pf-venue" name="venueName" required minLength={2} maxLength={120} placeholder="Le Break, L'Arcade…" className={input + bad("venueName")} />
+          <label className={label} htmlFor="pf-venue">{asso ? "Nom de ton association *" : "Nom de ton établissement *"}</label>
+          <input id="pf-venue" name="venueName" required minLength={2} maxLength={120} placeholder={asso ? "Les Joyeux Lurons, Comité des fêtes…" : "Le Break, L'Arcade…"} className={input + bad("venueName")} />
         </div>
         <div>
           <label className={label} htmlFor="pf-city">Ville *</label>
@@ -92,13 +98,13 @@ export default function ProspectForm() {
         </div>
       </div>
 
-      <div>
+      {!asso && <div>
         <label className={label} htmlFor="pf-type">Type de lieu *</label>
         <select id="pf-type" name="venueType" required defaultValue="" className={input + " appearance-none"}>
           <option value="" disabled className="text-gray-900">Choisis…</option>
           {VENUE_TYPES.map(([v, l]) => <option key={v} value={v} className="text-gray-900">{l}</option>)}
         </select>
-      </div>
+      </div>}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
@@ -107,7 +113,7 @@ export default function ProspectForm() {
         </div>
         <div>
           <label className={label} htmlFor="pf-email">E-mail *</label>
-          <input id="pf-email" name="email" type="email" required maxLength={160} placeholder="contact@tonlieu.fr" autoComplete="email" className={input + bad("email")} />
+          <input id="pf-email" name="email" type="email" required maxLength={160} placeholder={asso ? "contact@tonasso.fr" : "contact@tonlieu.fr"} autoComplete="email" className={input + bad("email")} />
         </div>
       </div>
 
@@ -117,14 +123,14 @@ export default function ProspectForm() {
       </div>
 
       <div>
-        <label className={label} htmlFor="pf-msg">Un mot sur ton lieu ou tes attentes <span className="font-normal text-white/60">(facultatif)</span></label>
-        <textarea id="pf-msg" name="message" rows={3} maxLength={1500} placeholder="Soirées quiz le jeudi, tournois de billard, on veut remplir les mardis…" className={input + " resize-none"} />
+        <label className={label} htmlFor="pf-msg">{asso ? "Un mot sur ton association ou tes attentes " : "Un mot sur ton lieu ou tes attentes "}<span className="font-normal text-white/60">(facultatif)</span></label>
+        <textarea id="pf-msg" name="message" rows={3} maxLength={1500} placeholder={asso ? "Un loto en mars, on cherche des bénévoles, on veut vendre nos billets en ligne…" : "Quiz le jeudi, tournois de billard, on veut remplir les mardis…"} className={input + " resize-none"} />
       </div>
 
       <label className={"flex items-start gap-3 text-sm text-white/85 cursor-pointer" + (missing.includes("consent") ? " text-red-200" : "")}>
         <input name="consent" type="checkbox" required className="mt-1 h-4 w-4 shrink-0 accent-[#5CB6AC]" />
         <span>
-          J&apos;accepte d&apos;être recontacté(e) par Jovial au sujet de Jovial Pro. Désinscription possible à tout moment.{" "}
+          J&apos;accepte d&apos;être recontacté(e) par Jovial au sujet de Jovial{asso ? "" : " Pro"}. Désinscription possible à tout moment.{" "}
           <Link href="/confidentialite" className="underline">Confidentialité</Link>
         </span>
       </label>

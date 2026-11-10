@@ -10,8 +10,11 @@ import { DEMO_BOOKING_URL } from "@/lib/appLinks";
 // pas renseigné (lib/appLinks.ts), on rassure : « on t'appelle / t'écrit sous 24 h ».
 export default function MerciPage() {
   const [first, setFirst] = useState("");
+  const [asso, setAsso] = useState(false);
   useEffect(() => {
-    const p = new URLSearchParams(window.location.search).get("p") ?? "";
+    const sp = new URLSearchParams(window.location.search);
+    setAsso(sp.get("t") === "asso");
+    const p = sp.get("p") ?? "";
     setFirst(p.replace(/[^\p{L}\p{M}' -]/gu, "").slice(0, 30));
   }, []);
 
@@ -22,8 +25,8 @@ export default function MerciPage() {
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Merci{first ? ` ${first}` : ""} ! 🎉</h1>
         <p className="text-white/80 text-lg leading-relaxed mb-8">
           Ta demande est bien arrivée. {DEMO_BOOKING_URL
-            ? "Choisis maintenant un créneau : en 15 minutes, on te montre comment Jovial peut remplir ton lieu."
-            : "On te recontacte sous 24 h (jours ouvrés) pour te montrer Jovial Pro en 15 minutes."}
+            ? (asso ? "Choisis maintenant un créneau : en 15 minutes, on te montre comment Jovial peut faire venir du monde à tes événements." : "Choisis maintenant un créneau : en 15 minutes, on te montre comment Jovial peut remplir ton lieu.")
+            : (asso ? "On te recontacte sous 24 h (jours ouvrés) pour te montrer Jovial en 15 minutes." : "On te recontacte sous 24 h (jours ouvrés) pour te montrer Jovial Pro en 15 minutes.")}
         </p>
         {DEMO_BOOKING_URL ? (
           <a
@@ -43,15 +46,23 @@ export default function MerciPage() {
           </a>
         )}
         <div className="mt-10 bg-white/10 border border-white/20 rounded-2xl p-6 text-left">
-          <p className="font-bold mb-3">En attendant, ce que Jovial Pro t&apos;apporte :</p>
+          <p className="font-bold mb-3">En attendant, ce que Jovial {asso ? "" : "Pro "}t&apos;apporte :</p>
+          {asso ? (
+          <ul className="space-y-2 text-white/85">
+            <li>📍 Ta fiche visible par ceux qui cherchent quoi faire près de chez eux.</li>
+            <li>🗺️ Tes événements affichés sur la carte de l&apos;appli.</li>
+            <li>🎟️ Une billetterie gratuite ou payante, avec QR code à l&apos;entrée.</li>
+          </ul>
+          ) : (
           <ul className="space-y-2 text-white/85">
             <li>📍 Ton lieu sur la carte Jovial, visible par ceux qui cherchent quoi faire près de chez eux.</li>
             <li>🎟️ Billetterie et réservations payées directement dans l&apos;appli.</li>
             <li>📣 Tes événements et tes bons plans publiés en 2 minutes.</li>
           </ul>
+          )}
         </div>
         <p className="mt-8">
-          <Link href="/etablissements" className="text-white/80 underline">← Retour à la page établissements</Link>
+          <Link href={asso ? "/associations" : "/etablissements"} className="text-white/80 underline">← Retour à la page {asso ? "associations" : "établissements"}</Link>
         </p>
       </div>
     </main>

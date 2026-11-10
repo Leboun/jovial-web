@@ -1,7 +1,7 @@
 import { Check, MapPin, Ticket, Users } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
-import ContactForm from "@/components/ContactForm";
+import ProspectForm from "@/components/ProspectForm";
 import FlipCard from "@/components/FlipCard";
 
 export const metadata: Metadata = {
@@ -366,16 +366,16 @@ export default function AssociationsPage() {
         </div>
       </section>
 
-      {/* CTA contact */}
-      <section className="py-16 px-6 bg-[#2B4E93] text-white">
+      {/* CTA contact : formulaire prospects (version associations) → fiche Admin + relances. */}
+      <section id="contact" className="py-16 px-6 bg-[#2B4E93] text-white scroll-mt-24">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold mb-3">Une question ? On est là.</h2>
+            <h2 className="text-3xl font-bold mb-3">Tu veux voir comment Jovial peut aider ton association ?</h2>
             <p className="text-white/70 text-lg">
-              Écris-nous et on t&apos;aide à inscrire ton association et à préparer ton premier événement sur Jovial.
+              Laisse-nous tes coordonnées : on te montre tout en 15 minutes et on t&apos;aide à préparer ton premier événement.
             </p>
           </div>
-          <ContactForm />
+          <ProspectForm variant="asso" />
         </div>
       </section>
     </>

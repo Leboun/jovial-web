@@ -9,6 +9,7 @@ import { PREMIUM_ENABLED } from "@/lib/features";
 
 const links = [
   { href: "/#concept", label: "L'appli" },
+  { href: "/etablissements", label: "Établissements" },
   { href: "/associations", label: "Associations" },
   { href: "/actualites", label: "Découvrir" },
   ...(PREMIUM_ENABLED ? [{ href: "/premium", label: "Jovial+" }] : []),
@@ -67,12 +68,13 @@ export default function Navbar() {
 
         {/* Desktop nav — bord droit */}
         <div className="hidden xl:flex items-center gap-3">
-          <a
-            href="https://pro.getjovial.fr/establishment/start"
+          {/* Appel à l'action principal pour les pros : la démo (formulaire prospects). */}
+          <Link
+            href="/etablissements#contact"
             className="inline-flex items-center h-11 text-sm font-semibold text-white bg-[#5CB6AC] px-4 rounded-full hover:bg-[#4aa39a] transition-colors whitespace-nowrap"
           >
-            Inscris ton établissement
-          </a>
+            Demander une démo
+          </Link>
           <a
             href="https://pro.getjovial.fr/establishment/login"
             className="inline-flex items-center h-11 text-sm font-semibold text-[#2B4E93] border-2 border-[#2B4E93] px-4 rounded-full hover:bg-[#2B4E93] hover:text-white transition-colors whitespace-nowrap"
@@ -112,9 +114,16 @@ export default function Navbar() {
           >
             Télécharger l'app
           </a>
+          <Link
+            href="/etablissements#contact"
+            className="bg-[#5CB6AC] text-white text-base font-semibold px-5 py-3 rounded-full text-center"
+            onClick={() => setOpen(false)}
+          >
+            Demander une démo
+          </Link>
           <a
             href="https://pro.getjovial.fr/establishment/start"
-            className="bg-[#5CB6AC] text-white text-base font-semibold px-5 py-3 rounded-full text-center"
+            className="text-[#2B4E93] font-semibold text-base border-2 border-[#2B4E93] px-5 py-3 rounded-full text-center"
             onClick={() => setOpen(false)}
           >
             Inscris ton établissement

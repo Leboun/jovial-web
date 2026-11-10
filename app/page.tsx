@@ -218,6 +218,12 @@ export default function HomePage() {
             >
               Découvrir Jovial Pro →
             </Link>
+            <Link
+              href="/etablissements#contact"
+              className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors"
+            >
+              Demander une démo
+            </Link>
             <a
               href="https://pro.getjovial.fr/establishment/offers"
               className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-bold px-8 py-4 rounded-2xl hover:bg-white/20 transition-colors border border-white/25"

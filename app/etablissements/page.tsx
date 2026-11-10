@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import ProspectForm from "@/components/ProspectForm";
+import StickyDemoBar from "@/components/StickyDemoBar";
 import EligibilityCheck from "@/components/EligibilityCheck";
 import FlipCard from "@/components/FlipCard";
 import LoopingVideos from "@/components/LoopingVideos";
@@ -156,14 +157,14 @@ export default function EtablissementsPage() {
                 Inscrire mon établissement
               </a>
               <a
-                href="https://pro.getjovial.fr/establishment/login"
-                className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-bold px-8 py-4 rounded-2xl hover:bg-white/20 transition-colors text-lg border border-white/20"
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 bg-white text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors text-lg"
               >
-                J&apos;ai déjà un compte
+                Demander une démo
               </a>
             </div>
-            <a href="#contact" className="inline-block mt-5 text-white/85 font-semibold underline underline-offset-4 hover:text-white">
-              Pas encore décidé ? Demande une démo de 15 min →
+            <a href="https://pro.getjovial.fr/establishment/login" className="inline-block mt-5 text-white/80 font-semibold underline underline-offset-4 hover:text-white">
+              J&apos;ai déjà un compte
             </a>
           </div>
 
@@ -533,6 +534,7 @@ export default function EtablissementsPage() {
           <ProspectForm />
         </div>
       </section>
+      <StickyDemoBar />
     </>
   );
 }
