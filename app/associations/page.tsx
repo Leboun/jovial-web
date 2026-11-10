@@ -372,7 +372,7 @@ export default function AssociationsPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold mb-3">Tu veux voir comment Jovial peut aider ton association ?</h2>
             <p className="text-white/70 text-lg">
-              Laisse-nous tes coordonnées : on te montre tout en 15 minutes et on t&apos;aide à préparer ton premier événement.
+              Laisse-nous tes coordonnées : on te montre tout en 30 minutes et on t&apos;aide à préparer ton premier événement.
             </p>
           </div>
           <ProspectForm variant="asso" />

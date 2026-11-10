@@ -6,7 +6,7 @@ import Link from "next/link";
 import { DEMO_BOOKING_URL } from "@/lib/appLinks";
 
 // PAGE « MERCI » du formulaire prospects (lot A) : on profite de la motivation du moment
-// pour proposer tout de suite la démo de 15 min (Cal.com). Tant que le lien Cal.com n'est
+// pour proposer tout de suite la démo de 30 min (Cal.com). Tant que le lien Cal.com n'est
 // pas renseigné (lib/appLinks.ts), on rassure : « on t'appelle / t'écrit sous 24 h ».
 export default function MerciPage() {
   const [first, setFirst] = useState("");
@@ -25,8 +25,8 @@ export default function MerciPage() {
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Merci{first ? ` ${first}` : ""} ! 🎉</h1>
         <p className="text-white/80 text-lg leading-relaxed mb-8">
           Ta demande est bien arrivée. {DEMO_BOOKING_URL
-            ? (asso ? "Choisis maintenant un créneau : en 15 minutes, on te montre comment Jovial peut faire venir du monde à tes événements." : "Choisis maintenant un créneau : en 15 minutes, on te montre comment Jovial peut remplir ton lieu.")
-            : (asso ? "On te recontacte sous 24 h (jours ouvrés) pour te montrer Jovial en 15 minutes." : "On te recontacte sous 24 h (jours ouvrés) pour te montrer Jovial Pro en 15 minutes.")}
+            ? (asso ? "Choisis maintenant un créneau : en 30 minutes, on te montre comment Jovial peut faire venir du monde à tes événements." : "Choisis maintenant un créneau : en 30 minutes, on te montre comment Jovial peut remplir ton lieu.")
+            : (asso ? "On te recontacte sous 24 h (jours ouvrés) pour te montrer Jovial en 30 minutes." : "On te recontacte sous 24 h (jours ouvrés) pour te montrer Jovial Pro en 30 minutes.")}
         </p>
         {DEMO_BOOKING_URL ? (
           <a
@@ -35,7 +35,7 @@ export default function MerciPage() {
             rel="noopener"
             className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors text-lg"
           >
-            📅 Réserver ma démo de 15 min
+            📅 Réserver ma démo de 30 min
           </a>
         ) : (
           <a

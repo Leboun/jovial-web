@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 // BARRE « DEMANDER UNE DÉMO » fixée en bas de l'écran, sur téléphone uniquement (page Établissements).
 // Elle apparaît une fois le haut de page dépassé et se cache quand le formulaire (#contact) est visible,
 // pour ne jamais le recouvrir.
-export default function StickyDemoBar({ href = "#contact", label = "Demander une démo de 15 min" }: { href?: string; label?: string }) {
+export default function StickyDemoBar({ href = "#contact", label = "Demander une démo de 30 min" }: { href?: string; label?: string }) {
   const [scrolled, setScrolled] = useState(false);
   const [formVisible, setFormVisible] = useState(false);
 

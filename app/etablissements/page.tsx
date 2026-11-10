@@ -528,7 +528,7 @@ export default function EtablissementsPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold mb-3">Tu veux voir Jovial Pro en vrai ?</h2>
             <p className="text-white/70 text-lg">
-              Laisse-nous tes coordonnées : en 15 minutes, on te montre comment Jovial peut remplir ton lieu. Gratuit et sans engagement.
+              Laisse-nous tes coordonnées : en 30 minutes, on te montre comment Jovial peut remplir ton lieu. Gratuit et sans engagement.
             </p>
           </div>
           <ProspectForm />
