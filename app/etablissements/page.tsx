@@ -37,7 +37,7 @@ const plans = [
     features: [
       "Fiche établissement complète (photos, horaires, réseaux sociaux)",
       "Apparition sur la carte interactive et les recherches Jovial",
-      "2 tags d'activités mis en avant",
+      "3 tags d'activités mis en avant",
       "4 événements par an dans l'agenda Jovial",
       "Gestion des réservations sur Jovial Pro",
       "Billetterie d'événements : vente, contrôle des billets et remboursements",
@@ -62,7 +62,6 @@ const plans = [
     popular: true,
     features: [
       "Tout ce qui est inclus dans Visibilité",
-      "2 tags d'activités mis en avant",
       "Événements illimités dans l'agenda Jovial",
       "Rappels automatiques J-1 et H-1 (réservations & événements)",
       "Billetterie d'événements : vente, contrôle des billets et remboursements",
@@ -87,7 +86,6 @@ const plans = [
     popular: false,
     features: [
       "Tout ce qui est inclus dans Rayonnement",
-      "3 tags d'activités mis en avant",
       "Événements illimités + rappels automatiques J-1 et H-1",
       "Billetterie d'événements : vente, contrôle des billets et remboursements",
       "Club Jovial avec administration complète",
