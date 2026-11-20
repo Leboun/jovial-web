@@ -110,7 +110,7 @@ export const organizationJsonLd = {
   name: "Jovial",
   url: BASE,
   logo: `${BASE}/icon.png`,
-  slogan: "Trouve ton plan idéal",
+  slogan: "Ta sortie idéale",
   email: "hello@getjovial.fr",
 };
 
