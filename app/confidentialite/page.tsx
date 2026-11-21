@@ -9,7 +9,7 @@ export default function ConfidentialitePage() {
   return (
     <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Politique de confidentialité</h1>
-      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 7 octobre 2026</p>
+      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 21 novembre 2026</p>
 
       <section className="space-y-3 mb-8">
         <h2 className="text-xl font-bold">Article 1 — Qui est responsable de vos données</h2>
@@ -369,10 +369,11 @@ export default function ConfidentialitePage() {
       <section className="space-y-3 mb-8">
         <h2 className="text-xl font-bold">Article 11 — Mineurs</h2>
         <p className="text-gray-700 leading-relaxed">
-          Le Service est destiné aux personnes âgées de 15 ans et plus. Lorsqu&apos;un traitement repose
-          sur le consentement et concerne un enfant de moins de 15 ans, le consentement doit être donné
-          ou autorisé conjointement avec le titulaire de l&apos;autorité parentale, conformément au droit
-          français. Si vous pensez qu&apos;un compte a été créé en violation de ces règles, contactez{" "}
+          Le Service est réservé aux personnes âgées de 15 ans et plus : les personnes de moins de
+          15 ans ne peuvent pas créer de compte. Jovial ne collecte pas sciemment de données concernant
+          des enfants de moins de 15 ans. Si nous apprenons qu&apos;un compte a été créé par une personne
+          de moins de 15 ans, ce compte et les données associées sont supprimés. Si vous pensez
+          qu&apos;un compte a été créé en violation de ces règles, contactez{" "}
           <a className="text-[#2B4E93] underline" href="mailto:hello@getjovial.fr">hello@getjovial.fr</a>.
         </p>
       </section>

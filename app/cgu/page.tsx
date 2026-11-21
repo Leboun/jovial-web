@@ -9,7 +9,7 @@ export default function CguPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Conditions générales d&apos;utilisation</h1>
-      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 4 novembre 2026</p>
+      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 21 novembre 2026</p>
 
       <section className="space-y-3 mb-8">
         <h2 className="text-xl font-bold">Article 1 — Objet</h2>
@@ -60,8 +60,9 @@ export default function CguPage() {
         <h2 className="text-xl font-bold">Article 5 — Accès au Service et compte</h2>
         <p className="text-gray-700 leading-relaxed">
           <strong>Âge minimum.</strong> Le Service est réservé aux personnes âgées d&apos;au moins 15 ans.
-          En créant un compte, vous déclarez avoir au moins 15 ans. Jovial peut suspendre ou supprimer
-          un compte s&apos;il apparaît que son titulaire n&apos;a pas l&apos;âge requis.
+          Les personnes de moins de 15 ans ne peuvent pas créer de compte. En créant un compte, vous
+          déclarez avoir au moins 15 ans. Si Jovial apprend qu&apos;un compte a été créé par une personne
+          de moins de 15 ans, ce compte est supprimé.
         </p>
         <p className="text-gray-700 leading-relaxed">
           <strong>Création du compte.</strong> Vous pouvez créer un compte via une adresse électronique ou
