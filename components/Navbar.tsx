@@ -37,20 +37,16 @@ export default function Navbar() {
             scrolled ? "w-[175px] md:w-[224px] xl:w-[180px] 2xl:w-[224px]" : "w-[225px] md:w-[288px] xl:w-[210px] 2xl:w-[288px]"
           }`}
         >
-          {/* 23/11/2026 : ombre INTÉGRÉE au PNG (logo-ombre-douce.png) au lieu du filtre CSS
-              drop-shadow, que Safari (iPhone/Mac) affichait comme un carré sombre autour du logo.
-              `unoptimized` : PNG servi tel quel (1090 px = 3x la plus grande taille affichée) ;
-              la conversion WebP de Next créait des paliers visibles dans le dégradé de l'ombre.
-              Marges transparentes pour l'ombre (280 px G/D, 230 haut, 330 bas pour 2144 px de logo)
-              → marges négatives en % pour garder exactement la même taille/position du logo. */}
+          {/* 23/11/2026 : AUCUNE ombre sous le logo (demande explicite). L'ancien filtre CSS
+              drop-shadow faisait un carré sombre sur Safari, et une ombre intégrée restait visible. */}
           <Image
-            src="/logo-ombre-douce.png"
+            src="/logo-sm.png"
             alt="Jovial"
-            width={1090}
-            height={667}
+            width={2144}
+            height={1095}
             priority
-            unoptimized
-            className="block h-auto w-[126.12%] max-w-none ml-[-13.06%] mt-[-10.73%] mb-[-15.39%]"
+            sizes="(min-width: 768px) 288px, 225px"
+            className="block h-auto w-full"
           />
         </Link>
 
