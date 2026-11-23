@@ -33,17 +33,22 @@ export default function Navbar() {
         {/* Logo — centré et agrandi, chevauchant le bandeau beige et la vidéo */}
         <Link
           href="/"
-          className="absolute left-1/2 -translate-x-1/2 top-0 z-10 flex items-center drop-shadow-[0_8px_18px_rgba(0,0,0,0.35)]"
+          className={`absolute left-1/2 -translate-x-1/2 top-0 z-10 block transition-[width] duration-300 ease-out ${
+            scrolled ? "w-[175px] md:w-[224px] xl:w-[180px] 2xl:w-[224px]" : "w-[225px] md:w-[288px] xl:w-[210px] 2xl:w-[288px]"
+          }`}
         >
+          {/* 23/11/2026 : ombre INTÉGRÉE au PNG (logo-ombre.png) au lieu du filtre CSS drop-shadow,
+              que Safari (iPhone/Mac) affichait comme un carré sombre autour du logo.
+              L'image a des marges transparentes pour l'ombre (200 px G/D, 140 haut, 260 bas sur
+              2144 px de logo) → marges négatives en % pour garder exactement la même taille/position. */}
           <Image
-            src="/logo-sm.png"
+            src="/logo-ombre.png"
             alt="Jovial"
-            width={288}
-            height={147}
+            width={2544}
+            height={1495}
             priority
-            className={`h-auto transition-[width] duration-300 ease-out ${
-              scrolled ? "w-[175px] md:w-[224px] xl:w-[180px] 2xl:w-[224px]" : "w-[225px] md:w-[288px] xl:w-[210px] 2xl:w-[288px]"
-            }`}
+            sizes="(min-width: 768px) 342px, 267px"
+            className="block h-auto w-[118.66%] max-w-none ml-[-9.33%] mt-[-6.53%] mb-[-12.13%]"
           />
         </Link>
 
