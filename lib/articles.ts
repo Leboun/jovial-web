@@ -245,7 +245,7 @@ Souvent **jusqu'à 1 h ou 2 h du matin** sur les scènes électro et dans les ba
 
 ## Pas (trop) fan de concerts ? Et si vous tiriez quelques fléchettes ?
 
-La Fête de la Musique, ce n'est pas le truc de tout le monde — et c'est très bien comme ça. Si les foules et les décibels, très peu pour vous, la Bretagne a de quoi occuper votre soirée autrement : rien de tel qu'un **bar à fléchettes** pour passer un bon moment entre amis, au calme, un verre à la main. On vous a justement préparé le guide des **[meilleurs bars à fléchettes de Bretagne](/actualites/meilleurs-bars-flechettes-bretagne-2026)** — de quoi viser dans le mille pendant que la ville chante.
+La Fête de la Musique, ce n'est pas le truc de tout le monde — et c'est très bien comme ça. Si les foules et les décibels, très peu pour vous, la Bretagne a de quoi occuper votre soirée autrement : rien de tel qu'un **bar à fléchettes** pour passer un bon moment entre amis, au calme. On vous a justement préparé le guide des **[meilleurs bars à fléchettes de Bretagne](/actualites/meilleurs-bars-flechettes-bretagne-2026)** — de quoi viser dans le mille pendant que la ville chante.
 
 ## Jovial, votre radar à bonnes soirées en Bretagne 🎶
 
@@ -272,7 +272,7 @@ Programmation issue des sites officiels des villes et des offices de tourisme (j
     city: "Bretagne",
     image: "/dartrad.jpg",
     content: `
-Cibles connectées, tournois entre potes, planches de charcuterie et bières artisanales… En quelques années, le bar à fléchettes est devenu un incontournable de la sortie en Bretagne — des grandes villes comme Brest, Rennes ou Vannes jusqu'aux pépites de communes plus discrètes comme Pontivy ou Hillion. Voici nos adresses préférées pour viser dans le mille en 2026.
+Cibles connectées, tournois entre potes, planches de charcuterie et ambiance conviviale… En quelques années, le bar à fléchettes est devenu un incontournable de la sortie en Bretagne — des grandes villes comme Brest, Rennes ou Vannes jusqu'aux pépites de communes plus discrètes comme Pontivy ou Hillion. Voici nos adresses préférées pour viser dans le mille en 2026.
 
 ![Le Piccadilly, bar a flechettes a Saint-Brieuc](/piccadilly-darts.jpg "Photo : Le Piccadilly")
 
@@ -296,7 +296,7 @@ Rennes mérite à elle seule son propre guide : fléchettes interactives, tourno
 **Tél :** 02 98 46 94 75
 **Horaires :** Lun–Mer 17h–00h | Jeu–Ven 17h–1h | Sam 16h–1h | Dim 16h–22h
 
-En plein cœur de la rue de Siam, l'artère la plus connue de Brest, Ma Target a planté ses cibles connectées et s'est imposée comme l'adresse fléchettes de la ville. Ambiance sports bar décontractée, bonnes bières pression, planches à partager et un patron aux petits soins : on y vient autant pour la partie que pour l'atmosphère. Avec près de 300 avis et une note de 4,7/5, c'est une valeur sûre pour une soirée entre amis.
+En plein cœur de la rue de Siam, l'artère la plus connue de Brest, Ma Target a planté ses cibles connectées et s'est imposée comme l'adresse fléchettes de la ville. Ambiance sports bar décontractée, planches à partager, ambiance conviviale et un patron aux petits soins : on y vient autant pour la partie que pour l'atmosphère. Avec près de 300 avis et une note de 4,7/5, c'est une valeur sûre pour une soirée entre amis.
 
 ### Le Loustik Bar — le pub de quartier qui joue le jeu
 
@@ -304,7 +304,7 @@ En plein cœur de la rue de Siam, l'artère la plus connue de Brest, Ma Target a
 **Tél :** 07 69 65 18 11
 **Horaires :** Mar–Sam 10h–00h (fermé dimanche et lundi)
 
-Plus intimiste, Le Loustik cultive l'esprit bistrot de quartier : accueil chaleureux, bières à prix doux, et une cible pour se lancer un défi entre deux verres. Une note de 4,8/5 qui en dit long sur la convivialité du lieu — parfait pour une fléchette sans chichis.
+Plus intimiste, Le Loustik cultive l'esprit bistrot de quartier : accueil chaleureux, habitués sympas et une cible pour se lancer un défi entre potes. Une note de 4,8/5 qui en dit long sur la convivialité du lieu — parfait pour une fléchette sans chichis.
 
 ## Vannes — la scène fléchettes du Morbihan
 
@@ -314,7 +314,7 @@ Plus intimiste, Le Loustik cultive l'esprit bistrot de quartier : accueil chaleu
 **Tél :** 02 42 05 06 40
 **Horaires :** Lun–Mar 17h–00h | Mer–Jeu 16h–00h | Ven–Sam 14h–1h | Dim 14h–23h
 
-Le pendant vannetais de l'enseigne : un lieu joliment décoré, des dartboards au très bon rapport qualité-prix, de belles planches de charcuterie-fromage et des cocktails à prix raisonnables. L'endroit fait aussi salle de concert, ce qui donne souvent une ambiance survoltée le week-end (4,7/5).
+Le pendant vannetais de l'enseigne : un lieu joliment décoré, des dartboards au très bon rapport qualité-prix et de belles planches de charcuterie-fromage. L'endroit fait aussi salle de concert, ce qui donne souvent une ambiance survoltée le week-end (4,7/5).
 
 ### Le Skellig — le pub à fléchettes du centre
 
@@ -322,7 +322,7 @@ Le pendant vannetais de l'enseigne : un lieu joliment décoré, des dartboards a
 **Tél :** 02 97 46 27 09
 **Horaires :** Mar–Mer 17h–00h | Jeu–Sam jusqu'à 1h | Dim & Lun en soirée
 
-Un pub vannetais apprécié pour ses bières et cocktails à prix sages, ses planches généreuses et ses quelques jeux dont une cible de fléchettes. Concerts live réguliers et bonne ambiance quand ça se remplit (4,6/5) : l'adresse idéale pour enchaîner partie et pinte.
+Un pub vannetais apprécié pour son accueil, ses planches généreuses et ses quelques jeux dont une cible de fléchettes. Concerts live réguliers et bonne ambiance quand ça se remplit (4,6/5) : l'adresse idéale pour enchaîner les parties entre amis.
 
 ### SET&SMASH — aux portes de Vannes (Ploeren)
 
@@ -332,7 +332,7 @@ Un pub vannetais apprécié pour ses bières et cocktails à prix sages, ses pla
 
 À quelques minutes de Vannes, SET&SMASH joue la carte du bar 100 % sport et jeux : fléchettes, poker, diffusions sportives, soirées à thème. Accueil très soigné et ambiance où toutes les générations se mélangent (4,8/5). Une belle alternative si vous cherchez un esprit « club » convivial.
 
-## Lorient — du bar à cocktails au club de passionnés
+## Lorient — du bar convivial au club de passionnés
 
 ### Ma Target Lorient — l'incontournable
 
@@ -340,15 +340,15 @@ Un pub vannetais apprécié pour ses bières et cocktails à prix sages, ses pla
 **Tél :** 09 77 97 28 85
 **Horaires :** Lun–Jeu 17h–00h | Ven–Sam 17h–1h | Dim fermé
 
-La troisième Ma Target de notre sélection, et l'une des mieux notées (4,8/5). Des pistes de fléchettes très bien entretenues, une vraie diversité de jeux, de la bonne bière et une équipe qui prend le temps d'expliquer aux débutants. L'adresse parfaite pour découvrir le dart à Lorient.
+La troisième Ma Target de notre sélection, et l'une des mieux notées (4,8/5). Des pistes de fléchettes très bien entretenues, une vraie diversité de jeux, une ambiance détendue et une équipe qui prend le temps d'expliquer aux débutants. L'adresse parfaite pour découvrir le dart à Lorient.
 
-### BARZH — fléchettes et cocartes à la carte
+### BARZH — fléchettes et planches à partager
 
 **Adresse :** 9 rue Victor Masse, 56100 Lorient
 
 **Horaires :** Lun–Jeu 17h–23h | Ven–Sam 16h–1h | Dim 17h–1h
 
-Comme son nom complet l'indique (« bar cocktails fléchettes bière artisanale »), BARZH assume sa double vocation : deux cibles électroniques, un large choix de bières, des cocktails soignés et de généreuses planches à partager. Une salle à l'étage permet d'accueillir les plus grands groupes.
+BARZH assume sa double vocation de bar et de spot fléchettes : deux cibles électroniques, une ambiance détendue et de généreuses planches à partager. Une salle à l'étage permet d'accueillir les plus grands groupes.
 
 ### CEP Darts An Oriant — pour les passionnés
 
@@ -366,7 +366,7 @@ Plus qu'un bar, un véritable club de fléchettes lorientais : ambiance ultra-co
 **Tél :** 02 96 33 37 09
 **Horaires :** Mar–Sam 18h–1h (fermé dimanche et lundi)
 
-Régulièrement cité comme l'un des meilleurs bars de Saint-Brieuc pour jouer aux fléchettes, Le Piccadilly mise sur une belle sélection de whiskies et de bières, une jolie cour à l'arrière et une ambiance musicale soignée portée par un patron très accueillant (4,7/5). Une adresse qui fait l'unanimité dans les Côtes-d'Armor.
+Régulièrement cité comme l'un des meilleurs bars de Saint-Brieuc pour jouer aux fléchettes, Le Piccadilly mise sur une jolie cour à l'arrière et une ambiance musicale soignée portée par un patron très accueillant (4,7/5). Une adresse qui fait l'unanimité dans les Côtes-d'Armor.
 
 ## Les pépites hors des sentiers battus
 
@@ -382,7 +382,7 @@ On l'oublie trop souvent : certaines des meilleures adresses fléchettes de Bret
 
 C'est sans doute la pépite la plus folle de notre sélection. Dartrad a été ouvert par **Thibault Tricole** — surnommé « The French Touch », numéro 1 français, premier joueur tricolore à disputer le championnat du monde PDC et finaliste du championnat du monde WDF 2022 — avec sa compagne Marie Bouffaut. Installé à Malguénac, à deux pas de Pontivy, où il préside aussi le Bleiz Darts Club, le meilleur joueur français de l'histoire a voulu créer dans son fief un véritable repaire pour les amateurs de dart.
 
-Le résultat : un bar à la déco industrielle très soignée, du matériel haut de gamme, de bonnes bières et une ambiance saluée par l'ensemble des avis (4,8/5). Le concept a quelque chose d'unique en France : on peut y croiser un champion et profiter de ses conseils. Débutant curieux ou joueur confirmé, c'est une étape incontournable du dart breton — et une vraie raison de pousser jusqu'à Pontivy.
+Le résultat : un bar à la déco industrielle très soignée, du matériel haut de gamme et une ambiance saluée par l'ensemble des avis (4,8/5). Le concept a quelque chose d'unique en France : on peut y croiser un champion et profiter de ses conseils. Débutant curieux ou joueur confirmé, c'est une étape incontournable du dart breton — et une vraie raison de pousser jusqu'à Pontivy.
 
 ### Le Griffin — Hillion, le social darts dans la baie de Saint-Brieuc
 
@@ -392,9 +392,9 @@ Le résultat : un bar à la déco industrielle très soignée, du matériel haut
 **Tél :** 09 77 00 85 75 | **Web :** legriffin.fr
 **Horaires :** Lun–Sam 10h–21h | Dim 14h–20h
 
-La preuve qu'une petite commune peut abriter un grand concept. Niché à Hillion, dans la baie de Saint-Brieuc, **Le Griffin** est un lieu hybride — cave à bières, coffee shop et bar — entièrement pensé autour du **social darts** : des cibles connectées avec scoring par caméra et une interface ludique, accessibles à tous les niveaux. Fondé par Anthony, il y ajoute du rétrogaming et la diffusion des grands matchs.
+La preuve qu'une petite commune peut abriter un grand concept. Niché à Hillion, dans la baie de Saint-Brieuc, **Le Griffin** est un lieu hybride — coffee shop et bar — entièrement pensé autour du **social darts** : des cibles connectées avec scoring par caméra et une interface ludique, accessibles à tous les niveaux. Fondé par Anthony, il y ajoute du rétrogaming et la diffusion des grands matchs.
 
-Avec une note d'environ 4,8/5 sur plusieurs centaines d'avis, Le Griffin s'est imposé en un temps record comme une adresse de référence du secteur briochin. Belle sélection de bières artisanales, accueil chaleureux, terrasse couverte : l'endroit idéal pour découvrir la fléchette interactive entre amis, en famille ou pour un afterwork — la cible se réserve même à l'avance.
+Avec une note d'environ 4,8/5 sur plusieurs centaines d'avis, Le Griffin s'est imposé en un temps record comme une adresse de référence du secteur briochin. Accueil chaleureux, terrasse couverte : l'endroit idéal pour découvrir la fléchette interactive entre amis, en famille ou pour un afterwork — la cible se réserve même à l'avance.
 
 ## Quimper — le dart au cœur des pubs
 
@@ -404,7 +404,7 @@ Avec une note d'environ 4,8/5 sur plusieurs centaines d'avis, Le Griffin s'est i
 **Tél :** 02 98 95 17 61
 **Horaires :** tous les jours dès 11h30 (jusqu'à 1h)
 
-Véritable institution quimpéroise (plus de 1 600 avis, 4,6/5), ce pub à l'irlandaise est le repaire des amateurs de fléchettes de la ville : il abrite le **Ceili Dart's Club**, qui réunit les joueurs de cibles électroniques et traditionnelles. Large choix de bières pression, ambiance animée, terrasse : l'adresse idéale pour enchaîner une partie et une pinte en plein centre.
+Véritable institution quimpéroise (plus de 1 600 avis, 4,6/5), ce pub à l'irlandaise est le repaire des amateurs de fléchettes de la ville : il abrite le **Ceili Dart's Club**, qui réunit les joueurs de cibles électroniques et traditionnelles. Ambiance animée, terrasse : l'adresse idéale pour enchaîner les parties en plein centre.
 
 Pour une soirée plus orientée jeux, *Le Big Bang* (110 rue de Bénodet) complète l'offre quimpéroise avec ses jeux de société, son coin rétrogaming et sa déco soignée.
 
@@ -418,20 +418,20 @@ Petite surprise : Saint-Malo est l'un des berceaux historiques de la fléchette 
 **Tél :** 02 90 10 24 99
 **Horaires :** basse saison Mar–Sam 17h–1h | haute saison tous les jours
 
-En plein intra-muros, près de la Grande Porte, ce pub à l'ambiance irlandaise (Guinness, rhums arrangés maison, esprit rock'n'roll) propose une sélection de jeux de pub dont une cible de fléchettes, et diffuse les matchs. Accueil chaleureux et l'un des bars ouverts le plus tard de la vieille ville (4,5/5).
+En plein intra-muros, près de la Grande Porte, ce pub à l'ambiance irlandaise et à l'esprit rock'n'roll propose une sélection de jeux de pub dont une cible de fléchettes, et diffuse les matchs. Accueil chaleureux et l'un des bars ouverts le plus tard de la vieille ville (4,5/5).
 
 ### L'Alchimiste
 
 **Adresse :** 7 rue Saint-Thomas, 35400 Saint-Malo
 
-Réparti sur trois niveaux, ce bar atypique à l'esprit rock cache à son sous-sol un billard et un jeu de fléchettes. Déco vintage, éclairage tamisé, belle sélection de bières et de cocktails : parfait pour une partie un peu à l'écart (4,5/5).
+Réparti sur trois niveaux, ce bar atypique à l'esprit rock cache à son sous-sol un billard et un jeu de fléchettes. Déco vintage, éclairage tamisé, ambiance feutrée : parfait pour une partie un peu à l'écart (4,5/5).
 
 ## Comment choisir son bar à fléchettes ?
 
 - **Pour découvrir :** privilégiez une enseigne dédiée type Ma Target, où les cibles électroniques comptent les points à votre place — idéal quand on débute.
 - **Pour la compétition :** visez les bars à tournois réguliers ou un club comme CEP Darts à Lorient.
 - **Pour une soirée groupe :** choisissez les grands bars à jeux qui cumulent fléchettes, billard et planches à partager.
-- **Pour l'ambiance pub :** les adresses de quartier (Le Loustik, Le Piccadilly, Le Skellig) offrent une fléchette plus « cosy », entre deux pintes.
+- **Pour l'ambiance pub :** les adresses de quartier (Le Loustik, Le Piccadilly, Le Skellig) offrent une fléchette plus « cosy », sans prise de tête.
 
 ## Retrouve tout ça sur Jovial
 
@@ -488,11 +488,11 @@ La franchise BDS a aussi posé ses valises à Saint-Malo. Même ADN qu'à Rennes
 
 ### Le Cactus · Fougères
 *51 boulevard Jean Jaurès, 35300 Fougères — Tél. 02 99 94 51 82*
-130 places, une salle taillée pour les soirées foot, référencée sur Allomatch pour ses retransmissions régulières. Fléchettes, bières pression, soirées à thème — Le Cactus est l'adresse incontournable du nord Ille-et-Vilaine pour les amateurs de sport. Idéal pour éviter la route jusqu'à Rennes.
+130 places, une salle taillée pour les soirées foot, référencée sur Allomatch pour ses retransmissions régulières. Fléchettes, soirées à thème — Le Cactus est l'adresse incontournable du nord Ille-et-Vilaine pour les amateurs de sport. Idéal pour éviter la route jusqu'à Rennes.
 
 ### O'Shannon Pub · Redon
 *62 Grande Rue, 35600 Redon — Tél. 02 99 71 48 28*
-Au cœur du vieux port de Redon, à la frontière du Morbihan et de la Loire-Atlantique, l'O'Shannon est un pub irlandais qui a fait de la diffusion sportive l'un de ses piliers. Ambiance chaleureuse, bonne sélection de bières, et un écran pour ne rien rater du duel PSG-Arsenal. L'adresse du pays de Redon pour ce samedi soir.
+Au cœur du vieux port de Redon, à la frontière du Morbihan et de la Loire-Atlantique, l'O'Shannon est un pub irlandais qui a fait de la diffusion sportive l'un de ses piliers. Ambiance chaleureuse, accueil aux petits soins et un écran pour ne rien rater du duel PSG-Arsenal. L'adresse du pays de Redon pour ce samedi soir.
 
 ---
 
@@ -500,7 +500,7 @@ Au cœur du vieux port de Redon, à la frontière du Morbihan et de la Loire-Atl
 
 ### Klub House · Brest
 *Zone de Kergaradec, Brest — klubhouse.fr*
-Le sport bar le plus ambitieux de Bretagne occidentale. Écran principal de 10 m² avec gradins façon tribune, plus de 20 bières pression, deux terrasses dont une sur le toit. Le Klub House a été conçu pour exactement ce type de soirée — une finale européenne diffusée dans les meilleures conditions possibles. Réservation conseillée.
+Le sport bar le plus ambitieux de Bretagne occidentale. Écran principal de 10 m² avec gradins façon tribune, deux terrasses dont une sur le toit. Le Klub House a été conçu pour exactement ce type de soirée — une finale européenne diffusée dans les meilleures conditions possibles. Réservation conseillée.
 
 ### Pub Hamilton · Brest
 *2 rue de la 2ème DB, 29200 Brest — Tél. 02 98 43 32 32*
@@ -516,11 +516,11 @@ L'adresse historique du sport à Morlaix. Bar de quartier à l'ambiance authenti
 
 ### BlackRock Irish Pub · Landerneau
 *18 rue Chanoine Kerbrat, 29800 Landerneau — blackrock-irishpub.bzh — @blackrock.landerneau*
-Pub irlandais niché dans une auberge du XVIIe siècle en plein cœur de Landerneau. Bières irlandaises et bretonnes à la pression, concerts live réguliers et retransmissions foot et rugby. L'adresse de référence du Pays de Landerneau pour PSG-Arsenal.
+Pub irlandais niché dans une auberge du XVIIe siècle en plein cœur de Landerneau. Cadre plein de caractère, concerts live réguliers et retransmissions foot et rugby. L'adresse de référence du Pays de Landerneau pour PSG-Arsenal.
 
 ### V and B · Concarneau
 *Concarneau*
-Bar à bières spécialisé avec retransmissions sportives et une belle sélection de bières artisanales. Pour les habitants de Concarneau et du sud Finistère, c'est l'alternative sérieuse à la route jusqu'à Quimper. Grande finale, grande bière — l'équation est simple.
+Un bar avec retransmissions sportives et une ambiance conviviale. Pour les habitants de Concarneau et du sud Finistère, c'est l'alternative sérieuse à la route jusqu'à Quimper. Grande finale, grand écran — l'équation est simple.
 
 ---
 
@@ -528,7 +528,7 @@ Bar à bières spécialisé avec retransmissions sportives et une belle sélecti
 
 ### Tavarn Ar Roue Morvan · Lorient
 *Centre-ville, Lorient*
-La taverne bretonne de référence de la scène nocturne lorientaise. Murs chargés d'histoire, bières bretonnes à la pression, atmosphère incomparable. Les soirs de grande compétition, le Tavarn se transforme : les tables se remplissent vite, les voix montent, et les cris de but résonnent jusqu'à la rue. Arrivez impérativement avant 17h30 pour PSG-Arsenal.
+La taverne bretonne de référence de la scène nocturne lorientaise. Murs chargés d'histoire, esprit breton, atmosphère incomparable. Les soirs de grande compétition, le Tavarn se transforme : les tables se remplissent vite, les voix montent, et les cris de but résonnent jusqu'à la rue. Arrivez impérativement avant 17h30 pour PSG-Arsenal.
 
 ### Le Shamrock · Lorient
 *29 place Jules-Ferry, 56100 Lorient*
@@ -560,7 +560,7 @@ Une institution guingampaise, fidèle à son nom depuis des années. Atmosphère
 
 ### Campbell's Pub · Guingamp
 *14 place Saint-Michel, 22200 Guingamp — Tél. 02 96 43 85 32 — @campbells_pub*
-Bar de nuit ouvert jusqu'à 3h le week-end, avec grand écran en plein cœur de Guingamp. Cadre convivial, bières pression, soirées DJ — et une salle qui prend vie dès que l'enjeu est là. L'une des meilleures options du Guingampais pour PSG-Arsenal.
+Bar de nuit ouvert jusqu'à 3h le week-end, avec grand écran en plein cœur de Guingamp. Cadre convivial, soirées DJ — et une salle qui prend vie dès que l'enjeu est là. L'une des meilleures options du Guingampais pour PSG-Arsenal.
 
 ### Pub Le Zinc · Lannion
 *46 rue de Tréguier, 22300 Lannion — Tél. 09 81 93 26 44*
@@ -620,7 +620,7 @@ Le concept repose sur trois jeux :
 
 **2 tables de ping-pong** — pour souffler entre deux parties ou prolonger la soirée.
 
-En cuisine, Corentin et Lily préparent des plats du jour maison, burgers, planches charcuterie et tapas. Au bar, Baptiste et Mattéo servent 8 bières pression — locales et internationales.
+En cuisine, Corentin et Lily préparent des plats du jour maison, burgers, planches charcuterie et tapas. Au bar, Baptiste et Mattéo veillent à l'accueil et à la bonne ambiance.
 
 ## Une clientèle qui revient
 
@@ -813,7 +813,7 @@ Techno et électronique jusqu'à 1h. Pour ceux qui aiment finir la nuit autremen
 Musique bretonne et électronique en alternance. Dès 18h30, à deux pas du métro.
 
 **Le Hangar** — 1 rue de Dinan
-Scène ouverte dès 18h. Ambiance bar de quartier, musique live, bière artisanale.
+Scène ouverte dès 18h. Ambiance bar de quartier, musique live.
 
 **Papier Timbré** — 39 rue de Dinan
 À deux pas du Hangar, une autre adresse de la rue de Dinan qui s'anime dès 19h.
@@ -847,7 +847,7 @@ Sur Jovial, vous retrouvez toutes ces adresses en carte interactive, avec les ho
     tagEmoji: "📍",
     title: "Les meilleurs bars à fléchettes de Rennes en 2026",
     excerpt:
-      "Fléchettes interactives, tournois, bières artisanales… Rennes s'est imposée comme une vraie capitale bretonne du dart. Voici les 5 adresses à connaître absolument.",
+      "Fléchettes interactives, tournois, planches à partager… Rennes s'est imposée comme une vraie capitale bretonne du dart. Voici les 5 adresses à connaître absolument.",
     readTime: "5 min",
     author: "Équipe Jovial",
     city: "Rennes",
@@ -866,7 +866,7 @@ Rennes fait partie de notre tour des [meilleurs bars à fléchettes de Bretagne]
 
 Ouvert en décembre 2024 par Éric et Adrien, Play Rennes est l'adresse de référence des fléchettes interactives en Bretagne. Six dartboards connectés retransmettent chaque lancer en temps réel sur des écrans géants. Résultat : chaque partie devient un mini-spectacle.
 
-La carte propose 8 bières pression (locales et internationales), des tapas, burgers et petits plats maison. Des tournois bihebdomadaires permettent aux habitués de se mesurer dans une ambiance conviviale et compétitive.
+La carte propose des tapas, burgers et petits plats maison. Des tournois bihebdomadaires permettent aux habitués de se mesurer dans une ambiance conviviale et compétitive.
 
 ## Le Grand Bain — l'ambiance guinguette
 
@@ -879,9 +879,9 @@ Ancienne piscine reconvertie en bar, Le Grand Bain joue sur un décor théâtral
 
 **Adresse :** 8 rue Nicolas Joseph Cugnot, 35000 Rennes (Bourg-l'Évêque)
 **Tél :** 02 23 46 77 60
-**Horaires :** Dim–Mer 11h–23h | Jeu–Sam 11h–1h | Happy hour : 17h–19h30
+**Horaires :** Dim–Mer 11h–23h | Jeu–Sam 11h–1h
 
-Avec plus de 300 places, BREWKLYN est le plus grand bar à jeux de Rennes. Fléchettes, billard, pétanque et concerts live plusieurs fois par semaine (rock, funk, acoustique). La sélection de bières artisanales est généreuse, et la cuisine tourne autour des tapas et planches à partager. Idéal pour les grandes tablées.
+Avec plus de 300 places, BREWKLYN est le plus grand bar à jeux de Rennes. Fléchettes, billard, pétanque et concerts live plusieurs fois par semaine (rock, funk, acoustique). La cuisine tourne autour des tapas et planches à partager. Idéal pour les grandes tablées.
 
 ## Tiffany's Pub — le classique
 
@@ -889,7 +889,7 @@ Avec plus de 300 places, BREWKLYN est le plus grand bar à jeux de Rennes. Fléc
 **Tél :** 02 99 38 91 24
 **Horaires :** Lun–Ven 10h–3h | Sam 15h–3h | Dim 12h–3h
 
-Institution rennaise depuis des années, Tiffany's propose une salle de billard dédiée (7 tables blackball + 1 US), une salle de fléchettes séparée et une grande terrasse. Pizzas, burgers et bières composent la carte. L'une des rares adresses ouvertes jusqu'à 3h du matin en semaine.
+Institution rennaise depuis des années, Tiffany's propose une salle de billard dédiée (7 tables blackball + 1 US), une salle de fléchettes séparée et une grande terrasse. Pizzas et burgers composent la carte. L'une des rares adresses ouvertes jusqu'à 3h du matin en semaine.
 
 ## Les Frères Jacks — hache et fléchettes nouvelle génération
 
@@ -922,7 +922,7 @@ Play Rennes organise des tournois toutes les deux semaines. BREWKLYN propose des
 
 Durant trois jours et trois nuits, le cœur de Saint-Brieuc change totalement de visage. Des milliers de festivaliers affluent dans les rues pour profiter de la programmation du festival, portée cette année par des artistes comme The Kooks, Véronique Sanson, De La Soul, Babyshambles, Suzane, Sébastien Tellier ou encore Gaëtan Roussel.
 
-Mais Art Rock, ce n'est pas uniquement les scènes officielles. Pendant tout le week-end, les bars, pubs et restaurants de Saint-Brieuc jouent eux aussi le jeu avec des soirées spéciales, concerts live, DJ sets, happy hours prolongés et animations festives qui font vibrer toute la ville jusque tard dans la nuit.
+Mais Art Rock, ce n'est pas uniquement les scènes officielles. Pendant tout le week-end, les bars, pubs et restaurants de Saint-Brieuc jouent eux aussi le jeu avec des soirées spéciales, concerts live, DJ sets et animations festives qui font vibrer toute la ville jusque tard dans la nuit.
 
 Cette effervescence profite naturellement aux établissements briochins qui préparent souvent des animations spéciales pour accueillir les visiteurs :
 
@@ -930,7 +930,6 @@ Cette effervescence profite naturellement aux établissements briochins qui pré
 - DJ sets électro et soirées à thème ;
 - terrasses animées et retransmissions ;
 - menus spéciaux "festival" ;
-- happy hours prolongés ;
 - brunchs et afters du dimanche.
 
 Le week-end Art Rock est devenu un moment incontournable pour découvrir l'ambiance festive des bars et restaurants de Saint-Brieuc.
@@ -944,7 +943,6 @@ Les pubs et bars à ambiance proposent généralement des programmations spécia
 - musique live ;
 - soirées électro ;
 - DJ locaux ;
-- cocktails exclusifs ;
 - animations en terrasse.
 
 C'est aussi l'occasion pour les visiteurs de découvrir la scène locale et l'atmosphère chaleureuse du centre historique de Saint-Brieuc.

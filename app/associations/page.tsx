@@ -67,13 +67,13 @@ const plans = [
     tagline: "Fais vivre toute ta commune",
     price: "190 €",
     period: "HT / an",
-    desc: "Pour programmer sans limite, être mis en avant dans toute ta région et suivre ce qui marche.",
+    desc: "Pour programmer sans limite, être mis en avant autour de toi et suivre ce qui marche.",
     color: "border-[#5CB6AC]",
     popular: false,
     features: [
       "Tout ce qui est inclus dans Active",
       "Événements illimités : programme autant que tu veux",
-      "Un événement mis en avant chaque semestre, vu par toute ta région",
+      "Un événement mis en avant chaque semestre, jusqu'à 60 km autour de toi",
       "Tes statistiques de fréquentation pour voir ce qui marche",
     ],
     cta: "Choisir Rayonnement",
@@ -203,7 +203,7 @@ export default function AssociationsPage() {
             <FlipCard
               icon="📅"
               title="Publie et anime tes événements"
-              desc="Vide-greniers, spectacles, initiations, assemblées… Un agenda clair, et des rappels automatiques envoyés à tes participants pour que personne n'oublie."
+              desc="Vide-greniers, spectacles, initiations, assemblées… Un agenda clair, et un rappel envoyé le jour J à tes participants pour que personne n'oublie."
               accent="#2B4E93"
               footer="Illimités avec Rayonnement"
             />

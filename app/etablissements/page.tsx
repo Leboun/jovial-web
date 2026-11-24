@@ -200,10 +200,10 @@ export default function EtablissementsPage() {
 
           <div className="flex flex-wrap justify-center gap-2.5 mb-10">
             {([
-              ["🍺", "Bar"], ["🍽️", "Restaurant"], ["☕", "Café"], ["🥂", "Guinguette"],
+              ["🎯", "Bar"], ["🍽️", "Restaurant"], ["☕", "Café"], ["🪗", "Guinguette"],
               ["🎱", "Bar à jeux"], ["🎳", "Bowling"], ["🔐", "Escape game"], ["🎤", "Karaoké"],
               ["😂", "Comedy club"], ["🎸", "Salle de concert"], ["🎭", "Théâtre"], ["🎬", "Cinéma"],
-              ["🏛️", "Tiers-lieu"], ["🧗", "Salle de sport"], ["🎨", "Atelier créatif"], ["🍷", "Bar à vin"],
+              ["🏛️", "Tiers-lieu"], ["🧗", "Salle de sport"], ["🎨", "Atelier créatif"], ["🧀", "Bar à vin"],
               ["🎢", "Parc de loisirs"], ["🖼️", "Musée"], ["⛳", "Mini-golf"], ["🤝", "Association"],
             ] as [string, string][]).map(([emoji, label]) => (
               <span
