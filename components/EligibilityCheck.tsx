@@ -102,7 +102,7 @@ export default function EligibilityCheck() {
           <p className="text-gray-500 text-sm mb-6 max-w-md mx-auto leading-relaxed">
             {isAsso
               ? "Ton association peut être sur la carte, publier ses événements et vendre ses billets — gratuitement pour commencer."
-              : "Ton établissement peut être sur la carte, publier ses événements et encaisser ses réservations — avec 14 jours d'essai gratuit."}
+              : "Ton établissement peut être sur la carte, publier ses événements et encaisser ses réservations — offert jusqu'au 17 janvier 2027 si tu t'inscris avant le 15 janvier (14 jours d'essai gratuit après cette date)."}
           </p>
           <a
             href={signupHref}

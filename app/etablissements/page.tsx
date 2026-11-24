@@ -29,8 +29,9 @@ const plans = [
     badge: null,
     tagline: "Présence essentielle",
     price: "290 €",
-    period: "/ an",
-    saving: null,
+    period: "HT / an",
+    monthly: "ou 29,99 € HT / mois, sans engagement",
+    saving: "Tu économises 19 %",
     desc: "Pour être présent sur Jovial, afficher ta fiche et publier jusqu'à 4 événements par an.",
     color: "border-gray-200",
     popular: false,
@@ -55,7 +56,8 @@ const plans = [
     badge: "Recommandée",
     tagline: "Animation locale",
     price: "490 €",
-    period: "/ an",
+    period: "HT / an",
+    monthly: "ou 49,99 € HT / mois, sans engagement",
     saving: "Tu économises 18 %",
     desc: "Pour animer régulièrement ton établissement, engager ta communauté et gagner en visibilité locale.",
     color: "border-[#2B4E93]",
@@ -79,7 +81,8 @@ const plans = [
     badge: "Le plus complet",
     tagline: "Pilotage complet",
     price: "790 €",
-    period: "/ an",
+    period: "HT / an",
+    monthly: "ou 79,99 € HT / mois, sans engagement",
     saving: "Tu économises 18 %",
     desc: "Pour piloter ta présence, tes réservations et tes prises de parole avec les outils les plus complets.",
     color: "border-[#5CB6AC]",
@@ -367,7 +370,7 @@ export default function EtablissementsPage() {
             Ils cherchent quoi faire. <span className="text-[#8FD9CF]">Fais-toi trouver.</span>
           </p>
           <p className="text-white/70 text-lg mb-8">
-            Rejoins Jovial et sois visible dès aujourd&apos;hui — 14 jours d&apos;essai offerts.
+            Rejoins Jovial et sois visible dès aujourd&apos;hui — offert jusqu&apos;au 17 janvier 2027 si tu t&apos;inscris avant le 15 janvier (14 jours d&apos;essai gratuit après cette date).
           </p>
           <a
             href="https://pro.getjovial.fr/establishment/offers"
@@ -390,7 +393,7 @@ export default function EtablissementsPage() {
             <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-2 jovial-grad-text leading-tight uppercase">
               Simple et transparent
             </h2>
-            <p className="text-gray-600">Mensuel sans engagement, ou à l&apos;année pour économiser.</p>
+            <p className="text-gray-600">Prix HT (TVA 20 % en plus). Mensuel sans engagement, ou à l&apos;année pour économiser.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
@@ -412,8 +415,9 @@ export default function EtablissementsPage() {
                   <p className="text-gray-400 text-xs font-semibold uppercase tracking-wider mt-0.5">{plan.tagline}</p>
                   <div className="flex items-end gap-1 mt-3">
                     <p className="text-4xl font-black text-gray-900">{plan.price}</p>
-                    <p className="text-gray-400 text-sm mb-1">{plan.period}</p>
+                    <p className="text-gray-400 text-sm mb-1 whitespace-nowrap">{plan.period}</p>
                   </div>
+                  <p className="text-gray-400 text-xs mt-0.5">{plan.monthly}</p>
                   {plan.saving && (
                     <span className="inline-block mt-1 text-xs font-semibold text-green-600 bg-green-50 px-2 py-0.5 rounded-full">
                       {plan.saving}
@@ -481,7 +485,11 @@ export default function EtablissementsPage() {
               },
               {
                 q: "Puis-je essayer gratuitement ?",
-                a: "Oui : 14 jours d'essai gratuit, sans engagement — rien n'est débité avant la fin. Tu configures ta fiche, tu publies tes premiers événements, tu testes tout, et tu annules quand tu veux."
+                a: "Oui. Pour toute inscription avant le 15 janvier 2027, Jovial Pro est offert jusqu'au 17 janvier 2027 inclus ; ensuite, chaque nouvel établissement a 14 jours d'essai gratuit. Rien n'est débité avant la fin de la période gratuite : tu configures ta fiche, tu publies tes premiers événements, tu testes tout, et tu annules quand tu veux."
+              },
+              {
+                q: "C'est quoi l'offre « établissement fondateur » ?",
+                a: "Les 100 premiers établissements qui choisissent une offre annuelle d'ici le 31 mars 2027 ont une remise sur leur 1re année : -30 % pour les 30 premiers, -20 % du 31e au 100e. Rien à saisir : la remise s'applique automatiquement à ton 1er paiement annuel, et ton numéro de fondateur s'affiche dans Jovial Pro."
               },
               {
                 q: "Quelle est la différence entre les 3 offres ?",
@@ -489,7 +497,7 @@ export default function EtablissementsPage() {
               },
               {
                 q: "Y a-t-il un engagement ?",
-                a: "Non. L'abonnement mensuel se résilie quand tu veux ; l'offre à l'année revient moins chère. Dans les deux cas, tu peux passer à une offre supérieure à tout moment."
+                a: "Non. L'abonnement mensuel se résilie quand tu veux ; l'offre à l'année, payée pour un an, revient moins chère. Une résiliation prend effet à la fin de la période déjà payée. Tu peux passer à une offre supérieure à tout moment (au prorata) ; pour descendre d'offre, tu résilies et tu choisis la nouvelle à l'échéance."
               },
               {
                 q: "Mon établissement est déjà sur Google et les réseaux, pourquoi Jovial en plus ?",

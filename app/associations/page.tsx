@@ -47,7 +47,7 @@ const plans = [
     badge: "Recommandée",
     tagline: "Recrute et anime ta communauté",
     price: "90 €",
-    period: "/ an",
+    period: "HT / an",
     desc: "Pour te faire repérer sur la carte, rythmer ta saison et fédérer tes membres et bénévoles.",
     color: "border-[#2B4E93]",
     popular: true,
@@ -66,7 +66,7 @@ const plans = [
     badge: "Le plus complet",
     tagline: "Fais vivre toute ta commune",
     price: "190 €",
-    period: "/ an",
+    period: "HT / an",
     desc: "Pour programmer sans limite, être mis en avant dans toute ta région et suivre ce qui marche.",
     color: "border-[#5CB6AC]",
     popular: false,
@@ -331,7 +331,7 @@ export default function AssociationsPage() {
             {[
               {
                 q: "C'est vraiment gratuit ?",
-                a: "Oui. L'offre Asso Découverte est gratuite et sans limite de durée : ta fiche dans l'annuaire, ta visibilité auprès des habitants et ton premier événement de l'année, sans rien payer. Tu passes à Asso Active (90 €/an) ou Rayonnement (190 €/an) seulement si tu veux l'épingle sur la carte, plus d'événements et le Club Jovial.",
+                a: "Oui. L'offre Asso Découverte est gratuite et sans limite de durée : ta fiche dans l'annuaire, ta visibilité auprès des habitants et ton premier événement de l'année, sans rien payer. Tu passes à Asso Active (90 € HT/an) ou Rayonnement (190 € HT/an) seulement si tu veux l'épingle sur la carte, plus d'événements et le Club Jovial.",
               },
               {
                 q: "Quels types d'associations peuvent s'inscrire ?",

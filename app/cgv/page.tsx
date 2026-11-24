@@ -9,7 +9,7 @@ export default function CgvPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Conditions générales de vente</h1>
-      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 4 novembre 2026</p>
+      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 24 novembre 2026</p>
 
       <section className="space-y-3 mb-8">
         <h2 className="text-xl font-bold">Article 1 — Objet et vendeur</h2>
@@ -56,12 +56,24 @@ export default function CgvPage() {
               <tr className="border-b border-gray-100">
                 <td className="py-2 pr-4">Établissement — Visibilité / Rayonnement / Pro</td>
                 <td className="py-2 pr-4">Professionnels</td>
-                <td className="py-2">290 € / 490 € / 790 € par an, avec 14 jours d&apos;essai gratuit</td>
+                <td className="py-2">
+                  290 € / 490 € / 790 € HT par an, ou 29,99 € / 49,99 € / 79,99 € HT par mois. Offert
+                  jusqu&apos;au 17 janvier 2027 inclus pour toute souscription avant le 15 janvier 2027 ; pour
+                  les souscriptions suivantes, 14 jours d&apos;essai gratuit
+                </td>
               </tr>
               <tr className="border-b border-gray-100">
                 <td className="py-2 pr-4">Association — Découverte / Active / Rayonnement</td>
                 <td className="py-2 pr-4">Associations</td>
-                <td className="py-2">0 € / 90 € / 190 € par an</td>
+                <td className="py-2">0 € / 90 € HT / 190 € HT par an (sans période d&apos;essai)</td>
+              </tr>
+              <tr className="border-b border-gray-100">
+                <td className="py-2 pr-4">Mises en avant à l&apos;unité</td>
+                <td className="py-2 pr-4">Établissements</td>
+                <td className="py-2">
+                  Coup de projecteur : 9,90 € HT (1 jour) ou 24,90 € HT (1 semaine) ; Sélection Jovial :
+                  29,90 € HT (1 semaine)
+                </td>
               </tr>
               <tr className="border-b border-gray-100">
                 <td className="py-2 pr-4">Jovial+</td>
@@ -69,9 +81,9 @@ export default function CgvPage() {
                 <td className="py-2">2,99 € / mois (via l&apos;achat intégré App Store ou Google Play)</td>
               </tr>
               <tr className="border-b border-gray-100">
-                <td className="py-2 pr-4">Billetterie</td>
+                <td className="py-2 pr-4">Billetterie et réservations payantes</td>
                 <td className="py-2 pr-4">Acheteurs / organisateurs</td>
-                <td className="py-2">Prix fixé par l&apos;organisateur ; commission Jovial de 5 % du prix du billet</td>
+                <td className="py-2">Prix fixé par l&apos;organisateur ; commission Jovial de 5 % du prix payé</td>
               </tr>
               <tr>
                 <td className="py-2 pr-4">Bons plans</td>
@@ -82,8 +94,26 @@ export default function CgvPage() {
           </table>
         </div>
         <p className="text-gray-700 leading-relaxed">
-          Sauf mention contraire, les prix sont indiqués toutes taxes comprises. Le montant total dû est
-          rappelé avant la validation de la commande.
+          Les prix des offres destinées aux professionnels (établissements, associations, mises en
+          avant à l&apos;unité) sont indiqués hors taxes : la TVA au taux en vigueur (20 %) s&apos;y ajoute.
+          Les prix destinés aux particuliers (Jovial+, billets, réservations, bons plans) sont indiqués
+          toutes taxes comprises. Le montant total dû est rappelé avant la validation de la commande.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <strong>Période gratuite.</strong> Elle est réservée à la première souscription d&apos;un
+          établissement : un établissement déjà abonné par le passé paie dès la nouvelle souscription.
+          Aucun montant n&apos;est prélevé avant la fin de la période gratuite, et l&apos;abonnement peut
+          être résilié avant cette date sans frais.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <strong>Offre « établissement fondateur ».</strong> Les 100 premiers établissements qui
+          souscrivent une offre annuelle (ou y passent depuis la formule mensuelle) au plus tard le 31
+          mars 2027 bénéficient d&apos;une remise sur
+          leur première année d&apos;abonnement annuel : 30 % pour les 30 premiers, 20 % du 31e au 100e. Le
+          rang est attribué dans l&apos;ordre des souscriptions et la remise s&apos;applique
+          automatiquement au premier paiement annuel, sans code à saisir. Elle ne concerne ni les
+          formules mensuelles, ni les associations, et n&apos;est pas cumulable avec une autre remise.
+          Les années suivantes sont facturées au tarif en vigueur.
         </p>
       </section>
 
@@ -161,6 +191,15 @@ export default function CgvPage() {
           contraire, ils se renouvellent par tacite reconduction pour une durée identique, sauf
           résiliation avant l&apos;échéance. Vous êtes informé de l&apos;échéance et de la faculté de ne pas
           reconduire dans les conditions prévues par la loi.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <strong>Offres professionnelles.</strong> La formule mensuelle est sans engagement. La formule
+          annuelle est payée pour un an. Dans les deux cas, la résiliation est possible à tout moment :
+          elle prend effet à la fin de la période déjà payée (mois ou année), sans remboursement de la
+          période entamée. Le passage à une offre supérieure, ou de la formule mensuelle à la formule
+          annuelle, est possible à tout moment et facturé au prorata. Le passage à une offre inférieure,
+          ou de l&apos;annuel au mensuel, n&apos;est pas possible en cours de période : il se fait en
+          résiliant, puis en souscrivant la nouvelle offre à l&apos;échéance.
         </p>
         <p className="text-gray-700 leading-relaxed">
           Le client peut résilier depuis son espace (ou son compte App Store / Google Play pour Jovial+)
