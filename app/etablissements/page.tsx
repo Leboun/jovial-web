@@ -68,8 +68,8 @@ const plans = [
       "Rappels automatiques J-1 et H-1 (réservations & événements)",
       "Billetterie d'événements : vente, contrôle des billets et remboursements",
       "Accès et animation du Club Jovial",
-      "2 passages dans le carrousel Top lieux par an",
-      "1 boost Explore (24h dans ta zone) par an",
+      "2 semaines par an dans la Sélection Jovial (carrousel de la page d'accueil)",
+      "1 Coup de projecteur par an (24 h en tête d'Explore dans ta zone)",
       "Kit de communication inclus",
     ],
     cta: "Choisir Rayonnement",
@@ -92,8 +92,8 @@ const plans = [
       "Événements illimités + rappels automatiques J-1 et H-1",
       "Billetterie d'événements : vente, contrôle des billets et remboursements",
       "Club Jovial avec administration complète",
-      "6 passages dans le carrousel Top lieux par an",
-      "1 boost Explore (24h dans ta zone) par mois",
+      "6 semaines par an dans la Sélection Jovial (carrousel de la page d'accueil)",
+      "1 Coup de projecteur par mois (24 h en tête d'Explore dans ta zone)",
       "1 notification de proximité ciblée par an (accord utilisateurs)",
       "Statistiques détaillées en temps réel : vues, favoris, réservations, billets et taux de conversion",
     ],
@@ -481,7 +481,7 @@ export default function EtablissementsPage() {
               },
               {
                 q: "Comment être mis en avant ?",
-                a: "Les offres Rayonnement et Pro incluent des passages dans le carrousel « Top lieux » et des boosts dans l'Explorer. Tu peux aussi en ajouter à la carte depuis ton espace, quand tu as un gros événement à pousser."
+                a: "Les offres Rayonnement et Pro incluent des semaines dans la Sélection Jovial (le carrousel de la page d'accueil) et des Coups de projecteur (24 h en tête d'Explore dans ta zone). Tu peux aussi en acheter à l'unité depuis ton espace, quelle que soit ton offre, quand tu as un gros événement à pousser."
               },
               {
                 q: "Puis-je essayer gratuitement ?",
