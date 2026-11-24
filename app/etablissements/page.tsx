@@ -511,10 +511,6 @@ export default function EtablissementsPage() {
                 q: "Comment fonctionne le Kit de communication ?",
                 a: "Dès ton inscription, tu reçois un kit clé en main : affiche à imprimer, visuels pour les réseaux sociaux et QR code qui renvoie vers ta fiche Jovial."
               },
-              {
-                q: "Puis-je gérer plusieurs établissements ?",
-                a: "Oui : avec l'offre Pro, tu administres plusieurs établissements depuis un seul tableau de bord."
-              },
             ].map((item) => (
               <details key={item.q} className="group bg-gray-50 rounded-2xl">
                 <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-gray-900 list-none [&::-webkit-details-marker]:hidden">
