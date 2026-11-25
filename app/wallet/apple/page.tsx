@@ -27,8 +27,12 @@ export default function AppleWalletPage() {
 
   const card: React.CSSProperties = { background: "#FFFFFF", color: "#1E2A40", borderRadius: 20, padding: "22px 20px", width: "100%", maxWidth: 400, textAlign: "left", boxShadow: "0 10px 30px rgba(0,0,0,0.25)" };
 
+  // Plein écran PAR-DESSUS la barre du site (fixe, z-50) et le pied de page (25/11/2026) :
+  // avant, le logo de la barre recouvrait Jovi. Le contenu est centré via margin:auto
+  // (et non justify-content) pour rester entièrement visible sur les petits écrans.
   return (
-    <main style={{ minHeight: "100dvh", background: "#2B4E93", color: "#fff", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "28px 16px", gap: 18, textAlign: "center" }}>
+    <div style={{ position: "fixed", inset: 0, zIndex: 100, overflowY: "auto", background: "#2B4E93", color: "#fff", display: "flex", flexDirection: "column" }}>
+    <div style={{ margin: "auto 0", display: "flex", flexDirection: "column", alignItems: "center", padding: "28px 16px", gap: 18, textAlign: "center" }}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/wallet/jovi-tile.png" alt="Jovi, la mascotte Jovial" width={96} height={96} style={{ borderRadius: 24 }} />
       {checked && !passUrl ? (
@@ -61,6 +65,8 @@ export default function AppleWalletPage() {
           <p style={{ margin: 0, fontSize: 13, opacity: 0.85 }}>L&apos;aperçu ne s&apos;est pas affiché ? Touche le bouton ci-dessus.</p>
         </>
       )}
-    </main>
+      <p style={{ margin: "6px 0 0", fontSize: 12, opacity: 0.7 }}>Jovial · Ta sortie idéale</p>
+    </div>
+    </div>
   );
 }
