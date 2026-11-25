@@ -9,7 +9,7 @@ export default function CgvPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Conditions générales de vente</h1>
-      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 24 novembre 2026</p>
+      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 25 novembre 2026</p>
 
       <section className="space-y-3 mb-8">
         <h2 className="text-xl font-bold">Article 1 — Objet et vendeur</h2>
@@ -148,8 +148,10 @@ export default function CgvPage() {
           l&apos;événement et n&apos;est pas partie à la prestation.
         </p>
         <ul className="list-disc pl-5 text-gray-700 leading-relaxed space-y-1">
-          <li>L&apos;identité de l&apos;organisateur et le prix total sont communiqués à l&apos;acheteur avant l&apos;achat.</li>
-          <li>Jovial perçoit une commission (5 % pour la billetterie, 10 % pour les bons plans) ; le solde est reversé à l&apos;organisateur via <strong>Stripe Connect</strong>.</li>
+          <li>L&apos;identité de l&apos;organisateur, le prix total et les conditions d&apos;annulation et de transfert choisies par l&apos;organisateur pour l&apos;événement sont communiqués à l&apos;acheteur avant l&apos;achat.</li>
+          <li>Le paiement est <strong>encaissé directement par l&apos;organisateur</strong>, sur son propre compte de paiement ouvert auprès de <strong>Stripe</strong> (Stripe Connect). Jovial ne détient à aucun moment les fonds de l&apos;acheteur.</li>
+          <li>Jovial perçoit une commission (5 % pour la billetterie, 10 % pour les bons plans), prélevée automatiquement par Stripe au moment du paiement. Les frais de traitement du paiement par Stripe sont à la charge de l&apos;organisateur.</li>
+          <li>En cas de remboursement, l&apos;acheteur est remboursé par l&apos;organisateur via Stripe, sur le moyen de paiement utilisé, et Jovial restitue la part de commission correspondante.</li>
           <li>L&apos;organisateur est seul responsable de la description, de la tenue, de l&apos;accès, de l&apos;annulation et du remboursement de son événement ou de son offre.</li>
           <li>Toute réclamation relative à un événement ou à une offre doit être adressée en priorité à l&apos;organisateur.</li>
         </ul>
