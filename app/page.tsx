@@ -85,13 +85,13 @@ export default function HomePage() {
       <section id="concept" className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               L&apos;application
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-5 jovial-grad-text leading-tight uppercase">
-              Tout ce qu&apos;il te faut pour sortir
+              Tout ce qu&apos;il te faut <span className="text-[#EF6731]">pour sortir</span>
             </h2>
             <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
               Découvre des lieux uniques, réserve tes activités, suis les événements — tout en un.
@@ -143,13 +143,13 @@ export default function HomePage() {
       <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               Avec ta bande
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-5 jovial-grad-text leading-tight uppercase">
-              Sortir, c&apos;est mieux à plusieurs
+              Sortir, c&apos;est mieux <span className="text-[#EF6731]">à plusieurs</span>
             </h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
               Vois où vont tes amis, organisez vos sorties en club et gardez vos meilleurs souvenirs, au même endroit.
@@ -214,13 +214,13 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/etablissements"
-              className="inline-flex items-center justify-center gap-2 bg-[#FFE8BF] text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors"
+              className="inline-flex items-center justify-center gap-2 btn-cream font-bold px-8 py-4 rounded-2xl transition-colors"
             >
               Découvrir Jovial Pro →
             </Link>
             <Link
               href="/etablissements#contact"
-              className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors"
+              className="inline-flex items-center justify-center gap-2 btn-orange font-bold px-8 py-4 rounded-2xl transition-colors"
             >
               Demander une démo
             </Link>
@@ -237,10 +237,10 @@ export default function HomePage() {
       {/* Associations — teaser vers /associations */}
       <section className="py-16 px-6 bg-white border-t border-[#EAD2A6]">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-            <span className="w-6 h-px bg-[#5CB6AC]" />
+          <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+            <span className="w-6 h-px bg-[#EF6731]" />
             Associations
-            <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="w-6 h-px bg-[#EF6731]" />
           </span>
           <h2 className="text-4xl md:text-5xl font-black mt-2 mb-4 uppercase leading-tight jovial-grad-text">
             Tu fais vivre une association ?
@@ -264,13 +264,13 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/associations"
-              className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors"
+              className="inline-flex items-center justify-center gap-2 btn-orange font-bold px-8 py-4 rounded-2xl transition-colors"
             >
               Jovial pour les associations →
             </Link>
             <a
               href="https://pro.getjovial.fr/establishment/asso/offers"
-              className="inline-flex items-center justify-center gap-2 bg-[#FFE8BF] text-[#2B4E93] font-bold px-8 py-4 rounded-2xl border-2 border-[#2B4E93] hover:bg-[#2B4E93] hover:text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 btn-cream font-bold px-8 py-4 rounded-2xl border-2 border-[#2B4E93] hover:bg-[#2B4E93] hover:text-white transition-colors"
             >
               Inscrire mon association
             </a>
@@ -286,12 +286,12 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-end justify-between mb-12">
             <div>
-              <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-                <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+                <span className="w-6 h-px bg-[#EF6731]" />
                 Découvrir
-                <span className="w-6 h-px bg-[#5CB6AC]" />
+                <span className="w-6 h-px bg-[#EF6731]" />
               </span>
-              <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">CE QUI SE PASSE PRÈS DE CHEZ TOI.</h2>
+              <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">CE QUI SE PASSE <span className="text-[#EF6731]">PRÈS DE CHEZ TOI.</span></h2>
               <p className="text-gray-600 text-lg mt-4 max-w-xl leading-relaxed">
                 Événements à venir, lieux d'activités, scènes locales — près de chez toi.
               </p>
@@ -345,10 +345,10 @@ export default function HomePage() {
       <section className="py-24 px-6 bg-white border-t border-[#EAD2A6]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               FAQ
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
               Questions fréquentes

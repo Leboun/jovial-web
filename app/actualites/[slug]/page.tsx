@@ -259,7 +259,7 @@ export default async function ArticlePage({ params }: Props) {
             {APP_COMING_SOON ? (
               <Link
                 href="/#telecharger"
-                className="bg-[#FFE8BF] text-[#2B4E93] text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/90 transition-colors"
+                className="btn-cream text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center transition-colors"
               >
                 Découvrir l&apos;app →
               </Link>
@@ -268,7 +268,7 @@ export default async function ArticlePage({ params }: Props) {
                 {APP_STORE_URL && (
                   <a
                     href={APP_STORE_URL}
-                    className="bg-[#FFE8BF] text-[#2B4E93] text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/90 transition-colors"
+                    className="btn-cream text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center transition-colors"
                   >
                     App Store
                   </a>

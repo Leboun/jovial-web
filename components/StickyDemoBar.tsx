@@ -37,7 +37,7 @@ export default function StickyDemoBar({ href = "#contact", label = "Demander une
       <a
         href={href}
         tabIndex={show ? 0 : -1}
-        className="flex items-center justify-center w-full bg-[#5CB6AC] text-white font-bold py-3.5 rounded-2xl hover:bg-[#4aa39a] transition-colors"
+        className="flex items-center justify-center w-full btn-orange font-bold py-3.5 rounded-2xl transition-colors"
       >
         📅 {label}
       </a>

@@ -138,7 +138,7 @@ export default function ProspectForm({ variant = "venue" }: { variant?: "venue" 
       <button
         type="submit"
         disabled={status === "sending"}
-        className="self-center bg-[#FFE8BF] text-[#2B4E93] font-bold px-10 py-4 rounded-2xl hover:bg-white/90 transition-colors disabled:opacity-60 text-lg"
+        className="self-center btn-cream font-bold px-10 py-4 rounded-2xl transition-colors disabled:opacity-60 text-lg"
       >
         {status === "sending" ? "Envoi en cours…" : "Je veux une démo"}
       </button>

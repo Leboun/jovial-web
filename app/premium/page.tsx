@@ -94,10 +94,10 @@ export default function PremiumPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               Comparatif
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">Gratuit vs Jovial+</h2>
             <p className="text-gray-600 mt-3">Tout le monde bénéficie de Jovial gratuitement. Jovial+ va encore plus loin.</p>
@@ -151,10 +151,10 @@ export default function PremiumPage() {
       <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               Fonctionnalités
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">Ce que tu débloques avec Jovial+</h2>
           </div>
@@ -216,10 +216,10 @@ export default function PremiumPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               FAQ
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
               Questions fréquentes

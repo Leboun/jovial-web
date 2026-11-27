@@ -48,7 +48,7 @@ export default function DesabonnementPage() {
             <button
               onClick={unsubscribe}
               disabled={state === "loading"}
-              className="inline-flex items-center justify-center bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors text-lg disabled:opacity-60"
+              className="inline-flex items-center justify-center btn-orange font-bold px-8 py-4 rounded-2xl transition-colors text-lg disabled:opacity-60"
             >
               {state === "loading" ? "Un instant…" : "Me désinscrire"}
             </button>

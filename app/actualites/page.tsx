@@ -26,12 +26,12 @@ export default function MagazinePage() {
       {/* Hero */}
       <section className="bg-white pt-32 pb-12 px-6 border-b border-[#EAD2A6]">
         <div className="max-w-5xl mx-auto">
-          <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-            <span className="w-6 h-px bg-[#5CB6AC]" />
+          <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+            <span className="w-6 h-px bg-[#EF6731]" />
             Découvrir
-            <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="w-6 h-px bg-[#EF6731]" />
           </span>
-          <h1 className="text-4xl sm:text-5xl font-black mt-2 mb-4 jovial-grad-text leading-tight uppercase">CE QUI SE PASSE PRÈS DE CHEZ TOI.</h1>
+          <h1 className="text-4xl sm:text-5xl font-black mt-2 mb-4 jovial-grad-text leading-tight uppercase">CE QUI SE PASSE <span className="text-[#EF6731]">PRÈS DE CHEZ TOI.</span></h1>
           <p className="text-gray-600 text-lg max-w-2xl leading-relaxed">
             Événements à venir, lieux d'activités, scènes locales — près de chez toi.
           </p>
@@ -138,10 +138,10 @@ export default function MagazinePage() {
       <section className="py-16 px-6 bg-[#2B4E93] text-white">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               Nous contacter
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <p className="text-4xl font-black mb-3 uppercase">Un lieu ou un événement à mettre en avant ?</p>
             <p className="text-white/70 text-lg">

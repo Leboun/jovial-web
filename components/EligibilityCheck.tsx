@@ -45,7 +45,7 @@ export default function EligibilityCheck() {
           <p className="text-gray-500 text-sm mb-6">Fais le test en 10 secondes — spoiler : ça va bien se passer.</p>
           <button
             onClick={() => setStep(1)}
-            className="inline-flex items-center gap-2 bg-[#5CB6AC] text-white font-bold px-7 py-3 rounded-xl hover:bg-[#4aa39a] transition-colors"
+            className="inline-flex items-center gap-2 btn-orange font-bold px-7 py-3 rounded-xl transition-colors"
           >
             C&apos;est parti →
           </button>
@@ -106,7 +106,7 @@ export default function EligibilityCheck() {
           </p>
           <a
             href={signupHref}
-            className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors text-lg"
+            className="inline-flex items-center justify-center gap-2 btn-orange font-bold px-8 py-4 rounded-2xl transition-colors text-lg"
           >
             {signupLabel} →
           </a>

@@ -58,14 +58,14 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93", footer
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
           }}
-          className="bg-[#FFF7EA] border border-[#EAD2A6] shadow-sm rounded-3xl p-6 sm:p-7 flex flex-col justify-between"
+          className="cartoon-card p-6 sm:p-7 flex flex-col justify-between"
         >
           <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl bg-[#D8F0EE]">
             {icon}
           </div>
           <div>
-            <h3 className="text-[#242D41] font-bold text-xl leading-snug">{title}</h3>
-            <div className="w-8 h-0.5 mt-3 rounded-full" style={{ backgroundColor: accent }} />
+            <h3 className="text-[#242D41] font-extrabold text-xl leading-snug">{title}</h3>
+            <div className="w-8 h-1 mt-3 rounded-full" style={{ backgroundColor: accent === "#2B4E93" ? "#EF6731" : accent }} />
           </div>
         </div>
 
@@ -77,11 +77,14 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93", footer
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
-            background: "var(--jovial-grad)",
+            // Dos en BLEU UNI de la charte (plus de dégradé, 27/11/2026), contour + ombre orange façon appli.
+            background: "#2B4E93",
+            border: "2.5px solid #242D41",
+            boxShadow: "5px 5px 0 #EF6731",
           }}
-          className="rounded-3xl p-6 sm:p-7 flex flex-col justify-between overflow-hidden"
+          className="rounded-[24px] p-6 sm:p-7 flex flex-col justify-between overflow-hidden"
         >
-          <p className="text-white/95 text-sm leading-relaxed">{desc}</p>
+          <p className="text-[#FFE8BF] text-base leading-relaxed font-semibold">{desc}</p>
           {footer ? (
             <div className="flex items-center gap-2 text-white font-semibold text-sm">
               <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-xs shrink-0">✓</div>

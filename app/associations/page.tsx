@@ -78,7 +78,7 @@ const plans = [
     ],
     cta: "Choisir Rayonnement",
     ctaHref: "https://pro.getjovial.fr/establishment/asso/offers",
-    ctaStyle: "bg-[#5CB6AC] text-white hover:bg-[#4aa39a]",
+    ctaStyle: "btn-orange",
   },
 ];
 
@@ -132,7 +132,7 @@ export default function AssociationsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="https://pro.getjovial.fr/establishment/asso/offers"
-                className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors text-lg"
+                className="inline-flex items-center justify-center gap-2 btn-orange font-bold px-8 py-4 rounded-2xl transition-colors text-lg"
               >
                 Inscrire mon association
               </a>
@@ -163,10 +163,10 @@ export default function AssociationsPage() {
       <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               Pourquoi Jovial ?
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
               Fais connaître ton asso, remplis tes événements.
@@ -250,10 +250,10 @@ export default function AssociationsPage() {
       <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               Tarifs
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-2 jovial-grad-text leading-tight uppercase">
               Un tarif pensé pour les assos
@@ -318,10 +318,10 @@ export default function AssociationsPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               FAQ
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
               Questions fréquentes

@@ -59,7 +59,7 @@ export default function DownloadSection() {
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="bg-[#5CB6AC] hover:bg-[#4aa39a] text-white text-sm font-bold px-5 py-3.5 rounded-full whitespace-nowrap transition-colors disabled:opacity-60"
+                className="btn-orange text-sm font-bold px-5 py-3.5 rounded-full whitespace-nowrap transition-colors disabled:opacity-60"
               >
                 {status === "sending" ? "Envoi…" : "Préviens-moi"}
               </button>

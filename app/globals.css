@@ -29,9 +29,41 @@
 }
 /* Dégradé de marque en FOND (PETITS éléments : boutons, puces) — le dégradé reste
    joli quand il est fin/petit. */
+/* 27/11/2026 : plus de dégradé (retour d'Esteban) — bleu uni de la charte, comme l'appli en clair. */
 .jovial-grad-bg {
-  background-image: var(--jovial-grad);
+  background-color: var(--primary);
 }
+
+/* ===== Style « appli » (27/11/2026, d'après l'écran d'accueil de l'appli) =====
+   Contour bleu nuit épais + ombre décalée, comme les vignettes et boutons de l'appli. */
+.cartoon-card {
+  background: #FFF7EA;
+  border: 2.5px solid var(--ink);
+  border-radius: 24px;
+  box-shadow: 5px 5px 0 var(--ink);
+}
+.cartoon-card-orange {
+  box-shadow: 5px 5px 0 var(--brand-orange);
+}
+.btn-orange {
+  background: var(--brand-orange);
+  color: var(--ink);
+  border: 2.5px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn-orange:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); }
+.btn-orange:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ink); }
+.btn-cream {
+  background: var(--cream-deep);
+  color: var(--ink);
+  border: 2.5px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn-cream:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); }
+/* Orange « texte » lisible sur fond clair (petits sur-titres). */
+.text-orange-deep { color: #B9461B; }
 
 /* GRANDS blocs / bandeaux : fond UNI (plus d'aplat dégradé géant, jugé lourd) +
    un FIN filet dégradé en haut → le dégradé reste en touche discrète. */

@@ -74,7 +74,7 @@ export default function Navbar() {
           {/* Appel à l'action principal pour les pros : la démo (formulaire prospects). */}
           <Link
             href="/etablissements#contact"
-            className="inline-flex items-center h-11 text-sm font-semibold text-white bg-[#5CB6AC] px-3.5 rounded-full hover:bg-[#4aa39a] transition-colors whitespace-nowrap"
+            className="inline-flex items-center h-11 text-sm font-semibold btn-orange px-3.5 rounded-full transition-colors whitespace-nowrap"
           >
             Demander une démo
           </Link>

@@ -99,7 +99,7 @@ const plans = [
     ],
     cta: "Choisir Pro",
     ctaHref: "https://pro.getjovial.fr/establishment/offers",
-    ctaStyle: "bg-[#5CB6AC] text-white hover:bg-[#4aa39a]",
+    ctaStyle: "btn-orange",
   },
 ];
 
@@ -153,13 +153,13 @@ export default function EtablissementsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="https://pro.getjovial.fr/establishment/offers"
-                className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors text-lg"
+                className="inline-flex items-center justify-center gap-2 btn-orange font-bold px-8 py-4 rounded-2xl transition-colors text-lg"
               >
                 Inscrire mon établissement
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 bg-[#FFE8BF] text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors text-lg"
+                className="inline-flex items-center justify-center gap-2 btn-cream font-bold px-8 py-4 rounded-2xl transition-colors text-lg"
               >
                 Demander une démo
               </a>
@@ -186,10 +186,10 @@ export default function EtablissementsPage() {
       {/* C'est pour qui ? — éligibilité, surfacée tôt pour rassurer */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto text-center">
-          <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-            <span className="w-6 h-px bg-[#5CB6AC]" />
+          <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+            <span className="w-6 h-px bg-[#EF6731]" />
             C&apos;est pour qui ?
-            <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="w-6 h-px bg-[#EF6731]" />
           </span>
           <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-4 jovial-grad-text leading-tight uppercase">
             Ton lieu a sa place sur Jovial
@@ -229,10 +229,10 @@ export default function EtablissementsPage() {
       <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               Pourquoi Jovial ?
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
               Sois là où tes clients te cherchent.
@@ -314,10 +314,10 @@ export default function EtablissementsPage() {
       <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               Nouveau
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
               Remplis tes heures creuses
@@ -374,7 +374,7 @@ export default function EtablissementsPage() {
           </p>
           <a
             href="https://pro.getjovial.fr/establishment/offers"
-            className="inline-flex items-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors text-lg"
+            className="inline-flex items-center gap-2 btn-orange font-bold px-8 py-4 rounded-2xl transition-colors text-lg"
           >
             Inscrire mon établissement →
           </a>
@@ -385,10 +385,10 @@ export default function EtablissementsPage() {
       <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               Tarifs
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-2 jovial-grad-text leading-tight uppercase">
               Simple et transparent
@@ -456,10 +456,10 @@ export default function EtablissementsPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+            <span className="inline-flex items-center gap-2 text-orange-deep text-xs font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="w-6 h-px bg-[#EF6731]" />
               FAQ
-              <span className="w-6 h-px bg-[#5CB6AC]" />
+              <span className="w-6 h-px bg-[#EF6731]" />
             </span>
             <h2 className="text-4xl sm:text-5xl font-black mt-2 jovial-grad-text leading-tight uppercase">
               Questions fréquentes

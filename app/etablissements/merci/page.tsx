@@ -33,14 +33,14 @@ export default function MerciPage() {
             href={DEMO_BOOKING_URL}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors text-lg"
+            className="inline-flex items-center justify-center gap-2 btn-orange font-bold px-8 py-4 rounded-2xl transition-colors text-lg"
           >
             📅 Réserver ma démo de 30 min
           </a>
         ) : (
           <a
             href="mailto:hello@getjovial.fr?subject=D%C3%A9mo%20Jovial%20Pro"
-            className="inline-flex items-center justify-center gap-2 bg-[#5CB6AC] text-white font-bold px-8 py-4 rounded-2xl hover:bg-[#4aa39a] transition-colors text-lg"
+            className="inline-flex items-center justify-center gap-2 btn-orange font-bold px-8 py-4 rounded-2xl transition-colors text-lg"
           >
             ✉️ Une question ? Écris-nous
           </a>
