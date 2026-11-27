@@ -169,15 +169,15 @@ export default function EtablissementsPage() {
             </a>
           </div>
 
-          {/* Mascotte — desktop uniquement */}
-          <div className="hidden lg:block shrink-0">
+          {/* Mascotte — desktop uniquement, sur un rond crème : Jovi (bleu / orange) se confondait avec le bandeau bleu (retour d'Esteban, 27/11/2026). */}
+          <div className="hidden lg:flex shrink-0 items-center justify-center w-[300px] h-[300px] xl:w-[330px] xl:h-[330px] rounded-full bg-[#FFE8BF] border-4 border-[#FFF7EA] shadow-[0_20px_40px_rgba(0,0,0,0.25)]">
             <Image
               src="/mascotte.png"
               alt="La mascotte Jovial"
               width={2953}
               height={3283}
               sizes="260px"
-              className="w-[240px] xl:w-[260px] h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.35)]"
+              className="w-[190px] xl:w-[210px] h-auto drop-shadow-[0_10px_18px_rgba(0,0,0,0.18)]"
             />
           </div>
         </div>
