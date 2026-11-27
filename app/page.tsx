@@ -102,7 +102,7 @@ export default function HomePage() {
             {/* Mockup app à gauche */}
             <div className="w-full max-w-[360px] shrink-0 mx-auto lg:mx-0 drop-shadow-2xl">
               <PhoneMockup
-                src="/mockup-carte.jpg"
+                src="/mockup-carte-2026-11.jpg"
                 alt="L'app Jovial : la carte interactive et la fiche d'un lieu"
               />
             </div>
