@@ -98,7 +98,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="self-center bg-white text-[#2B4E93] font-bold px-10 py-4 rounded-2xl hover:bg-white/90 transition-colors disabled:opacity-60"
+        className="self-center bg-[#FFFBF3] text-[#2B4E93] font-bold px-10 py-4 rounded-2xl hover:bg-white/90 transition-colors disabled:opacity-60"
       >
         {status === "sending" ? "Envoi en cours…" : "Envoyer"}
       </button>

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function CguPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
+    <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#242D41]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Conditions générales d&apos;utilisation</h1>
       <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 27 novembre 2026</p>
 
@@ -226,7 +226,7 @@ export default function CguPage() {
           afin de rechercher une solution amiable. Conformément au code de la consommation, vous pouvez
           recourir gratuitement au médiateur de la consommation dont relève Jovial :
         </p>
-        <p className="text-gray-700 leading-relaxed pl-4 border-l-2 border-gray-200">
+        <p className="text-gray-700 leading-relaxed pl-4 border-l-2 border-[#EAD2A6]">
           <strong>CM2C — Centre de la Médiation de la Consommation de Conciliateurs de Justice</strong>
           <br />
           49 rue de Ponthieu, 75008 Paris — Tél. : 01 89 47 00 14 — SIRET : 831 213 871 00021

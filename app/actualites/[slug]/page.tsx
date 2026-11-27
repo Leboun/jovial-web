@@ -106,7 +106,7 @@ function renderContent(content: string) {
     if (!trimmed) {
       elements.push(<div key={key++} className="h-4" />);
     } else if (trimmed === "---") {
-      elements.push(<hr key={key++} className="my-8 border-t border-gray-200" />);
+      elements.push(<hr key={key++} className="my-8 border-t border-[#EAD2A6]" />);
     } else if (/^!\[[^\]]*\]\([^)]+\)$/.test(trimmed)) {
       // ![alt](url) ou ![alt](url "Crédit / légende")
       const m = trimmed.match(/^!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)$/)!;
@@ -129,13 +129,13 @@ function renderContent(content: string) {
       );
     } else if (trimmed.startsWith("## ")) {
       elements.push(
-        <h2 key={key++} className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+        <h2 key={key++} className="text-2xl font-bold text-[#242D41] mt-10 mb-4">
           {renderInline(trimmed.slice(3))}
         </h2>
       );
     } else if (trimmed.startsWith("### ")) {
       elements.push(
-        <h3 key={key++} className="text-xl font-bold text-gray-900 mt-8 mb-3">
+        <h3 key={key++} className="text-xl font-bold text-[#242D41] mt-8 mb-3">
           {renderInline(trimmed.slice(4))}
         </h3>
       );
@@ -196,7 +196,7 @@ export default async function ArticlePage({ params }: Props) {
         }}
       />
       {/* Hero */}
-      <section className="bg-white pt-28 pb-12 px-6 border-b border-gray-100">
+      <section className="bg-[#FFFBF3] pt-28 pb-12 px-6 border-b border-[#EAD2A6]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/actualites"
@@ -221,7 +221,7 @@ export default async function ArticlePage({ params }: Props) {
             )}
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-[#242D41] mb-6">
             {article.title}
           </h1>
 
@@ -242,14 +242,14 @@ export default async function ArticlePage({ params }: Props) {
       </section>
 
       {/* Content */}
-      <section className="py-16 px-6 bg-white">
+      <section className="py-16 px-6 bg-[#FFFBF3]">
         <div className="max-w-3xl mx-auto prose-custom">
           <div className="space-y-5">{renderContent(article.content)}</div>
         </div>
       </section>
 
       {/* CTA app */}
-      <section className="py-14 px-6 bg-[#f8faff] border-y border-gray-100">
+      <section className="py-14 px-6 bg-[#FFF7EA] border-y border-[#EAD2A6]">
         <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-[#2B4E93] rounded-3xl p-8 text-white">
           <div className="flex-1">
             <p className="text-lg font-bold mb-1">Découvre ces bars sur Jovial</p>
@@ -259,7 +259,7 @@ export default async function ArticlePage({ params }: Props) {
             {APP_COMING_SOON ? (
               <Link
                 href="/#telecharger"
-                className="bg-white text-[#2B4E93] text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/90 transition-colors"
+                className="bg-[#FFFBF3] text-[#2B4E93] text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/90 transition-colors"
               >
                 Découvrir l&apos;app →
               </Link>
@@ -268,7 +268,7 @@ export default async function ArticlePage({ params }: Props) {
                 {APP_STORE_URL && (
                   <a
                     href={APP_STORE_URL}
-                    className="bg-white text-[#2B4E93] text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/90 transition-colors"
+                    className="bg-[#FFFBF3] text-[#2B4E93] text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/90 transition-colors"
                   >
                     App Store
                   </a>
@@ -287,20 +287,20 @@ export default async function ArticlePage({ params }: Props) {
 
       {/* Related articles */}
       {related.length > 0 && (
-        <section className="py-16 px-6 bg-white">
+        <section className="py-16 px-6 bg-[#FFFBF3]">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">À lire aussi</h2>
+            <h2 className="text-2xl font-bold text-[#242D41] mb-8">À lire aussi</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {related.map((a) => (
                 <Link key={a.slug} href={`/actualites/${a.slug}`} className="group block">
-                  <article className="bg-gray-50 rounded-2xl p-6 hover:shadow-md transition-shadow h-full flex flex-col">
+                  <article className="bg-[#FFFBF3] rounded-2xl p-6 hover:shadow-md transition-shadow h-full flex flex-col">
                     <div
                       className="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-full mb-4 w-fit"
                       style={{ backgroundColor: a.tagColor + "18", color: a.tagColor }}
                     >
                       {a.tagEmoji} {a.tag}
                     </div>
-                    <h3 className="font-bold text-gray-900 leading-snug mb-3 group-hover:text-[#2B4E93] transition-colors flex-1">
+                    <h3 className="font-bold text-[#242D41] leading-snug mb-3 group-hover:text-[#2B4E93] transition-colors flex-1">
                       {a.title}
                     </h3>
                     <p className="text-xs text-gray-400 flex items-center gap-1">

@@ -79,7 +79,7 @@ export default function HomePage() {
       </section>
 
       {/* Concept */}
-      <section id="concept" className="py-24 px-6 bg-white">
+      <section id="concept" className="py-24 px-6 bg-[#FFFBF3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -137,7 +137,7 @@ export default function HomePage() {
 
 
       {/* Sortir avec sa bande — ce qui distingue Jovial d'une simple carte (audit nov. 2026) */}
-      <section className="py-20 px-6 bg-[#F5F8FC]">
+      <section className="py-20 px-6 bg-[#FFF7EA]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -211,7 +211,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/etablissements"
-              className="inline-flex items-center justify-center gap-2 bg-white text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[#FFFBF3] text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors"
             >
               Découvrir Jovial Pro →
             </Link>
@@ -232,7 +232,7 @@ export default function HomePage() {
       </section>
 
       {/* Associations — teaser vers /associations */}
-      <section className="py-16 px-6 bg-white border-t border-gray-100">
+      <section className="py-16 px-6 bg-[#FFFBF3] border-t border-[#EAD2A6]">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
             <span className="w-6 h-px bg-[#5CB6AC]" />
@@ -247,13 +247,13 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mb-10 text-sm">
-            <span className="flex items-center gap-2 bg-[#f8faff] rounded-full px-4 py-2 border border-gray-100 font-semibold text-gray-700">
+            <span className="flex items-center gap-2 bg-[#FFF7EA] rounded-full px-4 py-2 border border-[#EAD2A6] font-semibold text-gray-700">
               <MapPin size={15} className="text-[#2F7D73]" /> Sur la carte
             </span>
-            <span className="flex items-center gap-2 bg-[#f8faff] rounded-full px-4 py-2 border border-gray-100 font-semibold text-gray-700">
+            <span className="flex items-center gap-2 bg-[#FFF7EA] rounded-full px-4 py-2 border border-[#EAD2A6] font-semibold text-gray-700">
               <Ticket size={15} className="text-[#2F7D73]" /> Billetterie gratuite ou payante
             </span>
-            <span className="flex items-center gap-2 bg-[#f8faff] rounded-full px-4 py-2 border border-gray-100 font-semibold text-gray-700">
+            <span className="flex items-center gap-2 bg-[#FFF7EA] rounded-full px-4 py-2 border border-[#EAD2A6] font-semibold text-gray-700">
               <Users size={15} className="text-[#2F7D73]" /> Recrute des bénévoles
             </span>
           </div>
@@ -267,7 +267,7 @@ export default function HomePage() {
             </Link>
             <a
               href="https://pro.getjovial.fr/establishment/asso/offers"
-              className="inline-flex items-center justify-center gap-2 bg-white text-[#2B4E93] font-bold px-8 py-4 rounded-2xl border-2 border-[#2B4E93] hover:bg-[#2B4E93] hover:text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[#FFFBF3] text-[#2B4E93] font-bold px-8 py-4 rounded-2xl border-2 border-[#2B4E93] hover:bg-[#2B4E93] hover:text-white transition-colors"
             >
               Inscrire mon association
             </a>
@@ -279,7 +279,7 @@ export default function HomePage() {
       <ScrollingBanner />
 
       {/* Magazine */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-24 px-6 bg-[#FFFBF3]">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-end justify-between mb-12">
             <div>
@@ -304,7 +304,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {homeArticles(3).map((a) => (
               <Link key={a.slug} href={`/actualites/${a.slug}`} className="group block">
-                <article className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-md transition-shadow h-full flex flex-col">
+                <article className="bg-[#FFFBF3] rounded-2xl overflow-hidden hover:shadow-md transition-shadow h-full flex flex-col">
                   <div className="h-1.5 w-full" style={{ backgroundColor: a.tagColor }} />
                   <div className="p-6 flex flex-col flex-1">
                     <span
@@ -313,7 +313,7 @@ export default function HomePage() {
                     >
                       {a.tagEmoji} {a.tag}
                     </span>
-                    <h3 className="font-bold text-gray-900 leading-snug mb-3 flex-1 group-hover:text-[#2B4E93] transition-colors">
+                    <h3 className="font-bold text-[#242D41] leading-snug mb-3 flex-1 group-hover:text-[#2B4E93] transition-colors">
                       {a.title}
                     </h3>
                     <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">{a.excerpt}</p>
@@ -339,7 +339,7 @@ export default function HomePage() {
       </section>
 
       {/* FAQ utilisateurs */}
-      <section className="py-24 px-6 bg-white border-t border-gray-100">
+      <section className="py-24 px-6 bg-[#FFFBF3] border-t border-[#EAD2A6]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -382,8 +382,8 @@ export default function HomePage() {
                   }]
                 : []),
             ].map((item) => (
-              <details key={item.q} className="group bg-gray-50 rounded-2xl">
-                <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+              <details key={item.q} className="group bg-[#FFFBF3] rounded-2xl">
+                <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-[#242D41] list-none [&::-webkit-details-marker]:hidden">
                   {item.q}
                   <span className="text-[#2B4E93] text-xl font-light shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>

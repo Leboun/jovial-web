@@ -17,20 +17,20 @@ export default async function PaiementAnnule({
   const appLink = isTicket && eventId ? `jovial://event/${eventId}` : "jovial://";
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-[#f8faff] px-6">
-      <div className="max-w-md w-full bg-white rounded-3xl border border-gray-200 shadow-sm p-8 text-center">
+    <main className="min-h-screen flex items-center justify-center bg-[#FFF7EA] px-6">
+      <div className="max-w-md w-full bg-[#FFFBF3] rounded-3xl border border-[#EAD2A6] shadow-sm p-8 text-center">
         <div className="text-5xl mb-4">💳</div>
-        <h1 className="text-2xl font-black text-gray-900 mb-3">Paiement annulé</h1>
+        <h1 className="text-2xl font-black text-[#242D41] mb-3">Paiement annulé</h1>
         {isTicket ? (
           <p className="text-gray-500 leading-relaxed mb-2">
             Pas de souci — aucune place n&apos;a été débitée. Tu peux reprendre
             l&apos;achat quand tu veux depuis la fiche de l&apos;événement dans
-            l&apos;application <span className="font-bold text-gray-900">Jovial</span>.
+            l&apos;application <span className="font-bold text-[#242D41]">Jovial</span>.
           </p>
         ) : (
           <p className="text-gray-500 leading-relaxed mb-2">
             Pas de souci — ta réservation est toujours enregistrée. Tu peux la payer quand
-            tu veux depuis l&apos;application <span className="font-bold text-gray-900">Jovial</span>,
+            tu veux depuis l&apos;application <span className="font-bold text-[#242D41]">Jovial</span>,
             onglet Profil → « Mes sorties ».
           </p>
         )}

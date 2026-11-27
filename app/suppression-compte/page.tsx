@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function SuppressionComptePage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
+    <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#242D41]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Supprimer mon compte</h1>
       <p className="text-sm text-gray-500 mb-8">Application Jovial, éditée par la société Jovial (SASU).</p>
 

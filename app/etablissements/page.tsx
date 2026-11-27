@@ -33,7 +33,7 @@ const plans = [
     monthly: "ou 29,99 € HT / mois, sans engagement",
     saving: "Tu économises 19 %",
     desc: "Pour être présent sur Jovial, afficher ta fiche et publier jusqu'à 4 événements par an.",
-    color: "border-gray-200",
+    color: "border-[#EAD2A6]",
     popular: false,
     features: [
       "Fiche établissement complète (photos, horaires, réseaux sociaux)",
@@ -127,7 +127,7 @@ export default function EtablissementsPage() {
       {/* Hero */}
       <section className="relative jovial-block text-white pt-40 pb-20 px-6 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#5CB6AC] rounded-full blur-[110px] opacity-25 -translate-y-1/3 translate-x-1/4" />
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#011A5C] rounded-full blur-[100px] opacity-30 translate-y-1/2 -translate-x-1/4" />
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#2B4E93] rounded-full blur-[100px] opacity-30 translate-y-1/2 -translate-x-1/4" />
 
         <div className="absolute top-20 right-6 z-10 hidden sm:block xl:hidden">
           <a
@@ -143,7 +143,7 @@ export default function EtablissementsPage() {
             <div className="inline-flex items-center gap-2 bg-white/15 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
               🏪 Pour les établissements
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl leading-[1.02] mb-6">
               Ton établissement mérite{" "}
               <span className="text-[#8FD9CF]">d&apos;être découvert.</span>
             </h1>
@@ -159,7 +159,7 @@ export default function EtablissementsPage() {
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 bg-white text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors text-lg"
+                className="inline-flex items-center justify-center gap-2 bg-[#FFFBF3] text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors text-lg"
               >
                 Demander une démo
               </a>
@@ -184,7 +184,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* C'est pour qui ? — éligibilité, surfacée tôt pour rassurer */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-[#FFFBF3]">
         <div className="max-w-5xl mx-auto text-center">
           <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
             <span className="w-6 h-px bg-[#5CB6AC]" />
@@ -208,7 +208,7 @@ export default function EtablissementsPage() {
             ] as [string, string][]).map(([emoji, label]) => (
               <span
                 key={label}
-                className="inline-flex items-center gap-2 bg-[#f8faff] border border-gray-100 rounded-full px-4 py-2 text-sm font-semibold text-gray-700"
+                className="inline-flex items-center gap-2 bg-[#FFF7EA] border border-[#EAD2A6] rounded-full px-4 py-2 text-sm font-semibold text-gray-700"
               >
                 <span className="text-base leading-none">{emoji}</span> {label}
               </span>
@@ -226,7 +226,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* Bénéfices — Flip cards */}
-      <section className="py-20 px-6 bg-[#f8faff]">
+      <section className="py-20 px-6 bg-[#FFF7EA]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -282,7 +282,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* Paiements & billetterie */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-[#FFFBF3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
@@ -297,11 +297,11 @@ export default function EtablissementsPage() {
             {paymentFeatures.map((f) => {
               const Icon = f.icon;
               return (
-                <div key={f.title} className="bg-[#f8faff] rounded-2xl p-7 border border-gray-100">
+                <div key={f.title} className="bg-[#FFF7EA] rounded-2xl p-7 border border-[#EAD2A6]">
                   <div className="w-11 h-11 rounded-xl bg-[#D8F0EE] flex items-center justify-center mb-4">
                     <Icon size={22} className="text-[#2F7D73]" />
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-2">{f.title}</h3>
+                  <h3 className="font-bold text-[#242D41] mb-2">{f.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
                 </div>
               );
@@ -311,7 +311,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* Bons plans */}
-      <section className="py-20 px-6 bg-[#f8faff]">
+      <section className="py-20 px-6 bg-[#FFF7EA]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -328,25 +328,25 @@ export default function EtablissementsPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            <div className="bg-white rounded-2xl p-7 border border-gray-100">
+            <div className="bg-[#FFFBF3] rounded-2xl p-7 border border-[#EAD2A6]">
               <div className="w-11 h-11 rounded-xl bg-[#D8F0EE] flex items-center justify-center mb-4">
                 <Tag size={22} className="text-[#2F7D73]" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Crée ton bon en 2 minutes</h3>
+              <h3 className="font-bold text-[#242D41] mb-2">Crée ton bon en 2 minutes</h3>
               <p className="text-gray-500 text-sm leading-relaxed">Un titre, un prix barré, un nombre de bons et une date : ton offre part en ligne et apparaît dans l&apos;app auprès des utilisateurs proches de toi.</p>
             </div>
-            <div className="bg-white rounded-2xl p-7 border border-gray-100">
+            <div className="bg-[#FFFBF3] rounded-2xl p-7 border border-[#EAD2A6]">
               <div className="w-11 h-11 rounded-xl bg-[#D8F0EE] flex items-center justify-center mb-4">
                 <Percent size={22} className="text-[#2F7D73]" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">10 % seulement, à la vente</h3>
+              <h3 className="font-bold text-[#242D41] mb-2">10 % seulement, à la vente</h3>
               <p className="text-gray-500 text-sm leading-relaxed">Aucun abonnement en plus, aucun frais fixe : tu ne paies une commission que sur les bons réellement vendus. Le reste tombe sur ton compte.</p>
             </div>
-            <div className="bg-white rounded-2xl p-7 border border-gray-100">
+            <div className="bg-[#FFFBF3] rounded-2xl p-7 border border-[#EAD2A6]">
               <div className="w-11 h-11 rounded-xl bg-[#D8F0EE] flex items-center justify-center mb-4">
                 <QrCode size={22} className="text-[#2F7D73]" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Le client vient avec son QR</h3>
+              <h3 className="font-bold text-[#242D41] mb-2">Le client vient avec son QR</h3>
               <p className="text-gray-500 text-sm leading-relaxed">Le bon payé s&apos;affiche avec un QR code dans l&apos;app. Le client passe chez toi, tu valides — simple, sans terminal, sans paperasse.</p>
             </div>
           </div>
@@ -354,7 +354,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* Vidéo interlude */}
-      <section className="relative py-32 px-6 overflow-hidden bg-[#0f1c38]">
+      <section className="relative py-32 px-6 overflow-hidden bg-[#2B4E93]">
         <LoopingVideos style={{
           position: "absolute", inset: 0,
           width: "100%", height: "100%",
@@ -363,7 +363,7 @@ export default function EtablissementsPage() {
         }} />
         <div style={{
           position: "absolute", inset: 0, zIndex: 1,
-          background: "linear-gradient(to bottom, rgba(15,28,56,0.82) 0%, rgba(43,78,147,0.7) 50%, rgba(15,28,56,0.82) 100%)"
+          background: "linear-gradient(to bottom, rgba(43,78,147,0.78) 0%, rgba(43,78,147,0.62) 50%, rgba(43,78,147,0.78) 100%)"
         }} />
         <div className="relative z-10 max-w-2xl mx-auto text-center text-white">
           <p className="text-4xl md:text-5xl font-black leading-tight mb-5 uppercase">
@@ -382,7 +382,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* Tarifs */}
-      <section className="py-20 px-6 bg-[#f8faff]">
+      <section className="py-20 px-6 bg-[#FFF7EA]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -400,7 +400,7 @@ export default function EtablissementsPage() {
             {plans.map((plan) => (
               <div
                 key={plan.name}
-                className={`relative bg-white rounded-2xl border-2 ${plan.color} p-8 flex flex-col ${plan.popular ? "shadow-xl scale-[1.02]" : ""}`}
+                className={`relative bg-[#FFFBF3] rounded-2xl border-2 ${plan.color} p-8 flex flex-col ${plan.popular ? "shadow-xl scale-[1.02]" : ""}`}
               >
                 {plan.badge && (
                   <div
@@ -411,10 +411,10 @@ export default function EtablissementsPage() {
                   </div>
                 )}
                 <div className="mb-6">
-                  <p className="font-bold text-lg text-gray-900">{plan.name}</p>
+                  <p className="font-bold text-lg text-[#242D41]">{plan.name}</p>
                   <p className="text-gray-400 text-xs font-semibold uppercase tracking-wider mt-0.5">{plan.tagline}</p>
                   <div className="flex items-end gap-1 mt-3">
-                    <p className="text-4xl font-black text-gray-900">{plan.price}</p>
+                    <p className="text-4xl font-black text-[#242D41]">{plan.price}</p>
                     <p className="text-gray-400 text-sm mb-1 whitespace-nowrap">{plan.period}</p>
                   </div>
                   <p className="text-gray-400 text-xs mt-0.5">{plan.monthly}</p>
@@ -453,7 +453,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-[#FFFBF3]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -512,8 +512,8 @@ export default function EtablissementsPage() {
                 a: "Dès ton inscription, tu reçois un kit clé en main : affiche à imprimer, visuels pour les réseaux sociaux et QR code qui renvoie vers ta fiche Jovial."
               },
             ].map((item) => (
-              <details key={item.q} className="group bg-gray-50 rounded-2xl">
-                <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+              <details key={item.q} className="group bg-[#FFFBF3] rounded-2xl">
+                <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-[#242D41] list-none [&::-webkit-details-marker]:hidden">
                   {item.q}
                   <span className="text-[#2B4E93] text-xl font-light shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>

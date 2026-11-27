@@ -18,21 +18,21 @@ export default async function PaiementSucces({
   const appLink = isTicket && eventId ? `jovial://event/${eventId}` : "jovial://";
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-[#f8faff] px-6">
-      <div className="max-w-md w-full bg-white rounded-3xl border border-gray-200 shadow-sm p-8 text-center">
+    <main className="min-h-screen flex items-center justify-center bg-[#FFF7EA] px-6">
+      <div className="max-w-md w-full bg-[#FFFBF3] rounded-3xl border border-[#EAD2A6] shadow-sm p-8 text-center">
         <div className="text-5xl mb-4">{isTicket ? "🎟️" : "✅"}</div>
-        <h1 className="text-2xl font-black text-gray-900 mb-3">Paiement confirmé !</h1>
+        <h1 className="text-2xl font-black text-[#242D41] mb-3">Paiement confirmé !</h1>
         {isTicket ? (
           <p className="text-gray-500 leading-relaxed mb-2">
             Ton billet t&apos;attend dans l&apos;application{" "}
-            <span className="font-bold text-gray-900">Jovial</span>, sur la fiche de
+            <span className="font-bold text-[#242D41]">Jovial</span>, sur la fiche de
             l&apos;événement — et il arrive aussi par mail.
           </p>
         ) : (
           <p className="text-gray-500 leading-relaxed mb-2">
             Ta réservation est payée et confirmée. Tout est déjà à jour dans
             « Mes sorties » de l&apos;application{" "}
-            <span className="font-bold text-gray-900">Jovial</span>.
+            <span className="font-bold text-[#242D41]">Jovial</span>.
           </p>
         )}
         <a

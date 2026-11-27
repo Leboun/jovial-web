@@ -101,8 +101,8 @@ export default function ProspectForm({ variant = "venue" }: { variant?: "venue" 
       {!asso && <div>
         <label className={label} htmlFor="pf-type">Type de lieu *</label>
         <select id="pf-type" name="venueType" required defaultValue="" className={input + " appearance-none"}>
-          <option value="" disabled className="text-gray-900">Choisis…</option>
-          {VENUE_TYPES.map(([v, l]) => <option key={v} value={v} className="text-gray-900">{l}</option>)}
+          <option value="" disabled className="text-[#242D41]">Choisis…</option>
+          {VENUE_TYPES.map(([v, l]) => <option key={v} value={v} className="text-[#242D41]">{l}</option>)}
         </select>
       </div>}
 
@@ -138,7 +138,7 @@ export default function ProspectForm({ variant = "venue" }: { variant?: "venue" 
       <button
         type="submit"
         disabled={status === "sending"}
-        className="self-center bg-white text-[#2B4E93] font-bold px-10 py-4 rounded-2xl hover:bg-white/90 transition-colors disabled:opacity-60 text-lg"
+        className="self-center bg-[#FFFBF3] text-[#2B4E93] font-bold px-10 py-4 rounded-2xl hover:bg-white/90 transition-colors disabled:opacity-60 text-lg"
       >
         {status === "sending" ? "Envoi en cours…" : "Je veux une démo"}
       </button>

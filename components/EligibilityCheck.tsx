@@ -29,7 +29,7 @@ export default function EligibilityCheck() {
   };
 
   return (
-    <div className="max-w-xl mx-auto bg-[#f8faff] border border-gray-100 rounded-2xl p-6 sm:p-8 text-left min-h-[280px] flex flex-col justify-center">
+    <div className="max-w-xl mx-auto bg-[#FFF7EA] border border-[#EAD2A6] rounded-2xl p-6 sm:p-8 text-left min-h-[280px] flex flex-col justify-center">
       {step > 0 && step < 3 && (
         <div className="flex items-center gap-1.5 mb-6">
           {[1, 2].map((n) => (
@@ -41,7 +41,7 @@ export default function EligibilityCheck() {
       {step === 0 && (
         <div className="text-center">
           <p className="text-3xl mb-2">🤔</p>
-          <h3 className="text-xl font-bold text-gray-900 mb-2">Pas sûr que ce soit pour toi ?</h3>
+          <h3 className="text-xl font-bold text-[#242D41] mb-2">Pas sûr que ce soit pour toi ?</h3>
           <p className="text-gray-500 text-sm mb-6">Fais le test en 10 secondes — spoiler : ça va bien se passer.</p>
           <button
             onClick={() => setStep(1)}
@@ -55,22 +55,22 @@ export default function EligibilityCheck() {
       {step === 1 && (
         <div>
           <p className="text-xs font-bold uppercase tracking-wider text-[#5CB6AC] mb-2">Question 1 / 2</p>
-          <h3 className="text-lg font-bold text-gray-900 mb-5">Tu gères plutôt…</h3>
+          <h3 className="text-lg font-bold text-[#242D41] mb-5">Tu gères plutôt…</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <button
               onClick={() => { setKind("etab"); setStep(2); }}
-              className="text-left p-4 rounded-xl border border-gray-200 bg-white hover:border-[#2B4E93] hover:shadow-sm transition-all"
+              className="text-left p-4 rounded-xl border border-[#EAD2A6] bg-[#FFFBF3] hover:border-[#2B4E93] hover:shadow-sm transition-all"
             >
               <span className="text-2xl">🏪</span>
-              <span className="block font-bold text-gray-900 mt-1">Un établissement</span>
+              <span className="block font-bold text-[#242D41] mt-1">Un établissement</span>
               <span className="block text-gray-500 text-xs mt-0.5">Bar, resto, café, salle de jeux, loisirs…</span>
             </button>
             <button
               onClick={() => { setKind("asso"); setStep(2); }}
-              className="text-left p-4 rounded-xl border border-gray-200 bg-white hover:border-[#2B4E93] hover:shadow-sm transition-all"
+              className="text-left p-4 rounded-xl border border-[#EAD2A6] bg-[#FFFBF3] hover:border-[#2B4E93] hover:shadow-sm transition-all"
             >
               <span className="text-2xl">🤝</span>
-              <span className="block font-bold text-gray-900 mt-1">Une association</span>
+              <span className="block font-bold text-[#242D41] mt-1">Une association</span>
               <span className="block text-gray-500 text-xs mt-0.5">Sport, culture, comité des fêtes…</span>
             </button>
           </div>
@@ -80,13 +80,13 @@ export default function EligibilityCheck() {
       {step === 2 && (
         <div>
           <p className="text-xs font-bold uppercase tracking-wider text-[#5CB6AC] mb-2">Question 2 / 2</p>
-          <h3 className="text-lg font-bold text-gray-900 mb-5">Chez toi, on trouve…</h3>
+          <h3 className="text-lg font-bold text-[#242D41] mb-5">Chez toi, on trouve…</h3>
           <div className="flex flex-col gap-2.5">
             {OFFERS.map((o) => (
               <button
                 key={o}
                 onClick={() => setStep(3)}
-                className="text-left px-4 py-3 rounded-xl border border-gray-200 bg-white hover:border-[#2B4E93] hover:shadow-sm text-sm font-semibold text-gray-700 transition-all"
+                className="text-left px-4 py-3 rounded-xl border border-[#EAD2A6] bg-[#FFFBF3] hover:border-[#2B4E93] hover:shadow-sm text-sm font-semibold text-gray-700 transition-all"
               >
                 {o}
               </button>
@@ -98,7 +98,7 @@ export default function EligibilityCheck() {
       {step === 3 && (
         <div className="text-center">
           <p className="text-4xl mb-3">🎉</p>
-          <h3 className="text-2xl font-black text-gray-900 mb-2 uppercase leading-tight">Oui, ta place est sur Jovial&nbsp;!</h3>
+          <h3 className="text-2xl font-black text-[#242D41] mb-2 uppercase leading-tight">Oui, ta place est sur Jovial&nbsp;!</h3>
           <p className="text-gray-500 text-sm mb-6 max-w-md mx-auto leading-relaxed">
             {isAsso
               ? "Ton association peut être sur la carte, publier ses événements et vendre ses billets — gratuitement pour commencer."

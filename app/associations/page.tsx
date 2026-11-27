@@ -29,7 +29,7 @@ const plans = [
     price: "0 €",
     period: "",
     desc: "Pour exister sur Jovial, afficher ta fiche et publier ton premier événement de l'année — sans rien payer.",
-    color: "border-gray-200",
+    color: "border-[#EAD2A6]",
     popular: false,
     features: [
       "Ta fiche dans l'annuaire : activités, horaires, contact",
@@ -122,7 +122,7 @@ export default function AssociationsPage() {
             <div className="inline-flex items-center gap-2 bg-white/15 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
               🤝 Pour les associations
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl leading-[1.02] mb-6">
               Ton association mérite{" "}
               <span className="text-[#8FD9CF]">d&apos;être connue.</span>
             </h1>
@@ -160,7 +160,7 @@ export default function AssociationsPage() {
       </section>
 
       {/* Bénéfices — Flip cards */}
-      <section className="py-20 px-6 bg-[#f8faff]">
+      <section className="py-20 px-6 bg-[#FFF7EA]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -218,7 +218,7 @@ export default function AssociationsPage() {
       </section>
 
       {/* Highlights */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-[#FFFBF3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
@@ -233,11 +233,11 @@ export default function AssociationsPage() {
             {highlights.map((f) => {
               const Icon = f.icon;
               return (
-                <div key={f.title} className="bg-[#f8faff] rounded-2xl p-7 border border-gray-100">
+                <div key={f.title} className="bg-[#FFF7EA] rounded-2xl p-7 border border-[#EAD2A6]">
                   <div className="w-11 h-11 rounded-xl bg-[#D8F0EE] flex items-center justify-center mb-4">
                     <Icon size={22} className="text-[#2F7D73]" />
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-2">{f.title}</h3>
+                  <h3 className="font-bold text-[#242D41] mb-2">{f.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
                 </div>
               );
@@ -247,7 +247,7 @@ export default function AssociationsPage() {
       </section>
 
       {/* Tarifs */}
-      <section className="py-20 px-6 bg-[#f8faff]">
+      <section className="py-20 px-6 bg-[#FFF7EA]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -265,7 +265,7 @@ export default function AssociationsPage() {
             {plans.map((plan) => (
               <div
                 key={plan.name}
-                className={`relative bg-white rounded-2xl border-2 ${plan.color} p-8 flex flex-col ${plan.popular ? "shadow-xl scale-[1.02]" : ""}`}
+                className={`relative bg-[#FFFBF3] rounded-2xl border-2 ${plan.color} p-8 flex flex-col ${plan.popular ? "shadow-xl scale-[1.02]" : ""}`}
               >
                 {plan.badge && (
                   <div
@@ -276,10 +276,10 @@ export default function AssociationsPage() {
                   </div>
                 )}
                 <div className="mb-6">
-                  <p className="font-bold text-lg text-gray-900">{plan.name}</p>
+                  <p className="font-bold text-lg text-[#242D41]">{plan.name}</p>
                   <p className="text-gray-400 text-xs font-semibold uppercase tracking-wider mt-0.5">{plan.tagline}</p>
                   <div className="flex items-end gap-1 mt-3">
-                    <p className="text-4xl font-black text-gray-900">{plan.price}</p>
+                    <p className="text-4xl font-black text-[#242D41]">{plan.price}</p>
                     {plan.period && <p className="text-gray-400 text-sm mb-1">{plan.period}</p>}
                   </div>
                   <p className="text-gray-500 text-sm mt-3 leading-relaxed">{plan.desc}</p>
@@ -315,7 +315,7 @@ export default function AssociationsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-[#FFFBF3]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -354,8 +354,8 @@ export default function AssociationsPage() {
                 a: "Un espace communautaire réservé à ton association : tu y publies tes annonces, tu fédères tes membres et tu peux recruter des bénévoles. C'est inclus à partir de l'offre Asso Active.",
               },
             ].map((item) => (
-              <details key={item.q} className="group bg-gray-50 rounded-2xl">
-                <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+              <details key={item.q} className="group bg-[#FFFBF3] rounded-2xl">
+                <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-[#242D41] list-none [&::-webkit-details-marker]:hidden">
                   {item.q}
                   <span className="text-[#2B4E93] text-xl font-light shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>

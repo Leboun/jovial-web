@@ -63,7 +63,7 @@ export default function PremiumPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-[#1a1040] via-[#2B1F6B] to-[#1e3a70] text-white pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-[#2B4E93] via-[#2B4E93] to-[#2B4E93] text-white pt-32 pb-20 px-6 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#8B5CF6] rounded-full blur-[120px] opacity-20 -translate-y-1/2 translate-x-1/3" />
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#5CB6AC] rounded-full blur-[100px] opacity-15 translate-y-1/3" />
 
@@ -71,7 +71,7 @@ export default function PremiumPage() {
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-white/20">
             <Star size={12} className="fill-yellow-400 text-yellow-400" /> Premium
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl leading-[1.02] mb-6">
             Passe à{" "}
             <span className="bg-gradient-to-r from-[#a78bfa] to-[#7c3aed] bg-clip-text text-transparent">
               Jovial+
@@ -91,7 +91,7 @@ export default function PremiumPage() {
       </section>
 
       {/* Comparatif */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-[#FFFBF3]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -105,10 +105,10 @@ export default function PremiumPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Free */}
-            <div className="border border-gray-200 rounded-2xl p-8">
+            <div className="border border-[#EAD2A6] rounded-2xl p-8">
               <div className="mb-6">
-                <p className="font-bold text-xl text-gray-900">Gratuit</p>
-                <p className="text-3xl font-black mt-2 text-gray-900">0 €<span className="text-base font-medium text-gray-400"> / mois</span></p>
+                <p className="font-bold text-xl text-[#242D41]">Gratuit</p>
+                <p className="text-3xl font-black mt-2 text-[#242D41]">0 €<span className="text-base font-medium text-gray-400"> / mois</span></p>
               </div>
               <ul className="space-y-3">
                 {free.map((item) => (
@@ -148,7 +148,7 @@ export default function PremiumPage() {
       </section>
 
       {/* Features Premium */}
-      <section className="py-20 px-6 bg-[#f8faff]">
+      <section className="py-20 px-6 bg-[#FFF7EA]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -199,11 +199,11 @@ export default function PremiumPage() {
             ].map((f) => {
               const Icon = f.icon;
               return (
-                <div key={f.title} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div key={f.title} className="bg-[#FFFBF3] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
                   <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: f.color + "20" }}>
                     <Icon size={22} style={{ color: f.color }} />
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-2">{f.title}</h3>
+                  <h3 className="font-bold text-[#242D41] mb-2">{f.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
                 </div>
               );
@@ -213,7 +213,7 @@ export default function PremiumPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-[#FFFBF3]">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -227,8 +227,8 @@ export default function PremiumPage() {
           </div>
           <div className="space-y-4">
             {faqs.map((faq) => (
-              <details key={faq.q} className="group bg-gray-50 rounded-2xl">
-                <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+              <details key={faq.q} className="group bg-[#FFFBF3] rounded-2xl">
+                <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-[#242D41] list-none [&::-webkit-details-marker]:hidden">
                   {faq.q}
                   <span className="text-[#2B4E93] text-xl font-light shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>

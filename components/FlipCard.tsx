@@ -58,13 +58,13 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93", footer
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
           }}
-          className="bg-white border border-gray-100 shadow-sm rounded-3xl p-6 sm:p-7 flex flex-col justify-between"
+          className="bg-[#FFFBF3] border border-[#EAD2A6] shadow-sm rounded-3xl p-6 sm:p-7 flex flex-col justify-between"
         >
           <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl bg-[#D8F0EE]">
             {icon}
           </div>
           <div>
-            <h3 className="text-gray-900 font-bold text-xl leading-snug">{title}</h3>
+            <h3 className="text-[#242D41] font-bold text-xl leading-snug">{title}</h3>
             <div className="w-8 h-0.5 mt-3 rounded-full" style={{ backgroundColor: accent }} />
           </div>
         </div>

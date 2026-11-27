@@ -30,7 +30,7 @@ export default function StickyDemoBar({ href = "#contact", label = "Demander une
 
   return (
     <div
-      className={`md:hidden fixed inset-x-0 bottom-0 z-40 px-4 pt-3 bg-white/95 backdrop-blur border-t border-gray-200 transition-transform duration-300 ${show ? "translate-y-0" : "translate-y-full"}`}
+      className={`md:hidden fixed inset-x-0 bottom-0 z-40 px-4 pt-3 bg-white/95 backdrop-blur border-t border-[#EAD2A6] transition-transform duration-300 ${show ? "translate-y-0" : "translate-y-full"}`}
       style={{ paddingBottom: "calc(env(safe-area-inset-bottom) + 12px)" }}
       aria-hidden={!show}
     >

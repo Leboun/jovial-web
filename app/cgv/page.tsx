@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function CgvPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
+    <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#242D41]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Conditions générales de vente</h1>
       <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 27 novembre 2026</p>
 
@@ -46,14 +46,14 @@ export default function CgvPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm text-left border-collapse">
             <thead>
-              <tr className="border-b border-gray-300 text-[#1a2238]">
+              <tr className="border-b border-gray-300 text-[#242D41]">
                 <th className="py-2 pr-4 font-semibold">Offre</th>
                 <th className="py-2 pr-4 font-semibold">Bénéficiaire</th>
                 <th className="py-2 font-semibold">Tarif indicatif</th>
               </tr>
             </thead>
             <tbody className="text-gray-700 align-top">
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Établissement — Visibilité / Rayonnement / Pro</td>
                 <td className="py-2 pr-4">Professionnels</td>
                 <td className="py-2">
@@ -62,12 +62,12 @@ export default function CgvPage() {
                   les souscriptions suivantes, 14 jours d&apos;essai gratuit
                 </td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Association — Découverte / Active / Rayonnement</td>
                 <td className="py-2 pr-4">Associations</td>
                 <td className="py-2">0 € / 90 € HT / 190 € HT par an (sans période d&apos;essai)</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Mises en avant à l&apos;unité</td>
                 <td className="py-2 pr-4">Établissements</td>
                 <td className="py-2">
@@ -75,12 +75,12 @@ export default function CgvPage() {
                   29,90 € HT (1 semaine)
                 </td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Jovial+</td>
                 <td className="py-2 pr-4">Particuliers</td>
                 <td className="py-2">2,99 € / mois (via l&apos;achat intégré App Store ou Google Play)</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Billetterie et réservations payantes</td>
                 <td className="py-2 pr-4">Acheteurs / organisateurs</td>
                 <td className="py-2">Prix fixé par l&apos;organisateur ; commission Jovial de 5 % TTC du prix payé (4,17 % HT + TVA 20 %)</td>
@@ -273,7 +273,7 @@ export default function CgvPage() {
           Conformément au code de la consommation, le consommateur peut recourir gratuitement au médiateur
           de la consommation dont relève Jovial :
         </p>
-        <p className="text-gray-700 leading-relaxed pl-4 border-l-2 border-gray-200">
+        <p className="text-gray-700 leading-relaxed pl-4 border-l-2 border-[#EAD2A6]">
           <strong>CM2C — Centre de la Médiation de la Consommation de Conciliateurs de Justice</strong>
           <br />
           49 rue de Ponthieu, 75008 Paris — Tél. : 01 89 47 00 14 — SIRET : 831 213 871 00021

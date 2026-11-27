@@ -105,7 +105,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="xl:hidden bg-white border-t border-gray-100 px-6 pt-8 pb-5 flex flex-col gap-2 max-h-[calc(100dvh-4rem)] overflow-y-auto">
+        <div className="xl:hidden bg-[#FFFBF3] border-t border-[#EAD2A6] px-6 pt-8 pb-5 flex flex-col gap-2 max-h-[calc(100dvh-4rem)] overflow-y-auto">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -139,7 +139,7 @@ export default function Navbar() {
           </a>
           <a
             href="https://pro.getjovial.fr/establishment/login"
-            className="text-gray-700 font-medium text-base border border-gray-200 px-5 py-3 rounded-full text-center"
+            className="text-gray-700 font-medium text-base border border-[#EAD2A6] px-5 py-3 rounded-full text-center"
             onClick={() => setOpen(false)}
           >
             Se connecter

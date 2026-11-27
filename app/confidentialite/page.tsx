@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function ConfidentialitePage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
+    <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#242D41]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Politique de confidentialité</h1>
       <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 21 novembre 2026</p>
 
@@ -59,41 +59,41 @@ export default function ConfidentialitePage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm text-left border-collapse">
             <thead>
-              <tr className="border-b border-gray-300 text-[#1a2238]">
+              <tr className="border-b border-gray-300 text-[#242D41]">
                 <th className="py-2 pr-4 font-semibold">Catégorie</th>
                 <th className="py-2 font-semibold">Exemples et caractère</th>
               </tr>
             </thead>
             <tbody className="text-gray-700 align-top">
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Compte</strong></td>
                 <td className="py-2">Nom, prénom, pseudonyme, adresse électronique, identifiant du fournisseur d&apos;authentification (Google, Apple). Nécessaire à la gestion du compte.</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Profil</strong></td>
                 <td className="py-2">Photo, description, centres d&apos;intérêt, ville, genre. Facultatif.</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Profil (espace privé)</strong></td>
                 <td className="py-2">Date de naissance, code postal. Facultatif ; stockés dans un espace à accès restreint, non visibles des autres utilisateurs.</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Localisation</strong></td>
                 <td className="py-2">Position approximative ou précise de l&apos;appareil. Facultatif, soumis à votre autorisation et révocable à tout moment dans les réglages du téléphone.</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Réservations et adhésions</strong></td>
                 <td className="py-2">Historique des réservations, billets, adhésions, cotisations et statut de paiement.</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Paiement</strong></td>
                 <td className="py-2">Montant, date, référence de transaction. Les coordonnées bancaires complètes sont traitées directement par le prestataire de paiement ; Jovial ne stocke aucune donnée de carte bancaire.</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Contenus</strong></td>
                 <td className="py-2">Messages, réactions, avis, photos et autres contenus publiés. Facultatif.</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Données techniques</strong></td>
                 <td className="py-2">Adresse IP, type d&apos;appareil, système d&apos;exploitation, version de l&apos;application, identifiant de notification push, journaux techniques.</td>
               </tr>
@@ -116,45 +116,45 @@ export default function ConfidentialitePage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm text-left border-collapse">
             <thead>
-              <tr className="border-b border-gray-300 text-[#1a2238]">
+              <tr className="border-b border-gray-300 text-[#242D41]">
                 <th className="py-2 pr-4 font-semibold">Finalité</th>
                 <th className="py-2 font-semibold">Base légale</th>
               </tr>
             </thead>
             <tbody className="text-gray-700 align-top">
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Création et gestion de votre compte</td>
                 <td className="py-2">Exécution du contrat (art. 6.1.b)</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Fonctionnalités : carte, recherche, réservation, billetterie, adhésion, messagerie, fonctionnalités sociales</td>
                 <td className="py-2">Exécution du contrat (art. 6.1.b)</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Paiements et facturation</td>
                 <td className="py-2">Exécution du contrat (art. 6.1.b) et obligation légale (art. 6.1.c)</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Contenus ou établissements proches à partir de votre localisation</td>
                 <td className="py-2">Consentement (art. 6.1.a)</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Notifications nécessaires au Service (réservations…)</td>
                 <td className="py-2">Exécution du contrat (art. 6.1.b)</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Notifications promotionnelles et suggestions</td>
                 <td className="py-2">Consentement (art. 6.1.a)</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Amélioration du Service, statistiques, correction d&apos;anomalies</td>
                 <td className="py-2">Intérêt légitime (art. 6.1.f)</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Sécurité, prévention de la fraude et modération</td>
                 <td className="py-2">Intérêt légitime (art. 6.1.f) et obligations applicables (DSA)</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Réponse aux demandes de support</td>
                 <td className="py-2">Exécution du contrat ou intérêt légitime</td>
               </tr>
@@ -184,54 +184,54 @@ export default function ConfidentialitePage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm text-left border-collapse">
             <thead>
-              <tr className="border-b border-gray-300 text-[#1a2238]">
+              <tr className="border-b border-gray-300 text-[#242D41]">
                 <th className="py-2 pr-4 font-semibold">Prestataire</th>
                 <th className="py-2 pr-4 font-semibold">Rôle</th>
                 <th className="py-2 font-semibold">Pays / politique</th>
               </tr>
             </thead>
             <tbody className="text-gray-700 align-top">
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Supabase</strong></td>
                 <td className="py-2 pr-4">Base de données, comptes, stockage, fonctions serveur</td>
                 <td className="py-2">UE (Suède) — <a className="text-[#2B4E93] underline" href="https://supabase.com/privacy" target="_blank" rel="noreferrer">politique</a></td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>OVH</strong></td>
                 <td className="py-2 pr-4">Emails et nom de domaine</td>
                 <td className="py-2">France — <a className="text-[#2B4E93] underline" href="https://www.ovhcloud.com/fr/personal-data-protection/" target="_blank" rel="noreferrer">politique</a></td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Vercel Inc.</strong></td>
                 <td className="py-2 pr-4">Hébergement du site, fonctions serveur et mesure d&apos;audience sans cookie</td>
                 <td className="py-2">États-Unis — <a className="text-[#2B4E93] underline" href="https://vercel.com/legal/privacy-notice" target="_blank" rel="noreferrer">politique</a></td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Expo</strong></td>
                 <td className="py-2 pr-4">Distribution de l&apos;app, mises à jour, relais des notifications push</td>
                 <td className="py-2">États-Unis — <a className="text-[#2B4E93] underline" href="https://expo.dev/privacy" target="_blank" rel="noreferrer">politique</a></td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Apple</strong></td>
                 <td className="py-2 pr-4">Notifications push iOS, distribution App Store</td>
                 <td className="py-2">US / Irlande — <a className="text-[#2B4E93] underline" href="https://www.apple.com/legal/privacy/" target="_blank" rel="noreferrer">politique</a></td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Google</strong></td>
                 <td className="py-2 pr-4">Push Android (FCM), cartes (Maps), connexion Google</td>
                 <td className="py-2">US / Irlande — <a className="text-[#2B4E93] underline" href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">politique</a></td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Sentry</strong></td>
                 <td className="py-2 pr-4">Rapports de plantage et de performance</td>
                 <td className="py-2">UE — <a className="text-[#2B4E93] underline" href="https://sentry.io/privacy/" target="_blank" rel="noreferrer">politique</a></td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>Stripe</strong></td>
                 <td className="py-2 pr-4">Traitement des paiements (billetterie, offres Pro)</td>
                 <td className="py-2">Irlande / US — <a className="text-[#2B4E93] underline" href="https://stripe.com/privacy" target="_blank" rel="noreferrer">politique</a></td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4"><strong>RevenueCat</strong></td>
                 <td className="py-2 pr-4">Gestion des abonnements in-app (Jovial+)</td>
                 <td className="py-2">États-Unis — <a className="text-[#2B4E93] underline" href="https://www.revenuecat.com/privacy" target="_blank" rel="noreferrer">politique</a></td>
@@ -264,37 +264,37 @@ export default function ConfidentialitePage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm text-left border-collapse">
             <thead>
-              <tr className="border-b border-gray-300 text-[#1a2238]">
+              <tr className="border-b border-gray-300 text-[#242D41]">
                 <th className="py-2 pr-4 font-semibold">Données</th>
                 <th className="py-2 font-semibold">Durée</th>
               </tr>
             </thead>
             <tbody className="text-gray-700 align-top">
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Compte et profil</td>
                 <td className="py-2">Durée d&apos;utilisation du compte ; effacement immédiat à la suppression, sous réserve des données à conserver légalement.</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Compte inactif</td>
                 <td className="py-2">Suppression ou anonymisation après 3 ans d&apos;inactivité, après relance préalable.</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Contenus publiés et messages</td>
                 <td className="py-2">Jusqu&apos;à suppression, fermeture du compte ou besoins de modération, sécurité ou preuve.</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Données de localisation</td>
                 <td className="py-2">Non conservées au-delà de la durée nécessaire à la fonctionnalité concernée.</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Réservations et transactions</td>
                 <td className="py-2">Durée nécessaire à la gestion, à la preuve et aux obligations légales.</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Pièces comptables et factures</td>
                 <td className="py-2">10 ans (obligation légale).</td>
               </tr>
-              <tr className="border-b border-gray-100">
+              <tr className="border-b border-[#EAD2A6]">
                 <td className="py-2 pr-4">Journaux techniques</td>
                 <td className="py-2">12 mois maximum.</td>
               </tr>
