@@ -5,17 +5,27 @@
   --primary-dark: #1e3a70;
   --orange: #5CB6AC;
   --cream: #FFF8F0;
+  /* 27/11/2026 : couleurs de l'appli en clair (crème Jovial), comme pro.getjovial.fr. */
+  --bg: #FFF3DE;        /* fond de page */
+  --surface: #FFFBF3;   /* cartes : presque blanc, chaud */
+  --cream-deep: #FFE8BF; /* crème de la charte (barre du haut, pastilles) */
+  --sand: #EAD2A6;      /* bordures */
+  --ink: #242D41;       /* texte */
+  --muted: #6B6152;     /* texte secondaire */
+  --brand-orange: #EF6731; /* réservé à « payer / réserver » */
   /* Dégradé UNIQUE de la marque (bleu marine → turquoise de l'app).
      Source unique : on le change ICI et il se met à jour sur tout le site. */
   --jovial-grad: linear-gradient(135deg, #2B4E93 0%, #5CB6AC 100%);
 }
 
 /* Dégradé de marque en remplissage de TEXTE (titres) */
+/* 27/11/2026 : comme l'appli en clair, les titres de section passent en BLEU UNI de la charte
+   et en Bangers (le dégradé bleu→turquoise reste réservé aux petits éléments). */
 .jovial-grad-text {
-  background-image: var(--jovial-grad);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--primary);
+  font-family: var(--font-bangers), var(--font-geist-sans), sans-serif;
+  font-weight: 400 !important;
+  letter-spacing: 0.02em;
 }
 /* Dégradé de marque en FOND (PETITS éléments : boutons, puces) — le dégradé reste
    joli quand il est fin/petit. */
@@ -41,8 +51,15 @@
 
 body {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
-  background: #ffffff;
-  color: #111827;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* Grands titres en Bangers, comme dans l'appli (27/11/2026). */
+.font-display {
+  font-family: var(--font-bangers), var(--font-geist-sans), sans-serif;
+  font-weight: 400 !important;
+  letter-spacing: 0.02em;
 }
 
 html {

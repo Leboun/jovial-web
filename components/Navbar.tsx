@@ -27,7 +27,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#F2EDE4] border-b border-[#e8e0d4]">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FFE8BF] border-b border-[#EAD2A6]">
       <div className="w-full px-6 h-16 flex items-center justify-between relative">
 
         {/* Logo — centré et agrandi, chevauchant le bandeau beige et la vidéo */}

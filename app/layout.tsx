@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Bangers, Catamaran } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { JsonLd, organizationJsonLd } from "@/lib/structuredData";
 
-const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+// 27/11/2026 : mêmes polices que l'appli (Catamaran pour le texte, Bangers pour les grands titres).
+const catamaran = Catamaran({ variable: "--font-geist-sans", subsets: ["latin"], weight: ["400", "600", "700", "800", "900"] });
+const bangers = Bangers({ variable: "--font-bangers", subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.getjovial.fr"),
@@ -39,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`${geist.variable} h-full`}>
+    <html lang="fr" className={`${catamaran.variable} ${bangers.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased">
         <JsonLd data={organizationJsonLd} />
         <Navbar />
