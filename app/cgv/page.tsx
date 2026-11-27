@@ -9,7 +9,7 @@ export default function CgvPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Conditions générales de vente</h1>
-      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 25 novembre 2026</p>
+      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 27 novembre 2026</p>
 
       <section className="space-y-3 mb-8">
         <h2 className="text-xl font-bold">Article 1 — Objet et vendeur</h2>
@@ -83,12 +83,12 @@ export default function CgvPage() {
               <tr className="border-b border-gray-100">
                 <td className="py-2 pr-4">Billetterie et réservations payantes</td>
                 <td className="py-2 pr-4">Acheteurs / organisateurs</td>
-                <td className="py-2">Prix fixé par l&apos;organisateur ; commission Jovial de 5 % du prix payé</td>
+                <td className="py-2">Prix fixé par l&apos;organisateur ; commission Jovial de 5 % TTC du prix payé (4,17 % HT + TVA 20 %)</td>
               </tr>
               <tr>
                 <td className="py-2 pr-4">Bons plans</td>
                 <td className="py-2 pr-4">Acheteurs / établissements</td>
-                <td className="py-2">Prix réduit fixé par l&apos;établissement ; commission Jovial de 10 %</td>
+                <td className="py-2">Prix réduit fixé par l&apos;établissement ; commission Jovial de 10 % TTC (8,33 % HT + TVA 20 %)</td>
               </tr>
             </tbody>
           </table>
@@ -97,7 +97,8 @@ export default function CgvPage() {
           Les prix des offres destinées aux professionnels (établissements, associations, mises en
           avant à l&apos;unité) sont indiqués hors taxes : la TVA au taux en vigueur (20 %) s&apos;y ajoute.
           Les prix destinés aux particuliers (Jovial+, billets, réservations, bons plans) sont indiqués
-          toutes taxes comprises. Le montant total dû est rappelé avant la validation de la commande.
+          toutes taxes comprises. Par exception, les taux de commission perçus par Jovial sur la
+          billetterie, les réservations et les bons plans s&apos;entendent toutes taxes comprises. Le montant total dû est rappelé avant la validation de la commande.
         </p>
         <p className="text-gray-700 leading-relaxed">
           <strong>Période gratuite.</strong> Elle est réservée à la première souscription d&apos;un
@@ -150,7 +151,7 @@ export default function CgvPage() {
         <ul className="list-disc pl-5 text-gray-700 leading-relaxed space-y-1">
           <li>L&apos;identité de l&apos;organisateur, le prix total et les conditions d&apos;annulation et de transfert choisies par l&apos;organisateur pour l&apos;événement sont communiqués à l&apos;acheteur avant l&apos;achat.</li>
           <li>Le paiement est <strong>encaissé directement par l&apos;organisateur</strong>, sur son propre compte de paiement ouvert auprès de <strong>Stripe</strong> (Stripe Connect). Jovial ne détient à aucun moment les fonds de l&apos;acheteur.</li>
-          <li>Jovial perçoit une commission (5 % pour la billetterie, 10 % pour les bons plans), prélevée automatiquement par Stripe au moment du paiement. Les frais de traitement du paiement par Stripe sont à la charge de l&apos;organisateur.</li>
+          <li>Jovial perçoit une commission TVA comprise (5 % TTC pour la billetterie et les réservations, soit 4,17 % HT ; 10 % TTC pour les bons plans, soit 8,33 % HT), prélevée automatiquement par Stripe au moment du paiement. Jovial adresse chaque mois à l&apos;organisateur une facture récapitulative de ses commissions. Les frais de traitement du paiement par Stripe sont distincts de la commission et à la charge de l&apos;organisateur.</li>
           <li>En cas de remboursement, l&apos;acheteur est remboursé par l&apos;organisateur via Stripe, sur le moyen de paiement utilisé, et Jovial restitue la part de commission correspondante.</li>
           <li>L&apos;organisateur est seul responsable de la description, de la tenue, de l&apos;accès, de l&apos;annulation et du remboursement de son événement ou de son offre.</li>
           <li>Toute réclamation relative à un événement ou à une offre doit être adressée en priorité à l&apos;organisateur.</li>
@@ -215,11 +216,30 @@ export default function CgvPage() {
         <h2 className="text-xl font-bold">Article 8 — Remboursements et annulations</h2>
         <p className="text-gray-700 leading-relaxed">
           Pour la billetterie et les bons plans, les conditions d&apos;annulation et de remboursement sont
-          définies par l&apos;organisateur. À titre indicatif, un organisateur peut procéder au
-          remboursement, et un acheteur peut en faire la demande dans les limites fixées (par exemple
-          jusqu&apos;à un certain délai avant le début de l&apos;événement). En cas d&apos;annulation par
-          l&apos;organisateur, celui-ci procède au remboursement. Les éventuels remboursements sont opérés
-          via Stripe.
+          définies par l&apos;organisateur. Pour chaque événement, l&apos;organisateur choisit si les billets
+          sont remboursables (jusqu&apos;à 24 heures, 48 heures ou 7 jours avant le début) ou non
+          remboursables, et si le transfert à un ami est autorisé ; ces conditions sont affichées avant
+          l&apos;achat. Dans le délai prévu, l&apos;acheteur peut annuler et être remboursé. En cas
+          d&apos;annulation par l&apos;organisateur, celui-ci procède au remboursement. Les remboursements
+          sont opérés via Stripe, sur le moyen de paiement utilisé.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <strong>Frais en cas de remboursement.</strong> Lorsqu&apos;un billet, une place ou une
+          réservation est remboursé, l&apos;acheteur récupère la totalité du montant payé et Jovial
+          rembourse sa commission à l&apos;organisateur. En revanche, les frais de traitement du paiement
+          prélevés par Stripe lors de l&apos;achat (à titre indicatif, environ 1,5 % + 0,25 € par paiement
+          pour une carte européenne standard) ne sont pas restitués par Stripe et restent à la charge de
+          l&apos;organisateur. Exemple : pour un billet de 1 € remboursé, l&apos;organisateur supporte
+          environ 0,27 € de frais ; pour un billet de 20 €, environ 0,55 €.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <strong>Annulations répétées.</strong> Pour un même événement, un acheteur peut annuler au
+          maximum 2 fois sa commande. L&apos;organisateur peut bloquer l&apos;accès à sa propre
+          billetterie à un acheteur ayant annulé au moins 2 commandes chez lui ; ce blocage est motivé,
+          enregistré, réversible, ne concerne que les ventes de cet organisateur et ne peut reposer sur
+          aucun motif discriminatoire. Les achats suivis d&apos;annulations en série constituent un
+          usage abusif pouvant entraîner un avertissement puis la suspension du compte, conformément
+          aux conditions générales d&apos;utilisation.
         </p>
       </section>
 
@@ -227,7 +247,10 @@ export default function CgvPage() {
         <h2 className="text-xl font-bold">Article 9 — Facturation</h2>
         <p className="text-gray-700 leading-relaxed">
           Une facture ou un justificatif est émis pour chaque paiement et mis à disposition du client. Les
-          pièces comptables sont conservées conformément aux obligations légales.
+          commissions perçues par Jovial sur les ventes d&apos;un organisateur font l&apos;objet d&apos;une
+          facture récapitulative mensuelle, acquittée, disponible dans la rubrique « Mes factures » de son
+          espace professionnel. Les pièces comptables sont conservées conformément aux obligations
+          légales.
         </p>
       </section>
 

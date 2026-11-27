@@ -9,7 +9,7 @@ export default function CguPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 pt-28 pb-20 text-[#1a2238]">
       <h1 className="text-3xl md:text-4xl font-black mb-2">Conditions générales d&apos;utilisation</h1>
-      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 21 novembre 2026</p>
+      <p className="text-sm text-gray-500 mb-10">Dernière mise à jour : 27 novembre 2026</p>
 
       <section className="space-y-3 mb-8">
         <h2 className="text-xl font-bold">Article 1 — Objet</h2>
@@ -153,6 +153,15 @@ export default function CguPage() {
           De nombreuses réservations sont gratuites et ne donnent lieu à aucun paiement en ligne. Les
           conditions d&apos;annulation et de remboursement sont celles de l&apos;Organisateur, à qui toute
           réclamation relative à un événement doit être adressée en priorité.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          <strong>Annulations répétées.</strong> Pour un même événement, un compte peut annuler au
+          maximum 2 fois sa commande. Des achats suivis d&apos;annulations en série, qui bloquent des
+          places au détriment des autres participants, constituent un usage abusif du Service. En cas
+          d&apos;abus, Jovial adresse d&apos;abord un avertissement ; en cas de récidive, Jovial peut
+          suspendre ou supprimer le compte, conformément à l&apos;article 8. Un Organisateur peut par
+          ailleurs refuser de nouvelles ventes à un acheteur ayant annulé de façon répétée chez lui,
+          dans les conditions prévues par les conditions générales de vente.
         </p>
       </section>
 
