@@ -15,7 +15,8 @@ export default function HeroTagline() {
   }, []);
 
   return (
-    <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-white text-center">
+    // 27/11/2026 : haut de page crème → titre en Bangers, bleu de la charte (fin « ici. » en turquoise).
+    <h1 className="font-display text-6xl md:text-8xl leading-[0.95] mb-6 text-[#2B4E93] text-center lg:text-left">
       Les meilleurs moments commencent{" "}
       {/* Les deux fins restent dans le DOM (SEO stable) — on n'anime que l'opacité, empilées dans une même cellule grid. */}
       <span className="grid">

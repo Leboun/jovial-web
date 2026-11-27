@@ -6,7 +6,9 @@ import { APP_STORE_URL, PLAY_STORE_URL, ANDROID_AVAILABLE } from "@/lib/appLinks
 // Même formulaire Formspree que le contact (champ "source" pour distinguer la waitlist)
 const FORMSPREE_ID = "xpqnjezp";
 
-export default function DownloadSection() {
+// tone="light" : sur fond crème (haut de l'accueil, 27/11/2026) ; par défaut, sur fond sombre / bleu.
+export default function DownloadSection({ tone = "dark" }: { tone?: "dark" | "light" }) {
+  const light = tone === "light";
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
   async function handleWaitlist(e: React.FormEvent<HTMLFormElement>) {
@@ -54,20 +56,22 @@ export default function DownloadSection() {
                 required
                 placeholder="ton@email.fr"
                 aria-label="Ton email pour être prévenu de la sortie sur Android"
-                className="flex-1 min-w-0 bg-white/10 border border-white/25 rounded-full px-4 py-3 text-base text-white placeholder-white/60 focus:outline-none focus:border-white/60 transition-colors"
+                className={light
+                  ? "flex-1 min-w-0 bg-[#FFFBF3] border border-[#EAD2A6] rounded-full px-4 py-3 text-base text-[#242D41] placeholder-[#6B6152]/70 focus:outline-none focus:border-[#2B4E93] transition-colors"
+                  : "flex-1 min-w-0 bg-white/10 border border-white/25 rounded-full px-4 py-3 text-base text-white placeholder-white/60 focus:outline-none focus:border-white/60 transition-colors"}
               />
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="bg-[#5CB6AC] hover:bg-[#4aa39a] text-white text-sm font-bold px-5 py-3.5 rounded-full whitespace-nowrap transition-colors disabled:opacity-60"
+                className={`${light ? "bg-[#2B4E93] hover:bg-[#1e3a70] text-[#FFE8BF]" : "bg-[#5CB6AC] hover:bg-[#4aa39a] text-white"} text-sm font-bold px-5 py-3.5 rounded-full whitespace-nowrap transition-colors disabled:opacity-60`}
               >
                 {status === "sending" ? "Envoi…" : "Préviens-moi"}
               </button>
             </form>
             {status === "error" ? (
-              <p className="text-xs text-red-300">Oups, ça n&apos;a pas marché. Réessaie ou écris-nous à hello@getjovial.fr</p>
+              <p className={`text-xs ${light ? "text-red-700" : "text-red-300"}`}>Oups, ça n&apos;a pas marché. Réessaie ou écris-nous à hello@getjovial.fr</p>
             ) : (
-              <p className="text-xs opacity-60">Sur Android ? L&apos;app arrive très vite sur Google Play — laisse ton email pour être prévenu·e 🚀</p>
+              <p className={`text-xs ${light ? "text-[#6B6152]" : "opacity-60"}`}>Sur Android ? L&apos;app arrive très vite sur Google Play — laisse ton email pour être prévenu·e 🚀</p>
             )}
           </>
         )
