@@ -160,7 +160,7 @@ export default function AssociationsPage() {
       </section>
 
       {/* Bénéfices — Flip cards */}
-      <section className="py-20 px-6 bg-[#FFF7EA]">
+      <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -218,7 +218,7 @@ export default function AssociationsPage() {
       </section>
 
       {/* Highlights */}
-      <section className="py-20 px-6 bg-[#FFFBF3]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
@@ -247,7 +247,7 @@ export default function AssociationsPage() {
       </section>
 
       {/* Tarifs */}
-      <section className="py-20 px-6 bg-[#FFF7EA]">
+      <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -265,7 +265,7 @@ export default function AssociationsPage() {
             {plans.map((plan) => (
               <div
                 key={plan.name}
-                className={`relative bg-[#FFFBF3] rounded-2xl border-2 ${plan.color} p-8 flex flex-col ${plan.popular ? "shadow-xl scale-[1.02]" : ""}`}
+                className={`relative bg-[#FFF7EA] rounded-2xl border-2 ${plan.color} p-8 flex flex-col ${plan.popular ? "shadow-xl scale-[1.02]" : ""}`}
               >
                 {plan.badge && (
                   <div
@@ -315,7 +315,7 @@ export default function AssociationsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-6 bg-[#FFFBF3]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -354,7 +354,7 @@ export default function AssociationsPage() {
                 a: "Un espace communautaire réservé à ton association : tu y publies tes annonces, tu fédères tes membres et tu peux recruter des bénévoles. C'est inclus à partir de l'offre Asso Active.",
               },
             ].map((item) => (
-              <details key={item.q} className="group bg-[#FFFBF3] rounded-2xl">
+              <details key={item.q} className="group bg-[#FFF7EA] rounded-2xl">
                 <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-[#242D41] list-none [&::-webkit-details-marker]:hidden">
                   {item.q}
                   <span className="text-[#2B4E93] text-xl font-light shrink-0 group-open:rotate-45 transition-transform">+</span>

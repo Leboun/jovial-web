@@ -159,7 +159,7 @@ export default function EtablissementsPage() {
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 bg-[#FFFBF3] text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors text-lg"
+                className="inline-flex items-center justify-center gap-2 bg-[#FFE8BF] text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors text-lg"
               >
                 Demander une démo
               </a>
@@ -184,7 +184,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* C'est pour qui ? — éligibilité, surfacée tôt pour rassurer */}
-      <section className="py-20 px-6 bg-[#FFFBF3]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto text-center">
           <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
             <span className="w-6 h-px bg-[#5CB6AC]" />
@@ -226,7 +226,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* Bénéfices — Flip cards */}
-      <section className="py-20 px-6 bg-[#FFF7EA]">
+      <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -282,7 +282,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* Paiements & billetterie */}
-      <section className="py-20 px-6 bg-[#FFFBF3]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-4xl sm:text-5xl font-black mt-2 mb-3 jovial-grad-text leading-tight uppercase">
@@ -311,7 +311,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* Bons plans */}
-      <section className="py-20 px-6 bg-[#FFF7EA]">
+      <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -328,21 +328,21 @@ export default function EtablissementsPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            <div className="bg-[#FFFBF3] rounded-2xl p-7 border border-[#EAD2A6]">
+            <div className="bg-[#FFF7EA] rounded-2xl p-7 border border-[#EAD2A6]">
               <div className="w-11 h-11 rounded-xl bg-[#D8F0EE] flex items-center justify-center mb-4">
                 <Tag size={22} className="text-[#2F7D73]" />
               </div>
               <h3 className="font-bold text-[#242D41] mb-2">Crée ton bon en 2 minutes</h3>
               <p className="text-gray-500 text-sm leading-relaxed">Un titre, un prix barré, un nombre de bons et une date : ton offre part en ligne et apparaît dans l&apos;app auprès des utilisateurs proches de toi.</p>
             </div>
-            <div className="bg-[#FFFBF3] rounded-2xl p-7 border border-[#EAD2A6]">
+            <div className="bg-[#FFF7EA] rounded-2xl p-7 border border-[#EAD2A6]">
               <div className="w-11 h-11 rounded-xl bg-[#D8F0EE] flex items-center justify-center mb-4">
                 <Percent size={22} className="text-[#2F7D73]" />
               </div>
               <h3 className="font-bold text-[#242D41] mb-2">10 % seulement, à la vente</h3>
               <p className="text-gray-500 text-sm leading-relaxed">Aucun abonnement en plus, aucun frais fixe : tu ne paies une commission que sur les bons réellement vendus. Le reste tombe sur ton compte.</p>
             </div>
-            <div className="bg-[#FFFBF3] rounded-2xl p-7 border border-[#EAD2A6]">
+            <div className="bg-[#FFF7EA] rounded-2xl p-7 border border-[#EAD2A6]">
               <div className="w-11 h-11 rounded-xl bg-[#D8F0EE] flex items-center justify-center mb-4">
                 <QrCode size={22} className="text-[#2F7D73]" />
               </div>
@@ -382,7 +382,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* Tarifs */}
-      <section className="py-20 px-6 bg-[#FFF7EA]">
+      <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -400,7 +400,7 @@ export default function EtablissementsPage() {
             {plans.map((plan) => (
               <div
                 key={plan.name}
-                className={`relative bg-[#FFFBF3] rounded-2xl border-2 ${plan.color} p-8 flex flex-col ${plan.popular ? "shadow-xl scale-[1.02]" : ""}`}
+                className={`relative bg-[#FFF7EA] rounded-2xl border-2 ${plan.color} p-8 flex flex-col ${plan.popular ? "shadow-xl scale-[1.02]" : ""}`}
               >
                 {plan.badge && (
                   <div
@@ -453,7 +453,7 @@ export default function EtablissementsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-6 bg-[#FFFBF3]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -512,7 +512,7 @@ export default function EtablissementsPage() {
                 a: "Dès ton inscription, tu reçois un kit clé en main : affiche à imprimer, visuels pour les réseaux sociaux et QR code qui renvoie vers ta fiche Jovial."
               },
             ].map((item) => (
-              <details key={item.q} className="group bg-[#FFFBF3] rounded-2xl">
+              <details key={item.q} className="group bg-[#FFF7EA] rounded-2xl">
                 <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-[#242D41] list-none [&::-webkit-details-marker]:hidden">
                   {item.q}
                   <span className="text-[#2B4E93] text-xl font-light shrink-0 group-open:rotate-45 transition-transform">+</span>

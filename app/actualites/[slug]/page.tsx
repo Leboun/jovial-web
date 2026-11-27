@@ -196,7 +196,7 @@ export default async function ArticlePage({ params }: Props) {
         }}
       />
       {/* Hero */}
-      <section className="bg-[#FFFBF3] pt-28 pb-12 px-6 border-b border-[#EAD2A6]">
+      <section className="bg-white pt-28 pb-12 px-6 border-b border-[#EAD2A6]">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/actualites"
@@ -242,14 +242,14 @@ export default async function ArticlePage({ params }: Props) {
       </section>
 
       {/* Content */}
-      <section className="py-16 px-6 bg-[#FFFBF3]">
+      <section className="py-16 px-6 bg-white">
         <div className="max-w-3xl mx-auto prose-custom">
           <div className="space-y-5">{renderContent(article.content)}</div>
         </div>
       </section>
 
       {/* CTA app */}
-      <section className="py-14 px-6 bg-[#FFF7EA] border-y border-[#EAD2A6]">
+      <section className="py-14 px-6 bg-[#FFF3DE] border-y border-[#EAD2A6]">
         <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-[#2B4E93] rounded-3xl p-8 text-white">
           <div className="flex-1">
             <p className="text-lg font-bold mb-1">Découvre ces bars sur Jovial</p>
@@ -259,7 +259,7 @@ export default async function ArticlePage({ params }: Props) {
             {APP_COMING_SOON ? (
               <Link
                 href="/#telecharger"
-                className="bg-[#FFFBF3] text-[#2B4E93] text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/90 transition-colors"
+                className="bg-[#FFE8BF] text-[#2B4E93] text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/90 transition-colors"
               >
                 Découvrir l&apos;app →
               </Link>
@@ -268,7 +268,7 @@ export default async function ArticlePage({ params }: Props) {
                 {APP_STORE_URL && (
                   <a
                     href={APP_STORE_URL}
-                    className="bg-[#FFFBF3] text-[#2B4E93] text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/90 transition-colors"
+                    className="bg-[#FFE8BF] text-[#2B4E93] text-sm font-bold px-5 py-3 rounded-xl inline-flex items-center hover:bg-white/90 transition-colors"
                   >
                     App Store
                   </a>
@@ -287,13 +287,13 @@ export default async function ArticlePage({ params }: Props) {
 
       {/* Related articles */}
       {related.length > 0 && (
-        <section className="py-16 px-6 bg-[#FFFBF3]">
+        <section className="py-16 px-6 bg-white">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#242D41] mb-8">À lire aussi</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {related.map((a) => (
                 <Link key={a.slug} href={`/actualites/${a.slug}`} className="group block">
-                  <article className="bg-[#FFFBF3] rounded-2xl p-6 hover:shadow-md transition-shadow h-full flex flex-col">
+                  <article className="bg-[#FFF7EA] rounded-2xl p-6 hover:shadow-md transition-shadow h-full flex flex-col">
                     <div
                       className="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-full mb-4 w-fit"
                       style={{ backgroundColor: a.tagColor + "18", color: a.tagColor }}

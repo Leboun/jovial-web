@@ -82,7 +82,7 @@ export default function HomePage() {
       </section>
 
       {/* Concept */}
-      <section id="concept" className="py-24 px-6 bg-[#FFFBF3]">
+      <section id="concept" className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -140,7 +140,7 @@ export default function HomePage() {
 
 
       {/* Sortir avec sa bande — ce qui distingue Jovial d'une simple carte (audit nov. 2026) */}
-      <section className="py-20 px-6 bg-[#FFF7EA]">
+      <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -214,7 +214,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/etablissements"
-              className="inline-flex items-center justify-center gap-2 bg-[#FFFBF3] text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[#FFE8BF] text-[#2B4E93] font-bold px-8 py-4 rounded-2xl hover:bg-white/90 transition-colors"
             >
               Découvrir Jovial Pro →
             </Link>
@@ -235,7 +235,7 @@ export default function HomePage() {
       </section>
 
       {/* Associations — teaser vers /associations */}
-      <section className="py-16 px-6 bg-[#FFFBF3] border-t border-[#EAD2A6]">
+      <section className="py-16 px-6 bg-white border-t border-[#EAD2A6]">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
             <span className="w-6 h-px bg-[#5CB6AC]" />
@@ -270,7 +270,7 @@ export default function HomePage() {
             </Link>
             <a
               href="https://pro.getjovial.fr/establishment/asso/offers"
-              className="inline-flex items-center justify-center gap-2 bg-[#FFFBF3] text-[#2B4E93] font-bold px-8 py-4 rounded-2xl border-2 border-[#2B4E93] hover:bg-[#2B4E93] hover:text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[#FFE8BF] text-[#2B4E93] font-bold px-8 py-4 rounded-2xl border-2 border-[#2B4E93] hover:bg-[#2B4E93] hover:text-white transition-colors"
             >
               Inscrire mon association
             </a>
@@ -282,7 +282,7 @@ export default function HomePage() {
       <ScrollingBanner />
 
       {/* Magazine */}
-      <section className="py-24 px-6 bg-[#FFFBF3]">
+      <section className="py-24 px-6 bg-[#FFF3DE]">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-end justify-between mb-12">
             <div>
@@ -307,7 +307,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {homeArticles(3).map((a) => (
               <Link key={a.slug} href={`/actualites/${a.slug}`} className="group block">
-                <article className="bg-[#FFFBF3] rounded-2xl overflow-hidden hover:shadow-md transition-shadow h-full flex flex-col">
+                <article className="bg-white border border-[#EAD2A6] rounded-2xl overflow-hidden hover:shadow-md transition-shadow h-full flex flex-col">
                   <div className="h-1.5 w-full" style={{ backgroundColor: a.tagColor }} />
                   <div className="p-6 flex flex-col flex-1">
                     <span
@@ -342,7 +342,7 @@ export default function HomePage() {
       </section>
 
       {/* FAQ utilisateurs */}
-      <section className="py-24 px-6 bg-[#FFFBF3] border-t border-[#EAD2A6]">
+      <section className="py-24 px-6 bg-white border-t border-[#EAD2A6]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -385,7 +385,7 @@ export default function HomePage() {
                   }]
                 : []),
             ].map((item) => (
-              <details key={item.q} className="group bg-[#FFFBF3] rounded-2xl">
+              <details key={item.q} className="group bg-[#FFF7EA] rounded-2xl">
                 <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-[#242D41] list-none [&::-webkit-details-marker]:hidden">
                   {item.q}
                   <span className="text-[#2B4E93] text-xl font-light shrink-0 group-open:rotate-45 transition-transform">+</span>

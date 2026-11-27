@@ -51,7 +51,8 @@
 
 body {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
-  background: var(--bg);
+  /* Fond BLANC : les sections alternent blanc / crème pour garder du contraste (retour d'Esteban 27/11). */
+  background: #ffffff;
   color: var(--ink);
 }
 

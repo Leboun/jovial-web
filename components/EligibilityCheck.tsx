@@ -59,7 +59,7 @@ export default function EligibilityCheck() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <button
               onClick={() => { setKind("etab"); setStep(2); }}
-              className="text-left p-4 rounded-xl border border-[#EAD2A6] bg-[#FFFBF3] hover:border-[#2B4E93] hover:shadow-sm transition-all"
+              className="text-left p-4 rounded-xl border border-[#EAD2A6] bg-[#FFF7EA] hover:border-[#2B4E93] hover:shadow-sm transition-all"
             >
               <span className="text-2xl">🏪</span>
               <span className="block font-bold text-[#242D41] mt-1">Un établissement</span>
@@ -67,7 +67,7 @@ export default function EligibilityCheck() {
             </button>
             <button
               onClick={() => { setKind("asso"); setStep(2); }}
-              className="text-left p-4 rounded-xl border border-[#EAD2A6] bg-[#FFFBF3] hover:border-[#2B4E93] hover:shadow-sm transition-all"
+              className="text-left p-4 rounded-xl border border-[#EAD2A6] bg-[#FFF7EA] hover:border-[#2B4E93] hover:shadow-sm transition-all"
             >
               <span className="text-2xl">🤝</span>
               <span className="block font-bold text-[#242D41] mt-1">Une association</span>
@@ -86,7 +86,7 @@ export default function EligibilityCheck() {
               <button
                 key={o}
                 onClick={() => setStep(3)}
-                className="text-left px-4 py-3 rounded-xl border border-[#EAD2A6] bg-[#FFFBF3] hover:border-[#2B4E93] hover:shadow-sm text-sm font-semibold text-gray-700 transition-all"
+                className="text-left px-4 py-3 rounded-xl border border-[#EAD2A6] bg-[#FFF7EA] hover:border-[#2B4E93] hover:shadow-sm text-sm font-semibold text-gray-700 transition-all"
               >
                 {o}
               </button>

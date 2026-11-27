@@ -18,7 +18,7 @@ export default async function PaiementAnnule({
 
   return (
     <main className="min-h-screen flex items-center justify-center bg-[#FFF7EA] px-6">
-      <div className="max-w-md w-full bg-[#FFFBF3] rounded-3xl border border-[#EAD2A6] shadow-sm p-8 text-center">
+      <div className="max-w-md w-full bg-[#FFF7EA] rounded-3xl border border-[#EAD2A6] shadow-sm p-8 text-center">
         <div className="text-5xl mb-4">💳</div>
         <h1 className="text-2xl font-black text-[#242D41] mb-3">Paiement annulé</h1>
         {isTicket ? (

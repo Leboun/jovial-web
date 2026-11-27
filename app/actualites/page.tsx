@@ -24,7 +24,7 @@ export default function MagazinePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#FFFBF3] pt-32 pb-12 px-6 border-b border-[#EAD2A6]">
+      <section className="bg-white pt-32 pb-12 px-6 border-b border-[#EAD2A6]">
         <div className="max-w-5xl mx-auto">
           <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
             <span className="w-6 h-px bg-[#5CB6AC]" />
@@ -39,7 +39,7 @@ export default function MagazinePage() {
       </section>
 
       {/* Catégories */}
-      <section className="py-8 px-6 bg-[#FFFBF3] border-b border-[#EAD2A6]">
+      <section className="py-8 px-6 bg-white border-b border-[#EAD2A6]">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
@@ -57,11 +57,11 @@ export default function MagazinePage() {
 
       {/* Article à la une */}
       {featured && (
-        <section className="py-12 px-6 bg-[#FFF7EA]">
+        <section className="py-12 px-6 bg-[#FFF3DE]">
           <div className="max-w-5xl mx-auto">
             <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-5">À la une</p>
             <Link href={`/actualites/${featured.slug}`} className="group block">
-              <article className="bg-[#FFFBF3] rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+              <article className="bg-[#FFF7EA] rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
                 <div className="h-2 w-full" style={{ backgroundColor: featured.tagColor }} />
                 <div className="p-8 md:p-12">
                   <div className="flex flex-wrap items-center gap-3 mb-6">
@@ -95,11 +95,11 @@ export default function MagazinePage() {
       )}
 
       {/* Grille d'articles */}
-      <section className="py-12 px-6 bg-[#FFF7EA]">
+      <section className="py-12 px-6 bg-[#FFF3DE]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {rest.map((a) => (
             <Link key={a.slug} href={`/actualites/${a.slug}`} className="group block">
-              <article className="bg-[#FFFBF3] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
+              <article className="bg-[#FFF7EA] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
                 <div className="h-1.5 w-full" style={{ backgroundColor: a.tagColor }} />
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center justify-between mb-4">

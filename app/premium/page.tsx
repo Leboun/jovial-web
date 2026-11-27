@@ -91,7 +91,7 @@ export default function PremiumPage() {
       </section>
 
       {/* Comparatif */}
-      <section className="py-20 px-6 bg-[#FFFBF3]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -148,7 +148,7 @@ export default function PremiumPage() {
       </section>
 
       {/* Features Premium */}
-      <section className="py-20 px-6 bg-[#FFF7EA]">
+      <section className="py-20 px-6 bg-[#FFF3DE]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -199,7 +199,7 @@ export default function PremiumPage() {
             ].map((f) => {
               const Icon = f.icon;
               return (
-                <div key={f.title} className="bg-[#FFFBF3] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div key={f.title} className="bg-[#FFF7EA] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
                   <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: f.color + "20" }}>
                     <Icon size={22} style={{ color: f.color }} />
                   </div>
@@ -213,7 +213,7 @@ export default function PremiumPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-6 bg-[#FFFBF3]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 text-[#5CB6AC] text-xs font-bold uppercase tracking-[0.2em] mb-4">
@@ -227,7 +227,7 @@ export default function PremiumPage() {
           </div>
           <div className="space-y-4">
             {faqs.map((faq) => (
-              <details key={faq.q} className="group bg-[#FFFBF3] rounded-2xl">
+              <details key={faq.q} className="group bg-[#FFF7EA] rounded-2xl">
                 <summary className="flex items-center justify-between gap-4 min-h-11 px-6 py-5 cursor-pointer font-semibold text-[#242D41] list-none [&::-webkit-details-marker]:hidden">
                   {faq.q}
                   <span className="text-[#2B4E93] text-xl font-light shrink-0 group-open:rotate-45 transition-transform">+</span>
