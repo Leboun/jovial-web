@@ -77,17 +77,18 @@ export default function FlipCard({ icon, title, desc, accent = "#2B4E93", footer
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
-            // Dos en BLEU UNI de la charte (plus de dégradé, 27/11/2026), contour + ombre orange façon appli.
-            background: "#2B4E93",
+            // Dos ORANGE de la charte (choix d'Esteban 27/11/2026, comme « Et plein d'autres plans » dans l'appli),
+            // texte bleu nuit, contour + ombre bleu nuit.
+            background: "#EF6731",
             border: "2.5px solid #242D41",
-            boxShadow: "5px 5px 0 #EF6731",
+            boxShadow: "5px 5px 0 #242D41",
           }}
           className="rounded-[24px] p-6 sm:p-7 flex flex-col justify-between overflow-hidden"
         >
-          <p className="text-[#FFE8BF] text-base leading-relaxed font-semibold">{desc}</p>
+          <p className="text-[#242D41] text-base leading-relaxed font-bold">{desc}</p>
           {footer ? (
-            <div className="flex items-center gap-2 text-white font-semibold text-sm">
-              <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-xs shrink-0">✓</div>
+            <div className="flex items-center gap-2 text-[#242D41] font-bold text-sm">
+              <div className="w-6 h-6 bg-[#FFE8BF] rounded-full flex items-center justify-center text-xs shrink-0">✓</div>
               {footer}
             </div>
           ) : null}
