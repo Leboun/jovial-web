@@ -1,0 +1,70 @@
+/* Charte « appli » du site (27/11/2026).
+   Fichier À PART de globals.css : lors de la mise en ligne du 27/11, l'hébergeur a compilé une
+   ANCIENNE version mise en cache de globals.css (nouveaux styles absents en ligne alors qu'ils
+   s'affichaient en local). Les règles de la nouvelle charte vivent donc ici, chargées APRÈS
+   globals.css, et l'emportent sur ses anciennes valeurs. */
+
+:root {
+  --bg: #FFF3DE;
+  --surface: #FFFBF3;
+  --cream-deep: #FFE8BF;
+  --sand: #EAD2A6;
+  --ink: #242D41;
+  --muted: #6B6152;
+  --brand-orange: #EF6731;
+}
+
+body {
+  background: #ffffff;
+  color: var(--ink);
+}
+
+/* Titres de section : Bangers, BLEU UNI (plus de dégradé). */
+.jovial-grad-text {
+  background-image: none !important;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  color: var(--primary);
+  font-family: var(--font-bangers), var(--font-geist-sans), sans-serif;
+  font-weight: 400 !important;
+  letter-spacing: 0.02em;
+}
+.font-display {
+  font-family: var(--font-bangers), var(--font-geist-sans), sans-serif;
+  font-weight: 400 !important;
+  letter-spacing: 0.02em;
+}
+/* Petits éléments : bleu uni (plus de dégradé). */
+.jovial-grad-bg {
+  background-image: none !important;
+  background-color: var(--primary);
+}
+
+.cartoon-card {
+  background: #FFF7EA;
+  border: 2.5px solid var(--ink);
+  border-radius: 24px;
+  box-shadow: 5px 5px 0 var(--ink);
+}
+.cartoon-card-orange {
+  box-shadow: 5px 5px 0 var(--brand-orange);
+}
+.btn-orange {
+  background: var(--brand-orange);
+  color: var(--ink);
+  border: 2.5px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn-orange:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); }
+.btn-orange:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ink); }
+.btn-cream {
+  background: var(--cream-deep);
+  color: var(--ink);
+  border: 2.5px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn-cream:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); }
+/* Orange « texte » lisible sur fond clair (petits sur-titres). */
+.text-orange-deep { color: #B9461B; }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bangers, Catamaran } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import "./jovial-theme.css"; // charte appli (27/11/2026), chargée après globals.css
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { JsonLd, organizationJsonLd } from "@/lib/structuredData";
