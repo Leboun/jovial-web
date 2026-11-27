@@ -45,36 +45,39 @@ function PhoneMockup({ src, alt }: { src: string; alt: string }) {
 export default function HomePage() {
   return (
     <>
-      {/* Hero CRÈME (27/11/2026, maquette validée par Esteban :
-          docs/maquette-site-getjovial-creme-27nov2026.html dans jovial-app) : titre en Bangers à
-          gauche, vidéo dans un cadre arrondi à droite avec le téléphone et Jovi devant.
-          Pour revenir à l'ancien hero (vidéo plein écran sous voile bleu nuit) : annuler ce commit. */}
-      <section className="relative overflow-hidden bg-[#FFF3DE]">
-        <div className="max-w-6xl mx-auto px-6 pt-32 pb-16 lg:pb-20 grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-12 items-center">
+      {/* Hero — vidéo plein écran + texte centré + 1 mockup */}
+      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden text-white bg-[#080b14]">
 
-          {/* Texte */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-            <HeroTagline />
-            <p className="text-[#6B6152] text-lg leading-relaxed mb-8 max-w-xl">
-              Sortir, jouer, se retrouver : concerts, comedy clubs, tournois, activités, événements… tout ce qui t&apos;attend près de chez toi, à réserver en deux clics.
-            </p>
-            <div id="telecharger" className="scroll-mt-28 w-full flex flex-col items-center lg:items-start">
-              <DownloadSection tone="light" />
-            </div>
-            <p className="text-[#6B6152] text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
-          </div>
+        {/* Vidéo en fond plein écran */}
+        <LoopingVideos style={{
+          position: "absolute", inset: 0,
+          width: "100%", height: "100%",
+          objectFit: "cover", objectPosition: "center 60%",
+          zIndex: 0,
+        }} />
 
-          {/* Visuel : vidéo en cadre arrondi + téléphone + Jovi */}
-          <div className="relative h-[400px] sm:h-[460px] lg:h-[520px] w-full max-w-[520px] mx-auto">
-            <div className="absolute right-0 top-4 w-[88%] h-[280px] sm:h-[330px] lg:h-[370px] rounded-[28px] overflow-hidden border-4 border-[#FFFBF3] shadow-[0_18px_40px_rgba(43,78,147,0.18)] bg-[#EAD2A6]">
-              <LoopingVideos style={{ objectPosition: "center 60%" }} />
-            </div>
-            <div className="absolute left-0 bottom-0 w-[170px] sm:w-[190px] lg:w-[210px] drop-shadow-2xl">
-              <PhoneMockup src="/mockup-carte.jpg" alt="L'app Jovial : la carte des sorties autour de toi" />
-            </div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/mascotte.png" alt="" aria-hidden="true" className="absolute -right-2 bottom-2 w-[96px] sm:w-[110px]" />
+        {/* Overlay sombre + dégradé vers le bas */}
+        <div style={{
+          position: "absolute", inset: 0, zIndex: 1,
+          background: "linear-gradient(to bottom, rgba(20,30,70,0.55) 0%, rgba(43,78,147,0.4) 50%, rgba(10,15,40,0.65) 100%)"
+        }} />
+
+        {/* Contenu centré */}
+        <div className="relative z-10 flex flex-col items-center text-center px-6 pt-28 pb-12 w-full max-w-5xl mx-auto">
+
+          {/* Tagline */}
+          <HeroTagline />
+
+          {/* Sous-titre */}
+          <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-xl">
+            Sortir, jouer, se retrouver : concerts, comedy clubs, tournois, activités, événements… tout ce qui t&apos;attend près de chez toi, à réserver en deux clics.
+          </p>
+
+          {/* Boutons téléchargement */}
+          <div id="telecharger" className="scroll-mt-28 w-full flex flex-col items-center">
+            <DownloadSection />
           </div>
+          <p className="text-white/35 text-xs mt-4">iOS 16+ et Android 10+. Gratuit, sans publicité.</p>
         </div>
       </section>
 
