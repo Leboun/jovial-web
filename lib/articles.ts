@@ -251,7 +251,7 @@ La Fête de la Musique, ce n'est pas le truc de tout le monde — et c'est très
 
 Vous avez aimé ne rien rater de la Fête de la Musique ? Imaginez la même chose **toute l'année**. **Jovial**, c'est l'application bretonne qui rassemble au même endroit les concerts, soirées et bonnes adresses près de chez vous — pour savoir en un coup d'œil **quoi faire ce soir**, sans éplucher dix sites différents.
 
-📲 *Disponible sur l'App Store, bientôt sur Google Play — gratuit, sans publicité.*
+📲 *Disponible sur l'App Store et Google Play — gratuit, sans publicité.*
 
 ## Sources
 
@@ -437,7 +437,7 @@ Réparti sur trois niveaux, ce bar atypique à l'esprit rock cache à son sous-s
 
 **Jovial**, c'est l'appli qui réunit les bars, activités et événements près de chez toi — fléchettes comprises. L'idée : repérer les adresses sur une carte interactive, suivre les tournois et réserver ta soirée en quelques secondes. Des lieux comme ceux de ce guide sont exactement ce qu'on a hâte de te faire découvrir au lancement.
 
-📲 *Disponible sur l'App Store, bientôt sur Google Play — gratuit, sans publicité.*
+📲 *Disponible sur l'App Store et Google Play — gratuit, sans publicité.*
     `,
   },
   {

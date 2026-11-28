@@ -1,8 +1,7 @@
 // Liens stores Jovial — source unique.
-// iOS publié le 29/10/2026. ⚠️ Remplir PLAY_STORE_URL le jour de la sortie Android :
-// les boutons, la waitlist Android et les CTA « Télécharger » se mettent à jour tout seuls.
+// iOS publié le 29/10/2026, Android le 26/11/2026.
 export const APP_STORE_URL = "https://apps.apple.com/fr/app/jovial/id6779774685";
-export const PLAY_STORE_URL = "";
+export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.jovial.app";
 
 // Tant que les deux liens sont vides, l'app est considérée « bientôt disponible ».
 export const APP_COMING_SOON = !APP_STORE_URL && !PLAY_STORE_URL;
